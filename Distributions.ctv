@@ -3,11 +3,11 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2008-11-11</version> 
+<version>2008-11-14</version> 
 
 <info> 
 For most of the classical distributions, base R provides
-probability distribution functions (p) density functions (d), quantile functions
+probability distribution functions (p), density functions (d), quantile functions
 (q), and random number generation (r).
 Beyond this basic functionality, many CRAN packages provide
 additional useful distributions. In particular, multivariate distributions as well as copulas
@@ -34,7 +34,7 @@ or not complete, please let me know.
      hypergeometric <code>hyper</code>,
      logistic <code>logis</code>,
      lognormal <code>lnorm</code>,
-     negative binomial <code>nbinom</code>
+     negative binomial <code>nbinom</code>,
      normal <code>norm</code>,
      Poisson <code>pois</code>,
      Student t <code>t</code>,
@@ -120,7 +120,7 @@ or not complete, please let me know.
      the d, p, q, r for the inverse exponential distribution. The shifted exponential distribution
      is implemented in <pkg>lmomco</pkg> package with d, p, q, r functions.</LI>
      
-     <LI><I>Frechet distribution</I>: provided in <pkg>VGAM</pkg>
+     <LI><I>Frechet distribution</I>: Provided in <pkg>VGAM</pkg>
      and <pkg>evd</pkg>.</LI>
 
      <LI><I>Gamma distribution and its extensions</I>: Base R provides
@@ -136,8 +136,8 @@ or not complete, please let me know.
      provides the moment generating function and moments. <pkg>ghyp</pkg> package
      provides d, p, q, r functions for the raw and the generalized inverse gaussian distribution, in the
      context of the generalized hyperbolic distribution. <pkg>SuppDists</pkg>
-     provide functions for the inverse Gaussian distribution as well and additionals functions
-     to compute moments, skewness, kurtosis... <pkg>VGAM</pkg> also implements
+     provides functions for the inverse Gaussian distribution as well and furthermore includes functions
+     for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> also implements
      the folded and the skewed normal distribution, the inverse gaussian distribution. <pkg>lmomco</pkg> implements 
      the generalized normal distribution. The multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI> 
@@ -232,13 +232,13 @@ or not complete, please let me know.
 <p> <strong>Mixture of probability laws:</strong>
    
    <UL>
-      <LI><I>Gaussian mixture</I>: functions d, r are provided by <pkg>mixtools</pkg>
+      <LI><I>Gaussian mixture</I>: Functions d, r are provided by <pkg>mixtools</pkg>
       package when dealing with finite mixture models.</LI>
 
-      <LI><I>Gamma mixture</I>: Gamma shape mixture are implemented (d, p, r functions)
+      <LI><I>Gamma mixture</I>: Gamma shape mixtures are implemented (d, p, r)
       in the <pkg>GSM</pkg> package.</LI>
 
-      <LI><I>Student mixture</I>: the<pkg>AdMit</pkg> provides d, r functions
+      <LI><I>Student mixture</I>: The <pkg>AdMit</pkg> package provides d, r functions
       for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</LI>
       
    </UL>
@@ -285,21 +285,26 @@ or not complete, please let me know.
      
      
    <UL>
-     <LI>This part refers to random number generation.
-     In R, runif calls by default the Mersenne Twister (1998) algorithm. Other generators
-     such as Knuth TAOCP, Wichmann-Hill, Marsaglia-Multicarry, Super-Duper are
-     directly available in R. <pkg>setRNG</pkg> provides an easy way to set RNG in R.</LI>
+     <LI>Basic functionality: R provides several random number generators (RNGs).
+     The random seed can be provided via <code>set.seed</code> and the kind of RNG can be specified
+     using <code>RNGkind</code>. The default RNG is the Mersenne-Twister algorithm.
+     Other generators include Wichmann-Hill, Marsaglia-Multicarry, Super-Duper,
+     "Knuth-TAOCP-2002, Knuth-TAOCP, as well as user-supplied RNGs. For normal
+     random numbers, the following algorithms are available: Kinderman-Ramage,
+     Ahrens-Dieter, Box-Muller, Inversion (default).</LI>
+     
+     <LI><I>Setting the RNG:</I> In addition to the tools above, <pkg>setRNG</pkg>
+     provides an easy way to set RNG.</LI>
      
      <LI><I>Pseudo-randomness</I>: 
-     <pkg>rsprng</pkg> implements Scalable Parallel Random Number Generators,
+     <pkg>rsprng</pkg> implements scalable parallel RNGs,
      <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
      pseudorandom number generator. <pkg>rstream</pkg> focuses on multiple 
      independent streams of random numbers from different sources (in a object oriented
      approach). 
-     And <pkg>randtoolbox</pkg> provides more recent random
-     number generators such as WELL and SF Mersenne-Twister.</LI>
+     And <pkg>randtoolbox</pkg> provides more recent RNGs such as WELL and SF Mersenne-Twister.</LI>
      
-     <LI><I>Quasi-randomness</I>: the <pkg>randtoolbox</pkg> provides
+     <LI><I>Quasi-randomness</I>: The <pkg>randtoolbox</pkg> provides
      the following quasi random sequences: the Sobol sequence, the Halton
      (hence Van Der Corput) sequence and the Torus sequence (also known as Kronecker
      sequence). <pkg>lhs</pkg> package implements the latin hypercube sampling,
@@ -311,7 +316,7 @@ or not complete, please let me know.
      random.org</A>.</LI>
      
      <LI><I>misc.</I>: <pkg>Runuran</pkg> package
-     interfaces to the UNU.RAN library for Universal Non-Uniform RANdom variate generators</LI>
+     interfaces to the UNU.RAN library for universal non-uniform RNGs.</LI>
    </UL>
      
 
@@ -329,11 +334,6 @@ or not complete, please let me know.
 
 
 
-<!-- FIXME: As I said above, I'm not sure whether you should discuss parameter
-     estimation. If so a short section might be appropriate. But then you should
-     think about inclusion/exclusion criteria for this...otherwise there will
-     be a lot of packages related to parameter estimation. -->
-     
      <LI><I>Object-orientation</I>: Object-oriented functions
      for probability distributions is available with <pkg>distr</pkg> package thanks
      to S4 classes. In addition to <pkg>distr</pkg>, <pkg>distrSim</pkg> provides
@@ -349,9 +349,9 @@ or not complete, please let me know.
        <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
      estimation for various distributions, while <pkg>lmomco</pkg> focuses on
      moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
-     estimation for usual and "exotic" distributions. Let us note that package
-     MASS (in the <pkg>VR</pkg> bundle)
-     also implements parameter estimations.      
+     estimation for usual and "exotic" distributions. Package
+     MASS (in the <pkg>VR</pkg> bundle) implements the flexible <code>fitdistr</code>
+     function for parameter estimations.
      Bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>.</LI>	       
       </UL>
 </p>
@@ -360,18 +360,18 @@ or not complete, please let me know.
 
 
 <packagelist>
-  <pkg>actuar</pkg> 
+  <pkg priority="core">actuar</pkg> 
   <pkg>AdMit</pkg>
   <pkg>bs</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>compoisson</pkg>
-  <pkg>copula</pkg>
+  <pkg priority="core">copula</pkg>
   <pkg>distr</pkg>
   <pkg>distributions</pkg>
   <pkg>distrSim</pkg> 
   <pkg>distrTEst</pkg> 
   <pkg>evd</pkg>
-  <pkg>fCopulae</pkg>
+  <pkg priority="core">fCopulae</pkg>
   <pkg>fgac</pkg>
   <pkg>gbs</pkg>
   <pkg>gld</pkg>
@@ -381,11 +381,11 @@ or not complete, please let me know.
   <pkg>gumbel</pkg>
   <pkg>HyperbolicDist</pkg>
   <pkg>lhs</pkg>
-  <pkg>lmomco</pkg>
+  <pkg priority="core">lmomco</pkg>
   <pkg>mixtools</pkg>
   <pkg>mlCopulaSelection</pkg>
-  <pkg>mnormt</pkg>
-  <pkg>mvtnorm</pkg>
+  <pkg priority="core">mnormt</pkg>
+  <pkg priority="core">mvtnorm</pkg>
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
   <pkg>randaes</pkg>
@@ -400,7 +400,7 @@ or not complete, please let me know.
   <pkg>SuppDists</pkg>
   <pkg>tdist</pkg>
   <pkg>triangle</pkg>
-  <pkg>VGAM</pkg>
+  <pkg priority="core">VGAM</pkg>
   <pkg>zipfR</pkg> 
 </packagelist> 
 
