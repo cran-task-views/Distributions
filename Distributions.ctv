@@ -15,8 +15,6 @@ are available in contributed packages. If you think information is not accurate
 or not complete, please let me know.
 
 <p><strong>Base functionality:</strong>
-
-
    <ul><li>
      Base R provides probability distribution functions <code>p<i>foo</i>()</code>
      density functions <code>d<i>foo</i>()</code>, quantile functions
@@ -392,9 +390,9 @@ or not complete, please let me know.
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
   <pkg>rsprng</pkg>
-  <pkg>rstream</pkg>,
+  <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
-  <pkg>setRNG</pkg>,
+  <pkg>setRNG</pkg>
   <pkg>skewt</pkg>     
   <pkg>sn</pkg>
   <pkg>SuppDists</pkg>
