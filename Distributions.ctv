@@ -137,7 +137,8 @@ or not complete, please let me know.
      provides functions for the inverse Gaussian distribution as well and furthermore includes functions
      for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> also implements
      the folded and the skewed normal distribution, the inverse gaussian distribution. <pkg>lmomco</pkg> implements 
-     the generalized normal distribution. The multivariate Gaussian distribution
+     the generalized normal distribution. The log normal distribution is implemented
+     in Base R (see above). Finally, the multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
@@ -295,12 +296,18 @@ or not complete, please let me know.
      provides an easy way to set RNG.</LI>
      
      <LI><I>Pseudo-randomness</I>: 
-     <pkg>rsprng</pkg> implements scalable parallel RNGs,
+     <pkg>RDieHarder</pkg> offers  several dozen new RNGs 
+     (all from the GNU GSL, and hence of decent 'peer-reviewwed' quality)
+     and <pkg>randtoolbox</pkg> provides more 'recent' RNGs such as WELL and 
+     SF Mersenne-Twister. The <pkg>Runuran</pkg> package
+     interfaces to the UNU.RAN library for universal non-uniform RNGs.
+     <pkg>rsprng</pkg> implements Scalable Parallel RNGs library, whereas
      <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
-     pseudorandom number generator. <pkg>rstream</pkg> focuses on multiple 
+     pseudorandom number generator (AES). Finally, <pkg>rstream</pkg> focuses on multiple 
      independent streams of random numbers from different sources (in a object oriented
      approach). 
-     And <pkg>randtoolbox</pkg> provides more recent RNGs such as WELL and SF Mersenne-Twister.</LI>
+     </LI>
+     
      
      <LI><I>Quasi-randomness</I>: The <pkg>randtoolbox</pkg> provides
      the following quasi random sequences: the Sobol sequence, the Halton
@@ -313,9 +320,14 @@ or not complete, please let me know.
      true random number service at <A HREF="http://random.org">
      random.org</A>.</LI>
      
-     <LI><I>misc.</I>: <pkg>Runuran</pkg> package
-     interfaces to the UNU.RAN library for universal non-uniform RNGs.</LI>
+     <LI><I>RNG tests</I>: <pkg>RDieHarder</pkg> offers
+      numerous tests of RNGs based on a
+      reimplementation and extension of Marsaglia's DieHarder battery,
+      while <pkg>randtoolbox</pkg> provides basic RNG tests.
+     </LI>
    </UL>
+
+The RDieHarder packages provides an R interface to the dieharder suite of random number generators and tests that was developed by Robert G. Brown, extending earlier work by George Marsaglia and others
      
 
 
@@ -364,7 +376,7 @@ or not complete, please let me know.
   <pkg>BiasedUrn</pkg>
   <pkg>compoisson</pkg>
   <pkg priority="core">copula</pkg>
-  <pkg>distr</pkg>
+  <pkg priority="core">distr</pkg>
   <pkg>distributions</pkg>
   <pkg>distrSim</pkg> 
   <pkg>distrTEst</pkg> 
@@ -389,13 +401,14 @@ or not complete, please let me know.
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
+  <pkg>RDieHarder</pkg>
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
   <pkg>setRNG</pkg>
   <pkg>skewt</pkg>     
   <pkg>sn</pkg>
-  <pkg>SuppDists</pkg>
+  <pkg priority="core">SuppDists</pkg>
   <pkg>tdist</pkg>
   <pkg>triangle</pkg>
   <pkg priority="core">VGAM</pkg>
