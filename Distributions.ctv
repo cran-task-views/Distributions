@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2008-11-14</version> 
+<version>2008-11-15</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -297,8 +297,8 @@ or not complete, please let me know.
      
      <LI><I>Pseudo-randomness</I>: 
      <pkg>RDieHarder</pkg> offers  several dozen new RNGs 
-     (all from the GNU GSL, and hence of decent 'peer-reviewwed' quality)
-     and <pkg>randtoolbox</pkg> provides more 'recent' RNGs such as WELL and 
+     from the GNU GSL and <pkg>randtoolbox</pkg> provides
+     more recent RNGs such as WELL and 
      SF Mersenne-Twister. The <pkg>Runuran</pkg> package
      interfaces to the UNU.RAN library for universal non-uniform RNGs.
      <pkg>rsprng</pkg> implements Scalable Parallel RNGs library, whereas
@@ -322,16 +322,10 @@ or not complete, please let me know.
      
      <LI><I>RNG tests</I>: <pkg>RDieHarder</pkg> offers
       numerous tests of RNGs based on a
-      reimplementation and extension of Marsaglia's DieHarder battery,
-      while <pkg>randtoolbox</pkg> provides basic RNG tests.
+      reimplementation and extension of Marsaglia's DieHarder battery.
+      <pkg>randtoolbox</pkg> provides basic RNG tests.
      </LI>
-   </UL>
-
-The RDieHarder packages provides an R interface to the dieharder suite of random number generators and tests that was developed by Robert G. Brown, extending earlier work by George Marsaglia and others
-     
-
-
-     
+   </UL>     
 </p>
 
 <p><strong>Miscellaneous:</strong> 
