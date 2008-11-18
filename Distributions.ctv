@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2008-11-15</version> 
+<version>2008-11-18</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -52,7 +52,7 @@ or not complete, please let me know.
 	  <UL>
 	   <LI><I>Basic distributions</I>: The binomial distribution (in particular 
 	    Bernoulli distribution) is already implemented in base R.
-	    The Dirichlet distribution and discrete uniform
+	    The discrete uniform
 	    distribution can be easily obtained with the basic functions.
 	    Truncated versions of
 	    the binomial and Poisson distributions as well as zero-inflated
@@ -110,7 +110,12 @@ or not complete, please let me know.
      expected values and the moment generating function are provided by <pkg>actuar</pkg>.
      The inverse chi-squared distribution does not seem to be available. The Chi
      distribution and the non-central Chi distribution are not yet implemented.</LI>
-	      
+
+     <LI><I>Davies distribution</I>: The Davies distribution is provided
+     in <pkg>Davies</pkg> package.</LI>	   
+     
+     <LI><I>DIrichlet distribution</I>: functions d, r
+	    are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>   
 
      <LI><I>Exponential distribution and its extensions</I>: Base R provides the d, p, q, r functions
      for this distribution (see above). <pkg>actuar</pkg> provides additional functions
@@ -138,8 +143,11 @@ or not complete, please let me know.
      for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> also implements
      the folded and the skewed normal distribution, the inverse gaussian distribution. <pkg>lmomco</pkg> implements 
      the generalized normal distribution. The log normal distribution is implemented
-     in Base R (see above). Finally, the multivariate Gaussian distribution
-     is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI> 
+     in Base R (see above). 
+     Finally, the multivariate Gaussian distribution
+     is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
+     <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
+     given a correlation matrix structure.</LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
      provided in <pkg>normalp</pkg>.</LI>
@@ -158,7 +166,7 @@ or not complete, please let me know.
      <LI><I>Kumaraswamy distribution</I>: Provided in package <pkg>VGAM</pkg>.</LI>
      
      <LI><I>Lambda distribution</I>: The Tukey lambda (also known as the generalized
-     lambda) distribution is implemented in packages <pkg>gld</pkg>.</LI>
+     lambda) distribution is implemented in packages <pkg>gld</pkg> and <pkg>Davies</pkg>.</LI>
 
      <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg>.</LI>
 
@@ -207,6 +215,10 @@ or not complete, please let me know.
      
      <LI><I>Triangle distribution</I>: Provided in packages <pkg>triangle</pkg> and
      <pkg>VGAM</pkg>.</LI>    
+     
+     <LI><I>Tweedie distribution</I>: the Tweedie distribution is implemented
+     in package <pkg>tweedie</pkg>. Let us note that the Tweedie distribution
+     is not necessarily continuous, a special case of it is the Poisson distribution.</LI>
     
     <LI><I>Uniform distribution</I>: d, p, q, r functions are of course provided
 	   in R. See section RNG for random number generation topics.
@@ -222,7 +234,8 @@ or not complete, please let me know.
      Finally, <pkg>lmomco</pkg> implements the Weibull distribution while
      <pkg>evd</pkg> implements the reverse Weibull distribution.</LI>
 
-
+	    <LI><I>Wishart and inverse Wishart distributions</I>: functions d, r
+	    are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>
 
      </LI>             
   </UL> 
@@ -334,7 +347,11 @@ or not complete, please let me know.
        <LI><I>Hierarchical models</I>: Distributions whose some parameters
        are no longer constant but random according to a particular distribution. 
        <pkg>VGAM</pkg> provides a lot of hierarchical models: beta/binomial,
-       beta/geometric and beta/normal distributions.</LI>
+       beta/geometric and beta/normal distributions. <pkg>bayesm</pkg>
+       implements: binary logit, linear, multivariate logit and negative binomial
+       models. Furthermore <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg> 
+       provides poisson/gamma, beta/binomial,
+       normal/normal and multinomial/Dirichlet models.</LI>
 
 
 
@@ -366,10 +383,12 @@ or not complete, please let me know.
 <packagelist>
   <pkg priority="core">actuar</pkg> 
   <pkg>AdMit</pkg>
-  <pkg>bs</pkg>
+  <pkg>bayesm</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>bs</pkg>
   <pkg>compoisson</pkg>
   <pkg priority="core">copula</pkg>
+  <pkg>Davies</pkg> 
   <pkg priority="core">distr</pkg>
   <pkg>distributions</pkg>
   <pkg>distrSim</pkg> 
@@ -384,12 +403,15 @@ or not complete, please let me know.
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
   <pkg>HyperbolicDist</pkg>
+  <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg priority="core">lmomco</pkg>
+  <pkg>MCMCpack</pkg>
   <pkg>mixtools</pkg>
   <pkg>mlCopulaSelection</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg priority="core">mvtnorm</pkg>
+  <pkg>mvtnormpcs</pkg>
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
   <pkg>randaes</pkg>
@@ -405,6 +427,7 @@ or not complete, please let me know.
   <pkg priority="core">SuppDists</pkg>
   <pkg>tdist</pkg>
   <pkg>triangle</pkg>
+  <pkg>tweedie</pkg>
   <pkg priority="core">VGAM</pkg>
   <pkg>zipfR</pkg> 
 </packagelist> 
