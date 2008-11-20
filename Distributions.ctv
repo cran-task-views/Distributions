@@ -311,14 +311,15 @@ or not complete, please let me know.
      <LI><I>Pseudo-randomness</I>: 
      <pkg>RDieHarder</pkg> offers  several dozen new RNGs 
      from the GNU GSL and <pkg>randtoolbox</pkg> provides
-     more recent RNGs such as WELL and 
-     SF Mersenne-Twister. The <pkg>Runuran</pkg> package
-     interfaces to the UNU.RAN library for universal non-uniform RNGs.
+     more recent RNGs such as WELL and SF Mersenne-Twister.      
      <pkg>rsprng</pkg> implements Scalable Parallel RNGs library, whereas
      <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
-     pseudorandom number generator (AES). Finally, <pkg>rstream</pkg> focuses on multiple 
+     pseudorandom number generator (AES). Furthermore, <pkg>rstream</pkg> focuses on multiple 
      independent streams of random numbers from different sources (in a object oriented
-     approach). 
+     approach). For non-uniform generation, the <pkg>Runuran</pkg> package
+     interfaces to the UNU.RAN library for universal non-uniform RNGs, while the
+     <pkg>rv</pkg> package provides a class to easily manipulate and summarize
+     simulations in R.
      </LI>
      
      
@@ -421,6 +422,7 @@ or not complete, please let me know.
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
+  <pkg>rv</pkg>
   <pkg>setRNG</pkg>
   <pkg>skewt</pkg>     
   <pkg>sn</pkg>
