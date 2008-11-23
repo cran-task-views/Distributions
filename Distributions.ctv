@@ -54,7 +54,7 @@ or not complete, please let me know.
 	    Bernoulli distribution) is already implemented in base R.
 	    The discrete uniform
 	    distribution can be easily obtained with the basic functions.
-	    Truncated versions of
+	    Dirac distribution is provided by <pkg>distr</pkg>. Truncated versions of
 	    the binomial and Poisson distributions as well as zero-inflated
 	    versions of the binomial, Poisson and negative binomial distributions 
 	    are implemented in <pkg>VGAM</pkg>.</LI>
@@ -80,6 +80,8 @@ or not complete, please let me know.
 <p><strong>Continuous distributions:</strong>
 
 	  <UL>
+	    <LI><I>Arcsine distribution</I>: implemented in package <pkg>distr</pkg>.</LI>
+	    
      <LI><I>Beta distribution and its extensions</I>: Base R provides
      the d, p, q, r functions for this distribution (see above).
      <pkg>actuar</pkg> provides moments and limited expected values.
@@ -114,7 +116,7 @@ or not complete, please let me know.
      <LI><I>Davies distribution</I>: The Davies distribution is provided
      in <pkg>Davies</pkg> package.</LI>	   
      
-     <LI><I>DIrichlet distribution</I>: functions d, r
+     <LI><I>Dirichlet distribution</I>: functions d, r
 	    are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>   
 
      <LI><I>Exponential distribution and its extensions</I>: Base R provides the d, p, q, r functions
@@ -168,7 +170,8 @@ or not complete, please let me know.
      <LI><I>Lambda distribution</I>: The Tukey lambda (also known as the generalized
      lambda) distribution is implemented in packages <pkg>gld</pkg> and <pkg>Davies</pkg>.</LI>
 
-     <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg>.</LI>
+     <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg>.
+     Laplace distribution (also called double exponential distribution) is implemented in <pkg>distr</pkg>.</LI>
 
      <LI><I>Logistic distributions and its extensions</I>: Base R provides
      the d, p, q, r functions for this distribution (see above).
@@ -250,6 +253,9 @@ or not complete, please let me know.
       <LI><I>Gamma mixture</I>: Gamma shape mixtures are implemented (d, p, r)
       in the <pkg>GSM</pkg> package.</LI>
 
+      <LI><I>Generic mixtures</I>: there is an implementation via S4-class 
+      UnivarMixingDistribution in package <pkg>distr</pkg>.</LI>
+
       <LI><I>Student mixture</I>: The <pkg>AdMit</pkg> package provides d, r functions
       for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</LI>
       
@@ -301,7 +307,7 @@ or not complete, please let me know.
      The random seed can be provided via <code>set.seed</code> and the kind of RNG can be specified
      using <code>RNGkind</code>. The default RNG is the Mersenne-Twister algorithm.
      Other generators include Wichmann-Hill, Marsaglia-Multicarry, Super-Duper,
-     "Knuth-TAOCP-2002, Knuth-TAOCP, as well as user-supplied RNGs. For normal
+     Knuth-TAOCP, Knuth-TAOCP-2002, as well as user-supplied RNGs. For normal
      random numbers, the following algorithms are available: Kinderman-Ramage,
      Ahrens-Dieter, Box-Muller, Inversion (default).</LI>
      
@@ -354,12 +360,20 @@ or not complete, please let me know.
        provides poisson/gamma, beta/binomial,
        normal/normal and multinomial/Dirichlet models.</LI>
 
+     <LI><i>Lebesgue decomposition</i>: Lebesgue decomposition are implemented
+     in <pkg>distr</pkg>, see Object-orientation below.</LI>
 
-
-     <LI><I>Object-orientation</I>: Object-oriented functions
-     for probability distributions is available with <pkg>distr</pkg> package thanks
-     to S4 classes. In addition to <pkg>distr</pkg>, <pkg>distrSim</pkg> provides
-     classes for simulation and <pkg>distrTEst</pkg> for evaluating procedures (estimators/tests).
+     <LI><I>Object-orientation</I>: 
+     General discrete and continuous distributions are implemented in package
+     <pkg>distr</pkg> respectively via S4-class DiscreteDistribution and 
+     AbscontDistribution providing the classic d, p, q and r functions. <pkg>distrEx</pkg>
+     extends available distributions to multivariate and conditional distributions as well
+     as methods to compute useful statistics (expectation, variance,...) and distances
+     between distributions (Hellinger, Kolmogorov,... distance). Finally
+     package <pkg>distrMod</pkg> provides functions for the computation of minimum
+     criterion estimators (maximum likelihood and minimum distance estimators). See other
+     packages of the distr-family (<pkg>distrSim</pkg>, <pkg>distrTEst</pkg>, 
+     <pkg>distrTeach</pkg>, <pkg>distrDoc</pkg>).
      </LI>
      
      <LI><I>TI 83 scientific calculator</I>: <pkg>distributions</pkg> provides
@@ -391,8 +405,12 @@ or not complete, please let me know.
   <pkg priority="core">copula</pkg>
   <pkg>Davies</pkg> 
   <pkg priority="core">distr</pkg>
+  <pkg>distrDoc</pkg>
+  <pkg>distrEx</pkg> 
   <pkg>distributions</pkg>
-  <pkg>distrSim</pkg> 
+  <pkg>distrMod</pkg>   
+  <pkg>distrSim</pkg>
+  <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>evd</pkg>
   <pkg priority="core">fCopulae</pkg>
@@ -435,7 +453,10 @@ or not complete, please let me know.
 </packagelist> 
 
 <links> 
-  <a href="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R Programs for Truncated Distributions</a> 
+  <A HREF="http://www.actuar-project.org/">actuar: an R package for actuarial science</A>
+  <A HREF="http://www.rmetrics.org/">fCopulae package, part of the Rmetrics project</A>
+  <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R Programs for Truncated Distributions</A> 
+  <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-Family of R-Packages</A>
 </links> 
 
 </CRANTaskView>
