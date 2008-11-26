@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2008-11-18</version> 
+<version>2008-11-26</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -360,8 +360,12 @@ or not complete, please let me know.
        provides poisson/gamma, beta/binomial,
        normal/normal and multinomial/Dirichlet models.</LI>
 
-     <LI><i>Lebesgue decomposition</i>: Lebesgue decomposition are implemented
-     in <pkg>distr</pkg>, see Object-orientation below.</LI>
+     <LI><i>Transformation</i>: Lebesgue decomposition are implemented
+     in <pkg>distr</pkg>, as well as Convolution, Truncation and Huberization of distributions. 
+     Furthermore, <pkg>distr</pkg> provides distribution of the maximum or minimum
+     of two distributions. See Object-orientation below.</LI>
+     
+
 
      <LI><I>Object-orientation</I>: 
      General discrete and continuous distributions are implemented in package
