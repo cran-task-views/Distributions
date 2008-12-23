@@ -207,6 +207,9 @@ or not complete, please let me know.
      </LI>     
 
       <LI><I>Slash distribution</I>: Provided in <pkg>VGAM</pkg>.</LI>
+      
+      <LI><I>stable distributions</I>: d, p, q, r functions are available in <pkg>fBasics</pkg>, 
+      the functions use the approach of J.P. Nolan for general stable distributions.</LI>
  
      <LI><I>Student distribution and its extensions</I>: Base R provides
      the d, p, q, r functions for Student and non central Student distribution (see above).
@@ -417,6 +420,7 @@ or not complete, please let me know.
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>evd</pkg>
+  <pkg>fBasics</pkg>
   <pkg priority="core">fCopulae</pkg>
   <pkg>fgac</pkg>
   <pkg>gbs</pkg>
