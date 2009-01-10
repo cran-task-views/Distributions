@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2008-11-26</version> 
+<version>2009-01-10</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -11,7 +11,15 @@ probability distribution functions (p), density functions (d), quantile function
 (q), and random number generation (r).
 Beyond this basic functionality, many CRAN packages provide
 additional useful distributions. In particular, multivariate distributions as well as copulas
-are available in contributed packages. If you think information is not accurate
+are available in contributed packages. 
+
+Ultimate bibles on probability distributions are 
+<UL>
+ <LI> Continuous univariate distributions by N. L. Johnson, S. Kotz and N. Balakrishnan,</LI> 
+ <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
+</UL>
+
+If you think information is not accurate
 or not complete, please let me know.
 
 <p><strong>Base functionality:</strong>
@@ -110,7 +118,8 @@ or not complete, please let me know.
      <LI><I>Chi(-squared or not) distributions</I>: Base R provides
      the d, p, q, r functions for this distribution (see above). Moments, limited
      expected values and the moment generating function are provided by <pkg>actuar</pkg>.
-     The inverse chi-squared distribution does not seem to be available. The Chi
+     Only d,r functions are available for the inverse chi-squared distribution
+     by package <pkg>geoR</pkg>. The Chi
      distribution and the non-central Chi distribution are not yet implemented.</LI>
 
      <LI><I>Davies distribution</I>: The Davies distribution is provided
@@ -424,6 +433,7 @@ or not complete, please let me know.
   <pkg priority="core">fCopulae</pkg>
   <pkg>fgac</pkg>
   <pkg>gbs</pkg>
+  <pkg>geoR</pkg>
   <pkg>gld</pkg>
   <pkg>GLDEX</pkg>
   <pkg>ghyp</pkg>
@@ -462,7 +472,7 @@ or not complete, please let me know.
 
 <links> 
   <A HREF="http://www.actuar-project.org/">actuar: an R package for actuarial science</A>
-  <A HREF="http://www.rmetrics.org/">fCopulae package, part of the Rmetrics project</A>
+  <A HREF="http://www.rmetrics.org/">fCopulae and fBasics packages, part of the Rmetrics project</A>
   <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R Programs for Truncated Distributions</A> 
   <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-Family of R-Packages</A>
 </links> 
