@@ -213,7 +213,7 @@ or not complete, please let me know.
      
      <LI><I>Pearson type III distribution</I>: Available in <pkg>lmomco</pkg>.</LI>
      
-      <LI><i>Phase-type distributions</i>: Provided in <pkg>actuar</pkg>.
+      <LI><i>Phase-type distributions</i>: Provided in <pkg>actuar</pkg>.</LI>
 
      <LI><I>Rayleigh distribution</I>: Provided in packages <pkg>VGAM</pkg> 
      and <pkg>lmomco</pkg>.</LI>
@@ -255,10 +255,9 @@ or not complete, please let me know.
      Finally, <pkg>lmomco</pkg> implements the Weibull distribution while
      <pkg>evd</pkg> implements the reverse Weibull distribution.</LI>
 
-	    <LI><I>Wishart and inverse Wishart distributions</I>: functions d, r
-	    are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>
+     <LI><I>Wishart and inverse Wishart distributions</I>: functions d, r
+     are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>
 
-     </LI>             
   </UL> 
 </p>
 
