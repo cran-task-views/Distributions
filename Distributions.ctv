@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-01-10</version> 
+<version>2009-02-08</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -51,8 +51,14 @@ or not complete, please let me know.
      <code>birthday</code> (only p and q), studentized range distribution <code>tukey</code>
      (only p and q), Wilcoxon signed rank distribution <code>signrank</code>, Wilcoxon
      rank sum distribution <code>wilcox</code>.
-  </li></ul>
+  </li>
+    <li> On base R distributions, <pkg>prob</pkg> provides the characteristic function, while 
+    <pkg>actuar</pkg> implements moments, limited expected values and moment generating 
+    function.
+    </li>
+  </ul>
 </p>	 
+
 
 
 <p><strong>Discrete distributions:</strong>
@@ -451,6 +457,7 @@ or not complete, please let me know.
   <pkg>mvtnormpcs</pkg>
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
+  <pkg>prob</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
@@ -475,6 +482,7 @@ or not complete, please let me know.
   <A HREF="http://www.rmetrics.org/">fCopulae and fBasics packages, part of the Rmetrics project</A>
   <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R Programs for Truncated Distributions</A> 
   <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-Family of R-Packages</A>
+  <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">the R wiki on distributions</A>
 </links> 
 
 </CRANTaskView>
