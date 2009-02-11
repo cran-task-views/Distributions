@@ -22,7 +22,7 @@ Ultimate bibles on probability distributions are
 If you think information is not accurate
 or not complete, please let me know.
 
-<p><strong>Base functionality:</strong>
+<p><strong>Base functionality:</strong></p>
    <ul><li>
      Base R provides probability distribution functions <code>p<i>foo</i>()</code>
      density functions <code>d<i>foo</i>()</code>, quantile functions
@@ -57,12 +57,10 @@ or not complete, please let me know.
     function.
     </li>
   </ul>
-</p>	 
 
 
 
-<p><strong>Discrete distributions:</strong>
-
+<p><strong>Discrete distributions:</strong></p>
 	  <UL>
 	   <LI><I>Basic distributions</I>: The binomial distribution (in particular 
 	    Bernoulli distribution) is already implemented in base R.
@@ -89,9 +87,8 @@ or not complete, please let me know.
 	    Skellam, Yule-Simon, Zeta and Haight's Zeta, Borel-Tanner and
 	    Felix distribution.</LI>
 	  </UL>
-</p>
 	 
-<p><strong>Continuous distributions:</strong>
+<p><strong>Continuous distributions:</strong></p>
 
 	  <UL>
 	    <LI><I>Arcsine distribution</I>: implemented in package <pkg>distr</pkg>.</LI>
@@ -259,9 +256,8 @@ or not complete, please let me know.
      are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>
 
   </UL> 
-</p>
 
-<p> <strong>Mixture of probability laws:</strong>
+<p><strong>Mixture of probability laws:</strong></p>
    
    <UL>
       <LI><I>Gaussian mixture</I>: Functions d, r are provided by <pkg>mixtools</pkg>
@@ -277,9 +273,8 @@ or not complete, please let me know.
       for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</LI>
       
    </UL>
-</p>
     
-<p><strong>Copulas:</strong> 
+<p><strong>Copulas:</strong></p>
 
       <UL>
       <LI><I>Unified approaches</I>:
@@ -314,9 +309,8 @@ or not complete, please let me know.
       <LI><I>Plackett</I>: Provided in <pkg>VGAM</pkg> and <pkg>copula</pkg>.</LI>
              
       </UL>
-</p>
 
-<p><strong>Random Number Generators:</strong>
+<p><strong>Random Number Generators:</strong></p>
      
      
    <UL>
@@ -363,9 +357,8 @@ or not complete, please let me know.
       <pkg>randtoolbox</pkg> provides basic RNG tests.
      </LI>
    </UL>     
-</p>
 
-<p><strong>Miscellaneous:</strong> 
+<p><strong>Miscellaneous:</strong></p>
 
       <UL>
        <LI><I>Hierarchical models</I>: Distributions whose some parameters
@@ -411,7 +404,6 @@ or not complete, please let me know.
      function for parameter estimations.
      Bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>.</LI>	       
       </UL>
-</p>
 </info> 
 
 
