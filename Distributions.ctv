@@ -24,10 +24,10 @@ or not complete, please let me know.
 
 <p><strong>Base functionality:</strong></p>
    <ul><li>
-     Base R provides probability distribution functions <code>p<i>foo</i>()</code>
-     density functions <code>d<i>foo</i>()</code>, quantile functions
-     <code>q<i>foo</i>()</code>, and random number generation
-     <code>r<i>foo</i>()</code> where <i>foo</i> indicates the type
+     Base R provides probability distribution functions <code>p</code><i>foo</i><code>()</code>
+     density functions <code>d</code><i>foo</i><code>()</code>, quantile functions
+     <code>q</code><i>foo</i><code>()</code>, and random number generation
+     <code>r</code><i>foo</i><code>()</code> where <i>foo</i> indicates the type
      of distribution:
      beta  (<i>foo</i> = <code>beta</code>),
      binomial <code>binom</code>,
