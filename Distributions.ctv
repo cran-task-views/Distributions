@@ -299,7 +299,8 @@ or not complete, please let me know.
       
       <LI><I>Extreme value copulas</I>: <pkg>fCopulae</pkg> provides the following copulas
       Gumbel, Galambos, Husler-Reiss, Tawn, or BB5. <pkg>copula</pkg> also implements
-      Gumbel, Galambos and Husler-Reiss.</LI>
+      Gumbel, Galambos and Husler-Reiss. <pkg>BLCOP</pkg> presents an application of
+      the copula-opinion pooling framework.</LI>
       
       <LI><I>Eyraud-Farlie-Gumbel-Morgenstern</I>: Provided in <pkg>VGAM</pkg> 
       and <pkg>copula</pkg>.</LI>
@@ -307,7 +308,7 @@ or not complete, please let me know.
       <LI><I>Mardia copula</I>: Not yet implemented</LI>   
       
       <LI><I>Plackett</I>: Provided in <pkg>VGAM</pkg> and <pkg>copula</pkg>.</LI>
-             
+                   
       </UL>
 
 <p><strong>Random Number Generators:</strong></p>
@@ -413,6 +414,7 @@ or not complete, please let me know.
   <pkg>AdMit</pkg>
   <pkg>bayesm</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>BLCOP</pkg>
   <pkg>bs</pkg>
   <pkg>compoisson</pkg>
   <pkg priority="core">copula</pkg>
