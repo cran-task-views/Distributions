@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-02-08</version> 
+<version>2009-03-15</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -77,6 +77,9 @@ or not complete, please let me know.
 	    <LI><I>Hypergeometric distributions</I>: Extented hypergeometric distribution
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
 	    not only p, d, q, r functions but also mean, variance, mode functions.</LI>
+	    
+	    <LI><I>Triangle distribution</I>: the discrete Triangle distribution can be found in
+	    <pkg>TRIANG</pkg>.</LI>	  
 	    
 	    <LI><I>Zipf law</I>: Package <pkg>zipfR</pkg> provides tools for the Zipf and
 	    the Zipf-Mandelbrot distributions. <pkg>VGAM</pkg> also implements the Zipf distribution.</LI>
@@ -464,6 +467,7 @@ or not complete, please let me know.
   <pkg>sn</pkg>
   <pkg priority="core">SuppDists</pkg>
   <pkg>tdist</pkg>
+  <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
   <pkg>tweedie</pkg>
   <pkg priority="core">VGAM</pkg>
