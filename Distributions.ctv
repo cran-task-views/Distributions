@@ -3,7 +3,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-03-15</version> 
+<version>2009-03-31</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -18,6 +18,9 @@ Ultimate bibles on probability distributions are
  <LI> Continuous univariate distributions by N. L. Johnson, S. Kotz and N. Balakrishnan,</LI> 
  <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
 </UL>
+
+The maintainer greatfully acknowledged Achime Zeileis, David L&uuml;thi, Tobias Verbeke, Robin
+Hankin, Mathias Kohl, G. Jay Kerns for their useful comments/suggestions.
 
 If you think information is not accurate
 or not complete, please let me know.
@@ -326,8 +329,9 @@ or not complete, please let me know.
      random numbers, the following algorithms are available: Kinderman-Ramage,
      Ahrens-Dieter, Box-Muller, Inversion (default).</LI>
      
-     <LI><I>Setting the RNG:</I> In addition to the tools above, <pkg>setRNG</pkg>
-     provides an easy way to set RNG.</LI>
+     <LI><I>Setting the RNG:</I>In addition to the tools above, <pkg>setRNG</pkg> 
+     provides an easy way to set, 
+     retain information about the setting, and reset the RNG.</LI>
      
      <LI><I>Pseudo-randomness</I>: 
      <pkg>RDieHarder</pkg> offers  several dozen new RNGs 
@@ -360,6 +364,10 @@ or not complete, please let me know.
       reimplementation and extension of Marsaglia's DieHarder battery.
       <pkg>randtoolbox</pkg> provides basic RNG tests.
      </LI>
+     
+     For Parallel computing: Random numbers, see the 
+     <A HREF="http://cran.r-project.org/web/views/HighPerformanceComputing.html">HPC</A>
+   CRAN task view.
    </UL>     
 
 <p><strong>Miscellaneous:</strong></p>
