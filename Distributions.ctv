@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView> 
 
 <name>Distributions</name> 
@@ -19,7 +20,7 @@ Ultimate bibles on probability distributions are
  <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
 </UL>
 
-The maintainer greatfully acknowledged Achime Zeileis, David L&uuml;thi, Tobias Verbeke, Robin
+The maintainer greatfully acknowledged Achime Zeileis, David Lüthi, Tobias Verbeke, Robin
 Hankin, Mathias Kohl, G. Jay Kerns for their useful comments/suggestions.
 
 If you think information is not accurate
