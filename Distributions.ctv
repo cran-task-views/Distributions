@@ -20,7 +20,7 @@ Ultimate bibles on probability distributions are
  <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
 </UL>
 
-The maintainer greatfully acknowledged Achime Zeileis, David Lüthi, Tobias Verbeke, Robin
+The maintainer greatfully acknowledged Achim Zeileis, David Lüthi, Tobias Verbeke, Robin
 Hankin, Mathias Kohl, G. Jay Kerns for their useful comments/suggestions.
 
 If you think information is not accurate
@@ -82,7 +82,7 @@ or not complete, please let me know.
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
 	    not only p, d, q, r functions but also mean, variance, mode functions.</LI>
 	    
-	    <LI><I>Triangle distribution</I>: the discrete Triangle distribution can be found in
+	    <LI><I>Triangle distribution</I>: The discrete triangle distribution can be found in
 	    <pkg>TRIANG</pkg>.</LI>	  
 	    
 	    <LI><I>Zipf law</I>: Package <pkg>zipfR</pkg> provides tools for the Zipf and
@@ -366,9 +366,8 @@ or not complete, please let me know.
       <pkg>randtoolbox</pkg> provides basic RNG tests.
      </LI>
      
-     For Parallel computing: Random numbers, see the 
-     <A HREF="http://cran.r-project.org/web/views/HighPerformanceComputing.html">HPC</A>
-   CRAN task view.
+     <LI><I>Parallel computing</I>: For parallel computing with random numbers, see the 
+     <view>HighPerformanceComputing</view> task view.</LI>
    </UL>     
 
 <p><strong>Miscellaneous:</strong></p>
