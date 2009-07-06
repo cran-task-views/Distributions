@@ -174,15 +174,14 @@ or not complete, please let me know.
      the d, p, q, r functions for this distribution (see above). <pkg>actuar</pkg>
      provides the moment generating function and moments. d, p, q, r functions for the generalized 
 	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>.
-	 <pkg>ghyp</pkg> package
-     provides d, p, q, r functions for the raw and the generalized inverse gaussian distribution, in the
-     context of the generalized hyperbolic distribution. <pkg>ig</pkg> provides d, p, q, r
+	  <pkg>ig</pkg> provides d, p, q, r
 	 functions for the (raw) inversion gaussian distribution. <pkg>SuppDists</pkg>
      provides functions for the inverse Gaussian distribution as well and furthermore includes functions
-     for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> also implements
+     for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> and <pkg>fBasics</pkg> 
+     also implement
      the folded and the skewed normal distribution, the inverse gaussian distribution. 
-	 <pkg>lmomco</pkg> implements 
-     the generalized normal distribution. The log normal distribution is implemented
+	 <pkg>lmomco</pkg> implements the generalized normal distribution. 	   
+	   The log normal distribution is implemented
      in Base R (see above). Ex-Gaussian distribution is implemented in <pkg>gamlss.dist</pkg>.
      Finally, the multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
@@ -190,10 +189,11 @@ or not complete, please let me know.
      given a correlation matrix structure.</LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
-     provided in <pkg>normalp</pkg>.</LI>
+     provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>.</LI>
      
      <LI><I>Generalized Extreme Value distribution</I>: Provided in <pkg>lmomco</pkg>
-     (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg> (d, p, q, r). Both bivariate and
+     (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg> 
+     and <pkg>fExtremes</pkg> (d, p, q, r). Both bivariate and
      multivariate Extreme Value distributions as well as order/maxima/minima distributions 
      are implemented in <pkg>evd</pkg> (d, p, r). <pkg>evdbayes</pkg> provides some
 	 additional functions for GEV distribution using MCMC. </LI>         
@@ -201,6 +201,9 @@ or not complete, please let me know.
      <LI><I>Gumbel distribution</I>: Provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg> and <pkg>evd</pkg>. The reverse Gumbel distribution is implemented
      in <pkg>lmomco</pkg>.</LI>   
+     
+     <LI><I>Hyperbolic distribuion</I>: <pkg>ghyp</pkg> and <pkg>fBasics</pkg> package
+     provide d, p, q, r functions for the generalized hyperbolic distributions.</LI>
 
      <LI><I>Kappa distribution</I>: Provided in <pkg>lmomco</pkg>.</LI>     
      
@@ -232,7 +235,7 @@ or not complete, please let me know.
      context, <pkg>actuar</pkg> provides d, p, q, r functions as well as moments and 
      limited expected values for the Pareto, the inverse Pareto, the 'generalized pareto'
      distributions, the Burr and the inverse Burr distributions.
-     Finally <pkg>lmomco</pkg>, <pkg>POT</pkg>, <pkg>evd</pkg> and <pkg>evir</pkg> packages
+     Finally <pkg>lmomco</pkg>, <pkg>POT</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg> and <pkg>evir</pkg> packages
      implement the GPD.</LI>
      
      <LI><I>Pearson type III distribution</I>: Available in <pkg>lmomco</pkg>.</LI>
@@ -259,7 +262,8 @@ or not complete, please let me know.
 	 Package <pkg>tdist</pkg> provides d, p, q functions
      for the distribution of a linear combination of independent Student distributions. 
 	 d, p, q, r functions for the generalized t-distribution
-	 can be found in <pkg>gamlss.dist</pkg>.
+	 can be found in <pkg>gamlss.dist</pkg>. <pkg>fBasics</pkg> provides d, p, q, r functions
+	 for the skew and the generalized hyperbolic t-distribution.
 	 
      The multivariate Student distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI>
@@ -478,6 +482,7 @@ or not complete, please let me know.
   <pkg>evir</pkg>
   <pkg>fBasics</pkg>
   <pkg priority="core">fCopulae</pkg>
+  <pkg>fExtremes</pkg>
   <pkg>fgac</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
