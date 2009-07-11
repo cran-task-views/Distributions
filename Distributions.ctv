@@ -451,7 +451,8 @@ or not complete, please let me know.
      (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. Package
      MASS (in the <pkg>VR</pkg> bundle) implements the flexible <code>fitdistr</code>
-     function for parameter estimations.
+     function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
+     the tools to fit probability distributions.
      Bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>.</LI>	       
       </UL>
 </info> 
@@ -484,6 +485,7 @@ or not complete, please let me know.
   <pkg priority="core">fCopulae</pkg>
   <pkg>fExtremes</pkg>
   <pkg>fgac</pkg>
+  <pkg>fitdistrplus</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gbs</pkg>
