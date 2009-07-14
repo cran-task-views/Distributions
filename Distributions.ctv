@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-03-31</version> 
+<version>2009-07-14</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -532,12 +532,12 @@ or not complete, please let me know.
 </packagelist> 
 
 <links> 
-  <A HREF="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advises to implement (new) distributions in R</A>
-  <A HREF="http://www.actuar-project.org/">actuar: an R package for actuarial science</A>
+  <A HREF="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</A>
+  <A HREF="http://www.actuar-project.org/">actuar: An R package for actuarial science</A>
   <A HREF="http://www.rmetrics.org/">fCopulae, fBasics, randtoolbox packages, part of the Rmetrics project</A>
-  <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R Programs for Truncated Distributions</A> 
-  <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-Family of R-Packages</A>
-  <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">the R wiki on distributions</A>
+  <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</A> 
+  <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-family of R-packages</A>
+  <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">The R wiki on distributions</A>
 </links> 
 
 </CRANTaskView>
