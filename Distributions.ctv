@@ -379,7 +379,7 @@ or not complete, please let me know.
      retain information about the setting, and reset the RNG.</LI>
      
      <LI><I>Pseudo-randomness</I>: 
-     <pkg>RDieHarder</pkg> offers  several dozen new RNGs 
+     <pkg>RDieHarder</pkg> offers several dozen new RNGs 
      from the GNU GSL and <pkg>randtoolbox</pkg> provides
      more recent RNGs such as WELL and SF Mersenne-Twister.      
      <pkg>rsprng</pkg> implements Scalable Parallel RNGs library, whereas
