@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-07-14</version> 
+<version>2009-07-17</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -20,7 +20,7 @@ Ultimate bibles on probability distributions are
  <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
 </UL>
 
-The maintainer greatfully acknowledged Achim Zeileis, David Lüthi, Tobias Verbeke, Robin
+The maintainer greatfully acknowledged Achim Zeileis, David Luethi, Tobias Verbeke, Robin
 Hankin, Mathias Kohl, G. Jay Kerns for their useful comments/suggestions.
 
 If you think information is not accurate
@@ -58,7 +58,8 @@ or not complete, please let me know.
   </li>
     <li> On base R distributions, <pkg>prob</pkg> provides the characteristic function, while 
     <pkg>actuar</pkg> implements moments, limited expected values and moment generating 
-    function. Graphical methods for illustrating probability distributions can be found in <pkg>denstrip</pkg>
+    function. Graphical methods for illustrating probability distributions can be found 
+    in <pkg>denstrip</pkg>.
     </li>
   </ul>
 
@@ -86,7 +87,7 @@ or not complete, please let me know.
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
 	    not only p, d, q, r functions but also mean, variance, mode functions.</LI>
 
-		<LI><I>Sichel distribution</I>: This can be found in
+		   <LI><I>Sichel distribution</I>: This can be found in
 	    <pkg>gamlss.dist</pkg>.</LI>	    
 	    
 	    <LI><I>Triangle distribution</I>: The discrete triangle distribution can be found in
@@ -126,6 +127,9 @@ or not complete, please let me know.
      <LI><I>Birnbaum-Saunders distribution</I>: Provided in packages
      <pkg>bs</pkg> and <pkg>VGAM</pkg>. The generalized Birnbaum-Saunders distribution is implemented in
      <pkg>gbs</pkg>.</LI>    
+     
+     <LI><I>Box Cox distributions</I>: <pkg>gamlss.dist</pkg> provides the Box-Cox normal,
+     the Box-Cox power exponential and the Box-Cox t distributions.</LI>
      
      <LI><I>Cardioid distribution</I>: Provided in <pkg>VGAM</pkg>.
      </LI>      
@@ -199,8 +203,9 @@ or not complete, please let me know.
 	 additional functions for GEV distribution using MCMC. </LI>         
      
      <LI><I>Gumbel distribution</I>: Provided in packages <pkg>lmomco</pkg>, 
-     <pkg>VGAM</pkg> and <pkg>evd</pkg>. The reverse Gumbel distribution is implemented
-     in <pkg>lmomco</pkg>.</LI>   
+     <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg> and <pkg>evd</pkg>. 
+     The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
+     and  <pkg>gamlss.dist</pkg>.</LI>   
      
      <LI><I>Hyperbolic distribuion</I>: <pkg>ghyp</pkg> and <pkg>fBasics</pkg> package
      provide d, p, q, r functions for the generalized hyperbolic distributions.</LI>
@@ -222,6 +227,7 @@ or not complete, please let me know.
      <pkg>VGAM</pkg> package also implements these distributions plus
      the bivariate logistic distribution. 
      <pkg>lmomco</pkg> implements the generalized logistic distribution.</LI>
+     
      <LI><I>Maxwell distribution</I>: Provided in <pkg>VGAM</pkg>.
      </LI>     
      
