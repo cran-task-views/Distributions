@@ -193,7 +193,8 @@ or not complete, please let me know.
      Finally, the multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
      <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
-     given a correlation matrix structure.</LI> 
+     given a correlation matrix structure. <pkg>tmvtnorm</pkg> implements the truncated
+	 multivariate normal distribution.</LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
      provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>.</LI>
@@ -526,6 +527,7 @@ or not complete, please let me know.
   <pkg>mlCopulaSelection</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg priority="core">mvtnorm</pkg>
+  <pkg>tmvtnorm</pkg>
   <pkg>mvtnormpcs</pkg>
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
