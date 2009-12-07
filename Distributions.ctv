@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-10-28</version> 
+<version>2009-12-07</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -431,21 +431,23 @@ or not complete, please let me know.
 
 <p><strong>Miscellaneous:</strong></p>
 
-      <UL>
-       <LI><I>Hierarchical models</I>: Distributions whose some parameters
-       are no longer constant but random according to a particular distribution. 
-       <pkg>VGAM</pkg> provides a lot of hierarchical models: beta/binomial,
-       beta/geometric and beta/normal distributions. <pkg>bayesm</pkg>
-       implements: binary logit, linear, multivariate logit and negative binomial
-       models. Furthermore <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg> 
-       provides poisson/gamma, beta/binomial,
-       normal/normal and multinomial/Dirichlet models.</LI>
-
-     <LI><i>Transformation</i>: Lebesgue decomposition are implemented
-     in <pkg>distr</pkg>, as well as Convolution, Truncation and Huberization of distributions. 
-     Furthermore, <pkg>distr</pkg> provides distribution of the maximum or minimum
-     of two distributions. See Object-orientation below.</LI>
-     
+	<UL>
+	  
+	<LI><I>Benchmark</I>: A set of 28 densities suitable for comparing 
+	nonparametric density estimators in simulation studies can be found 
+	in the <pkg>benchden</pkg> package. The densities vary greatly in degree of 
+	smoothness, number of modes and other properties. The package 
+	provides d,p,q and r functions.</LI>   
+	  
+	  
+     <LI><I>Hierarchical models</I>: Distributions whose some parameters
+     are no longer constant but random according to a particular distribution. 
+     <pkg>VGAM</pkg> provides a lot of hierarchical models: beta/binomial,
+     beta/geometric and beta/normal distributions. <pkg>bayesm</pkg>
+     implements: binary logit, linear, multivariate logit and negative binomial
+     models. Furthermore <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg> 
+     provides poisson/gamma, beta/binomial,
+     normal/normal and multinomial/Dirichlet models.</LI>    
 
 
      <LI><I>Object-orientation</I>: 
@@ -467,7 +469,12 @@ or not complete, please let me know.
      based on TI-83 Plus graphic scientific calculator.
      </LI>
      
-       <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
+	 <LI><i>Transformation</i>: Lebesgue decomposition are implemented
+     in <pkg>distr</pkg>, as well as Convolution, Truncation and Huberization of distributions. 
+     Furthermore, <pkg>distr</pkg> provides distribution of the maximum or minimum
+     of two distributions. See Object-orientation below.</LI>
+	 
+     <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
      estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focuse on
      (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. Package
@@ -484,6 +491,7 @@ or not complete, please let me know.
   <pkg priority="core">actuar</pkg> 
   <pkg>AdMit</pkg>
   <pkg>bayesm</pkg>
+  <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>BLCOP</pkg>
   <pkg>bs</pkg>
