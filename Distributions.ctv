@@ -325,7 +325,8 @@ or not complete, please let me know.
    
    
       <LI><I>Gaussian mixture</I>: Functions d, r are provided by <pkg>mixtools</pkg>
-      package when dealing with finite mixture models.</LI>
+      package when dealing with finite mixture models. <pkg>nor1mix</pkg> provides
+	  d, p, r functions for Gaussian mixture.</LI>
 
       <LI><I>Gamma mixture</I>: Gamma shape mixtures are implemented (d, p, r)
       in the <pkg>GSM</pkg> package.</LI>
@@ -537,6 +538,7 @@ or not complete, please let me know.
   <pkg priority="core">mnormt</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>mvtnormpcs</pkg>
+  <pkg>nor1mix</pkg>  
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
   <pkg>prob</pkg>
