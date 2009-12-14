@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2009-12-07</version> 
+<version>2009-12-14</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -378,36 +378,51 @@ or not complete, please let me know.
       </UL>
 
 <p><strong>Random Number Generators:</strong></p>
-     
+    	   
      
    <UL>
-     <LI>Basic functionality: R provides several random number generators (RNGs).
+     <LI><I>Basic functionality</I>: R provides several random number generators (RNGs).
      The random seed can be provided via <code>set.seed</code> and the kind of RNG can be specified
      using <code>RNGkind</code>. The default RNG is the Mersenne-Twister algorithm.
      Other generators include Wichmann-Hill, Marsaglia-Multicarry, Super-Duper,
      Knuth-TAOCP, Knuth-TAOCP-2002, as well as user-supplied RNGs. For normal
      random numbers, the following algorithms are available: Kinderman-Ramage,
-     Ahrens-Dieter, Box-Muller, Inversion (default).</LI>
-     
-     <LI><I>Setting the RNG:</I>In addition to the tools above, <pkg>setRNG</pkg> 
-     provides an easy way to set, 
-     retain information about the setting, and reset the RNG.</LI>
+     Ahrens-Dieter, Box-Muller, Inversion (default). In addition to the tools above, <pkg>setRNG</pkg> 
+     provides an easy way to set, retain information about the setting, and reset the RNG.
+	</LI>
      
      <LI><I>Pseudo-randomness</I>: 
      <pkg>RDieHarder</pkg> offers several dozen new RNGs 
-     from the GNU GSL and <pkg>randtoolbox</pkg> provides
-     more recent RNGs such as WELL and SF Mersenne-Twister. <pkg>SuppDists</pkg>
+     from the GNU GSL. <pkg>randtoolbox</pkg> provides
+     more recent RNGs such as SF Mersenne-Twister and WELL,
+	 which are generators of Mersenne Twister type, but with
+	 improved quality parameters. 
+	 <pkg>rngwell19937</pkg> provides one of the WELL generators with 53 bit
+	 resolution of the output and allows seeding by a vector
+	 of integers of arbitrary length.
+	 <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
+     pseudorandom number generator (AES).
+	 <pkg>SuppDists</pkg>
 	 implements two RNGs of G. Marsaglia.    
-     <pkg>rsprng</pkg> implements Scalable Parallel RNGs library, whereas
-     <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
-     pseudorandom number generator (AES). Furthermore, <pkg>rstream</pkg> focuses on multiple 
-     independent streams of random numbers from different sources (in a object oriented
-     approach). For non-uniform generation, the <pkg>Runuran</pkg> package
-     interfaces to the UNU.RAN library for universal non-uniform RNGs, while the
-     <pkg>rv</pkg> package provides a class to easily manipulate and summarize
-     simulations in R.
-     </LI>
-     
+	 
+		<UL>
+		<LI> Support for several independent streams: 
+		<pkg>rsprng</pkg> implements Scalable Parallel RNGs library.
+		<pkg>rstream</pkg> focuses on multiple independent streams of random numbers
+		from different sources (in an object oriented approach).
+		</LI>
+
+		<LI> For non-uniform generation, the <pkg>Runuran</pkg>  
+		package interfaces to the UNU.RAN library for universal non-uniform RNGs.
+		</LI>
+
+		<LI> Misc.:
+		<pkg>rv</pkg> package provides a class to easily manipulate and summarize
+		simulations in R. 
+		</LI>
+		</UL>  
+	  
+	 </LI>  
      
      <LI><I>Quasi-randomness</I>: The <pkg>randtoolbox</pkg> provides
      the following quasi random sequences: the Sobol sequence, the Halton
@@ -440,6 +455,11 @@ or not complete, please let me know.
 	smoothness, number of modes and other properties. The package 
 	provides d,p,q and r functions.</LI>   
 	  
+	  <LI><I>Empirical distribution</I>: Base R provides functions for univariate analysis:
+	(1) the empirical density (see density), (2) the empirical cumulative
+	distribution function (see ecdf), (3) the empirical quantile (see quantile)
+	and (4) random sampling (see sample). For multivariate analysis, the package
+	<pkg>mecdf</pkg> provides the multivariate empirical distribution function.</LI>
 	  
      <LI><I>Hierarchical models</I>: Distributions whose some parameters
      are no longer constant but random according to a particular distribution. 
@@ -532,6 +552,7 @@ or not complete, please let me know.
   <pkg priority="core">lmomco</pkg>
   <pkg>Lmoments</pkg>
   <pkg>MASS</pkg>
+  <pkg>mecdf</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mixtools</pkg>
   <pkg>mlCopulaSelection</pkg>
@@ -546,6 +567,7 @@ or not complete, please let me know.
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
   <pkg>RDieHarder</pkg>
+  <pkg>rngwell19937</pkg>
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
