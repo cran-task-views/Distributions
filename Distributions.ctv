@@ -239,8 +239,14 @@ or not complete, please let me know.
 	 
      <LI><I>Kumaraswamy distribution</I>: Provided in package <pkg>VGAM</pkg>.</LI>
      
-     <LI><I>Lambda distribution</I>: The Tukey lambda (also known as the generalized
-     lambda) distribution is implemented in packages <pkg>gld</pkg> and <pkg>Davies</pkg>.</LI>
+     <LI><I>(Tukey) Lambda distribution and its extentions</I>: The generalized Lambda 
+	 distribution (GLD) is well known for its wide range of shapes. There exists 3 kinds
+	 of GLD in the literature: RS, FMKL and FM5. The following packages implement such distributions
+	 (with d, p, q, r functions): <pkg>gld</pkg> for the 3 kinds of GLD
+	 (RS, FMKL and FM5), <pkg>GLDEX</pkg> for 2 kinds (RS, FMKL)
+	  and <pkg>Davies</pkg> for 1 type (RS). The original Tukey Lambda distribution can 
+	  be obtained as a special case of the generalized Lambda distribution.	
+	  </LI>
 
      <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg>.
      Laplace distribution (also called double exponential distribution) is implemented in <pkg>distr</pkg>.
