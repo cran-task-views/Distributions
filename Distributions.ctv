@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2010-01-29</version> 
+<version>2010-05-08</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -308,8 +308,6 @@ or not complete, please let me know.
      the d, p, q, r functions for Student and non central Student distribution (see above).
      The skewed Student distribution is provided by <pkg>skewt</pkg>,
      <pkg>sn</pkg> and <pkg>gamlss.dist</pkg> packages. 
-	 Package <pkg>tdist</pkg> provides d, p, q functions
-     for the distribution of a linear combination of independent Student distributions. 
 	 d, p, q, r functions for the generalized t-distribution
 	 can be found in <pkg>gamlss.dist</pkg>. <pkg>fBasics</pkg> provides d, p, q, r functions
 	 for the skew and the generalized hyperbolic t-distribution.
@@ -607,7 +605,6 @@ or not complete, please let me know.
   <pkg>skewt</pkg>     
   <pkg>sn</pkg>
   <pkg priority="core">SuppDists</pkg>
-  <pkg>tdist</pkg>
   <pkg>tmvtnorm</pkg>
   <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
