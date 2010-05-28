@@ -89,7 +89,8 @@ or not complete, please let me know.
 		Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.</LI>
 		
 		<LI><I>Logarithmic distribution</I>: This can be found in
-	    <pkg>VGAM</pkg>. A fast random generator is available for the logarithmic distribution 
+	    <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is 
+		available for the logarithmic distribution 
 		is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
 		</LI>	
 		
@@ -100,6 +101,12 @@ or not complete, please let me know.
 	    <LI><I>Triangle distribution</I>: The discrete triangle distribution can be found in
 	    <pkg>TRIANG</pkg>.</LI>	  
 	    
+		<LI><I>Zero inflated/modified (ZI/ZM) distributions</I>: 
+		ZM (or Hurdle) Poisson, ZM logarithmic, 
+		ZI/ZM negative binomial, ZI Poisson inverse Gaussian,
+		ZI/ZM binomial, ZI/ZM beta binomial distributions are 
+		implemented in <pkg>gamlss.dist</pkg>. </LI>
+		
 	    <LI><I>Zipf law</I>: Package <pkg>zipfR</pkg> provides tools for the Zipf and
 	    the Zipf-Mandelbrot distributions. <pkg>VGAM</pkg> also implements the Zipf distribution.</LI>
 
