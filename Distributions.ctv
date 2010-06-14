@@ -196,7 +196,7 @@ or not complete, please let me know.
      <LI><I>Gaussian (or normal) distribution and its extensions</I>: Base R provides
      the d, p, q, r functions for this distribution (see above). <pkg>actuar</pkg>
      provides the moment generating function and moments. d, p, q, r functions for the generalized 
-	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>.
+	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg> and <pkg>HyperbolicDist</pkg>.
 	 A fast random generator is available for the (generalized) Inverse Gaussian distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
 	  <pkg>ig</pkg> provides d, p, q, r
@@ -231,7 +231,7 @@ or not complete, please let me know.
      The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
      and  <pkg>gamlss.dist</pkg>.</LI>   
      
-     <LI><I>Hyperbolic distribuion</I>: <pkg>ghyp</pkg> and <pkg>fBasics</pkg> package
+     <LI><I>Hyperbolic distribuion</I>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg> and <pkg>HyperbolicDist</pkg> packages
      provide d, p, q, r functions for the generalized hyperbolic distributions. 
 	 A fast random generator is available for the hyperbolic distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. </LI>
@@ -255,7 +255,8 @@ or not complete, please let me know.
 	  be obtained as a special case of the generalized Lambda distribution.	
 	  </LI>
 
-     <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg>.
+     <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg> 
+	 and <pkg>HyperbolicDist</pkg> packages.
      Laplace distribution (also called double exponential distribution) is implemented in <pkg>distr</pkg>.
 	 A fast random generator is available for the Laplace distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. </LI>
