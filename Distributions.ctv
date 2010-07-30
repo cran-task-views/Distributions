@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2010-06-14</version> 
+<version>2010-07-30</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -199,8 +199,7 @@ or not complete, please let me know.
 	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg> and <pkg>HyperbolicDist</pkg>.
 	 A fast random generator is available for the (generalized) Inverse Gaussian distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
-	  <pkg>ig</pkg> provides d, p, q, r
-	 functions for the (raw) inversion gaussian distribution. <pkg>SuppDists</pkg>
+     <pkg>SuppDists</pkg>
      provides functions for the inverse Gaussian distribution as well and furthermore includes functions
      for computing moments, skewness, kurtosis. <pkg>VGAM</pkg> and <pkg>fBasics</pkg> 
      also implement
@@ -453,10 +452,6 @@ or not complete, please let me know.
 		package interfaces to the UNU.RAN library for universal non-uniform generation.
 		</LI>
 
-		<LI> Misc.:
-		<pkg>rv</pkg> package provides a class to easily manipulate and summarize
-		simulations in R. 
-		</LI>
 		</UL>  
 	  
 	 </LI>  
@@ -538,8 +533,7 @@ or not complete, please let me know.
      estimation for usual and "exotic" distributions. Package
      <pkg>MASS</pkg> implements the flexible <code>fitdistr</code>
      function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
-     the tools to fit probability distributions.
-     Bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>.</LI>	       
+     the tools to fit probability distributions.</LI>	       
       </UL>
 </info> 
 
@@ -583,7 +577,6 @@ or not complete, please let me know.
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
   <pkg>HyperbolicDist</pkg>
-  <pkg>ig</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg priority="core">lmomco</pkg>
@@ -592,7 +585,6 @@ or not complete, please let me know.
   <pkg>mecdf</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mixtools</pkg>
-  <pkg>mlCopulaSelection</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>mvtnormpcs</pkg>
@@ -608,7 +600,6 @@ or not complete, please let me know.
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
-  <pkg>rv</pkg>
   <pkg>setRNG</pkg>
   <pkg>skewt</pkg>     
   <pkg>sn</pkg>
