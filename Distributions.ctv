@@ -194,7 +194,10 @@ or not complete, please let me know.
 	 can also be found in <pkg>gamlss.dist</pkg>.</LI>
      
      <LI><I>Gaussian (or normal) distribution and its extensions</I>: Base R provides
-     the d, p, q, r functions for this distribution (see above). <pkg>actuar</pkg>
+     the d, p, q, r functions for this distribution (see above). 
+	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
+	 univariate gaussian distribution as well as functions for the first two moments.
+	 <pkg>actuar</pkg>
      provides the moment generating function and moments. d, p, q, r functions for the generalized 
 	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg> and <pkg>HyperbolicDist</pkg>.
 	 A fast random generator is available for the (generalized) Inverse Gaussian distribution 
@@ -605,6 +608,7 @@ or not complete, please let me know.
   <pkg>sn</pkg>
   <pkg priority="core">SuppDists</pkg>
   <pkg>tmvtnorm</pkg>
+  <pkg>truncnorm</pkg>
   <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
   <pkg>tweedie</pkg>
