@@ -94,7 +94,10 @@ or not complete, please let me know.
 		is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
 		</LI>	
 		
-			 
+		<LI><I>Multinomial distribution</I>: This can be found in
+	    <pkg>mc2d</pkg>, <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg>.</LI>	
+		
+					 
 		<LI><I>Sichel distribution</I>: This can be found in
 	    <pkg>gamlss.dist</pkg>.</LI>	    
 	    
@@ -129,10 +132,10 @@ or not complete, please let me know.
 	 can be found in <pkg>gamlss.dist</pkg> as well as generalized beta of the first
 	 and second kind. The
      beta of the second kind and the generalized beta distribution 
-     can also be found in <pkg>VGAM</pkg>. Several special cases of
+     can also be found in <pkg>VGAM</pkg> and <pkg>mc2d</pkg>. Several special cases of
      the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
      Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
-     paralogistic and Singh-Maddala distribution.</LI>	  
+     paralogistic and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.</LI>	  
      
      <LI><I>Benini distribution</I>: Provided in <pkg>VGAM</pkg>.
      </LI>
@@ -163,7 +166,7 @@ or not complete, please let me know.
      in <pkg>Davies</pkg> package.</LI>	   
      
      <LI><I>Dirichlet distribution</I>: functions d, r
-	    are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>   
+	    are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg> and <pkg>bayesm</pkg>.</LI>   
 
      <LI><I>Exponential distribution and its extensions</I>: Base R provides the d, p, q, r functions
      for this distribution (see above). <pkg>actuar</pkg> provides additional functions
@@ -325,7 +328,7 @@ or not complete, please let me know.
      The multivariate Student distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI>
      
-     <LI><I>Triangle distribution</I>: Provided in packages <pkg>triangle</pkg> and
+     <LI><I>Triangle distribution</I>: Provided in packages <pkg>triangle</pkg>, <pkg>mc2d</pkg> and
      <pkg>VGAM</pkg>. 
 	 A fast random generator is available for the triangle distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.</LI>    
@@ -462,7 +465,7 @@ or not complete, please let me know.
      <LI><I>Quasi-randomness</I>: The <pkg>randtoolbox</pkg> provides
      the following quasi random sequences: the Sobol sequence, the Halton
      (hence Van Der Corput) sequence and the Torus sequence (also known as Kronecker
-     sequence). <pkg>lhs</pkg> package implements the latin hypercube sampling,
+     sequence). <pkg>lhs</pkg> and <pkg>mc2d</pkg> packages implement the latin hypercube sampling,
      an hybrid quasi/pseudo random method.</LI>
      
      <LI><I>True randomness</I>: The <pkg>random</pkg>
@@ -501,7 +504,7 @@ or not complete, please let me know.
      <pkg>VGAM</pkg> provides a lot of hierarchical models: beta/binomial,
      beta/geometric and beta/normal distributions. <pkg>bayesm</pkg>
      implements: binary logit, linear, multivariate logit and negative binomial
-     models. Furthermore <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg> 
+     models. Furthermore <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg>
      provides poisson/gamma, beta/binomial,
      normal/normal and multinomial/Dirichlet models.</LI>    
 
@@ -586,6 +589,7 @@ or not complete, please let me know.
   <pkg>Lmoments</pkg>
   <pkg>MASS</pkg>
   <pkg>mecdf</pkg>
+  <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mixtools</pkg>
   <pkg priority="core">mnormt</pkg>
