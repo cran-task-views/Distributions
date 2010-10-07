@@ -394,8 +394,12 @@ or not complete, please let me know.
       copulas of Nelsen (1998, <i>Introduction to Copulas</i>, Springer-Verlag) including
       Gumbel, Frank, Clayton, and Ali-Mikhail-Haq. <pkg>gumbel</pkg> is a 
       standalone package for the Gumbel copula and <pkg>VGAM</pkg> 
-      provides the Ali-Mikhail-Haq bivariate distribution. Generalized Archimedean copulas
+      provides the Ali-Mikhail-Haq bivariate distribution. <pkg>nacopula</pkg> provides
+	   Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
+	  Generalized Archimedean copulas
       are implemented in the <pkg>fgac</pkg> package.</LI>
+	  
+	  
       
       <LI><I>Cubic copula</I>: Not yet implemented</LI>
       
@@ -414,6 +418,9 @@ or not complete, please let me know.
       and <pkg>copula</pkg>.</LI>
      
       <LI><I>Mardia copula</I>: Not yet implemented</LI>   
+	  
+	  <LI><I>Nested copulas</I>: arbitrary nested versions of copulas can
+	  be implemented in <pkg>nacopula</pkg>. </LI>
       
       <LI><I>Plackett</I>: Provided in <pkg>VGAM</pkg> and <pkg>copula</pkg>.</LI>
                    
@@ -595,6 +602,7 @@ or not complete, please let me know.
   <pkg priority="core">mnormt</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>mvtnormpcs</pkg>
+  <pkg>nacopula</pkg>
   <pkg>nor1mix</pkg>  
   <pkg>normalp</pkg>
   <pkg>POT</pkg>
