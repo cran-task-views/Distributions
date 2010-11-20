@@ -211,8 +211,9 @@ or not complete, please let me know.
      also implement
      the folded and the skewed normal distribution, the inverse gaussian distribution. 
 	 <pkg>lmomco</pkg> implements the generalized normal distribution. 	   
-	   The log normal distribution is implemented
-     in Base R (see above). Ex-Gaussian distribution is implemented in <pkg>gamlss.dist</pkg>.
+	 The log normal distribution is implemented in Base R (see above), but the 3-parameter lognormal
+	 distribution is available in <pkg>lmomco</pkg>.
+	 Ex-Gaussian distribution is implemented in <pkg>gamlss.dist</pkg>.
      Finally, the multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
      <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
@@ -249,15 +250,15 @@ or not complete, please let me know.
      
 	 <LI><I>Kappa distribution</I>: Provided in <pkg>lmomco</pkg>.</LI>  
 	 
-     <LI><I>Kumaraswamy distribution</I>: Provided in package <pkg>VGAM</pkg>.</LI>
+     <LI><I>Kumaraswamy distribution</I>: Provided in packages <pkg>VGAM</pkg> and <pkg>lmomco</pkg>.</LI>
      
      <LI><I>(Tukey) Lambda distribution and its extentions</I>: The generalized Lambda 
 	 distribution (GLD) is well known for its wide range of shapes. There exists 3 kinds
 	 of GLD in the literature: RS, FMKL and FM5. The following packages implement such distributions
-	 (with d, p, q, r functions): <pkg>gld</pkg> for the 3 kinds of GLD
-	 (RS, FMKL and FM5), <pkg>GLDEX</pkg> for 2 kinds (RS, FMKL)
-	  and <pkg>Davies</pkg> for 1 type (RS). The original Tukey Lambda distribution can 
-	  be obtained as a special case of the generalized Lambda distribution.	
+	 (with d, p, q, r functions): <pkg>gld</pkg> and <pkg>GLDEX</pkg> provides the 3 kinds of GLD, 
+	 <pkg>Davies</pkg> provides the RS type and <pkg>lmomco</pkg> provides the FMKL. 
+	 The original Tukey Lambda distribution can be obtained as a special 
+	 case of the generalized Lambda distribution.	
 	  </LI>
 
      <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg> 
@@ -305,7 +306,7 @@ or not complete, please let me know.
      <LI><I>Rayleigh distribution</I>: Provided in packages <pkg>VGAM</pkg> 
      and <pkg>lmomco</pkg>.</LI>
 
-     <LI><I>Rice distribution</I>: Provided in <pkg>VGAM</pkg>.
+     <LI><I>Rice distribution</I>: Provided in <pkg>VGAM</pkg> and <pkg>lmomco</pkg>.
      </LI>     
 
      <LI><I>Sinh-Arcsinh distribution</I>: Provided in <pkg>gamlss.dist</pkg>.</LI>
@@ -541,8 +542,8 @@ or not complete, please let me know.
      of two distributions. See Object-orientation below.</LI>
 	 
      <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
-     estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focuse on
-     (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
+     estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
+     univariate/multivariate (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. Package
      <pkg>MASS</pkg> implements the flexible <code>fitdistr</code>
      function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
