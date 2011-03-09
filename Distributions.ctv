@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-02-27</version> 
+<version>2011-03-09</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -171,8 +171,9 @@ or not complete, please let me know.
      <LI><I>Exponential distribution and its extensions</I>: Base R provides the d, p, q, r functions
      for this distribution (see above). <pkg>actuar</pkg> provides additional functions
      such as the moment generating function, moments and limited expected values. It also has
-     the d, p, q, r for the inverse exponential distribution. The shifted exponential distribution
-     is implemented in <pkg>lmomco</pkg> package with d, p, q, r functions.
+     the d, p, q, r for the inverse exponential distribution. The shifted and the 
+	 truncated exponential distributions are implemented in <pkg>lmomco</pkg> 
+	 package with d, p, q, r functions.
 	 d, p, q, r functions for the power and the skew power exponential type 1-4 distributions are implemented
 	 in <pkg>gamlss.dist</pkg>.
 	 A fast random generator is available for the power Exponential distribution 
