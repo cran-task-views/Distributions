@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-03-09</version> 
+<version>2011-04-12</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -330,8 +330,9 @@ or not complete, please let me know.
      The multivariate Student distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</LI>
      
-     <LI><I>Triangle distribution</I>: Provided in packages <pkg>triangle</pkg>, <pkg>mc2d</pkg> and
-     <pkg>VGAM</pkg>. 
+     <LI><I>Triangle/trapezoidal distribution</I>: packages <pkg>triangle</pkg>, <pkg>mc2d</pkg> and
+     <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle distribution, while the package
+	 <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized Trapezoidal Distribution.
 	 A fast random generator is available for the triangle distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.</LI>    
      
@@ -622,9 +623,10 @@ or not complete, please let me know.
   <pkg>sn</pkg>
   <pkg priority="core">SuppDists</pkg>
   <pkg>tmvtnorm</pkg>
-  <pkg>truncnorm</pkg>
+  <pkg>trapezoid</pkg>
   <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
+  <pkg>truncnorm</pkg>
   <pkg>tweedie</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
