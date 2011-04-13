@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-04-12</version> 
+<version>2011-04-13</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -414,8 +414,7 @@ or not complete, please let me know.
       
       <LI><I>Extreme value copulas</I>: <pkg>fCopulae</pkg> provides the following copulas
       Gumbel, Galambos, Husler-Reiss, Tawn, or BB5. <pkg>copula</pkg> also implements
-      Gumbel, Galambos and Husler-Reiss. <pkg>BLCOP</pkg> presents an application of
-      the copula-opinion pooling framework.</LI>
+      Gumbel, Galambos and Husler-Reiss.</LI>
       
       <LI><I>Eyraud-Farlie-Gumbel-Morgenstern</I>: Provided in <pkg>VGAM</pkg> 
       and <pkg>copula</pkg>.</LI>
@@ -532,12 +531,6 @@ or not complete, please let me know.
      <pkg>distrTeach</pkg>, <pkg>distrDoc</pkg>).
      </LI>
      
-     <LI><I>TI 83 scientific calculator</I>: <pkg>distributions</pkg> provides
-     the base R probability distributions (binomial, poisson, geometric, 
-     normal, chi square, Fisher, Student) 
-     based on TI-83 Plus graphic scientific calculator.
-     </LI>
-     
 	 <LI><i>Transformation</i>: Lebesgue decomposition are implemented
      in <pkg>distr</pkg>, as well as Convolution, Truncation and Huberization of distributions. 
      Furthermore, <pkg>distr</pkg> provides distribution of the maximum or minimum
@@ -561,7 +554,6 @@ or not complete, please let me know.
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
-  <pkg>BLCOP</pkg>
   <pkg>bs</pkg>
   <pkg>compoisson</pkg>
   <pkg priority="core">copula</pkg>
@@ -570,7 +562,6 @@ or not complete, please let me know.
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
   <pkg>distrEx</pkg> 
-  <pkg>distributions</pkg>
   <pkg>distrMod</pkg>   
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
