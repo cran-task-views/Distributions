@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-04-13</version> 
+<version>2011-04-22</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -219,7 +219,10 @@ or not complete, please let me know.
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
      <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
      given a correlation matrix structure. <pkg>tmvtnorm</pkg> implements the truncated
-	 multivariate normal distribution.</LI> 
+	 multivariate normal distribution.
+	 <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
+	 in normal variates.
+	 </LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
      provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>, see <I>exponential</I> item.</LI>
@@ -556,6 +559,7 @@ or not complete, please let me know.
   <pkg>BiasedUrn</pkg>
   <pkg>bs</pkg>
   <pkg>compoisson</pkg>
+  <pkg>CompQuadForm</pkg>  
   <pkg priority="core">copula</pkg>
   <pkg>Davies</pkg> 
   <pkg>denstrip</pkg>
