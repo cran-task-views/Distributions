@@ -232,7 +232,7 @@ or not complete, please let me know.
 	 <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
 	 as well as the raw moment, the expected value and the variance functions.
 	 Ex-Gaussian distribution is implemented in <pkg>gamlss.dist</pkg>.
-	 The Exponentially modified Gaussian is available in <pkg>EMG</pkg>.
+	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>.
      Finally, the multivariate Gaussian distribution
      is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
      <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
@@ -675,7 +675,7 @@ or not complete, please let me know.
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
-  <pkg>EMG</pkg> 
+  <pkg>emg</pkg> 
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
   <pkg>evir</pkg>
