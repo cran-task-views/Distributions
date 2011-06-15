@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-05-11</version> 
+<version>2011-06-15</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -16,8 +16,9 @@ are available in contributed packages.
 
 Ultimate bibles on probability distributions are 
 <UL>
- <LI> Continuous univariate distributions by N. L. Johnson, S. Kotz and N. Balakrishnan,</LI> 
+ <LI> different volumes of N. L. Johnson, S. Kotz and N. Balakrishnan books, e.g. Continuous Univariate Distributions, Vol. 1,</LI> 
  <LI> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</LI>
+ <LI> Statistical Distributions by M. Evans, N. Hastings, B. Peacock. </LI>
 </UL>
 
 The maintainer greatfully acknowledged Achim Zeileis, David Luethi, Tobias Verbeke, Robin
@@ -310,7 +311,8 @@ or not complete, please let me know.
      the log logistic (also called Fisk), the paralogistic and the inverse paralogistic distributions. 
      <pkg>VGAM</pkg> package also implements these distributions plus
      the bivariate logistic distribution. 
-     <pkg>lmomco</pkg> implements the generalized logistic distribution and <pkg>FAdist</pkg>
+	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
+	 in <pkg>lmomco</pkg> and <pkg>glogis</pkg>.  <pkg>FAdist</pkg>
 	 the log-logistic distribution with two and three parameters. Finally,
 	 <pkg>reliaR</pkg> implements the exponential logistic distribution.
      </LI>
@@ -694,6 +696,7 @@ or not complete, please let me know.
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>gld</pkg>
   <pkg>GLDEX</pkg>
+  <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
