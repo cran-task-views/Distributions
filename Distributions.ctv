@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-06-15</version> 
+<version>2011-10-18</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -264,6 +264,9 @@ or not complete, please let me know.
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
      The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
      and  <pkg>gamlss.dist</pkg>.</LI>   
+	 
+	 <LI><I>Huber’s least favourable distribution</I>: density and random
+	 generator in package <pkg>smoothmest</pkg>.</LI>
      
      <LI><I>Hyperbolic distribuion</I>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
@@ -297,7 +300,8 @@ or not complete, please let me know.
 	 and <pkg>HyperbolicDist</pkg> packages.
      Laplace distribution (also called double exponential distribution) is implemented in <pkg>distr</pkg>.
 	 A fast random generator is available for the Laplace distribution 
-	 is implemented in <pkg>Runuran</pkg> as well as the density function. </LI>
+	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
+	 <pkg>smoothmest</pkg> implements the density and the random generator.</LI>
 
 	 <LI><I>Linear failure rate distribution</I>: Provided in <pkg>reliaR</pkg>.
      </LI>   
@@ -742,6 +746,7 @@ or not complete, please let me know.
   <pkg>skellam</pkg>
   <pkg>skewt</pkg>     
   <pkg>SkewHyperbolic</pkg>
+  <pkg>smoothmest</pkg>
   <pkg>sn</pkg>
   <pkg>spd</pkg>
   <pkg>stabledist</pkg>
