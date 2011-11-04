@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-10-18</version> 
+<version>2011-11-04</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -144,8 +144,8 @@ or not complete, please let me know.
      </LI>
 	 
 	 
-     <LI><I>Birnbaum-Saunders distribution</I>: Provided in packages
-     <pkg>bs</pkg> and <pkg>VGAM</pkg>. The generalized Birnbaum-Saunders distribution is implemented in
+     <LI><I>Birnbaum-Saunders distribution</I>: Provided in package
+     <pkg>VGAM</pkg>. The generalized Birnbaum-Saunders distribution is implemented in
      <pkg>gbs</pkg>.</LI>    
      
      <LI><I>Box Cox distributions</I>: <pkg>gamlss.dist</pkg> provides the Box-Cox normal,
@@ -667,7 +667,6 @@ or not complete, please let me know.
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
-  <pkg>bs</pkg>
   <pkg>compoisson</pkg>
   <pkg>CompQuadForm</pkg>  
   <pkg priority="core">copula</pkg>
