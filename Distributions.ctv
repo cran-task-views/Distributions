@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-11-04</version> 
+<version>2011-11-27</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -647,6 +647,13 @@ or not complete, please let me know.
 	 <pkg>spd</pkg> provides the Semi Parametric Piecewise Distribution, while 
 	 <pkg>fBasics</pkg> implements spline smoothed distributions.</LI>
 	 
+	 <LI><i>User Interface</i>:
+	 <pkg>AtelieR</pkg> package provides a GTK GUI for teaching basic 
+	 concepts in statistical inference, implementing all the R base distributions
+	 as well as the generalized Student, the inverse Chi-square, the inverse gamma
+	 and the lambda distributions. 
+	 </LI>
+	 
      <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
      estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
      univariate/multivariate (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
@@ -664,6 +671,7 @@ or not complete, please let me know.
 <packagelist>
   <pkg priority="core">actuar</pkg> 
   <pkg>AdMit</pkg>
+  <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
