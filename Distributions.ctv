@@ -651,7 +651,7 @@ or not complete, please let me know.
 	 <pkg>AtelieR</pkg> package provides a GTK GUI for teaching basic 
 	 concepts in statistical inference, implementing all the R base distributions
 	 as well as the generalized Student, the inverse Chi-square, the inverse gamma
-	 and the lambda distributions. 
+	 and the lambda-prime distributions. 
 	 </LI>
 	 
      <LI><I>Transversal functions</I>: Package <pkg>modeest</pkg> provides mode
