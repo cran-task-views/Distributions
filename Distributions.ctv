@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-11-27</version> 
+<version>2011-12-03</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -295,6 +295,14 @@ or not complete, please let me know.
 	 The original Tukey Lambda distribution can be obtained as a special 
 	 case of the generalized Lambda distribution.	
 	  </LI>
+	  
+	 <LI><I>Tukey's H distribution</I>: provided as a special case of 
+	 Lambert W x F distribution.
+	 </LI>   	  
+	  
+	 <LI><I>Lambert W x F distributions</I>: <pkg>LambertW</pkg> package provides 
+	 d, p, q, r functions as well as the first 4 central moments and a qqplot.
+     </LI>   
 
      <LI><I>Laplace and asymetric Laplace distribution</I>: Provided in <pkg>VGAM</pkg> 
 	 and <pkg>HyperbolicDist</pkg> packages.
@@ -714,6 +722,7 @@ or not complete, please let me know.
   <pkg>HI</pkg>
   <pkg>HyperbolicDist</pkg>
   <pkg>hyperdirichlet</pkg>
+  <pkg>LambertW</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg>loglognorm</pkg>
