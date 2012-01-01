@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2011-12-03</version> 
+<version>2012-01-01</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -287,7 +287,7 @@ or not complete, please let me know.
 	 
      <LI><I>Kumaraswamy distribution</I>: Provided in packages <pkg>VGAM</pkg> and <pkg>lmomco</pkg>.</LI>
      
-     <LI><I>(Tukey) Lambda distribution and its extentions</I>: The generalized Lambda 
+     <LI><I>(Tukey) Lambda distribution and its extensions</I>: The generalized Lambda 
 	 distribution (GLD) is well known for its wide range of shapes. There exists 3 kinds
 	 of GLD in the literature: RS, FMKL and FM5. The following packages implement such distributions
 	 (with d, p, q, r functions): <pkg>gld</pkg> and <pkg>GLDEX</pkg> provides the 3 kinds of GLD, 
