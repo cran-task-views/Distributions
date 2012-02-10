@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-01-10</version> 
+<version>2012-02-10</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -162,12 +162,15 @@ or not complete, please let me know.
      </LI>
 	 
      <LI><I>Chi(-squared or not) distributions</I>: Base R provides
-     the d, p, q, r functions for this distribution (see above). Moments, limited
+     the d, p, q, r functions for the chi-squared distribution, both central
+	 and non-central (see above). Moments, limited
      expected values and the moment generating function are provided by <pkg>actuar</pkg>.
      Only d,r functions are available for the inverse chi-squared distribution
      by package <pkg>geoR</pkg>. A fast random generator is available for the Chi distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
-	 The non-central Chi distribution is not yet implemented.</LI>
+	 The non-central Chi distribution is not yet implemented. The chi-bar-squared distribution
+	 is implemented in <pkg>emdbook</pkg>.
+	 </LI>
 
      <LI><I>Davies distribution</I>: The Davies distribution is provided
      in <pkg>Davies</pkg> package.</LI>	   
@@ -191,6 +194,10 @@ or not complete, please let me know.
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
 	 </LI>
+	 
+	 <LI><I>Fisher-Snedecor or F distribution</I>: Base R provides the d, p, q, r functions
+     for the F distribution, possibly with a non-central parameter. Doubly non-central
+	 F distribution does not seem to be implemented?</LI>
      
      <LI><I>Frechet distribution</I>: Provided in <pkg>VGAM</pkg>
      and <pkg>evd</pkg>. A fast random generator is available for the Frechet distribution 
@@ -696,6 +703,7 @@ or not complete, please let me know.
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
+  <pkg>emdbook</pkg>
   <pkg>emg</pkg> 
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
