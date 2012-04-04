@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-02-10</version> 
+<version>2012-04-04</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -586,7 +586,9 @@ or not complete, please let me know.
 		</LI>
 
 		<LI> For non-uniform generation, the <pkg>Runuran</pkg>  
-		package interfaces to the UNU.RAN library for universal non-uniform generation.
+		package interfaces to the UNU.RAN library for universal non-uniform generation
+		as well as customised distributions based on polynomial interpolation of the inverse
+		cumulative distribution function.
 		</LI>
 
 		</UL>  
