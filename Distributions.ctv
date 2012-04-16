@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-04-04</version> 
+<version>2012-04-16</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -242,9 +242,8 @@ or not complete, please let me know.
 	 Ex-Gaussian distribution is implemented in <pkg>gamlss.dist</pkg>.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>.
      Finally, the multivariate Gaussian distribution
-     is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>, while
-     <pkg>mvtnormpcs</pkg>implements multivariate student/normal integrals, 
-     given a correlation matrix structure. <pkg>tmvtnorm</pkg> implements the truncated
+     is provided by the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>. 
+     <pkg>tmvtnorm</pkg> implements the truncated
 	 multivariate normal distribution.
 	 <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
 	 in normal variates.
@@ -747,7 +746,6 @@ or not complete, please let me know.
   <pkg>movMF</pkg>
   <pkg>mvtBinaryEP</pkg>
   <pkg priority="core">mvtnorm</pkg>
-  <pkg>mvtnormpcs</pkg>
   <pkg>nacopula</pkg>
   <pkg>nor1mix</pkg>  
   <pkg>normalp</pkg>
