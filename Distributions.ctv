@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-04-20</version> 
+<version>2012-04-28</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -436,12 +436,14 @@ or not complete, please let me know.
 	 the reverse generalized extreme value distribution are provided in
 	 <pkg>gamlss.dist</pkg>.</LI>
 
-     <LI><I>Wishart and inverse Wishart distributions</I>: functions d, r
-     are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>. 
-	 Spiked Wishart Maximum Eigenvalue 
-	  White Wishart Maximum Eigenvalue 
-	  Tracy-Widom
-	  Marcenko-Pastur limiting distribution of wWME</LI>
+     <LI><I>Wishart and inverse Wishart distributions</I>: 
+	 Base R provides the r function for the Wishart distribution.
+	 the d, r functions are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg> 
+	 including also the distributions: 
+	 Spiked Wishart Maximum Eigenvalue, 
+	  White Wishart Maximum Eigenvalue,
+	  Tracy-Widom, and 
+	  Marcenko-Pastur limiting distribution of wWME.</LI>
 
   </UL> 
 
