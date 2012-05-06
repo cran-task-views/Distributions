@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-04-28</version> 
+<version>2012-05-06</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -58,8 +58,7 @@ or not complete, please let me know.
      rank sum distribution <code>wilcox</code>.
   </li>
     <li> On base R distributions, <pkg>prob</pkg> provides the characteristic function, while 
-    <pkg>actuar</pkg> implements moments, limited expected values and moment generating 
-    function. Graphical methods for illustrating probability distributions can be found 
+    graphical methods for illustrating probability distributions can be found 
     in <pkg>denstrip</pkg>.
     </li>
   </ul>
@@ -271,7 +270,7 @@ or not complete, please let me know.
      The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
      and  <pkg>gamlss.dist</pkg>.</LI>   
 	 
-	 <LI><I>Huber’s least favourable distribution</I>: density and random
+	 <LI><I>Huber's least favourable distribution</I>: density and random
 	 generator in package <pkg>smoothmest</pkg>.</LI>
      
      <LI><I>Hyperbolic distribuion</I>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
@@ -436,14 +435,7 @@ or not complete, please let me know.
 	 the reverse generalized extreme value distribution are provided in
 	 <pkg>gamlss.dist</pkg>.</LI>
 
-     <LI><I>Wishart and inverse Wishart distributions</I>: 
-	 Base R provides the r function for the Wishart distribution.
-	 the d, r functions are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg> 
-	 including also the distributions: 
-	 Spiked Wishart Maximum Eigenvalue, 
-	  White Wishart Maximum Eigenvalue,
-	  Tracy-Widom, and 
-	  Marcenko-Pastur limiting distribution of wWME.</LI>
+
 
   </UL> 
 
@@ -484,16 +476,59 @@ or not complete, please let me know.
 	  
       
    </UL>
+
+<p><strong>Moments, skewness, kurtosis and etc:</strong></p>
+   
+   <UL>
+      <LI><I>Empirical moments</I>: base R provides <code>mean()</code>, 
+	  <code>sd()</code>, <code>var()</code> functions to compute
+	  the mean, standard deviation and variance, respectively.
+	  The skewness is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
+      <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg> packages.
+	  The kurtosis is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, 
+	  <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg> packages.
+	  The raw or centered moments are provided in <pkg>e1071</pkg>,
+      <pkg>moments</pkg>, while L-moments and trimmed L-moments 
+	  are available in <pkg>GLDEX</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg> 
+	  and cumulants in <pkg>GLDEX</pkg>. 
+	  Finally, the mode is provided in <pkg>modeest</pkg>.
+	  </LI>
+   
+	  <LI><I>Theoretical moments</I>: 
+	  The <pkg>actuar</pkg> package implements raw moments, limited expected values 
+	  and moment generating function for base R distributions.
+	  <pkg>HyperbolicDist</pkg> provides the mean, variance, skewness, kurtosis, mode,
+	  raw and centered moments for the hyperbolic, the generalized hyperbolic and the
+	  generalized inverse Gaussian distributions.
+	  <pkg>lmomco</pkg> provides L-moments (L) and trimmed L-moments (TL) for the following
+	  distributions: Asymmetric Exponential Power (L), Cauchy (TL), 
+	  Exponential (L), Gamma (L), Generalized Extreme Value (L), 
+	  Generalized Lambda (L, TL), Generalized Logistic (L), Generalized Normal (L), 
+	  Generalized Pareto (L[RC], TL), Gumbel (L), Kappa (L), Kumaraswamy (L), 
+	  Laplace (L), Normal (L), 3-parameter log-Normal (L), Pearson Type III (L), 
+	  Rayleigh (L), Reverse Gumbel (L[RC]), Rice/Rician (L), Truncated Exponential (L), 
+	  Wakeby (L) and Weibull (L).
+      </LI>
+
+   </UL>
    
 <p><strong>Random matrices:</strong></p>
 
       <UL>
+	  
+	  <LI><I>Wishart and inverse Wishart distributions</I>: 
+	  Base R provides the r function for the Wishart distribution.
+	  the d, r functions are provided in <pkg>MCMCpack</pkg> and <pkg>bayesm</pkg>.</LI>
 
       <LI><I>Marcenko-Pastur distribution</I>:
-      provided in <pkg>RMTstat</pkg>.</LI>
+      provided in <pkg>RMTstat</pkg>, <pkg>MCMCpack</pkg> and 
+	  <pkg>bayesm</pkg>.</LI>
 
       <LI><I>Tracy-Widom distribution</I>:
-      provided in <pkg>RMTstat</pkg>, supported beta values 
+      provided in <pkg>RMTstat</pkg>, <pkg>MCMCpack</pkg> and 
+	  <pkg>bayesm</pkg>: supported beta values 
 	  are 1 (Gaussian Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), 
 	  and 4 (Gaussian Symplectic Ensemble). </LI>
 
@@ -501,10 +536,12 @@ or not complete, please let me know.
       provided in <pkg>RMTstat</pkg>.</LI>
 
       <LI><I>Spiked Wishart Maximum Eigenvalue Distributions</I>:
-      provided in <pkg>RMTstat</pkg>.</LI>
+      provided in <pkg>RMTstat</pkg>, <pkg>MCMCpack</pkg> and 
+	  <pkg>bayesm</pkg>.</LI>
 
       <LI><I>White Wishart Maximum Eigenvalue Distribution</I>:
-      provided in <pkg>RMTstat</pkg>.</LI>
+      provided in <pkg>RMTstat</pkg>, <pkg>MCMCpack</pkg> and 
+	  <pkg>bayesm</pkg>.</LI>
                    
       </UL>   
     
@@ -689,6 +726,7 @@ or not complete, please let me know.
 <packagelist>
   <pkg priority="core">actuar</pkg> 
   <pkg>AdMit</pkg>
+  <pkg>agricolae</pkg>
   <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
@@ -706,6 +744,7 @@ or not complete, please let me know.
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
+  <pkg>e1071</pkg>
   <pkg>emdbook</pkg>
   <pkg>emg</pkg> 
   <pkg>evd</pkg>
@@ -725,6 +764,7 @@ or not complete, please let me know.
   <pkg>geoR</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>gld</pkg>
+  <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
   <pkg>GSM</pkg>
@@ -745,12 +785,15 @@ or not complete, please let me know.
   <pkg>mgpd</pkg>
   <pkg>mixtools</pkg>
   <pkg priority="core">mnormt</pkg>
+  <pkg>modeest</pkg>
+  <pkg>moments</pkg>
   <pkg>movMF</pkg>
   <pkg>mvtBinaryEP</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>nacopula</pkg>
   <pkg>nor1mix</pkg>  
   <pkg>normalp</pkg>
+  <pkg>npde</pkg>
   <pkg priority="core">PearsonDS</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
@@ -767,6 +810,7 @@ or not complete, please let me know.
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
+  <pkg>s20x</pkg>
   <pkg>setRNG</pkg>
   <pkg>skellam</pkg>
   <pkg>skewt</pkg>     
@@ -781,6 +825,7 @@ or not complete, please let me know.
   <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
   <pkg>truncnorm</pkg>
+  <pkg>TSA</pkg>
   <pkg>tweedie</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
