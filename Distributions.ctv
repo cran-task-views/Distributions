@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-05-06</version> 
+<version>2012-07-09</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -667,8 +667,7 @@ or not complete, please let me know.
 	  <LI><I>Empirical distribution</I>: Base R provides functions for univariate analysis:
 	(1) the empirical density (see density), (2) the empirical cumulative
 	distribution function (see ecdf), (3) the empirical quantile (see quantile)
-	and (4) random sampling (see sample). For multivariate analysis, the package
-	<pkg>mecdf</pkg> provides the multivariate empirical distribution function.</LI>
+	and (4) random sampling (see sample).</LI>
 	  
      <LI><I>Hierarchical models</I>: Distributions whose some parameters
      are no longer constant but random according to a particular distribution. 
@@ -779,7 +778,6 @@ or not complete, please let me know.
   <pkg priority="core">lmomco</pkg>
   <pkg>Lmoments</pkg>
   <pkg>MASS</pkg>
-  <pkg>mecdf</pkg>
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
