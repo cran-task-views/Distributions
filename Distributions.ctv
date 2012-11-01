@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-10-10</version> 
+<version>2012-11-01</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -116,8 +116,7 @@ or not complete, please let me know.
 	    
 	    <LI><I>Further distributions</I>: The <pkg>VGAM</pkg> package provides several
 	    additional distributions, namely: Skellam, Yule-Simon, Zeta and Haight's Zeta, 
-		Borel-Tanner and Felix distribution. <pkg>skellam</pkg> implements the
-		Skellam distribution.</LI>
+		Borel-Tanner and Felix distribution.</LI>
 	  </UL>
 	 
 <p><strong>Continuous distributions:</strong></p>
@@ -808,7 +807,6 @@ or not complete, please let me know.
   <pkg>Runuran</pkg>
   <pkg>s20x</pkg>
   <pkg>setRNG</pkg>
-  <pkg>skellam</pkg>
   <pkg>skewt</pkg>     
   <pkg>SkewHyperbolic</pkg>
   <pkg>smoothmest</pkg>
