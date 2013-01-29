@@ -842,6 +842,7 @@ or not complete, please let me know.
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
   <pkg priority="core">PearsonDS</pkg>
+  <pkg>PhaseType</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
