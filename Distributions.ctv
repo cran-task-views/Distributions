@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2012-12-04</version> 
+<version>2013-02-04</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -633,7 +633,11 @@ or not complete, please let me know.
       
       <LI><I>Plackett</I>: Provided in <pkg>VGAM</pkg>, <pkg>copBasic</pkg> 
 	  and <pkg>copula</pkg>.</LI>
-                   
+      
+	  <LI><I>Vine copulas</I>: Packages <pkg>CDVine</pkg>, <pkg>VineCopula</pkg> 
+	  provide functions for CD-vine copulas (C-vine and D-vine) and vine copulas, 
+	  respectively.</LI>
+	                     
       </UL>
 
 <p><strong>Random Number Generators:</strong></p>
@@ -779,6 +783,7 @@ or not complete, please let me know.
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>CDVine</pkg>
   <pkg>compoisson</pkg>
   <pkg>CompQuadForm</pkg>  
   <pkg>copBasic</pkg>
@@ -876,6 +881,7 @@ or not complete, please let me know.
   <pkg>tweedie</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
+  <pkg>VineCopula</pkg> 
   <pkg>zipfR</pkg> 
 </packagelist> 
 
@@ -887,6 +893,7 @@ or not complete, please let me know.
   <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</A> 
   <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-family of R-packages</A>
   <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">The R wiki on distributions</A>
+  <A HREF="http://www-m4.ma.tum.de/forschung/vine-copula-models/#c662">Overview of vine copula models</A>
 </links> 
 
 </CRANTaskView>
