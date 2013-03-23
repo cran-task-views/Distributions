@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-03-15</version> 
+<version>2013-03-23</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -534,16 +534,17 @@ or not complete, please let me know.
 	  <code>sd()</code>, <code>var()</code> functions to compute
 	  the mean, standard deviation and variance, respectively.
 	  The skewness is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
-	  <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
       <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg> packages.
 	  The kurtosis is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
-	  <pkg>HyperbolicDist</pkg>, 
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, 
 	  <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. 
-	  L-moments are available in <pkg>lmom</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg>, 
+	  L-moments are available in <pkg>lmom</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg>, <pkg>GLDEX</pkg>,
 	  trimmed L-moments are available in <pkg>lmomco</pkg>, and <pkg>Lmoments</pkg>, 
-	  and right-censored L-moments are available in <pkg>lmomco</pkg>.
+	  right-censored L-moments are available in <pkg>lmomco</pkg>,
+	  and cumulants in <pkg>GLDEX</pkg>.
 	  Finally, the mode is provided in <pkg>modeest</pkg>.
 	  </LI>
    
@@ -833,6 +834,7 @@ or not complete, please let me know.
   <pkg>geoR</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>gld</pkg>
+  <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
   <pkg>GSM</pkg>
