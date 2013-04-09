@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-03-23</version> 
+<version>2013-04-09</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -82,7 +82,7 @@ or not complete, please let me know.
 	    <pkg>compoisson</pkg>.</LI>	    
 		
 		<LI><I>Delaporte distribution</I>: This can be found in
-	    <pkg>gamlss.dist</pkg>.</LI>	    
+	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</LI>	    
 	    
 	    <LI><I>Hypergeometric distributions</I>: Extented hypergeometric distribution
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
@@ -805,6 +805,7 @@ or not complete, please let me know.
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
   <pkg>Davies</pkg> 
+  <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
