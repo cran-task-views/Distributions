@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-04-09</version> 
+<version>2013-04-22</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -718,8 +718,10 @@ or not complete, please let me know.
       <pkg>randtoolbox</pkg> provides basic RNG tests.
      </LI>
      
-     <LI><I>Parallel computing</I>: For parallel computing with random numbers, see the 
-     <view>HighPerformanceComputing</view> task view.</LI>
+     <LI><I>Parallel computing</I>: 
+	 Random-number generators for parallel computing are available via 
+	 the <pkg>rsprng</pkg> package and the <pkg>rlecuyer</pkg> package.
+	See the <view>HighPerformanceComputing</view> task view for more details.</LI>
    </UL>     
 
 <p><strong>Miscellaneous:</strong></p>
@@ -880,6 +882,7 @@ or not complete, please let me know.
   <pkg>retimes</pkg>
   <pkg>RMTstat</pkg>
   <pkg>rngwell19937</pkg>
+  <pkg>rlecuyer</pkg>
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>Runuran</pkg>
