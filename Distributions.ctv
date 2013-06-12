@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-04-22</version> 
+<version>2013-06-12</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -267,6 +267,7 @@ or not complete, please let me know.
 	 multivariate normal distribution.
 	 <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
 	 in normal variates.
+	 <pkg>NormalGamma</pkg> provides the density of the sum of a gaussian and a gamma random variables.
 	 </LI> 
      
      <LI><I>General Error Distribution (also known as exponential power distribution)</I>:
@@ -864,7 +865,8 @@ or not complete, please let me know.
   <pkg>mvtBinaryEP</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>nacopula</pkg>
-  <pkg>nor1mix</pkg>  
+  <pkg>nor1mix</pkg> 
+  <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
   <pkg priority="core">PearsonDS</pkg>
@@ -909,13 +911,13 @@ or not complete, please let me know.
 </packagelist> 
 
 <links> 
-  <A HREF="http://www.actuar-project.org/">actuar: An R package for actuarial science</A>
   <A HREF="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</A>
   <A HREF="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</A>
+  <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">The R wiki on distributions</A>
+  <A HREF="http://www.actuar-project.org/">actuar: An R package for actuarial science</A>
   <A HREF="http://www.rmetrics.org/">fCopulae, fBasics, randtoolbox packages, part of the Rmetrics project</A>
   <A HREF="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</A> 
   <A HREF="http://distr.r-forge.r-project.org/">The "distrXXX"-family of R-packages</A>
-  <A HREF="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">The R wiki on distributions</A>
   <A HREF="http://www-m4.ma.tum.de/forschung/vine-copula-models/#c662">Overview of vine copula models</A>
 </links> 
 
