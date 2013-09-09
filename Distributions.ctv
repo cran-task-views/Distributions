@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-07-01</version> 
+<version>2013-09-10</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -210,7 +210,11 @@ or not complete, please let me know.
 	 <LI><I>Fisher-Snedecor or F distribution</I>: Base R provides the d, p, q, r functions
      for the F distribution, possibly with a non-central parameter. Doubly non-central
 	 F distribution does not seem to be implemented?.
-	 <pkg>ActuDistns</pkg> provides integrated hazard rate function for generalized F distribution.
+	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
+	hazard (h) and integrated hazard rate (i) functions for 
+	the generalized F distribution.
+	 <pkg>ActuDistns</pkg> provides integrated hazard rate function 
+	 for generalized F distribution.
 	</LI>
      
      <LI><I>Frechet distribution</I>: Provided in <pkg>VGAM</pkg>
@@ -232,7 +236,11 @@ or not complete, please let me know.
      gamma and the generalized gamma distribution. The generalized gamma distribution
 	 can also be found in <pkg>gamlss.dist</pkg>. <pkg>reliaR</pkg> provides
 	 the log gamma distribution. See Pearson III for a three-parameter
-	 gamma distribution with a location parameter.</LI>
+	 gamma distribution with a location parameter.
+	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
+	hazard (h) and integrated hazard rate (i) functions for 
+	the	generalized gamma distribution.
+	 </LI>
      
      <LI><I>Gaussian (or normal) distribution and its extensions</I>: Base R provides
      the d, p, q, r functions for this distribution (see above). 
@@ -281,8 +289,9 @@ or not complete, please let me know.
 	 additional functions for GEV distribution using MCMC. </LI>         
      
 	 
-	 <LI><I>Gompertz distribution</I>: Provided in <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.
-	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.</LI>     
+	 <LI><I>Gompertz distribution</I>: Provided in <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>,
+	  <pkg>flexsurv</pkg>.  <pkg>ActuDistns</pkg> and <pkg>flexsurv</pkg> also 
+	  provide hazard (h) and integrated hazard rate (i) functions.</LI>     
 
 	 
      <LI><I>Gumbel distribution</I>: Provided in packages <pkg>lmomco</pkg>, 
@@ -789,7 +798,11 @@ or not complete, please let me know.
 	 multivariate Gaussian probability density functions
 	 Package <pkg>MASS</pkg> implements the flexible <code>fitdistr</code>
      function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
-     the tools to fit probability distributions.</LI>	       
+     the tools to fit probability distributions.
+	  <pkg>flexsurv</pkg> and <pkg>msm</pkg> provides a quantile
+	function for a generic distribution based on numerical 
+	computation based on a dichotomic search.
+	 </LI>	       
       </UL>
 </info> 
 
@@ -833,6 +846,7 @@ or not complete, please let me know.
   <pkg>fExtremes</pkg>
   <pkg>fgac</pkg>
   <pkg>fitdistrplus</pkg>
+  <pkg>flexsurv</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
@@ -865,6 +879,7 @@ or not complete, please let me know.
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
   <pkg>movMF</pkg>
+  <pkg>msm</pkg>
   <pkg>mvtBinaryEP</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>nacopula</pkg>
