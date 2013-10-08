@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-09-10</version> 
+<version>2013-10-08</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -745,7 +745,15 @@ or not complete, please let me know.
 	in the <pkg>benchden</pkg> package. The densities vary greatly in degree of 
 	smoothness, number of modes and other properties. The package 
 	provides d,p,q and r functions.</LI>   
-	  
+	
+	<LI>
+	Binned Empirical distributions: The <pkg>HistogramTools</pkg> package
+	provides a number of methods for manipulating empirical data that has
+	been binned into histogram form, including: (1) the empirical
+	cumulative distribution function, (2) the empirical quantile, and (3)
+	information loss metrics associated with binning.
+	</LI>
+		  
 	  <LI><I>Empirical distribution</I>: Base R provides functions for univariate analysis:
 	(1) the empirical density (see density), (2) the empirical cumulative
 	distribution function (see ecdf), (3) the empirical quantile (see quantile)
@@ -861,6 +869,7 @@ or not complete, please let me know.
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
   <pkg>HI</pkg>
+  <pkg>HistogramTools</pkg>
   <pkg>HyperbolicDist</pkg>
   <pkg>hyperdirichlet</pkg>
   <pkg>LambertW</pkg>
