@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-10-08</version> 
+<version>2013-11-08</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -387,6 +387,11 @@ or not complete, please let me know.
 	      
      <LI><I>Maxwell distribution</I>: Provided in <pkg>VGAM</pkg>.
      </LI>     
+
+     <LI><I>Maxwell-Boltzmann-Bose-Einstein-Fermie-Dirac (MBBEFD) distribution </I>: 
+	 Provided in <pkg>mbbefd</pkg>. Note that the distribution is a 
+	 mixed-type distribution.
+     </LI>     
      
      <LI><I>Nakagami distribution</I>: Provided in <pkg>VGAM</pkg>.
      </LI>     
@@ -519,6 +524,10 @@ or not complete, please let me know.
       <LI><I>Generic mixtures</I>: there is an implementation via S4-class 
       UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
 	  uses the <pkg>gamlss.dist</pkg> package.</LI>
+	  
+      <LI><I>Normal-polynomial quantile mixture</I>: d, p, q, r functions are
+	  provided by <pkg>Lmoments</pkg>.</LI>
+
 	  
 	  <LI><I>Poisson Binomial distribution</I>: <pkg>poibin</pkg> implements
 	  the Poisson Binomial distribution.</LI>
@@ -880,6 +889,7 @@ or not complete, please let me know.
   <pkg priority="core">lmomco</pkg>
   <pkg>Lmoments</pkg>
   <pkg>MASS</pkg>
+  <pkg>mbbefd</pkg>
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
