@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2013-12-10</version> 
+<version>2014-01-09</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -540,6 +540,9 @@ or not complete, please let me know.
 	  <LI><I>Poisson-Tweedie exponential family models</I>: provided in <pkg>poistweedie</pkg>.</LI>
 	  
 
+      <LI><I>Student mixture</I>: The <pkg>AdMit</pkg> package provides d, r functions
+      for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</LI>
+
       <LI><I>von Mises Fisher mixture</I>: The <pkg>movMF</pkg> package provides d, r functions
       for finite von Mises Fisher mixtures.</LI>
 	  
@@ -827,6 +830,7 @@ or not complete, please let me know.
 <packagelist>
   <pkg priority="core">actuar</pkg> 
   <pkg priority="core">ActuDistns</pkg>
+  <pkg>AdMit</pkg>
   <pkg>agricolae</pkg>
   <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
