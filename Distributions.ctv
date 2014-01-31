@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-01-09</version> 
+<version>2014-01-31</version> 
 
 <info> 
 For most of the classical distributions, base R provides
@@ -139,7 +139,7 @@ or not complete, please let me know.
 	 can be found in <pkg>gamlss.dist</pkg> as well as generalized beta of the first
 	 and second kind. The
      beta of the second kind and the generalized beta distribution 
-     can also be found in <pkg>VGAM</pkg>, <pkg>GB2</pkg> and 
+     can also be found in <pkg>VGAM</pkg> and 
 	 <pkg>mc2d</pkg>. Several special cases of
      the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
      Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
@@ -869,7 +869,6 @@ or not complete, please let me know.
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
-  <pkg>GB2</pkg>
   <pkg>gbs</pkg>
   <pkg>geoR</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
