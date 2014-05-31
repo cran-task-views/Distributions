@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-03-31</version>
+<version>2014-05-31</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -414,7 +414,7 @@ or not complete, please let me know.
 	 of type II, while <pkg>evd</pkg> provides the density for type I.
 	 <pkg>ActuDistns</pkg> also provides q, p, q, h functions of the Pareto II distribution and
 	 the Burr-X distribution.
-     Finally <pkg>lmomco</pkg>, <pkg>POT</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
+     Finally <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
 	 <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
@@ -906,7 +906,6 @@ or not complete, please let me know.
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
-  <pkg>POT</pkg>
   <pkg>prob</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
