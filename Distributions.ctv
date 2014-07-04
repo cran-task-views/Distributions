@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-05-31</version>
+<version>2014-07-04</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -248,27 +248,15 @@ or not complete, please let me know.
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
 	 univariate gaussian distribution as well as functions for the first two moments.
 	 <pkg>actuar</pkg>
-     provides the moment generating function and moments. d, p, q, r functions for the generalized 
-	 inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg> and <pkg>HyperbolicDist</pkg>.
-	 A fast random generator is available for the (generalized) Inverse Gaussian distribution 
-	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
-     <pkg>SuppDists</pkg>
-     provides functions for the inverse Gaussian distribution as well and furthermore includes functions
-     for computing moments, skewness, kurtosis. <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg> and <pkg>fBasics</pkg> 
-     also implement
-     the folded and the skewed normal distribution, the inverse Gaussian distribution, and
-	 <pkg>fBasics</pkg> the normal inverse Gaussian and standardized 
-	 normal inverse Gaussian distributions.
-	 <pkg>lmomco</pkg> implements the generalized normal distribution. 	   
-	 The log normal distribution is implemented in Base R (see above), but the 3-parameter lognormal
-	 distribution is available in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
-	 <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions 
-	 for the lognormal distribution.
-	 The package
-	 <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
-	 as well as the raw moment, the expected value and the variance functions.
+     provides the moment generating function and moments.
+     <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
+     <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg> and <pkg>fBasics</pkg>
+     also implement
+     the folded and the skewed normal distribution, and
+	 <pkg>fBasics</pkg> the normal inverse Gaussian and standardized
+	 normal inverse Gaussian distributions.
      Finally, the multivariate Gaussian distribution
      is provided in the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>;
      <pkg>tmvtnorm</pkg> implements the truncated
@@ -322,6 +310,17 @@ or not complete, please let me know.
 	 	 <pkg>fBasics</pkg> also implements the standardized generalized Hyperbolic distribution.
 	 A fast random generator is available for the hyperbolic distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. </li>
+     
+	 <li><i>Inverse Gaussian distribution</i>: Provided in <pkg>ActuDistns</pkg>.
+     d, p, q, r functions of the inverse Gaussian is provided in
+     <pkg>SuppDists</pkg>, <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg>, <pkg>gamlss.dist</pkg> and <pkg>fBasics</pkg>.
+     <pkg>SuppDists</pkg>  also provides functions for computing moments, skewness, kurtosis.
+     The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg> and
+     <pkg>HyperbolicDist</pkg>.
+	 A fast random generator is available for the (generalized) Inverse Gaussian distribution
+	 is implemented in <pkg>Runuran</pkg> as well as the density function.
+     </li>
+	 
 	 
 	 <li><i>J-shaped distribution</i>: Provided in <pkg>ActuDistns</pkg>.</li>     
 	 
@@ -386,6 +385,16 @@ or not complete, please let me know.
 	 the log-logistic distribution with two and three parameters. Finally,
 	  <pkg>ActuDistns</pkg>  implements the log-logistic distribution.
      </li>
+     
+     <li><i>Lognormal distribution and its extensions</i>:
+         The log normal distribution is implemented in Base R (see above), but the 3-parameter lognormal
+         distribution is available in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
+         <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions
+         for the lognormal distribution.
+         The package
+         <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
+         as well as the raw moment, the expected value and the variance functions.
+	 </li>
      
 	 <li><i>Makeham distribution</i>: Provided in <pkg>ActuDistns</pkg> as well as
 	 Makeham-Beard and Makeham-Perks distributions.
