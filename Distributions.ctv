@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-07-17</version>
+<version>2014-07-19</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -217,7 +217,7 @@ or not complete, please let me know.
 	 for generalized F distribution.
 	</li>
      
-     <li><i>Frechet distribution</i>: provided in <pkg>VGAM</pkg>
+     <li><i>Frechet distribution</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>
      and <pkg>evd</pkg>. A fast random generator is available for the Frechet distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. </li>
 	 
@@ -423,11 +423,12 @@ or not complete, please let me know.
 	 of type II, while <pkg>evd</pkg> provides the density for type I.
 	 <pkg>ActuDistns</pkg> also provides q, p, q, h functions of the Pareto II distribution and
 	 the Burr-X distribution.
-     Finally <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
+     <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>,
 	 <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
-	 a shifted exponential distribution or a generalized beta I distribution.</li>
+	 a shifted exponential distribution or a generalized beta I distribution.
+     Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>.</li>
      
      <li><i>Pearson's distributions</i>: Pearson type III available 
 	 in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
@@ -559,7 +560,7 @@ or not complete, please let me know.
       <li><i>Student mixture</i>: The <pkg>AdMit</pkg> package provides d, r functions
       for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</li>
 
-      <li><i>von Mises Fisher mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
+      <li><i>von Mises Fisher (or Langevin) mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
       for finite von Mises Fisher mixtures.</li>
 	  
 	  
@@ -640,7 +641,8 @@ or not complete, please let me know.
 	  as described in the well known introduction to copulas by Nelsen.</li>
 
       <li><i>Archimedean copulas</i>: The Frank bivariate distribution 
-      is available in <pkg>VGAM</pkg>. <pkg>fCopulae</pkg> implements the 22 Archimedean 
+      is available in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>.
+      <pkg>fCopulae</pkg> implements the 22 Archimedean
       copulas of Nelsen (1998, <i>Introduction to Copulas</i>, Springer-Verlag) including
       Gumbel, Frank, Clayton, and Ali-Mikhail-Haq. <pkg>gumbel</pkg> is a 
       standalone package for the Gumbel copula and <pkg>VGAM</pkg> 
@@ -669,7 +671,7 @@ or not complete, please let me know.
       Gumbel, Galambos, Husler-Reiss, Tawn, or BB5. <pkg>copula</pkg> also implements
       Gumbel, Galambos and Husler-Reiss.</li>
       
-      <li><i>Eyraud-Farlie-Gumbel-Morgenstern copula</i>: provided in <pkg>VGAM</pkg> 
+      <li><i>Eyraud-Farlie-Gumbel-Morgenstern copula</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>,
       and <pkg>copula</pkg>.</li>
      
       <li><i>Mardia copula</i>: Not yet implemented?</li>   
@@ -932,6 +934,7 @@ or not complete, please let me know.
   <pkg>rlecuyer</pkg>
   <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
+  <pkg>RTDE</pkg>
   <pkg>Runuran</pkg>
   <pkg>s20x</pkg>
   <pkg>setRNG</pkg>
