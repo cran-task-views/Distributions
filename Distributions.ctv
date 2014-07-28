@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-07-19</version>
+<version>2014-07-29</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -498,8 +498,6 @@ or not complete, please let me know.
 	 <pkg>ActuDistns</pkg> provides hazard and integrated hazard rate functions.
 	 <pkg>HI</pkg> generates
 	 uniformly random points on a bounded convex set, in particular the unit ball.
-	 <pkg>mvtBinaryEP</pkg> provides a generator for bivariate data correlated by
-	 the method of Emrich and Piedmonte.
      </li> 
 
      <li><i>Wakeby distribution</i>: A 5-parameter Wakeby is provided in <pkg>lmomco</pkg>.
@@ -909,7 +907,6 @@ or not complete, please let me know.
   <pkg>moments</pkg>
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
-  <pkg>mvtBinaryEP</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>nacopula</pkg>
   <pkg>nor1mix</pkg> 
