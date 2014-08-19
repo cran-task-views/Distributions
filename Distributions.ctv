@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-08-08</version>
+<version>2014-08-19</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -250,7 +250,7 @@ or not complete, please let me know.
 	 <pkg>actuar</pkg>
      provides the moment generating function and moments.
      <pkg>lmomco</pkg> implements the generalized normal distribution.
-	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
+	 The Exponentially modified Gaussian is available in <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
      <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg> and <pkg>fBasics</pkg>
      also implement
@@ -857,7 +857,6 @@ or not complete, please let me know.
   <pkg>distrTEst</pkg> 
   <pkg>e1071</pkg>
   <pkg>emdbook</pkg>
-  <pkg>emg</pkg>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
   <pkg>evir</pkg>
