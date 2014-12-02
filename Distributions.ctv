@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-08-19</version>
+<version>2014-12-02</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -642,7 +642,7 @@ or not complete, please let me know.
       is available in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>.
       <pkg>gumbel</pkg> is a 
       standalone package for the Gumbel copula and <pkg>VGAM</pkg> 
-      provides the Ali-Mikhail-Haq bivariate distribution. <pkg>nacopula</pkg> provides
+      provides the Ali-Mikhail-Haq bivariate distribution. <pkg>copula</pkg> provides
 	   Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
 	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
 	   Clayton, Gumbel, Frank, Joe, BB1, BB6, BB7 and BB8 copulas.
@@ -671,7 +671,7 @@ or not complete, please let me know.
       <li><i>Mardia copula</i>: Not yet implemented?</li>   
 	  
 	  <li><i>Nested copulas</i>: arbitrary nested versions of copulas can
-	  be implemented in <pkg>nacopula</pkg>. </li>
+	  be implemented in <pkg>copula</pkg>. </li>
       
       <li><i>Plackett</i>: provided in <pkg>VGAM</pkg>, <pkg>copBasic</pkg> 
 	  and <pkg>copula</pkg>.</li>
@@ -902,7 +902,6 @@ or not complete, please let me know.
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
   <pkg priority="core">mvtnorm</pkg>
-  <pkg>nacopula</pkg>
   <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
