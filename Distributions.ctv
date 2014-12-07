@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-12-02</version>
+<version>2014-12-07</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -101,10 +101,7 @@ or not complete, please let me know.
 					 
 		<li><i>Sichel distribution</i>: This can be found in
 	    <pkg>gamlss.dist</pkg>.</li>	    
-	    
-	    <li><i>Triangle distribution</i>: The discrete triangle distribution can be found in
-	    <pkg>TRIANG</pkg>.</li>	  
-	    
+	    	    
 		<li><i>Zero inflated/modified (ZI/ZM) distributions</i>: 
 		ZM (or Hurdle) Poisson, ZM logarithmic, 
 		ZI/ZM negative binomial, ZI Poisson inverse Gaussian,
@@ -940,7 +937,6 @@ or not complete, please let me know.
   <pkg priority="core">SuppDists</pkg>
   <pkg>tmvtnorm</pkg>
   <pkg>trapezoid</pkg>
-  <pkg>TRIANG</pkg>
   <pkg>triangle</pkg>
   <pkg>truncnorm</pkg>
   <pkg>TSA</pkg>
