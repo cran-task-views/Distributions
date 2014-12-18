@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-12-07</version>
+<version>2014-12-18</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -629,7 +629,7 @@ or not complete, please let me know.
 
       <ul>
       <li><i>Unified approaches</i>:
-	  The packages <pkg>copula</pkg>, and <pkg>copBasic</pkg> provide a lot of 
+	  The packages <pkg>fCopulae</pkg>, <pkg>copula</pkg>, and <pkg>copBasic</pkg> provide a lot of 
 	  general functionality for copulas. Although lacking support for 
 	  many existing copulas themselves, <pkg>copBasic</pkg> is primarily oriented 
 	  around utility functions for the general mathematics of copulas 
@@ -637,6 +637,9 @@ or not complete, please let me know.
 
       <li><i>Archimedean copulas</i>: The Frank bivariate distribution 
       is available in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>.
+      <pkg>fCopulae</pkg> implements the 22 Archimedean
+      copulas of Nelsen (1998, <i>Introduction to Copulas</i>, Springer-Verlag) including
+      Gumbel, Frank, Clayton, and Ali-Mikhail-Haq.
       <pkg>gumbel</pkg> is a 
       standalone package for the Gumbel copula and <pkg>VGAM</pkg> 
       provides the Ali-Mikhail-Haq bivariate distribution. <pkg>copula</pkg> provides
@@ -656,10 +659,12 @@ or not complete, please let me know.
 	  
 	  <li><i>Empirical copula</i>: provided in <pkg>copBasic</pkg>.</li>
       
-      <li><i>Elliptical copulas</i>: <pkg>copula</pkg>, <pkg>CDVine</pkg>, 
+      <li><i>Elliptical copulas</i>: Gaussian, Student and Cauchy copulas are implemented in
+      <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, 
 	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copula.</li>
       
-      <li><i>Extreme value copulas</i>: <pkg>copula</pkg> implements
+      <li><i>Extreme value copulas</i>: <pkg>fCopulae</pkg> provides the following copulas
+      Gumbel, Galambos, Husler-Reiss, Tawn, or BB5. <pkg>copula</pkg> implements
       Gumbel, Galambos and Husler-Reiss.</li>
       
       <li><i>Eyraud-Farlie-Gumbel-Morgenstern copula</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>,
@@ -860,6 +865,7 @@ or not complete, please let me know.
   <pkg>FAdist</pkg>
   <pkg>FatTailsR</pkg>
   <pkg>fBasics</pkg>
+  <pkg priority="core">fCopulae</pkg>
   <pkg>fExtremes</pkg>
   <pkg>fgac</pkg>
   <pkg>fitdistrplus</pkg>
