@@ -956,7 +956,6 @@ or not complete, please let me know.
 <links> 
   <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
-  <a href="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-distri">The R wiki on distributions</a>
   <a href="http://www.actuar-project.org/">actuar: An R package for actuarial science</a>
   <a href="http://www.rmetrics.org/">fCopulae, fBasics, randtoolbox packages, part of the Rmetrics project</a>
   <a href="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</a> 
