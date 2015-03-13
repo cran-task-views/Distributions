@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2014-12-18</version>
+<version>2015-03-13</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -166,7 +166,10 @@ or not complete, please let me know.
 	 
      <li><i>Chi(-squared or not) distributions</i>: Base R provides
      the d, p, q, r functions for the chi-squared distribution, both central
-	 and non-central (see above). Moments, limited
+	 and non-central (see above).
+     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+     for sums of non central chi-squared distribution for computing d, p, q, r functions.
+     Moments, limited
      expected values and the moment generating function are provided in <pkg>actuar</pkg>.
      Only d,r functions are available for the inverse chi-squared distribution
      in package <pkg>geoR</pkg>. A fast random generator is available for the Chi distribution
@@ -205,8 +208,10 @@ or not complete, please let me know.
 	 </li>
 	 
 	 <li><i>Fisher-Snedecor or F distribution</i>: Base R provides the d, p, q, r functions
-     for the F distribution, possibly with a non-central parameter. Doubly non-central
-	 F distribution does not seem to be implemented?.
+     for the F distribution, possibly with a non-central parameter.
+     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+     for non central Fisher distribution for computing d, p, q, r functions.
+     Doubly non-central F distribution does not seem to be implemented?
 	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
 	hazard (h) and integrated hazard rate (i) functions for 
 	the generalized F distribution.
@@ -471,6 +476,8 @@ or not complete, please let me know.
  
      <li><i>Student distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for Student and non central Student distribution (see above).
+     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+     for non central Student distribution for computing d, p, q, r functions.
      The skewed Student distribution is provided in <pkg>skewt</pkg>,
      <pkg>sn</pkg> and <pkg>gamlss.dist</pkg> packages. 
 	 d, p, q, r functions for the generalized t-distribution
@@ -754,26 +761,54 @@ or not complete, please let me know.
 <p><strong>Miscellaneous:</strong></p>
 
 	<ul>
-	  
+	
+    <li><i>Computation</i>:
+    <ul>
+    
+    <li><i>Approximation of d, p, q, r functions</i>:
+    <pkg>PDQutils</pkg> provides tools for computing the density, cumulative distribution,
+    and quantile functions of a distribution when the cumulants or moments are given,
+    using the classical Gram Charlier, Edgeworth and Cornish-Fisher approximations.
+    <pkg>sadists</pkg> is a showcase for PDQutils, providing density, cumulative distribution,
+    quantile, and random generation for the doubly non-central t, doubly non-central F,
+    K-prime, Lambda-prime, Upsilon, and sum of (non-central) chi-squares to powers
+    distributions.
+    </li>
+    
+    <li> For non-uniform generation, see the <pkg>Runuran</pkg> above.
+    </li>
+    
 	<li><i>Benchmark</i>: A set of 28 densities suitable for comparing 
 	nonparametric density estimators in simulation studies can be found 
 	in the <pkg>benchden</pkg> package. The densities vary greatly in degree of 
 	smoothness, number of modes and other properties. The package 
-	provides d,p,q and r functions.</li>   
+	provides d,p,q and r functions.</li>
+    
+    </ul>
+    </li>
 	
-	<li>
-	Binned Empirical distributions: The <pkg>HistogramTools</pkg> package
+    <li><i>Non parametric models</i>:
+    <ul>
+        
+	<li><i>Binned Empirical distributions</i>: The <pkg>HistogramTools</pkg> package
 	provides a number of methods for manipulating empirical data that has
 	been binned into histogram form, including: (1) the empirical
 	cumulative distribution function, (2) the empirical quantile, and (3)
 	information loss metrics associated with binning.
 	</li>
 		  
-	  <li><i>Empirical distribution</i>: Base R provides functions for univariate analysis:
-	(1) the empirical density (see density), (2) the empirical cumulative
-	distribution function (see ecdf), (3) the empirical quantile (see quantile)
-	and (4) random sampling (see sample).</li>
-	  
+    <li><i>Empirical distribution</i>: Base R provides functions for univariate analysis:
+	(1) the empirical density (see density()), (2) the empirical cumulative
+	distribution function (see ecdf()), (3) the empirical quantile (see quantile())
+	and (4) random sampling (see sample()).</li>
+
+    <li><i>Non Parametric distributions </i>:
+    <pkg>spd</pkg> provides the Semi Parametric Piecewise Distribution, while
+    <pkg>fBasics</pkg> implements spline smoothed distributions.</li>
+
+    </ul>
+    </li>
+  
      <li><i>Hierarchical models</i>: Distributions whose some parameters
      are no longer constant but random according to a particular distribution. 
      <pkg>VGAM</pkg> provides a lot of hierarchical models: beta/binomial,
@@ -783,7 +818,9 @@ or not complete, please let me know.
      provides poisson/gamma, beta/binomial,
      normal/normal and multinomial/Dirichlet models.</li>    
 
-
+    <li><i>Distribution handling</i>:
+    <ul>
+        
      <li><i>Object-orientation</i>: 
      General discrete and continuous distributions are implemented in package
      <pkg>distr</pkg> respectively via S4-class DiscreteDistribution and 
@@ -802,9 +839,6 @@ or not complete, please let me know.
      Furthermore, <pkg>distr</pkg> provides distribution of the maximum or minimum
      of two distributions. See Object-orientation above.</li>
 	 
-	 <li><i>Non Parametric distributions </i>:
-	 <pkg>spd</pkg> provides the Semi Parametric Piecewise Distribution, while 
-	 <pkg>fBasics</pkg> implements spline smoothed distributions.</li>
 	 
 	 <li><i>User Interface</i>:
 	 <pkg>AtelieR</pkg> package provides a GTK GUI for teaching basic 
@@ -812,8 +846,11 @@ or not complete, please let me know.
 	 as well as the generalized Student, the inverse Chi-square, the inverse gamma
 	 and the lambda-prime distributions. 
 	 </li>
+     
+     </ul>
+    </li>
 	 
-     <li><i>Transversal functions</i>: Package <pkg>modeest</pkg> provides mode
+     <li><i>Transversal estimation functions</i>: Package <pkg>modeest</pkg> provides mode
      estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
      univariate/multivariate (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. 
@@ -914,6 +951,7 @@ or not complete, please let me know.
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
+  <pkg>PDQutils</pkg>
   <pkg>predfinitepop</pkg>
   <pkg>prob</pkg>
   <pkg>randaes</pkg>
@@ -930,6 +968,7 @@ or not complete, please let me know.
   <pkg>RTDE</pkg>
   <pkg>Runuran</pkg>
   <pkg>s20x</pkg>
+  <pkg>sadists</pkg>
   <pkg>setRNG</pkg>
   <pkg>skewt</pkg>     
   <pkg>SkewHyperbolic</pkg>
