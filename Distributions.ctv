@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-03-13</version>
+<version>2015-03-17</version>
 
 <info> 
 For most of the classical distributions, base R provides
@@ -76,18 +76,39 @@ or not complete, please let me know.
 	    the binomial and Poisson distributions as well as zero-inflated
 	    versions of the binomial, Poisson and negative binomial distributions 
 	    are implemented in <pkg>VGAM</pkg>. Zero-inflated Poisson distribution
-		is available in <pkg>gamlss.dist</pkg>.</li>
+		is available in <pkg>gamlss.dist</pkg>.
+       New parametrization of the negative binomial distribution and the bivariate
+       negative binomial distribution is available in
+       <pkg>RMKdiscrete</pkg>.
+       
+       </li>
 
 	    <li><i>Conway-Maxwell-Poisson distribution</i>: This can be found in
 	    <pkg>compoisson</pkg>.</li>	    
 		
 		<li><i>Delaporte distribution</i>: This can be found in
 	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>	    
-	    
+
+        <li><i>(generalized) Hermite distribution</i>: This can be found in
+            <pkg>hermite</pkg>.</li>
+
+
 	    <li><i>Hypergeometric distributions</i>: Extented hypergeometric distribution
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
 	    not only p, d, q, r functions but also mean, variance, mode functions.
 		Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.</li>
+        
+        
+        <li><i>Inverse Weibull distribution</i>:
+            <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
+            inverse Weibull as well as hazard rate function and moments.
+        </li>
+
+        
+        <li><i>Lagrangian Poisson distribution</i>:
+            <pkg>RMKdiscrete</pkg> provides d, p, q, r functions for the
+            univariate and the bivariate Lagrangian Poisson distribution.
+        </li>
 		
 		<li><i>Logarithmic distribution</i>: This can be found in
 	    <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is 
@@ -95,7 +116,9 @@ or not complete, please let me know.
 		is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
 		</li>	
 		
-		<li><i>Multinomial distribution</i>: This can be found in
+        <li><i>Mana Clash distribution</i>: This can be found in <pkg>RMKdiscrete</pkg>.</li>
+
+        <li><i>Multinomial distribution</i>: This can be found in
 	    <pkg>mc2d</pkg>, <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg>.</li>	
 		
 					 
@@ -206,6 +229,10 @@ or not complete, please let me know.
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
 	 </li>
+     
+     <li><i>Externally Studentized Midrange</i>:
+         Package <pkg>SMR</pkg> computes the studentized midrange distribution (d, p, q, r).
+     </li>
 	 
 	 <li><i>Fisher-Snedecor or F distribution</i>: Base R provides the d, p, q, r functions
      for the F distribution, possibly with a non-central parameter.
@@ -244,7 +271,7 @@ or not complete, please let me know.
 	the	generalized gamma distribution.
 	 </li>
      
-     <li><i>Gaussian (or normal) distribution and its extensions</i>: Base R provides
+     <li><i>(Univariate) Gaussian (or normal) distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for this distribution (see above). 
 	 <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions.
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
@@ -259,17 +286,25 @@ or not complete, please let me know.
      the folded and the skewed normal distribution, and
 	 <pkg>fBasics</pkg> the normal inverse Gaussian and standardized
 	 normal inverse Gaussian distributions.
-     Finally, the multivariate Gaussian distribution
-     is provided in the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>;
-     <pkg>tmvtnorm</pkg> implements the truncated
-	 multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
-	 fast algorithms to compute the density and generate random variates of 
-	 a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
 	 <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
 	 in normal variates.
 	 <pkg>NormalGamma</pkg> provides the density of the sum of a gaussian and a gamma random variables.
-	 </li> 
+     <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
+     <pkg>csn</pkg> provides d, r functions for the closed skew-normal distribution.
+	 </li>
      
+     <li><i>(Multivariate) Gaussian (or normal) distribution and its extensions</i>: Base R provides
+     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r) and
+     <pkg>mnormt</pkg> (d, p, r).
+     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
+     multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
+     fast algorithms to compute the density and generate random variates of
+     a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
+     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
+     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
+     normal distribution.
+     </li>
+
      <li><i>General Error Distribution (also known as exponential power distribution)</i>:
      provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>, see <i>exponential</i> item.</li>
      
@@ -312,6 +347,13 @@ or not complete, please let me know.
 	 	 <pkg>fBasics</pkg> also implements the standardized generalized Hyperbolic distribution.
 	 A fast random generator is available for the hyperbolic distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. </li>
+     
+     <li><i>Hyperbolic sine distribution and extension</i>: <pkg>gamlss.dist</pkg>
+         provides the sinh and the asinh distributions.
+         <pkg>ihs</pkg> provides the asinh distribution.
+         Generalized Power Hyperbolic sine distributions are  provided in <pkg>FatTailsR</pkg>.</li>
+      </li>
+      
      
 	 <li><i>Inverse Gaussian distribution</i>:
      d, p, q, and r functions of the inverse Gaussian are provided in <pkg>statmod</pkg>,
@@ -360,9 +402,10 @@ or not complete, please let me know.
 	 d, p, q, r functions as well as the first 4 central moments and a qqplot.
      </li>   
 
-     <li><i>Laplace and asymetric Laplace distribution</i>: provided in <pkg>lmomco</pkg>, 
+     <li><i>Laplace (also called double exponential distribution)
+         and asymetric Laplace distribution</i>: provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>,
 	 <pkg>VGAM</pkg> and <pkg>HyperbolicDist</pkg> packages.
-     Laplace distribution (also called double exponential distribution) is implemented in <pkg>distr</pkg>.
+     Asymetric Laplace distribution is implemented in <pkg>ald</pkg>.
 	 A fast random generator is available for the Laplace distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
 	 <pkg>smoothmest</pkg> implements the density and the random generator.</li>
@@ -383,7 +426,7 @@ or not complete, please let me know.
      <pkg>VGAM</pkg> package also implements these distributions plus
      the bivariate logistic distribution. 
 	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
-	 in <pkg>lmomco</pkg> and <pkg>glogis</pkg>.  <pkg>FAdist</pkg>
+	 in <pkg>lmomco</pkg>, <pkg>sld</pkg> and <pkg>glogis</pkg>.  <pkg>FAdist</pkg>
 	 the log-logistic distribution with two and three parameters. Finally,
 	  <pkg>ActuDistns</pkg>  implements the log-logistic distribution.
      </li>
@@ -430,6 +473,7 @@ or not complete, please let me know.
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
 	 a shifted exponential distribution or a generalized beta I distribution.
+     <pkg>ParetoPosStable</pkg> implements the Pareto positive stable distribution.
      Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>.</li>
      
      <li><i>Pearson's distributions</i>: Pearson type III available 
@@ -452,7 +496,7 @@ or not complete, please let me know.
 	 <li><i>Power distributions</i>:  <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> implement the 
 	 exponential power distribution.</li>
 
-    <li><i>Power Hyperbolic distributions</i>:  provided in <pkg>FatTailsR</pkg>.</li>
+
     
 
      <li><i>Rayleigh distribution</i>: provided in packages <pkg>VGAM</pkg> 
@@ -464,8 +508,7 @@ or not complete, please let me know.
 
 	 <li><i>Schabe distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>
 
-     <li><i>Sinh-Arcsinh distribution</i>: provided in <pkg>gamlss.dist</pkg>.</li>
- 
+
 	 <li><i>Slash distribution</i>: provided in <pkg>lmomco</pkg> and <pkg>VGAM</pkg>.</li>
       
 	 <li><i>Spearman's Rho distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
@@ -479,19 +522,25 @@ or not complete, please let me know.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for non central Student distribution for computing d, p, q, r functions.
      The skewed Student distribution is provided in <pkg>skewt</pkg>,
-     <pkg>sn</pkg> and <pkg>gamlss.dist</pkg> packages. 
+     <pkg>sn</pkg> and <pkg>gamlss.dist</pkg> packages.
+     The generalized skew distribution is provided in <pkg>sgt</pkg>.
 	 d, p, q, r functions for the generalized t-distribution
 	 can be found in <pkg>gamlss.dist</pkg>. <pkg>fBasics</pkg> provides d, p, q, r functions
 	 for the skew and the generalized hyperbolic t-distribution.
      The L-moments of the Student t (3-parameter) are provided in <pkg>lmomco</pkg>.
      The multivariate Student distribution
-     is provided in the packages <pkg>mvtnorm</pkg> and <pkg>mnormt</pkg>.</li>
+     is provided in the packages <pkg>mvtnorm</pkg> (d, r) and <pkg>mnormt</pkg> (d, p, r).</li>
      
      <li><i>Triangle/trapezoidal distribution</i>: packages <pkg>triangle</pkg>, <pkg>mc2d</pkg> and
      <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle distribution, while the package
 	 <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized Trapezoidal Distribution.
 	 A fast random generator is available for the triangle distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.</li>    
+
+    <li><i>Tsallis or q-Exponential distribution</i>:
+        <pkg>tsallisqexp</pkg> provides d, p, q, r functions for two parametrizations of
+        the Tsallis distribution and also implements a left-censored version.
+     </li>
      
      <li><i>Tweedie distribution</i>: the Tweedie distribution is implemented
      in package <pkg>tweedie</pkg>. Let us note that the Tweedie distribution
@@ -565,9 +614,26 @@ or not complete, please let me know.
       <li><i>von Mises Fisher (or Langevin) mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
       for finite von Mises Fisher mixtures.</li>
 	  
-	  
-      
    </ul>
+
+<p><strong>Exponentiated and tranformation of distributions:</strong></p>
+
+    <li><i>Exponentiated distributions</i> are not yet implemented.
+    </li>
+    
+    
+    <li><i> G transformed distribution</i> are implemented in <pkg>Newdistns</pkg>
+        which includes Marshall Olkin G distributions, exponentiated G distributions,
+        beta G distributions, gamma G distributions, Kumaraswamy G distributions,
+        generalized beta G distributions, beta extended G distributions, gamma G distributions,
+        gamma uniform G distributions, beta exponential G distributions, Weibull G distributions,
+        log gamma G I distributions, log gamma G II distributions, exponentiated generalized G
+        distributions, exponentiated Kumaraswamy G distributions, geometric exponential Poisson
+        G distributions, truncated-exponential skew-symmetric G distributions, modified beta
+        G distributions, and exponentiated exponential Poisson G distributions.
+    </li>
+<ul>
+</ul>
 
 <p><strong>Moments, skewness, kurtosis and etc:</strong></p>
    
@@ -577,9 +643,11 @@ or not complete, please let me know.
 	  the mean, standard deviation and variance, respectively.
 	  The skewness is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
-      <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg> packages.
-	  The kurtosis is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
-	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, 
+      <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
+      <pkg>DistributionUtils</pkg> packages.
+	  The kurtosis is available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
+      <pkg>e1071</pkg>,
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>,
 	  <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. 
@@ -587,8 +655,13 @@ or not complete, please let me know.
 	  trimmed L-moments are available in <pkg>lmomco</pkg>, and <pkg>Lmoments</pkg>, 
 	  right-censored L-moments are available in <pkg>lmomco</pkg>,
 	  and cumulants in <pkg>GLDEX</pkg>.
-	  Finally, the mode is provided in <pkg>modeest</pkg>.
 	  </li>
+      
+      <li><i>Mode estimation</i>:
+          Package <pkg>modeest</pkg> provides mode estimation for various distributions.
+      </li>
+      
+
    
 	  <li><i>Theoretical moments</i>: 
 	  The <pkg>actuar</pkg> package implements raw moments, limited expected values 
@@ -596,7 +669,15 @@ or not complete, please let me know.
 	  <pkg>HyperbolicDist</pkg> provides the mean, variance, skewness, kurtosis, mode,
 	  raw and centered moments for the hyperbolic, the generalized hyperbolic and the
 	  generalized inverse Gaussian distributions.
-      <pkg>lmomco</pkg> provides L-moments (L), trimmed L-moments (TL), and right-censored [RC] for the following distributions: Asymmetric Exponential Power (L), Cauchy (TL), Eta-Mu (L), Exponential (L), Gamma (L), Generalized Extreme Value (L), Generalized Lambda (L and TL), Generalized Logistic (L), Generalized Normal (L), Generalized Pareto (L[RC] and TL), Govindarajulu (L), Gumbel (L), Kappa (L), Kappa-Mu (L), Kumaraswamy (L), Laplace (L), Normal (L), 3-parameter log-Normal (L), Pearson Type III (L), Rayleigh (L), Reverse Gumbel (L[RC]), Rice/Rician (L), Slash (TL), 3-parameter Student T (L), Truncated Exponential (L), Wakeby (L), and Weibull (L). Multivariate L-moments (L-comoments) are provided in <pkg>lmomco</pkg>.
+      <pkg>mvrtn</pkg> provides mean, variance for left/right truncated normal distributions.
+      <pkg>lmomco</pkg> provides L-moments (L), trimmed L-moments (TL), and right-censored [RC] for
+      the following distributions: Asymmetric Exponential Power (L), Cauchy (TL), Eta-Mu (L),
+      Exponential (L), Gamma (L), Generalized Extreme Value (L), Generalized Lambda (L and TL),
+      Generalized Logistic (L), Generalized Normal (L), Generalized Pareto (L[RC] and TL),
+      Govindarajulu (L), Gumbel (L), Kappa (L), Kappa-Mu (L), Kumaraswamy (L), Laplace (L),
+      Normal (L), 3-parameter log-Normal (L), Pearson Type III (L), Rayleigh (L), Reverse Gumbel
+      (L[RC]), Rice/Rician (L), Slash (TL), 3-parameter Student T (L), Truncated Exponential
+      (L), Wakeby (L), and Weibull (L). Multivariate L-moments (L-comoments).
       </li>
 
    </ul>
@@ -849,9 +930,19 @@ or not complete, please let me know.
      
      </ul>
     </li>
-	 
-     <li><i>Transversal estimation functions</i>: Package <pkg>modeest</pkg> provides mode
-     estimation for various distributions, while <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
+	
+    <li><i>Transversal functions</i>:
+        <ul>
+    
+    <li><i>Histogram, tail plots, distance estimation</i>:
+        <pkg>DistributionUtils</pkg> provides log-histogram,
+        tail plots, functions for testing distributions using inversion tests and the Massart inequality.
+        <pkg>GMD</pkg> is a package for non-parametric distance measurement
+        between two discrete frequency distributions.
+    </li>
+
+
+     <li><i>Paremeter estimation</i>: <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
      univariate/multivariate (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. 
 	 <pkg>gaussDiff</pkg> provides a collection difference measures for 
@@ -862,8 +953,11 @@ or not complete, please let me know.
 	  <pkg>flexsurv</pkg> and <pkg>msm</pkg> provides a quantile
 	function for a generic distribution based on numerical 
 	computation based on a dichotomic search.
-	 </li>	       
-      </ul>
+	 </li>
+        </ul>
+    </li>
+
+</ul>
 </info> 
 
 
@@ -873,23 +967,29 @@ or not complete, please let me know.
   <pkg priority="core">ActuDistns</pkg>
   <pkg>AdMit</pkg>
   <pkg>agricolae</pkg>
+  <pkg>ald</pkg>
   <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>CDVine</pkg>
+  <pkg>cmvnorm</pkg>
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
-  <pkg>CompQuadForm</pkg>  
+  <pkg>CompQuadForm</pkg>
+  <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
+  <pkg>csn</pkg>
   <pkg>Davies</pkg> 
   <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
+  <pkg>DiscreteInverseWeibull</pkg>
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
   <pkg>distrEllipse</pkg>
-  <pkg>distrEx</pkg> 
+  <pkg>distrEx</pkg>
+  <pkg>DistributionUtils</pkg>
   <pkg>distrMod</pkg>   
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
@@ -917,12 +1017,15 @@ or not complete, please let me know.
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
+  <pkg>GMD</pkg>
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
+  <pkg>hermite</pkg>
   <pkg>HI</pkg>
   <pkg>HistogramTools</pkg>
   <pkg>HyperbolicDist</pkg>
   <pkg>hyperdirichlet</pkg>
+  <pkg>ihs</pkg>
   <pkg>LambertW</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
@@ -941,11 +1044,14 @@ or not complete, please let me know.
   <pkg>moments</pkg>
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
+  <pkg>mvrtn</pkg>
   <pkg priority="core">mvtnorm</pkg>
+  <pkg>Newdistns</pkg>
   <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
+  <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
   <pkg>PhaseType</pkg>
   <pkg>poibin</pkg>
@@ -961,6 +1067,7 @@ or not complete, please let me know.
   <pkg priority="core">reliaR</pkg> 
   <pkg>retimes</pkg>
   <pkg>RMTstat</pkg>
+  <pkg>RMKdiscrete</pkg>
   <pkg>rngwell19937</pkg>
   <pkg>rlecuyer</pkg>
   <pkg>rsprng</pkg>
@@ -970,9 +1077,12 @@ or not complete, please let me know.
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
   <pkg>setRNG</pkg>
+  <pkg>sgt</pkg>
   <pkg>skewt</pkg>     
   <pkg>SkewHyperbolic</pkg>
+  <pkg>sld</pkg>
   <pkg>smoothmest</pkg>
+  <pkg>SMR</pkg>
   <pkg>sn</pkg>
   <pkg>sparseMVN</pkg>
   <pkg>spd</pkg>
@@ -985,6 +1095,7 @@ or not complete, please let me know.
   <pkg>triangle</pkg>
   <pkg>truncnorm</pkg>
   <pkg>TSA</pkg>
+  <pkg>tsallisqexp</pkg>
   <pkg>tweedie</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
