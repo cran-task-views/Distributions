@@ -351,7 +351,7 @@ or not complete, please let me know.
      <li><i>Hyperbolic sine distribution and extension</i>: <pkg>gamlss.dist</pkg>
          provides the sinh and the asinh distributions.
          <pkg>ihs</pkg> provides the asinh distribution.
-         Generalized Power Hyperbolic sine distributions are  provided in <pkg>FatTailsR</pkg>.</li>
+         Generalized Power Hyperbolic sine distributions are  provided in <pkg>FatTailsR</pkg>.
       </li>
       
      
