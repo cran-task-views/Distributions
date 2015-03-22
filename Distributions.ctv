@@ -7,14 +7,14 @@
 <version>2015-03-17</version>
 
 <info> 
-For most of the classical distributions, base R provides
+<p>For most of the classical distributions, base R provides
 probability distribution functions (p), density functions (d), quantile functions
 (q), and random number generation (r).
 Beyond this basic functionality, many CRAN packages provide
 additional useful distributions. In particular, multivariate distributions as well as copulas
-are available in contributed packages. 
+are available in contributed packages.</p>
 
-Ultimate bibles on probability distributions are 
+<p>Ultimate bibles on probability distributions are:</p>
 <ul>
  <li> different volumes of N. L. Johnson, S. Kotz and N. Balakrishnan books, e.g. Continuous Univariate Distributions, Vol. 1,</li> 
  <li> Thesaurus of univariate discrete probability distributions by G. Wimmer and G. Altmann.</li>
@@ -22,11 +22,9 @@ Ultimate bibles on probability distributions are
  <li> Distributional Analysis with L-moment Statistics using the R Environment for Statistical Computing, Asquith (2011).</li>
 </ul>
 
-The maintainer greatfully acknowledged Achim Zeileis, David Luethi, Tobias Verbeke, Robin
+<p>The maintainer greatfully acknowledges Achim Zeileis, David Luethi, Tobias Verbeke, Robin
 Hankin, Mathias Kohl, G. Jay Kerns, Kjetil Halvorsen, William Asquith for their useful comments/suggestions.
-
-If you think information is not accurate
-or not complete, please let me know.
+If you think information is not accurate or not complete, please let me know.</p>
 
 <p><strong>Base functionality:</strong></p>
    <ul><li>
