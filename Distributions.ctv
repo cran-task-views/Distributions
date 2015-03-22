@@ -615,12 +615,12 @@ If you think information is not accurate or not complete, please let me know.</p
    </ul>
 
 <p><strong>Exponentiated and tranformation of distributions:</strong></p>
-
+   <ul>
     <li><i>Exponentiated distributions</i> are not yet implemented.
     </li>
     
     
-    <li><i> G transformed distribution</i> are implemented in <pkg>Newdistns</pkg>
+    <li><i>G transformed distribution</i> are implemented in <pkg>Newdistns</pkg>
         which includes Marshall Olkin G distributions, exponentiated G distributions,
         beta G distributions, gamma G distributions, Kumaraswamy G distributions,
         generalized beta G distributions, beta extended G distributions, gamma G distributions,
@@ -630,8 +630,7 @@ If you think information is not accurate or not complete, please let me know.</p
         G distributions, truncated-exponential skew-symmetric G distributions, modified beta
         G distributions, and exponentiated exponential Poisson G distributions.
     </li>
-<ul>
-</ul>
+   </ul>
 
 <p><strong>Moments, skewness, kurtosis and etc:</strong></p>
    
