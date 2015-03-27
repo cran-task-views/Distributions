@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-03-17</version>
+<version>2015-03-27</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -798,7 +798,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 		<ul>
 		<li> Support for several independent streams: 
-		<pkg>rsprng</pkg> implements Scalable Parallel RNGs library.
 		<pkg>rstream</pkg> focuses on multiple independent streams of random numbers
 		from different sources (in an object oriented approach).
 		</li>
@@ -832,7 +831,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Parallel computing</i>: 
 	 Random-number generators for parallel computing are available via 
-	 the <pkg>rsprng</pkg> package and the <pkg>rlecuyer</pkg> package.
+	 the <pkg>rlecuyer</pkg> package.
 	See the <view>HighPerformanceComputing</view> task view for more details.</li>
    </ul>     
 
@@ -1067,7 +1066,6 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg>RMKdiscrete</pkg>
   <pkg>rngwell19937</pkg>
   <pkg>rlecuyer</pkg>
-  <pkg>rsprng</pkg>
   <pkg>rstream</pkg>
   <pkg>RTDE</pkg>
   <pkg>Runuran</pkg>
