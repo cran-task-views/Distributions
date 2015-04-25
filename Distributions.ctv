@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-03-27</version>
+<version>2015-04-25</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -94,7 +94,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	    <li><i>Hypergeometric distributions</i>: Extented hypergeometric distribution
 	    can be found in <pkg>BiasedUrn</pkg> package, which provides
 	    not only p, d, q, r functions but also mean, variance, mode functions.
-		Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.</li>
+		Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
+        Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>.
+        </li>
         
         
         <li><i>Inverse Weibull distribution</i>:
@@ -129,13 +131,18 @@ If you think information is not accurate or not complete, please let me know.</p
 		ZI/ZM binomial, ZI/ZM beta binomial distributions are 
 		implemented in <pkg>gamlss.dist</pkg>. </li>
 		
-	    <li><i>Zipf law</i>: Package <pkg>zipfR</pkg> provides tools for the Zipf and
-	    the Zipf-Mandelbrot distributions. <pkg>VGAM</pkg> also implements the Zipf distribution.</li>
+	    <li><i>Zipf law</i>:
+        d, p, q, r functions of the Zipf and the Zipf-Mandelbrot distributions
+        are provided in <pkg>tolerance</pkg>, <pkg>VGAM</pkg>.
+        Package <pkg>zipfR</pkg> provides tools for distribution of word frequency,
+        such as the Zipf distribution.</li>
 
 	    
 	    <li><i>Further distributions</i>: The <pkg>VGAM</pkg> package provides several
 	    additional distributions, namely: Skellam, Yule-Simon, Zeta and Haight's Zeta, 
-		Borel-Tanner and Felix distribution.</li>
+		Borel-Tanner and Felix distribution.
+        Zeta and Poisson-Lindley distributions are provided in <pkg>tolerance</pkg>.
+        </li>
 	  </ul>
 	 
 <p><strong>Continuous distributions:</strong></p>
@@ -152,13 +159,12 @@ If you think information is not accurate or not complete, please let me know.</p
      the d, p, q, r functions for this distribution (see above).
      <pkg>actuar</pkg> provides moments and limited expected values, <pkg>ActuDistns</pkg>
 	 provides hazard and integrated hazard rate functions.
-     It also provide the d, p, q, r functions for the generalized beta and
-     the inverse tranformed beta distribution. The zero and one inflated beta distribution
-	 can be found in <pkg>gamlss.dist</pkg> as well as generalized beta of the first
-	 and second kind. The
-     beta of the second kind and the generalized beta distribution 
-     can also be found in <pkg>VGAM</pkg> and 
-	 <pkg>mc2d</pkg>. Several special cases of
+     The beta prime (or beta of the second kind), which is the distribution of X/(1-X) when
+     X follows a beta distribution, is provided in <pkg>VGAM</pkg> and <pkg>mc2d</pkg>.
+     The zero and one inflated beta distribution can be found in <pkg>gamlss.dist</pkg>.
+     The generalized beta of the first kind (GB1) is provided in <pkg>gamlss.dist</pkg>
+     The generalized beta of the second kind (GB2) is provided in <pkg>gamlss.dist</pkg>, <pkg>GB2</pkg>.
+     Several special cases of
      the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
      Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
      paralogistic and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.</li>	  
@@ -215,9 +221,9 @@ If you think information is not accurate or not complete, please let me know.</p
      such as the moment generating function, moments and limited expected values. It also has
      the d, p, q, r for the inverse exponential distribution. 
 	 <pkg>ActuDistns</pkg> provides hazard and integrated hazard rate functions.
-	 The shifted and the 
-	 truncated exponential distributions are implemented in <pkg>lmomco</pkg> 
-	 package with d, p, q, r functions.
+	 The shifted (or two-parameter exponential) and the
+	 truncated exponential distributions are implemented in <pkg>lmomco</pkg> and <pkg>tolerance</pkg>
+	 packages with d, p, q, r functions.
 	 d, p, q, r functions for the power and the skew power exponential type 1-4 distributions are implemented
 	 in <pkg>gamlss.dist</pkg> and <pkg>lmomco</pkg>.
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> provide 
@@ -494,8 +500,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Power distributions</i>:  <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> implement the 
 	 exponential power distribution.</li>
 
+    <li><i>Proportion distribution</i>: this is the distribution for the difference
+    between two independent beta distributions. d, p, q, r functions in <pkg>tolerance</pkg>.</li>
 
-    
+
 
      <li><i>Rayleigh distribution</i>: provided in packages <pkg>VGAM</pkg> 
      and <pkg>lmomco</pkg>. Generalized and logistic Rayleigh distributions are available in
@@ -1007,6 +1015,7 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
   <pkg>gbs</pkg>
+  <pkg>GB2</pkg>
   <pkg>geoR</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>gld</pkg>
@@ -1086,6 +1095,7 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg>STAR</pkg>
   <pkg priority="core">SuppDists</pkg>
   <pkg>tmvtnorm</pkg>
+  <pkg>tolerance</pkg>
   <pkg>trapezoid</pkg>
   <pkg>triangle</pkg>
   <pkg>truncnorm</pkg>
