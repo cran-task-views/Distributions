@@ -294,7 +294,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 in normal variates.
 	 <pkg>NormalGamma</pkg> provides the density of the sum of a gaussian and a gamma random variables.
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
-     <pkg>csn</pkg> provides d, r functions for the closed skew-normal distribution.
 	 </li>
      
      <li><i>(Multivariate) Gaussian (or normal) distribution and its extensions</i>: Base R provides
@@ -984,7 +983,6 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
-  <pkg>csn</pkg>
   <pkg>Davies</pkg> 
   <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
