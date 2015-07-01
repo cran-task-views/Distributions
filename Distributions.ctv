@@ -359,7 +359,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
 	 <li><i>Inverse Gaussian distribution</i>:
      d, p, q, and r functions of the inverse Gaussian are provided in <pkg>statmod</pkg>,
-     <pkg>SuppDists</pkg>, <pkg>predfinitepop</pkg> and <pkg>STAR</pkg>.
+     <pkg>SuppDists</pkg> and <pkg>STAR</pkg>.
      <pkg>SuppDists</pkg> also provides a function that returns moments, skewness, kurtosis.
       <pkg>ActuDistns</pkg> provides d, q functions as well as (integrated) hazard function.
      The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>
@@ -1052,7 +1052,6 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
   <pkg>PDQutils</pkg>
-  <pkg>predfinitepop</pkg>
   <pkg>prob</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
