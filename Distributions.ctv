@@ -175,8 +175,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 
      <li><i>Birnbaum-Saunders distribution</i>: provided in package
-     <pkg>VGAM</pkg>. The generalized Birnbaum-Saunders distribution is implemented in
-     <pkg>gbs</pkg>.</li>    
+     <pkg>VGAM</pkg>.</li>    
      
      <li><i>Box Cox distributions</i>: <pkg>gamlss.dist</pkg> provides the Box-Cox normal,
      the Box-Cox power exponential and the Box-Cox t distributions.</li>
@@ -1006,7 +1005,6 @@ If you think information is not accurate or not complete, please let me know.</p
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
-  <pkg>gbs</pkg>
   <pkg>GB2</pkg>
   <pkg>geoR</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
