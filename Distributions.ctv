@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-07-01</version>
+<version>2015-07-31</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -64,12 +64,11 @@ If you think information is not accurate or not complete, please let me know.</p
 
 
 
-<p><strong>Discrete distributions:</strong></p>
+<p><strong>Discrete univariate distributions:</strong></p>
 	  <ul>
-	   <li><i>Basic distributions</i>: The binomial distribution (in particular 
-	    Bernoulli distribution) is already implemented in base R.
-	    The discrete uniform
-	    distribution can be easily obtained with the basic functions.
+	   <li><i>Basic distributions</i>: The binomial distribution (in particular
+	    Bernoulli distribution) is already implemented in base R (<pkg>stats</pkg> package).
+	    The discrete uniform distribution can be easily obtained with the basic functions.
 	    Dirac distribution is provided in <pkg>distr</pkg>. Truncated versions of
 	    the binomial and Poisson distributions as well as zero-inflated
 	    versions of the binomial, Poisson and negative binomial distributions 
@@ -118,8 +117,7 @@ If you think information is not accurate or not complete, please let me know.</p
 		
         <li><i>Mana Clash distribution</i>: This can be found in <pkg>RMKdiscrete</pkg>.</li>
 
-        <li><i>Multinomial distribution</i>: This can be found in
-	    <pkg>mc2d</pkg>, <pkg>LearnBayes</pkg> and <pkg>MCMCpack</pkg>.</li>	
+        <li><i>Multinomial distribution</i>: </li>
 		
 					 
 		<li><i>Sichel distribution</i>: This can be found in
@@ -144,8 +142,37 @@ If you think information is not accurate or not complete, please let me know.</p
         Zeta and Poisson-Lindley distributions are provided in <pkg>tolerance</pkg>.
         </li>
 	  </ul>
-	 
-<p><strong>Continuous distributions:</strong></p>
+      
+<p><strong>Discrete multivariate distributions:</strong></p>
+	  <ul>
+          
+    <li><i>Multinomial distribution</i>:
+    <pkg>stats</pkg>, <pkg>mc2d</pkg> package provides d, r functions.
+    </li>
+
+    <li><i>Negative multinomial distribution</i>:
+    not yet implemented?
+    </li>
+
+    <li><i>Multivariate Poisson distribution</i>:
+    not yet implemented?
+    </li>
+
+    <li><i>Multivariate hypergeometric distribution</i>:
+    not yet implemented?
+    </li>
+    
+    <li><i>Multivariate Polya-Eggenberger distribution</i>:
+        not yet implemented?
+    </li>
+    
+    <li><i>Multivariate Ewens distribution</i>:
+    not yet implemented?
+    </li>
+
+	  </ul>
+      
+<p><strong>Continuous univariate distributions:</strong></p>
 
 	  <ul>
 	    <li><i>Arcsine distribution</i>: implemented in package <pkg>distr</pkg>.</li>
@@ -231,6 +258,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 the exponential extension distributions.
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
+     
+     <table>
+         <tr><td>Packages</td> <td>Functions</td></tr>
+         <tr><td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+     </table>
 	 </li>
      
      <li><i>Externally Studentized Midrange</i>:
@@ -295,26 +327,13 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
 	 </li>
      
-     <li><i>(Multivariate) Gaussian (or normal) distribution and its extensions</i>: Base R provides
-     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r) and
-     <pkg>mnormt</pkg> (d, p, r).
-     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
-     multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
-     fast algorithms to compute the density and generate random variates of
-     a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
-     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
-     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
-     normal distribution.
-     </li>
 
      <li><i>General Error Distribution (also known as exponential power distribution)</i>:
      provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>, see <i>exponential</i> item.</li>
      
      <li><i>Generalized Extreme Value distribution</i>: provided in <pkg>lmomco</pkg>
      (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>
-     and <pkg>fExtremes</pkg> (d, p, q, r). Both bivariate and
-     multivariate Extreme Value distributions as well as order/maxima/minima distributions 
-     are implemented in <pkg>evd</pkg> (d, p, r). <pkg>evdbayes</pkg> provides some
+     and <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
 	 additional functions for GEV distribution using MCMC. </li>         
      
      
@@ -466,9 +485,7 @@ If you think information is not accurate or not complete, please let me know.</p
      limited expected values for the Pareto I and II, the inverse Pareto, the 'generalized pareto'
      distributions, the Burr and the inverse Burr distributions. A fast random generator for the
 	 Burr and the Pareto II distribution is implemented in <pkg>Runuran</pkg> as well as the density.
-	 <pkg>mgpd</pkg> provides the density for the multivariate generalized Pareto distribution
-	 of type II, while <pkg>evd</pkg> provides the density for type I.
-	 <pkg>ActuDistns</pkg> also provides q, p, q, h functions of the Pareto II distribution and
+     <pkg>ActuDistns</pkg> also provides q, p, q, h functions of the Pareto II distribution and
 	 the Burr-X distribution.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>,
 	 <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
@@ -532,8 +549,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 can be found in <pkg>gamlss.dist</pkg>. <pkg>fBasics</pkg> provides d, p, q, r functions
 	 for the skew and the generalized hyperbolic t-distribution.
      The L-moments of the Student t (3-parameter) are provided in <pkg>lmomco</pkg>.
-     The multivariate Student distribution
-     is provided in the packages <pkg>mvtnorm</pkg> (d, r) and <pkg>mnormt</pkg> (d, p, r).</li>
+     </li>
      
      <li><i>Triangle/trapezoidal distribution</i>: packages <pkg>triangle</pkg>, <pkg>mc2d</pkg> and
      <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle distribution, while the package
@@ -576,7 +592,59 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Xie distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>
 
 
-  </ul> 
+  </ul>
+      
+      
+      
+<p><strong>Continuous multivariate distributions:</strong></p>
+      <ul>
+          
+          
+<li><i>Dirichlet distribution</i>:
+    not yet implemented?
+</li>
+          
+<li><i>Multivariate exponential distribution</i>:
+    not yet implemented?
+</li>
+          
+          
+
+<li><i>Multivariate Gaussian (or normal) distribution</i>:
+    The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r) and
+    <pkg>mnormt</pkg> (d, p, r).
+    Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
+    multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
+    fast algorithms to compute the density and generate random variates of
+    a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
+    <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
+    Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
+    normal distribution.
+</li>
+
+<li><i>Multivariate generalized extreme value distribution</i>:
+    Both bivariate and multivariate Extreme Value distributions as well as order/maxima/minima distributions
+    are implemented in <pkg>evd</pkg> (d, p, r).
+</li>
+
+
+<li><i>Multivariate Pareto distribution</i>:
+<pkg>mgpd</pkg> provides the density for the multivariate generalized Pareto distribution
+of type II, while <pkg>evd</pkg> provides the density for type I.
+</li>
+
+<li><i>Multivariate Stable distribution</i>:
+    not yet implemented?
+</li>
+
+
+<li><i>Multivariate Student distribution</i>:
+The multivariate Student distribution
+is provided in the packages <pkg>mvtnorm</pkg> (d, r) and <pkg>mnormt</pkg> (d, p, r).
+</li>
+
+      </ul>
+      
 
 <p><strong>Mixture of probability laws (and composite):</strong></p>
    
