@@ -147,7 +147,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <ul>
           
     <li><i>Multinomial distribution</i>:
-    <pkg>stats</pkg>, <pkg>mc2d</pkg> package provides d, r functions.
+    <pkg>stats</pkg>, <pkg>mc2d</pkg> packages provide d, r functions.
     </li>
 
     <li><i>Negative multinomial distribution</i>:
@@ -229,6 +229,16 @@ If you think information is not accurate or not complete, please let me know.</p
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
 	 The non-central Chi distribution is not yet implemented. The chi-bar-squared distribution
 	 is implemented in <pkg>emdbook</pkg>.
+     
+     <table border="0">
+         <caption>Summary for Chi related distributions</caption>
+         <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
+         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>  <td>Chi</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td> <td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td> </tr>
+         <tr><td>Chi-bar-squared</td> <td><pkg>emdbook</pkg></td> <td>d, p, q, r</td></tr>
+
+     </table>
+     
 	 </li>
 
      <li><i>Davies distribution</i>: The Davies distribution is provided
@@ -236,7 +246,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Dirichlet distribution</i>: functions d, r
 	 are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg> and 
-	 <pkg>bayesm</pkg>. The generalized and the hyperdirichlet distributions are provided
+	 <pkg>bayesm</pkg>. The standard and generalized hyperdirichlet distributions are provided
 	 in <pkg>hyperdirichlet</pkg>.</li>
 
 	 <li><i>Eta-mu distribution</i>: provided in <pkg>lmomco</pkg>.</li>     
@@ -259,10 +269,18 @@ If you think information is not accurate or not complete, please let me know.</p
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
      
-     <table>
-         <tr><td>Packages</td> <td>Functions</td></tr>
-         <tr><td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+     <table border="0">
+         <caption>Summary for exponential related distributions</caption>
+         <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
+         <tr><td>Exponential</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>  <td>Power exp.</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
+         <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td> <td>Power and skew pow. exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td> </tr>
+         <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td> </td> <td>Power and skew pow. exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td> </td>  <td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+         <tr><td>Inverse exp.</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td> </td>  <td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Shifted exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+         <tr><td>Shifted exp.</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
      </table>
+     
 	 </li>
      
      <li><i>Externally Studentized Midrange</i>:
@@ -304,6 +322,26 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
 	hazard (h) and integrated hazard rate (i) functions for 
 	the	generalized gamma distribution.
+    
+    
+    <table border="0">
+        <caption>Summary for gamma related distributions</caption>
+        <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
+        <tr><td>Gamma</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>   <td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td></tr>
+        <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td>  <td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td></tr>
+        <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td> </td>  <td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td> </td>  <td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td> </td>  <td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td> <td> </td>  <td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+
 	 </li>
      
      <li><i>(Univariate) Gaussian (or normal) distribution and its extensions</i>: Base R provides
