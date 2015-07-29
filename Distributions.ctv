@@ -78,8 +78,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	    versions of the binomial, Poisson and negative binomial distributions 
 	    are implemented in <pkg>VGAM</pkg>. Zero-inflated Poisson distribution
 		is available in <pkg>gamlss.dist</pkg>.
-       New parametrization of the negative binomial distribution and the bivariate
-       negative binomial distribution is available in
+        Poisson is implemented in <pkg>poweRlaw</pkg>.
+       New parametrization of the negative binomial distribution is available in
        <pkg>RMKdiscrete</pkg>.
        
        </li>
@@ -88,7 +88,14 @@ If you think information is not accurate or not complete, please let me know.</p
 	    <pkg>compoisson</pkg>.</li>	    
 		
 		<li><i>Delaporte distribution</i>: This can be found in
-	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>	    
+	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
+        
+        <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+        
+        <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+        
+        <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample<code>.</li>
+        
 
         <li><i>(generalized) Hermite distribution</i>: This can be found in
             <pkg>hermite</pkg>.</li>
@@ -117,15 +124,21 @@ If you think information is not accurate or not complete, please let me know.</p
 	    <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is 
 		available for the logarithmic distribution 
 		is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
-		</li>	
+		</li>
+        
+        <li><i>Power law distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+        
 		
-        <li><i>Mana Clash distribution</i>: This can be found in <pkg>RMKdiscrete</pkg>.</li>
+        <li><i>Mana Clash distribution</i>: provided in <pkg>RMKdiscrete</pkg>.</li>
 
         <li><i>Multinomial distribution</i>: </li>
 		
 					 
-		<li><i>Sichel distribution</i>: This can be found in
-	    <pkg>gamlss.dist</pkg>.</li>	    
+		<li><i>Sichel distribution</i>: provided in
+	    <pkg>gamlss.dist</pkg>.</li>
+        
+        <li><i>Yule-Simon distribution</i>: provided in
+            <pkg>VGAM</pkg> and sampling in <pkg>degreenet</pkg>.</li>
 	    	    
 		<li><i>Zero inflated/modified (ZI/ZM) distributions</i>: 
 		ZM (or Hurdle) Poisson, ZM logarithmic, 
@@ -141,9 +154,11 @@ If you think information is not accurate or not complete, please let me know.</p
 
 	    
 	    <li><i>Further distributions</i>: The <pkg>VGAM</pkg> package provides several
-	    additional distributions, namely: Skellam, Yule-Simon, Zeta and Haight's Zeta, 
+	    additional distributions, namely: Skellam, Zeta and Haight's Zeta,
 		Borel-Tanner and Felix distribution.
+        Sampling for Waring distribution is implemented in  <pkg>degreenet</pkg>.
         Zeta and Poisson-Lindley distributions are provided in <pkg>tolerance</pkg>.
+
         </li>
 	  </ul>
       
@@ -155,10 +170,13 @@ If you think information is not accurate or not complete, please let me know.</p
     </li>
 
     <li><i>Negative multinomial distribution</i>:
-    not yet implemented?
+        New parametrization of the bivariate
+        negative binomial distribution is available in
+        <pkg>RMKdiscrete</pkg>.
     </li>
 
     <li><i>Multivariate Poisson distribution</i>:
+        
     not yet implemented?
     </li>
 
@@ -290,7 +308,9 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td> </td> <td>Power and skew pow. exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
          <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td>  <td> </td>  <td>Power and skew pow. exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
 
-        <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td> </td>   <td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td> </td>   <td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td>  <td> </td> </tr>
+        
          <tr><td>Inverse exp.</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td> </td>  <td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
          <tr><td>Shifted exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
          <tr><td>Shifted exp.</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
@@ -509,7 +529,8 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
      
      <li><i>Lognormal distribution and its extensions</i>:
-         The log normal distribution is implemented in Base R (see above), but the 3-parameter lognormal
+         The log normal distribution is implemented in Base R (see above)
+         and <pkg>poweRlaw</pkg>, but the 3-parameter lognormal
          distribution is available in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
          <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions
          for the lognormal distribution.
@@ -569,7 +590,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Phase-type distributions</i>: provided in <pkg>actuar</pkg>, see also 
 	 <pkg>PhaseType</pkg> for inference.</li>
 	 
-	 <li><i>Power distributions</i>:  <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> implement the 
+	 <li><i>Power distributions</i>:  <pkg>reliaR</pkg>, <pkg>poweRlaw</pkg> and <pkg>ActuDistns</pkg> implement the
 	 exponential power distribution.</li>
 
     <li><i>Proportion distribution</i>: this is the distribution for the difference
@@ -865,7 +886,9 @@ are provided in <pkg>TTmoment</pkg>.
 	   Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
 	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
 	   Clayton, Gumbel, Frank, Joe, BB1, BB6, BB7 and BB8 copulas.
-	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.</li>
+	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
+      <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
+      </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
 
@@ -1095,6 +1118,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>BivarP</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
   <pkg>CompLognormal</pkg>
@@ -1103,7 +1127,8 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
-  <pkg>Davies</pkg> 
+  <pkg>Davies</pkg>
+  <pkg>degreenet</pkg>
   <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
   <pkg>DiscreteInverseWeibull</pkg>
@@ -1181,6 +1206,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
   <pkg>PDQutils</pkg>
+  <pkg>poweRlaw</pkg>
   <pkg>prob</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
