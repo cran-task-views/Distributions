@@ -94,7 +94,7 @@ If you think information is not accurate or not complete, please let me know.</p
         
         <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
         
-        <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample<code>.</li>
+        <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
         
 
         <li><i>(generalized) Hermite distribution</i>: This can be found in
@@ -259,14 +259,15 @@ If you think information is not accurate or not complete, please let me know.</p
 	 The non-central Chi distribution is not yet implemented. The chi-bar-squared distribution
 	 is implemented in <pkg>emdbook</pkg>.
      
-     <table border="0">
-         <caption>Summary for Chi related distributions</caption>
-         <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
-         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>  <td>Chi</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
-         <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td> <td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td> </tr>
+     <p><table border="0">
+         <caption>Summary for Chi-related distributions</caption>
+         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
          <tr><td>Chi-bar-squared</td> <td><pkg>emdbook</pkg></td> <td>d, p, q, r</td></tr>
-
-     </table>
+         <tr><td>Chi</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
+         <tr><td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td></tr>
+     </table></p>
      
 	 </li>
 
@@ -300,26 +301,29 @@ If you think information is not accurate or not complete, please let me know.</p
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
      
-     <table border="0">
-         <caption>Summary for exponential related distributions</caption>
-         <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
-         <tr><td>Exponential</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>  <td>Power exp.</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td>  <td>Power exp.</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
-         <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td> </td> <td>Power and skew pow. exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
-         <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td>  <td> </td>  <td>Power and skew pow. exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
-
-         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td> </td>   <td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-        <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td>  <td> </td> </tr>
-        
-         <tr><td>Inverse exp.</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td> </td>  <td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Shifted exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-         <tr><td>Shifted exp.</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td>  <td> </td> <td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Power exp.</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td>  <td> </td> </tr>
-
-     </table>
-     
-     ,
-     
+     <p><table border="0">
+         <caption>Summary for exponential-related distributions</caption>
+         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
+         <tr><td>Exponential</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
+         <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
+         <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Inverse exponential</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td></tr>
+         <tr><td>Shifted exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
+         <tr><td>Shifted exponential</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Power exponential</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Power exponential</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Power exponential</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
+         <tr><td>Power and skew power exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
+         <tr><td>Power and skew power exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
+     </table></p>
+          
 	 </li>
      
      <li><i>Externally Studentized Midrange</i>:
@@ -363,19 +367,24 @@ If you think information is not accurate or not complete, please let me know.</p
 	hazard (h) and integrated hazard rate (i) functions for 
 	the	generalized gamma distribution.
     
-    
-    <table border="0">
-        <caption>Summary for gamma related distributions</caption>
-        <tr><td>Distribution</td> <td>Packages</td> <td>Functions</td> <td> </td>  <td>Distribution</td> <td>Packages</td> <td>Functions</td>  </tr>
-        <tr><td>Gamma</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td> </td>   <td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td></tr>
-        <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td>  <td> </td>  <td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td></tr>
-        <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td> </td>  <td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-        <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td> </td>  <td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
-        <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td> </td>   <td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td></tr>
-        <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td> </td>  <td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
-        <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td> <td> </td></tr>
+    <p><table border="0">
+        <caption>Summary for gamma-related distributions</caption>
+        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
+        <tr><td>Gamma</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+        <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
+        <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
+        <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
+        <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
         <tr><td>Log-gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
-    </table>
+        <tr><td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td></tr>
+        <tr><td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
+    </table></p>
 
 	 </li>
      
