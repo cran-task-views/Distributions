@@ -261,7 +261,7 @@ If you think information is not accurate or not complete, please let me know.</p
      for sums of non central chi-squared raised to powers distribution and sums of log of
      non central chi-squared for computing d, p, q, r functions.
      
-     <p><table border="0">
+     <br/><table>
          <caption>Summary for Chi-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Chi-squared</td> <td>stats</td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
@@ -272,7 +272,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td> <td><code>invchisq</code></td></tr>
          <tr><td>Sum of power Chi-squared </td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>sumchisqpow</code></td></tr>
          <tr><td>Sum of log Chi-squared</td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>sumlogchisq</code></td></tr>
-     </table></p>
+     </table><br/>
      
 	 </li>
 
@@ -306,7 +306,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
      
-     <p><table border="0">
+     <br/><table>
          <caption>Summary for exponential-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
          <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td></tr>
@@ -327,7 +327,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
          <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
          <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
-     </table></p>
+     </table><br/>
           
 	 </li>
      
@@ -372,7 +372,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	hazard (h) and integrated hazard rate (i) functions for 
 	the	generalized gamma distribution.
     
-    <p><table border="0">
+    <br/><table>
         <caption>Summary for gamma-related distributions</caption>
         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
         <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td></tr>
@@ -389,7 +389,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
-    </table></p>
+    </table><br/>
 
 	 </li>
      
