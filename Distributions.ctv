@@ -261,7 +261,7 @@ If you think information is not accurate or not complete, please let me know.</p
      for sums of non central chi-squared raised to powers distribution and sums of log of
      non central chi-squared for computing d, p, q, r functions.
      
-     <br/><table>
+     <br/><table border="0" summary="Chi-related distributions">
          <caption>Summary for Chi-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Chi-squared</td> <td>stats</td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
@@ -306,7 +306,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
      
-     <br/><table>
+     <br/><table border="0" summary="Exponential-related distributions">
          <caption>Summary for exponential-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
          <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td></tr>
@@ -372,7 +372,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	hazard (h) and integrated hazard rate (i) functions for 
 	the	generalized gamma distribution.
     
-    <br/><table>
+    <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
         <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td></tr>
