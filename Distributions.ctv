@@ -259,7 +259,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 is implemented in <pkg>emdbook</pkg>.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for sums of non central chi-squared raised to powers distribution and sums of log of
-     non central chi-squared for computing d, p, q, r functions.
+     non central chi-squared for computing d, p, q, r functions.<br/>
      
      <br/><table border="0" summary="Chi-related distributions">
          <caption>Summary for Chi-related distributions</caption>
@@ -304,7 +304,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 the exponential extension distributions.
       <pkg>ExtDist</pkg> also provides d, p, q, r functions for the exponential distribution.
 	 A fast random generator is available for the power Exponential distribution 
-	 is implemented in <pkg>Runuran</pkg> as well as the density function.
+	 is implemented in <pkg>Runuran</pkg> as well as the density function.<br/>
      
      <br/><table border="0" summary="Exponential-related distributions">
          <caption>Summary for exponential-related distributions</caption>
@@ -370,7 +370,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 gamma distribution with a location parameter.
 	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
 	hazard (h) and integrated hazard rate (i) functions for 
-	the	generalized gamma distribution.
+	the	generalized gamma distribution.<br/>
     
     <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
