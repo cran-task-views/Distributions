@@ -249,8 +249,6 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Chi(-squared or not) distributions</i>: Base R provides
      the d, p, q, r functions for the chi-squared distribution, both central
 	 and non-central (see above).
-     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
-     for sums of non central chi-squared distribution for computing d, p, q, r functions.
      Moments, limited
      expected values and the moment generating function are provided in <pkg>actuar</pkg>.
      Only d,r functions are available for the inverse chi-squared distribution
@@ -258,15 +256,21 @@ If you think information is not accurate or not complete, please let me know.</p
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
 	 The non-central Chi distribution is not yet implemented. The chi-bar-squared distribution
 	 is implemented in <pkg>emdbook</pkg>.
+     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+     for sums of non central chi-squared raised to powers distribution and sums of log of
+     non central chi-squared for computing d, p, q, r functions.
      
      <p><table border="0">
          <caption>Summary for Chi-related distributions</caption>
-         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
-         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
-         <tr><td>Chi-bar-squared</td> <td><pkg>emdbook</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Chi</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
-         <tr><td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td></tr>
+         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>chisq</code></td></tr>
+         <tr><td>Chi-squared</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>chisq</code></td></tr>
+         <tr><td>Chi-bar-squared</td> <td><pkg>emdbook</pkg></td> <td>d, p, q, r</td> <td><code>chibarsq</code></td></tr>
+         <tr><td>Chi</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>chi</code></td></tr>
+         <tr><td>Inverse Chi-squared</td> <td><pkg>geoR</pkg></td> <td>d, r</td> <td><code>invchisq</code></td></tr>
+         <tr><td>Sum of power Chi-squared </td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>sumchisqpow</code></td></tr>
+         <tr><td>Sum of log Chi-squared</td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>sumlogchisq</code></td></tr>
      </table></p>
      
 	 </li>
