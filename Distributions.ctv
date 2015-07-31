@@ -71,7 +71,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <p><strong>Discrete univariate distributions:</strong></p>
 	  <ul>
 	   <li><i>Basic distributions</i>: The binomial distribution (in particular
-	    Bernoulli distribution) is already implemented in base R (<pkg>stats</pkg> package).
+	    Bernoulli distribution) is already implemented in base R (stats package).
 	    The discrete uniform distribution can be easily obtained with the basic functions.
 	    Dirac distribution is provided in <pkg>distr</pkg>. Truncated versions of
 	    the binomial and Poisson distributions as well as zero-inflated
@@ -167,7 +167,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <ul>
           
     <li><i>Multinomial distribution</i>:
-    <pkg>stats</pkg>, <pkg>mc2d</pkg> packages provide d, r functions.
+    stats, <pkg>mc2d</pkg> packages provide d, r functions.
     </li>
 
     <li><i>Negative multinomial distribution</i>:
@@ -264,7 +264,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <p><table border="0">
          <caption>Summary for Chi-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
-         <tr><td>Chi-squared</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
+         <tr><td>Chi-squared</td> <td>stats</td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
          <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>chisq</code></td></tr>
          <tr><td>Chi-squared</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>chisq</code></td></tr>
          <tr><td>Chi-bar-squared</td> <td><pkg>emdbook</pkg></td> <td>d, p, q, r</td> <td><code>chibarsq</code></td></tr>
@@ -309,7 +309,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <p><table border="0">
          <caption>Summary for exponential-related distributions</caption>
          <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
-         <tr><td>Exponential</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td></tr>
          <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
          <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
          <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
@@ -375,7 +375,7 @@ If you think information is not accurate or not complete, please let me know.</p
     <p><table border="0">
         <caption>Summary for gamma-related distributions</caption>
         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
-        <tr><td>Gamma</td> <td><pkg>stats</pkg></td> <td>d, p, q, r</td></tr>
+        <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td></tr>
         <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
         <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
         <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
@@ -1150,6 +1150,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
+  <pkg>csn</pkg>
   <pkg>Davies</pkg>
   <pkg>degreenet</pkg>
   <pkg>Delaporte</pkg>
