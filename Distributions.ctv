@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-08-09</version>
+<version>2015-08-10</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -84,10 +84,10 @@ If you think information is not accurate or not complete, please let me know.</p
        
        </li>
 
-	    <li><i>Conway-Maxwell-Poisson distribution</i>: This can be found in
-	    <pkg>compoisson</pkg>.</li>	    
+	    <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
+	    <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
 		
-		<li><i>Delaporte distribution</i>: This can be found in
+		<li><i>Delaporte distribution</i>: provided in
 	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
         
         <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
@@ -96,8 +96,15 @@ If you think information is not accurate or not complete, please let me know.</p
         
         <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
         
+        
+        <li><i>Geometric (compound) Poisson distribution
+            (also known Polya-Aeppli distribution)</i>:  provided in
+            <pkg>polyaAeppli</pkg>.</li>
+        
+        <li><i>Generalized binomial distribution</i>: provided in
+            <pkg>GenBinomApps</pkg>.</li>
 
-        <li><i>(generalized) Hermite distribution</i>: This can be found in
+        <li><i>Generalized Hermite distribution</i>: provided in
             <pkg>hermite</pkg>.</li>
 
 
@@ -423,6 +430,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>NormalGamma</pkg> provides the density of the sum of a gaussian and a gamma random variables.
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
      <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
+     <pkg>copulaedas</pkg> provides p, q functions of the truncated normal distribution.
      <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
      <pkg>NormalLaplace</pkg> provides d, p, q, r functions for the normal-laplace distribution.
 	 </li>
@@ -484,6 +492,7 @@ If you think information is not accurate or not complete, please let me know.</p
      The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
+     <pkg>GIGrvg</pkg> generates random variables from the generalized inverse Gaussian distribution.
      </li>
 	 
 	 
@@ -499,7 +508,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	
 	 <li><i>Kappa-mu distribution</i>: provided in <pkg>lmomco</pkg>.</li>     
 	 
-     <li><i>Kendall's tau distribution</i>: provided in <pkg>SuppDists</pkg>.</li>	 
+     <li><i>Kendall's tau distribution</i>: provided in <pkg>SuppDists</pkg>.</li>
+     
+     <li><i>Kolmogorov distribution</i>: p function provided in <pkg>kolmim</pkg>.</li>
+     
 
      <li><i>Kruskal Wallis distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
      	
@@ -634,6 +646,12 @@ If you think information is not accurate or not complete, please let me know.</p
      and <pkg>lmomco</pkg>. Generalized and logistic Rayleigh distributions are available in
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.</li>
 
+    <li><i>Response time distribution</i>: <pkg>rtdists</pkg> provides d, p, r functions
+    for Ratcliff distribution and linear ballistic accumulator (LBA) with different
+    underlying drift-distributions (Normal, Gamma, Frechet, and log-normal).
+    </li>
+
+
      <li><i>Rice distribution</i>: provided in <pkg>VGAM</pkg> and <pkg>lmomco</pkg>.
      </li>     
 
@@ -645,8 +663,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Spearman's Rho distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
 	  
      <li><i>stable distributions</i>: d, p, q, r functions are available in <pkg>fBasics</pkg>
-	 and <pkg>stabledist</pkg>, 
-     the functions use the approach of J.P. Nolan for general stable distributions.</li>
+	 and <pkg>stabledist</pkg>, the functions use the approach of J.P. Nolan
+         for general stable distributions. <pkg>MixedTS</pkg> provides mixed tempered
+     stable distribution (d, p, q, r).</li>
  
      <li><i>Student distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for Student and non central Student distribution (see above).
@@ -726,8 +745,10 @@ If you think information is not accurate or not complete, please let me know.</p
           
 
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
-    The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r) and
-    <pkg>mnormt</pkg> (d, p, r).
+    The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
+    <pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r).
+    <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
+    <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
     multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
     fast algorithms to compute the density and generate random variates of
@@ -735,6 +756,8 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
     normal distribution.
+    <pkg>EMMIXskew</pkg> provide the multivariate skew normal distribution (d, r).
+    
 </li>
 
 <li><i>Multivariate generalized extreme value distribution</i>:
@@ -754,10 +777,11 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 
 
 <li><i>Multivariate Student distribution</i>:
-The multivariate Student distribution
-is provided in the packages <pkg>mvtnorm</pkg> (d, r) and <pkg>mnormt</pkg> (d, p, r).
+The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
+<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r).
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
+<pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r).
 </li>
 
       </ul>
@@ -909,7 +933,9 @@ are provided in <pkg>TTmoment</pkg>.
 	  general functionality for copulas. Although lacking support for 
 	  many existing copulas themselves, <pkg>copBasic</pkg> is primarily oriented 
 	  around utility functions for the general mathematics of copulas 
-	  as described in the well known introduction to copulas by Nelsen.</li>
+	  as described in the well known introduction to copulas by Nelsen.
+      <pkg>copulaedas</pkg> provides a copula approach to estimate distribution algorithms (EDA).
+      </li>
 
       <li><i>Archimedean copulas</i>: The Frank bivariate distribution 
       is available in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>.
@@ -1166,12 +1192,14 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>BivarP</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
+  <pkg>CompGLM</pkg>
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
   <pkg>CompQuadForm</pkg>
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
+  <pkg>copulaedas</pkg>
   <pkg>csn</pkg>
   <pkg>Davies</pkg>
   <pkg>degreenet</pkg>
@@ -1190,6 +1218,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>e1071</pkg>
   <pkg>emdbook</pkg>
   <pkg>emg</pkg>
+  <pkg>EMMIXskew</pkg>
   <pkg>ExtDist</pkg>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
@@ -1207,8 +1236,10 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>gaussDiff</pkg>
   <pkg>GB2</pkg>
   <pkg>geoR</pkg>
+  <pkg>GenBinomApps</pkg>
   <pkg>GenOrd</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
+  <pkg>GIGrvg</pkg>
   <pkg>gld</pkg>
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
@@ -1222,6 +1253,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>HyperbolicDist</pkg>
   <pkg>hyperdirichlet</pkg>
   <pkg>ihs</pkg>
+  <pkg>kolmim</pkg>
   <pkg>LambertW</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
@@ -1234,12 +1266,14 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
+  <pkg>MixedTS</pkg>
   <pkg>mixtools</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
+  <pkg>mvprpb</pkg>
   <pkg>mvrtn</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>Newdistns</pkg>
@@ -1254,6 +1288,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
+  <pkg>polyaAeppli</pkg>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>prob</pkg>
@@ -1269,6 +1304,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>rlecuyer</pkg>
   <pkg>rstream</pkg>
   <pkg>RTDE</pkg>
+  <pkg>rtdists</pkg>
   <pkg>Runuran</pkg>
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
@@ -1287,6 +1323,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>statmod</pkg>
   <pkg>STAR</pkg>
   <pkg priority="core">SuppDists</pkg>
+  <pkg>symmoments</pkg>
   <pkg>tmvtnorm</pkg>
   <pkg>tolerance</pkg>
   <pkg>trapezoid</pkg>
