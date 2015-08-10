@@ -82,6 +82,15 @@ If you think information is not accurate or not complete, please let me know.</p
        New parametrization of the negative binomial distribution is available in
        <pkg>RMKdiscrete</pkg>.
        
+       <pkg>Compounding</pkg> provides pgf for <code>xxx</code> distribution,
+       inverse <code>xxx</code> distribution,
+       first derivative of the <code>xxx</code> distribution,
+       where <code>xxx</code> belongs to binomial, binomial-Poisson, geometric, hypergeometric,
+       hyper-Poisson, Katti type H1/H2, logarithmic, logarithmic-binomial,
+       logarithmic-Poisson, negative binomial, Neyman type A/B/C, Pascal-Poisson, Poisson,
+       Poisson-binomial, Poisson-Lindley, Poisson-Pascal, Polya Aeppli, Thomas,
+       Waring, Yule.
+       
        </li>
 
 	    <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
@@ -92,10 +101,18 @@ If you think information is not accurate or not complete, please let me know.</p
         
         <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
         
+        <li><i>Discrete inverse Weibull distribution</i>:
+            <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
+            inverse Weibull as well as hazard rate function and moments.
+        </li>
+
+        
         <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
         
         <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
         
+        <li><i>Discrete Weibull distribution</i>: provided in <pkg>DiscreteWeibull</pkg>:
+            d, p, q, r, m for disc. Weib. type 1, d, p, q, r, m, h for disc. Weib. type 3.</li>
         
         <li><i>Geometric (compound) Poisson distribution
             (also known Polya-Aeppli distribution)</i>:  provided in
@@ -116,11 +133,7 @@ If you think information is not accurate or not complete, please let me know.</p
         </li>
         
         
-        <li><i>Inverse Weibull distribution</i>:
-            <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
-            inverse Weibull as well as hazard rate function and moments.
-        </li>
-
+        
         
         <li><i>Lagrangian Poisson distribution</i>:
             <pkg>RMKdiscrete</pkg> provides d, p, q, r functions for the
@@ -294,9 +307,9 @@ If you think information is not accurate or not complete, please let me know.</p
      in <pkg>Davies</pkg> package.</li>	   
      
      <li><i>Dirichlet distribution</i>: functions d, r
-	 are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg> and 
-	 <pkg>bayesm</pkg>. The standard and generalized hyperdirichlet distributions are provided
-	 in <pkg>hyperdirichlet</pkg>.</li>
+	 are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
+     <pkg>dirmult</pkg> and <pkg>bayesm</pkg>. The standard and generalized
+     hyperdirichlet distributions are provided in <pkg>hyperdirichlet</pkg>.</li>
 
 	 <li><i>Eta-mu distribution</i>: provided in <pkg>lmomco</pkg>.
          <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
@@ -523,7 +536,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 distribution (GLD) is well known for its wide range of shapes. There exists 3 kinds
 	 of GLD in the literature: RS, FMKL and FM5. The following packages implement such distributions
 	 (with d, p, q, r functions): <pkg>gld</pkg> provides the 3 kinds of GLD, 
-	 <pkg>Davies</pkg> provides the RS type and <pkg>lmomco</pkg> provides the FMKL. 
+	 <pkg>Davies</pkg> and <pkg>gb</pkg> provide the RS type, <pkg>lmomco</pkg> provides the FMKL.
 	 The original Tukey Lambda distribution can be obtained as a special 
 	 case of the generalized Lambda distribution.	
 	  </li>
@@ -588,12 +601,7 @@ If you think information is not accurate or not complete, please let me know.</p
      </li> 
 	      
      <li><i>Maxwell distribution</i>: provided in <pkg>VGAM</pkg>.
-     </li>     
-
-     <li><i>Maxwell-Boltzmann-Bose-Einstein-Fermie-Dirac (MBBEFD) distribution </i>: 
-	 provided in <pkg>mbbefd</pkg>. Note that the distribution is a 
-	 mixed-type distribution.
-     </li>     
+     </li>
      
      <li><i>Nakagami distribution</i>: provided in <pkg>VGAM</pkg>.
      </li>     
@@ -786,6 +794,18 @@ are provided in <pkg>TTmoment</pkg>.
 
       </ul>
       
+      
+<p><strong>Mixed-type distributions:</strong></p>
+<ul>
+    <li><i>Maxwell-Boltzmann-Bose-Einstein-Fermie-Dirac (MBBEFD) distribution </i>:
+        provided in <pkg>mbbefd</pkg>.
+    </li>
+          
+    <li><i>Mixed ordinal and normal distribution</i>:
+              provided in <pkg>OrdNor</pkg>.
+    </li>
+          
+</ul>
 
 <p><strong>Mixture of probability laws (and composite):</strong></p>
    
@@ -829,8 +849,19 @@ are provided in <pkg>TTmoment</pkg>.
 	  
    </ul>
 
-<p><strong>Exponentiated and tranformation of distributions:</strong></p>
+<p><strong>Compound, exponentiated and tranformation of distributions:</strong></p>
    <ul>
+    
+    <li><i>Compound distributions</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
+        where the parent distribution is any continuous distribution and the compound distribution
+        is any distribution among the list: binomial, binomial-Poisson, geometric, hypergeometric,
+        hyper-Poisson, Katti type H1/H2, logarithmic, logarithmic-binomial,
+        logarithmic-Poisson, negative binomial, Neyman type A/B/C, Pascal-Poisson, Poisson,
+        Poisson-binomial, Poisson-Lindley, Poisson-Pascal, Polya Aeppli, Thomas,
+        Waring, Yule.
+
+    </li>
+       
     <li><i>Exponentiated distributions</i> are not yet implemented.
     </li>
     
@@ -1195,6 +1226,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>CompGLM</pkg>
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
+  <pkg>Compounding</pkg>
   <pkg>CompQuadForm</pkg>
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
@@ -1205,7 +1237,9 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>degreenet</pkg>
   <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
+  <pkg>dirmult</pkg>
   <pkg>DiscreteInverseWeibull</pkg>
+  <pkg>DiscreteWeibull</pkg>
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
   <pkg>distrEllipse</pkg>
@@ -1234,6 +1268,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
+  <pkg>gb</pkg>
   <pkg>GB2</pkg>
   <pkg>geoR</pkg>
   <pkg>GenBinomApps</pkg>
@@ -1281,6 +1316,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
+  <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
   <pkg>PerMallows</pkg>
@@ -1342,6 +1378,8 @@ are provided in <pkg>TTmoment</pkg>.
 <links> 
   <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
+  <a href="https://en.wikipedia.org/wiki/Statistical_data_type">A comprehensive list of data types</a>
+  
   <a href="http://www.actuar-project.org/">actuar: An R package for actuarial science</a>
   <a href="http://www.rmetrics.org/">fCopulae, fBasics, randtoolbox packages, part of the Rmetrics project</a>
   <a href="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</a> 
