@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-07-31</version>
+<version>2015-08-09</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -193,6 +193,10 @@ If you think information is not accurate or not complete, please let me know.</p
     not yet implemented?
     </li>
 
+<li><i>Permutation distribution</i>:
+    Mallows, generalized Mallows and weighted Mallows distributions are implemented in <pkg>PerMallows</pkg> (functions d, r).
+</li>
+
 	  </ul>
       
 <p><strong>Continuous univariate distributions:</strong></p>
@@ -209,6 +213,8 @@ If you think information is not accurate or not complete, please let me know.</p
      the d, p, q, r functions for this distribution (see above).
      <pkg>actuar</pkg> provides moments and limited expected values, <pkg>ActuDistns</pkg>
 	 provides hazard and integrated hazard rate functions.
+     <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+     for doubly non central beta distribution for computing d, p, q, r functions.
      The four-parameter beta (with location and scale param), the symmetric reflected truncated
      beta (both for two-parameter and four-parameter beta) are available in <pkg>ExtDist</pkg>.
      The beta prime (or beta of the second kind), which is the distribution of X/(1-X) when
@@ -220,6 +226,7 @@ If you think information is not accurate or not complete, please let me know.</p
      the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
      Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
      paralogistic and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.
+     
      
      </li>
      
@@ -284,7 +291,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>bayesm</pkg>. The standard and generalized hyperdirichlet distributions are provided
 	 in <pkg>hyperdirichlet</pkg>.</li>
 
-	 <li><i>Eta-mu distribution</i>: provided in <pkg>lmomco</pkg>.</li>     
+	 <li><i>Eta-mu distribution</i>: provided in <pkg>lmomco</pkg>.
+         <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+         for doubly non central eta distribution for computing d, p, q, r functions.
+     </li>
 	 
 
      <li><i>Exponential distribution and its extensions</i>: Base R provides the d, p, q, r functions
@@ -338,8 +348,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Fisher-Snedecor or F distribution</i>: Base R provides the d, p, q, r functions
      for the F distribution, possibly with a non-central parameter.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
-     for non central Fisher distribution for computing d, p, q, r functions.
-     Doubly non-central F distribution does not seem to be implemented?
+     for doubly non central Fisher distribution (and product of multiple
+     doubly non central Fisher distribution) for computing d, p, q, r functions.
 	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
 	hazard (h) and integrated hazard rate (i) functions for 
 	the generalized F distribution.
@@ -414,6 +424,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
      <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
      <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
+     <pkg>NormalLaplace</pkg> provides d, p, q, r functions for the normal-laplace distribution.
 	 </li>
      
 
@@ -480,6 +491,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>Johnson distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
 
+    <li><i>K-prime distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+    for K-prime distribution for computing d, p, q, r functions. </li>
+
 	 <li><i>Kappa distribution</i>: A 4-parameter Kappa distribution is provided in
 	<pkg>lmomco</pkg> and <pkg>FAdist</pkg>. </li>  
 	
@@ -506,7 +520,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 Lambert W x F distribution.
 	 </li>   	  
 	  
-	 <li><i>Lai distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>      
+	 <li><i>Lai distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>
+     
+     <li><i>Lambda-prime distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+         for K-prime distribution for computing d, p, q, r functions. </li>
+
 	  
 	 <li><i>Lambert W x F distributions</i>: <pkg>LambertW</pkg> package provides 
 	 d, p, q, r functions as well as the first 4 central moments and a qqplot.
@@ -633,7 +651,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Student distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for Student and non central Student distribution (see above).
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
-     for non central Student distribution for computing d, p, q, r functions.
+     for doubly non central Student distribution for computing d, p, q, r functions.
      The skewed Student distribution is provided in <pkg>skewt</pkg>,
      <pkg>sn</pkg> and <pkg>gamlss.dist</pkg> packages.
      The generalized skew distribution is provided in <pkg>sgt</pkg>.
@@ -664,7 +682,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>ActuDistns</pkg> provides hazard and integrated hazard rate functions.
 	 <pkg>HI</pkg> generates
 	 uniformly random points on a bounded convex set, in particular the unit ball.
-     </li> 
+     </li>
+     
+     <li><i>Upsilon distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
+         for Upsilon distribution for computing d, p, q, r functions. </li>
+     
 
      <li><i>Wakeby distribution</i>: A 5-parameter Wakeby is provided in <pkg>lmomco</pkg>.
      </li>
@@ -1227,6 +1249,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>npde</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
+  <pkg>PerMallows</pkg>
   <pkg>PhaseType</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
