@@ -194,6 +194,7 @@ If you think information is not accurate or not complete, please let me know.</p
         New parametrization of the bivariate
         negative binomial distribution is available in
         <pkg>RMKdiscrete</pkg>.
+        The multiplicative multinomial distribution is implemented in <pkg>MM</pkg>.
     </li>
 
     <li><i>Multivariate Poisson distribution</i>:
@@ -310,6 +311,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
      <pkg>dirmult</pkg> and <pkg>bayesm</pkg>. The standard and generalized
      hyperdirichlet distributions are provided in <pkg>hyperdirichlet</pkg>.</li>
+     
+     <li><i>(non-central) Dunnett's test distribution</i>: provided
+         in <pkg>nCDunnett</pkg>.</li>
+     
+     
 
 	 <li><i>Eta-mu distribution</i>: provided in <pkg>lmomco</pkg>.
          <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
@@ -361,11 +367,11 @@ If you think information is not accurate or not complete, please let me know.</p
           
 	 </li>
      
-     <li><i>Externally Studentized Midrange</i>:
+     <li><i>Externally Studentized Midrange distribution</i>:
          Package <pkg>SMR</pkg> computes the studentized midrange distribution (d, p, q, r).
      </li>
 	 
-	 <li><i>Fisher-Snedecor or F distribution</i>: Base R provides the d, p, q, r functions
+	 <li><i>Fisher-Snedecor (or F) distribution</i>: Base R provides the d, p, q, r functions
      for the F distribution, possibly with a non-central parameter.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for doubly non central Fisher distribution (and product of multiple
@@ -375,6 +381,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	the generalized F distribution.
 	 <pkg>ActuDistns</pkg> provides integrated hazard rate function 
 	 for generalized F distribution.
+     <pkg>fpow</pkg> returns the noncentrality parameter of the noncentral F distribution
+     if probability of type I and type II error, degrees of freedom of the numerator
+     and the denominator are given.
 	</li>
      
      <li><i>Frechet distribution</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>
@@ -506,12 +515,16 @@ If you think information is not accurate or not complete, please let me know.</p
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
      <pkg>GIGrvg</pkg> generates random variables from the generalized inverse Gaussian distribution.
+     <pkg>frmqa</pkg> computes p function of the generalized inverse Gaussian distribution.
      </li>
 	 
 	 
 	 <li><i>J-shaped distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>     
 	 
-	 <li><i>Johnson distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
+	 <li><i>Johnson distribution</i>: provided in <pkg>SuppDists</pkg>.
+     <pkg>JohnsonDistribution</pkg> provides functions to convert normal variate
+     to Johnson distribution and vice-versa.
+     </li>
 
     <li><i>K-prime distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
     for K-prime distribution for computing d, p, q, r functions. </li>
@@ -585,7 +598,12 @@ If you think information is not accurate or not complete, please let me know.</p
       <pkg>ExtDist</pkg> implements the logistic distribution.
      </li>
      
-     <li><i>Lognormal distribution and its extensions</i>:
+     
+     <li><i>Logit-normal distribution</i>:
+         provided in <pkg>logitnorm</pkg>.
+     </li>
+     
+     <li><i>Log-normal distribution and its extensions</i>:
          The log normal distribution is implemented in Base R (see above)
          and <pkg>poweRlaw</pkg>, but the 3-parameter lognormal
          distribution is available in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
@@ -641,7 +659,11 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Phase-type distributions</i>: provided in <pkg>actuar</pkg>, see also 
 	 <pkg>PhaseType</pkg> for inference.</li>
-	 
+
+    <li><i>Poisson subordinated distributions</i>: provided in <pkg>LIHNPSD</pkg>
+        (d, p, q, r, m functions).</li>
+
+
 	 <li><i>Power distributions</i>:  <pkg>reliaR</pkg>, <pkg>poweRlaw</pkg> and <pkg>ActuDistns</pkg> implement the
 	 exponential power distribution.</li>
 
@@ -673,7 +695,10 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>stable distributions</i>: d, p, q, r functions are available in <pkg>fBasics</pkg>
 	 and <pkg>stabledist</pkg>, the functions use the approach of J.P. Nolan
          for general stable distributions. <pkg>MixedTS</pkg> provides mixed tempered
-     stable distribution (d, p, q, r).</li>
+     stable distribution (d, p, q, r).
+     <pkg>FMStable</pkg> provides (d, p, q) the extremal or maximally skew stable and
+     the finite moment log stable distributions.
+     </li>
  
      <li><i>Student distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for Student and non central Student distribution (see above).
@@ -842,7 +867,9 @@ are provided in <pkg>TTmoment</pkg>.
 	  
 
       <li><i>Student mixture</i>: The <pkg>AdMit</pkg> package provides d, r functions
-      for Student mixtures in the context of Adaptive Mixture of Student-t distributions.</li>
+      for Student mixtures in the context of Adaptive Mixture of Student-t distributions.
+      <pkg>MitISEM</pkg> package also provides d, r functions for mixture of Student-t distributions.
+      </li>
 
       <li><i>von Mises Fisher (or Langevin) mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
       for finite von Mises Fisher mixtures.</li>
@@ -1265,6 +1292,9 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>fgac</pkg>
   <pkg>fitdistrplus</pkg>
   <pkg>flexsurv</pkg>
+  <pkg>FMStable</pkg>
+  <pkg>fpow</pkg>
+  <pkg>frmqa</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
@@ -1288,10 +1318,13 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>HyperbolicDist</pkg>
   <pkg>hyperdirichlet</pkg>
   <pkg>ihs</pkg>
+  <pkg>JohnsonDistribution</pkg>
   <pkg>kolmim</pkg>
   <pkg>LambertW</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
+  <pkg>LIHNPSD</pkg>
+  <pkg>logitnorm</pkg>
   <pkg>loglognorm</pkg>
   <pkg>lmom</pkg>
   <pkg priority="core">lmomco</pkg>
@@ -1301,8 +1334,10 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
+  <pkg>MitISEM</pkg>
   <pkg>MixedTS</pkg>
   <pkg>mixtools</pkg>
+  <pkg>MM</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
@@ -1312,6 +1347,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>mvrtn</pkg>
   <pkg priority="core">mvtnorm</pkg>
   <pkg>Newdistns</pkg>
+  <pkg>nCDunnett</pkg>
   <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
