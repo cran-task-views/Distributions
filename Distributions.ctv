@@ -386,9 +386,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 The shifted (or two-parameter exponential) and the
 	 truncated exponential distributions are implemented in <pkg>lmomco</pkg> and <pkg>tolerance</pkg>
 	 packages with d, p, q, r functions.
+     Exponential Power distribution is also known as General Error Distribution:
 	 d, p, q, r functions for the power and the skew power exponential type 1-4 distributions are implemented
 	 in <pkg>gamlss.dist</pkg> and <pkg>lmomco</pkg>.
-     The power exponential distribution is also provided in <pkg>normalp</pkg> and <pkg>fExtremes</pkg>.
+     The power exponential distribution is also provided in <pkg>normalp</pkg>.
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> provide 
 	 the generalized exponential, the inverse generalized exponential,
 	 the logistic exponential, the Marshall-Olkin Extended Exponential and 
@@ -399,25 +400,26 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <br/><table border="0" summary="Exponential-related distributions">
          <caption>Summary for exponential-related distributions</caption>
-         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
-         <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td></tr>
-         <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
-         <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
-         <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Inverse exponential</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td></tr>
-         <tr><td>Shifted exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
-         <tr><td>Shifted exponential</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Power exponential</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Power exponential</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Power exponential</td> <td><pkg>Runuran</pkg></td> <td>d, r</td></tr>
-         <tr><td>Power and skew power exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td></tr>
-         <tr><td>Power and skew power exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
-         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td></tr>
+         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td>  <td><code>exp</code></td></tr>
+         <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>exp</code></td></tr>
+         <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td> <td><code>exponential</code></td></tr>
+         <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td>  <td><code>Exp</code></td></tr>
+         <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td><code>EXP</code></td></tr>
+         <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td> <td><code>exp</code></td></tr>
+         <tr><td>Inverse exponential</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>invexp</code></td></tr>
+         <tr><td>Shifted exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td> <td><code>exp</code></td></tr>
+         <tr><td>Shifted exponential</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td> <td><code>2exp</code></td></tr>
+         <tr><td>Truncated exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td> <td><code>texp</code></td></tr>
+         
+         <tr><td>Power exponential</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td>  <td><code>normp</code></td></tr>
+         <tr><td>Power exponential</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>exp</code></td></tr>
+         <tr><td>Skew power exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td><code>aep4</code></td></tr>
+         <tr><td>Power and skew power exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td><code>PE, SEP</code></td></tr>
+         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>  <td><code>ige</code></td></tr>
+         <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td>  <td><code>gen.exp, inv.genexp</code></td> </tr>
+         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>  <td><code>le, moe, expext</code></td></tr>
+         <tr><td>Logistic, Marshall-Olkin Ext. exp. and exp. ext.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td>  <td><code>logis.exp, moee, exp.ext</code></td>   </tr>
      </table><br/>
           
 	 </li>
@@ -543,8 +545,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	    
 	 <li><i>Hjorth distribution</i>: provided in <pkg>ActuDistns</pkg>.</li> 	 
 	 
-	 <li><i>Huber's least favourable distribution</i>: density and random
-	 generator in package <pkg>smoothmest</pkg>.</li>
+	 <li><i>Huber's least favourable distribution</i>: d, r in package <pkg>smoothmest</pkg>,
+         d, p, q, r in <pkg>VGAM</pkg>.</li>
      
      <li><i>Hyperbolic distribuion</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
@@ -677,8 +679,8 @@ If you think information is not accurate or not complete, please let me know.</p
          as well as the raw moment, the expected value and the variance functions.
 	 </li>
      
-	 <li><i>Makeham distribution</i>: provided in <pkg>ActuDistns</pkg> as well as
-	 Makeham-Beard and Makeham-Perks distributions.
+	 <li><i>Makeham distribution</i>: provided in <pkg>VGAM</pkg> and
+         <pkg>ActuDistns</pkg> provides Makeham, Makeham-Beard and Makeham-Perks distributions.
      </li> 
 	      
      <li><i>Maxwell distribution</i>: provided in <pkg>VGAM</pkg>.
@@ -717,7 +719,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>Pearson's Rho distribution</i>: provided in <pkg>SuppDists</pkg>.</li> 
 	 
-	 <li><i>Perks distribution</i>: provided in <pkg>ActuDistns</pkg> as well as 
+	 <li><i>Perks distribution</i>: provided in <pkg>VGAM</pkg>
+         and in <pkg>ActuDistns</pkg> as well as
 	 the Makeham-Perks distribution.
      </li> 	 
 	 
@@ -961,7 +964,10 @@ are provided in <pkg>TTmoment</pkg>.
 
     </li>
        
-    <li><i>Exponentiated distributions</i> are not yet implemented.
+       <li><i>Exponentiated distributions</i>:
+           Exponentiated exponential, exponentiated logistic, exponentiated Weibull,
+           inverse exponentiated exponential
+           are implemented in <pkg>ActuDistns</pkg>.
     </li>
     
     
