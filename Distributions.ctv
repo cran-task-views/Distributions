@@ -470,21 +470,21 @@ If you think information is not accurate or not complete, please let me know.</p
     
     <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
-        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td></tr>
-        <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td></tr>
-        <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td></tr>
-        <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td></tr>
-        <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td></tr>
-        <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td></tr>
-        <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td></tr>
-        <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
-        <tr><td>Log-gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
+        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+        <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td> <td><code>gamma</code></td></tr>
+        <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>gamma</code></td></tr>
+        <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td><code>gamma</code></td></tr>
+        <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Gamma</code></td></tr>
+        <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td><code>invgamma</code></td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>lgamma</code></td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td> <td><code>lgammad</code></td></tr>
+        <tr><td>Log-gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>  <td><code>lgamma</code></td></tr>
         <tr><td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td></tr>
         <tr><td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td></tr>
-        <tr><td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>   <td><code>gengammad</code></td> </tr>
         <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
-        <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td></tr>
-        <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td>  <td><code>GG</code></td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>   <td><code>gengamma.stacy</code></td></tr>
     </table><br/>
 
 	 </li>
