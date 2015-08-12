@@ -1077,16 +1077,15 @@ are provided in <pkg>TTmoment</pkg>.
       <pkg>copulaedas</pkg> provides a copula approach to estimate distribution algorithms (EDA).
       </li>
 
-      <li><i>Archimedean copulas</i>: The Frank bivariate distribution 
-      is available in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>.
-      <pkg>fCopulae</pkg> implements the 22 Archimedean
-      copulas of Nelsen (1998, <i>Introduction to Copulas</i>, Springer-Verlag) including
-      Gumbel, Frank, Clayton, and Ali-Mikhail-Haq.
-      <pkg>gumbel</pkg> is a 
-      standalone package for the Gumbel copula and <pkg>VGAM</pkg> 
-      provides the Ali-Mikhail-Haq bivariate distribution. <pkg>copula</pkg> provides
-	   Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
-	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
+      <li><i>Archimedean copulas</i>:
+          <pkg>gumbel</pkg> is a standalone package for the Gumbel copula
+          <pkg>fCopulae</pkg> implements the 22 Archimedean
+          copulas of Nelsen (1998, <i>Introduction to Copulas</i>, Springer-Verlag) including
+          Gumbel, Frank, Clayton, and Ali-Mikhail-Haq.
+          <pkg>VGAM</pkg>  provides Ali-Mikhail-Haq, Clayton, Frank, Frechet copulas.
+          <pkg>copula</pkg> provides Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
+          The Frank bivariate distribution is available in <pkg>RTDE</pkg>.
+      	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
 	   Clayton, Gumbel, Frank, Joe, BB1, BB6, BB7 and BB8 copulas.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
@@ -1106,7 +1105,7 @@ are provided in <pkg>TTmoment</pkg>.
       with a specified correlation matrix.</li>
       
       <li><i>Elliptical copulas</i>: Gaussian, Student and Cauchy copulas are implemented in
-      <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, 
+      <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, <pkg>VGAM</pkg>,
 	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copula.</li>
       
       <li><i>Extreme value copulas</i>: <pkg>fCopulae</pkg> provides the following copulas
