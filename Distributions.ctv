@@ -106,7 +106,12 @@ If you think information is not accurate or not complete, please let me know.</p
             inverse Weibull as well as hazard rate function and moments.
         </li>
 
-        
+        <li><i>Discrete Laplace distribution</i>:
+            The skew discrete Laplace distribution has two parametrization (DSL and ADSL),
+            both provided in <pkg>DiscreteLaplace</pkg> and DSL in <pkg>disclap</pkg>.
+        </li>
+
+
         <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
         
         <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
@@ -546,12 +551,19 @@ If you think information is not accurate or not complete, please let me know.</p
 	 and <pkg>lmomco</pkg>.</li>
      
      <li><i>(Tukey) Lambda distribution and its extensions</i>: The generalized Lambda 
-	 distribution (GLD) is well known for its wide range of shapes. There exists 3 kinds
-	 of GLD in the literature: RS, FMKL and FM5. The following packages implement such distributions
-	 (with d, p, q, r functions): <pkg>gld</pkg> provides the 3 kinds of GLD, 
-	 <pkg>Davies</pkg> and <pkg>gb</pkg> provide the RS type, <pkg>lmomco</pkg> provides the FMKL.
-	 The original Tukey Lambda distribution can be obtained as a special 
-	 case of the generalized Lambda distribution.	
+	 distribution (GLD) is well known for its wide range of shapes.
+     The original Tukey Lambda distribution can be obtained as a special
+     case of the generalized Lambda distribution.
+     There exists different parametrization of GLD in the literature:
+     RS (Ramberg-Schmeiser or tail-index param),
+     FMKL (Freimer-Mudholkar-Kollia-Lin),
+     FM5 (Five-parameter version of FKML by Gilchrist),
+     GPD (gen. Pareto dist.)
+     and AS (Asymmetry-steepness). The following packages implement such distributions
+     (with d, p, q, r functions): <pkg>gld</pkg> (RS, FKML, FM5, GPD),
+	 <pkg>Davies</pkg> (RS), <pkg>gb</pkg> (RS),
+     <pkg>lmomco</pkg> (FMKL), <pkg>gldist</pkg> (AS).
+	 
 	  </li>
 	  
 	 <li><i>Tukey's H distribution</i>: provided as a special case of 
@@ -619,6 +631,9 @@ If you think information is not accurate or not complete, please let me know.</p
      </li> 
 	      
      <li><i>Maxwell distribution</i>: provided in <pkg>VGAM</pkg>.
+     </li>
+     
+     <li><i>Minimax distribution</i>: provided in <pkg>minimax</pkg>.
      </li>
      
      <li><i>Nakagami distribution</i>: provided in <pkg>VGAM</pkg>.
@@ -931,6 +946,13 @@ are provided in <pkg>TTmoment</pkg>.
           Package <pkg>modeest</pkg> provides mode estimation for various distributions.
       </li>
       
+      
+      <li><i>Order statistics</i>:
+      Distribution function of the jth order statistic can be obtained with base R functions.
+      <pkg>ORDER2PARENT</pkg> transforms distribution function of order statistics to its parent
+      distribution function.
+       </li>
+      
 
    
 	  <li><i>Theoretical moments</i>: 
@@ -939,6 +961,8 @@ are provided in <pkg>TTmoment</pkg>.
 	  <pkg>HyperbolicDist</pkg> provides the mean, variance, skewness, kurtosis, mode,
 	  raw and centered moments for the hyperbolic, the generalized hyperbolic and the
 	  generalized inverse Gaussian distributions.
+      <pkg>GLDEX</pkg> also provides the mean, variance, skewness, kurtosis of generalized Lambda
+      distribution.
       <pkg>mvrtn</pkg> provides mean, variance for left/right truncated normal distributions.
       <pkg>lmomco</pkg> provides L-moments (L), trimmed L-moments (TL), and right-censored [RC] for
       the following distributions: Asymmetric Exponential Power (L), Cauchy (TL), Eta-Mu (L),
@@ -948,6 +972,7 @@ are provided in <pkg>TTmoment</pkg>.
       Normal (L), 3-parameter log-Normal (L), Pearson Type III (L), Rayleigh (L), Reverse Gumbel
       (L[RC]), Rice/Rician (L), Slash (TL), 3-parameter Student T (L), Truncated Exponential
       (L), Wakeby (L), and Weibull (L). Multivariate L-moments (L-comoments).
+      
       </li>
 
    </ul>
@@ -1265,7 +1290,9 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>Delaporte</pkg>
   <pkg>denstrip</pkg>
   <pkg>dirmult</pkg>
+  <pkg>disclap</pkg>
   <pkg>DiscreteInverseWeibull</pkg>
+  <pkg>DiscreteLaplace</pkg>
   <pkg>DiscreteWeibull</pkg>
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
@@ -1306,6 +1333,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>GIGrvg</pkg>
   <pkg>gld</pkg>
+  <pkg>gldist</pkg>
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
@@ -1334,6 +1362,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
+  <pkg>minimax</pkg>
   <pkg>MitISEM</pkg>
   <pkg>MixedTS</pkg>
   <pkg>mixtools</pkg>
@@ -1352,6 +1381,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
+  <pkg>ORDER2PARENT</pkg>
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
