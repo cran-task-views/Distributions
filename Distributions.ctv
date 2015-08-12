@@ -70,17 +70,136 @@ If you think information is not accurate or not complete, please let me know.</p
 
 <p><strong>Discrete univariate distributions:</strong></p>
 	  <ul>
-	   <li><i>Basic distributions</i>: The binomial distribution (in particular
-	    Bernoulli distribution) is already implemented in base R (stats package).
-	    The discrete uniform distribution can be easily obtained with the basic functions.
-	    Dirac distribution is provided in <pkg>distr</pkg>. Truncated versions of
-	    the binomial and Poisson distributions as well as zero-inflated
-	    versions of the binomial, Poisson and negative binomial distributions 
-	    are implemented in <pkg>VGAM</pkg>. Zero-inflated Poisson distribution
-		is available in <pkg>gamlss.dist</pkg>.
-        Poisson is implemented in <pkg>poweRlaw</pkg>.
-       New parametrization of the negative binomial distribution is available in
-       <pkg>RMKdiscrete</pkg>.
+          
+          <li><i>Beta-binomial distribution</i>: provided in <pkg>VGAM</pkg>.
+              ZI/ZM beta binomial distributions are
+              implemented in <pkg>gamlss.dist</pkg>. </li>
+          <li><i>Beta-geometric distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Binomial (including Bernoulli) distribution</i>: provided in <pkg>stats</pkg>.
+          Zero-modified, zero-inflated, truncated versions are provided
+          in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+          </li>
+          
+          <li><i>Benford distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Borel-Tanner distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
+              <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
+          
+          <li><i>Delaporte distribution</i>: provided in
+              <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
+          
+          <li><i>Dirac distribution</i>: provided in <pkg>distr</pkg>.</li>
+          
+          
+          <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+          
+          <li><i>Discrete inverse Weibull distribution</i>:
+              <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
+              inverse Weibull as well as hazard rate function and moments.
+          </li>
+          
+          <li><i>Discrete Laplace distribution</i>:
+              The skew discrete Laplace distribution has two parametrization (DSL and ADSL),
+              both provided in <pkg>DiscreteLaplace</pkg> and DSL in <pkg>disclap</pkg>.
+          </li>
+          
+          
+          <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+          
+          <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
+          
+          <li><i>Discrete Weibull distribution</i>: provided in <pkg>DiscreteWeibull</pkg>:
+              d, p, q, r, m for disc. Weib. type 1, d, p, q, r, m, h for disc. Weib. type 3.</li>
+          
+          <li><i>Felix distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Geometric distribution</i>: provided in <pkg>stats</pkg>.
+              Zero-modified, zero-inflated, truncated versions are provided
+              in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+          </li>
+          
+          <li><i>Geometric (compound) Poisson distribution
+              (also known Polya-Aeppli distribution)</i>:  provided in
+          <pkg>polyaAeppli</pkg>.</li>
+          
+          <li><i>Generalized binomial distribution</i>: provided in
+              <pkg>GenBinomApps</pkg>.</li>
+          
+          <li><i>Generalized Hermite distribution</i>: provided in
+              <pkg>hermite</pkg>.</li>
+          
+          
+
+          <li><i>Hypergeometric distributions</i>:
+              provided in <pkg>stats</pkg>.
+              Extented hypergeometric distribution
+              can be found in <pkg>BiasedUrn</pkg> package, which provides
+              not only p, d, q, r functions but also mean, variance, mode functions.
+              Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
+              Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>.
+          </li>
+          
+          
+          
+          
+          <li><i>Lagrangian Poisson distribution</i>:
+              <pkg>RMKdiscrete</pkg> provides d, p, q, r functions for the
+              univariate and the bivariate Lagrangian Poisson distribution.
+          </li>
+          
+          <li><i>Lindley distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Logarithmic distribution</i>: This can be found in
+              <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is
+              available for the logarithmic distribution
+              is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
+          </li>
+          
+          <li><i>Poisson distribution</i>: provided in <pkg>stats</pkg> and in <pkg>poweRlaw</pkg>.
+              Zero-modified, zero-inflated, truncated versions are provided
+              in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+          </li>
+          
+          <li><i>Poisson-Lindley distribution</i>: provided in <pkg>tolerance</pkg>.</li>
+          
+          <li><i>Power law distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+          
+          <li><i>Mana Clash distribution</i>: provided in <pkg>RMKdiscrete</pkg>.</li>
+          
+          <li><i>Multinomial distribution</i>: </li>
+          
+          <li><i>Negative binomial distribution</i>: provided in <pkg>stats</pkg>.
+              Zero-modified, zero-inflated, truncated versions are provided
+              in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+          New parametrization of the negative binomial distribution is available in <pkg>RMKdiscrete</pkg>.
+          </li>
+          
+          <li><i>Sichel distribution</i>: provided in
+              <pkg>gamlss.dist</pkg>.</li>
+          
+          <li><i>Skellam distribution</i>: provided in
+              <pkg>VGAM</pkg> and <pkg>skellam</pkg>.</li>
+          
+          <li><i>Waring distribution</i>: sampling in <pkg>degreenet</pkg>.</li>
+          
+          <li><i>Yule-Simon distribution</i>: provided in
+              <pkg>VGAM</pkg> and sampling in <pkg>degreenet</pkg>.</li>
+          
+          <li><i>Zeta and Haight's Zeta distribution</i>: provided in
+              <pkg>VGAM</pkg>, <pkg>tolerance</pkg>.</li>
+
+        <li><i>Zipf law</i>:
+            d, p, q, r functions of the Zipf and the Zipf-Mandelbrot distributions
+            are provided in <pkg>tolerance</pkg>, <pkg>VGAM</pkg>.
+            Package <pkg>zipfR</pkg> provides tools for distribution of word frequency,
+            such as the Zipf distribution.</li>
+
+
+
+	   <li>Probability generating function:
        
        <pkg>Compounding</pkg> provides pgf for <code>xxx</code> distribution,
        inverse <code>xxx</code> distribution,
@@ -93,100 +212,7 @@ If you think information is not accurate or not complete, please let me know.</p
        
        </li>
 
-	    <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
-	    <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
-		
-		<li><i>Delaporte distribution</i>: provided in
-	    <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
-        
-        <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
-        
-        <li><i>Discrete inverse Weibull distribution</i>:
-            <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
-            inverse Weibull as well as hazard rate function and moments.
-        </li>
-
-        <li><i>Discrete Laplace distribution</i>:
-            The skew discrete Laplace distribution has two parametrization (DSL and ADSL),
-            both provided in <pkg>DiscreteLaplace</pkg> and DSL in <pkg>disclap</pkg>.
-        </li>
-
-
-        <li><i>Discrete lognormal distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
-        
-        <li><i>Discrete uniform distribution</i>: can be easily obtained with the functions <code>sum,cumsum,sample</code>.</li>
-        
-        <li><i>Discrete Weibull distribution</i>: provided in <pkg>DiscreteWeibull</pkg>:
-            d, p, q, r, m for disc. Weib. type 1, d, p, q, r, m, h for disc. Weib. type 3.</li>
-        
-        <li><i>Geometric (compound) Poisson distribution
-            (also known Polya-Aeppli distribution)</i>:  provided in
-            <pkg>polyaAeppli</pkg>.</li>
-        
-        <li><i>Generalized binomial distribution</i>: provided in
-            <pkg>GenBinomApps</pkg>.</li>
-
-        <li><i>Generalized Hermite distribution</i>: provided in
-            <pkg>hermite</pkg>.</li>
-
-
-	    <li><i>Hypergeometric distributions</i>: Extented hypergeometric distribution
-	    can be found in <pkg>BiasedUrn</pkg> package, which provides
-	    not only p, d, q, r functions but also mean, variance, mode functions.
-		Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
-        Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>.
-        </li>
-        
-        
-        
-        
-        <li><i>Lagrangian Poisson distribution</i>:
-            <pkg>RMKdiscrete</pkg> provides d, p, q, r functions for the
-            univariate and the bivariate Lagrangian Poisson distribution.
-        </li>
-		
-		<li><i>Logarithmic distribution</i>: This can be found in
-	    <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is 
-		available for the logarithmic distribution 
-		is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
-		</li>
-        
-        <li><i>Power law distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
-        
-		
-        <li><i>Mana Clash distribution</i>: provided in <pkg>RMKdiscrete</pkg>.</li>
-
-        <li><i>Multinomial distribution</i>: </li>
-		
-					 
-		<li><i>Sichel distribution</i>: provided in
-	    <pkg>gamlss.dist</pkg>.</li>
-        
-        <li><i>Yule-Simon distribution</i>: provided in
-            <pkg>VGAM</pkg> and sampling in <pkg>degreenet</pkg>.</li>
-	    	    
-		<li><i>Zero inflated/modified (ZI/ZM) distributions</i>: 
-		ZM (or Hurdle) Poisson, ZM logarithmic, 
-		ZI/ZM negative binomial, ZI Poisson inverse Gaussian,
-		ZI/ZM binomial, ZI/ZM beta binomial distributions are 
-		implemented in <pkg>gamlss.dist</pkg>. </li>
-		
-	    <li><i>Zipf law</i>:
-        d, p, q, r functions of the Zipf and the Zipf-Mandelbrot distributions
-        are provided in <pkg>tolerance</pkg>, <pkg>VGAM</pkg>.
-        Package <pkg>zipfR</pkg> provides tools for distribution of word frequency,
-        such as the Zipf distribution.</li>
-
-	    
-	    <li><i>Further distributions</i>: The <pkg>VGAM</pkg> package provides several
-	    additional distributions, namely: Skellam, Zeta and Haight's Zeta,
-		Borel-Tanner and Felix distribution.
-	<pkg>skellam</pkg> implements the Skellam distribution.
-        Sampling for Waring distribution is implemented in  <pkg>degreenet</pkg>.
-        Zeta and Poisson-Lindley distributions are provided in <pkg>tolerance</pkg>.
-
-        </li>
-	  </ul>
+	   	  </ul>
       
 <p><strong>Discrete multivariate distributions:</strong></p>
 	  <ul>
@@ -235,7 +261,8 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
 
 	    
-     <li><i>Beta distribution and its extensions</i>: Base R and <pkg>ExtDist</pkg> provide
+     <li><i>Beta distribution and its extensions</i>:
+         Base R and <pkg>ExtDist</pkg> provide
      the d, p, q, r functions for this distribution (see above).
      <pkg>actuar</pkg> provides moments and limited expected values, <pkg>ActuDistns</pkg>
 	 provides hazard and integrated hazard rate functions.
@@ -243,6 +270,7 @@ If you think information is not accurate or not complete, please let me know.</p
      for doubly non central beta distribution for computing d, p, q, r functions.
      The four-parameter beta (with location and scale param), the symmetric reflected truncated
      beta (both for two-parameter and four-parameter beta) are available in <pkg>ExtDist</pkg>.
+     
      The beta prime (or beta of the second kind), which is the distribution of X/(1-X) when
      X follows a beta distribution, is provided in <pkg>VGAM</pkg> and <pkg>mc2d</pkg>.
      The zero and one inflated beta distribution can be found in <pkg>gamlss.dist</pkg>.
@@ -253,7 +281,28 @@ If you think information is not accurate or not complete, please let me know.</p
      Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
      paralogistic and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.
      
-     
+     <br/><table border="0" summary="Beta-related distributions">
+         <caption>Summary for Beta-related distributions</caption>
+         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td>Beta (1st kind)</td> <td>stats</td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
+         <tr><td>Beta</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>beta</code></td></tr>
+         <tr><td>Beta</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Beta</code></td></tr>
+         <tr><td>Doubly non central beta </td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>nbeta</code></td></tr>
+         <tr><td>4-param beta</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Beta_ab</code></td></tr>
+         <tr><td>zero-infl beta</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>BEZI</code></td></tr>
+         <tr><td>one-infl beta</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>BEOI</code></td></tr>
+         <tr><td>GB1</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB1</code></td></tr>
+     </table><br/>
+
+    <br/><table border="0" summary="Beta-related distributions">
+        <caption>Summary for second kind Beta-related distributions</caption>
+        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+        <tr><td>Beta (2nd kind)</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
+        <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
+        <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB2</code></td></tr>
+        <tr><td>GB2</td> <td><pkg>GB2</pkg></td> <td>d, p, q, r</td> <td><code>gb2</code></td></tr>
+    </table><br/>
+
      </li>
      
      <li><i>Benini distribution</i>: provided in <pkg>VGAM</pkg>.
