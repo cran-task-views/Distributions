@@ -278,8 +278,7 @@ If you think information is not accurate or not complete, please let me know.</p
      The generalized beta of the second kind (GB2) is provided in <pkg>gamlss.dist</pkg>, <pkg>GB2</pkg>.
      Several special cases of
      the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
-     Lomax, inverse Lomax, Dagum, Fisk (aka log logistic), (inverse or not) 
-     paralogistic and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.
+     Lomax, inverse Lomax, Dagum and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.
      
      <br/><table border="0" summary="Beta-related distributions">
          <caption>Summary for Beta-related distributions</caption>
@@ -358,6 +357,8 @@ If you think information is not accurate or not complete, please let me know.</p
      
 	 </li>
 
+    <li><i>Dagum distribution</i>: see beta.</li>
+    
      <li><i>Davies distribution</i>: The Davies distribution is provided
      in <pkg>Davies</pkg> package.</li>	   
      
@@ -643,20 +644,21 @@ If you think information is not accurate or not complete, please let me know.</p
 
 	 <li><i>Loglog distribution</i>: provided in <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
-     </li>   
+     </li>
+     
+     <li><i>Lomax distribution</i>: see beta.</li>
 
      <li><i>Logistic distributions and its extensions</i>: Base R provides
      the d, p, q, r functions for this distribution (see above).
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
-     <pkg>actuar</pkg> provides d, p, q, r  functions for
-     the log logistic (also called Fisk), the paralogistic and the inverse paralogistic distributions. 
-     <pkg>VGAM</pkg> package also implements these distributions plus
-     the bivariate logistic distribution. 
+     <pkg>actuar</pkg> and <pkg>VGAM</pkg> provide d, p, q, r  functions for
+     the log logistic (also called Fisk), the paralogistic and the inverse paralogistic distributions.
 	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
 	 in <pkg>lmomco</pkg>, <pkg>sld</pkg> and <pkg>glogis</pkg>.  <pkg>FAdist</pkg>
 	 the log-logistic distribution with two and three parameters. Finally,
 	  <pkg>ActuDistns</pkg>  implements the log-logistic distribution.
       <pkg>ExtDist</pkg> implements the logistic distribution.
+      
      </li>
      
      
@@ -751,6 +753,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
 	 <li><i>Schabe distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>
 
+    <li><i>Singh-Maddala distribution</i>: see beta.</li>
 
 	 <li><i>Slash distribution</i>: provided in <pkg>lmomco</pkg> and <pkg>VGAM</pkg>.</li>
       
@@ -861,6 +864,11 @@ If you think information is not accurate or not complete, please let me know.</p
     Both bivariate and multivariate Extreme Value distributions as well as order/maxima/minima distributions
     are implemented in <pkg>evd</pkg> (d, p, r).
 </li>
+
+<li><i>Multivariate Logistic distribution</i>:
+    <pkg>VGAM</pkg> package  implements the bivariate logistic distribution.
+</li>
+
 
 
 <li><i>Multivariate Pareto distribution</i>:
