@@ -479,10 +479,10 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>lgamma</code></td></tr>
         <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td> <td><code>lgammad</code></td></tr>
         <tr><td>Log-gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>  <td><code>lgamma</code></td></tr>
-        <tr><td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td></tr>
-        <tr><td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td></tr>
+        <tr><td>Variance gamma</td> <td><pkg>ghyp</pkg></td> <td>d, p, q, r</td> <td><code>VG</code></td></tr>
+        <tr><td>Variance gamma</td> <td><pkg>VarianceGamma</pkg></td> <td>d, p, q, r, m</td> <td><code>vg</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>   <td><code>gengammad</code></td> </tr>
-        <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td> <td><code>gengamma</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td>  <td><code>GG</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>   <td><code>gengamma.stacy</code></td></tr>
     </table><br/>
