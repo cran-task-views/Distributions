@@ -282,7 +282,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <br/><table border="0" summary="Beta-related distributions">
          <caption>Summary for Beta-related distributions</caption>
-         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Beta (1st kind)</td> <td>stats</td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
          <tr><td>Beta</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>beta</code></td></tr>
          <tr><td>Beta</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Beta</code></td></tr>
@@ -295,7 +295,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
     <br/><table border="0" summary="Beta-related distributions">
         <caption>Summary for second kind Beta-related distributions</caption>
-        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+        <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
         <tr><td>Beta (2nd kind)</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
         <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
         <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB2</code></td></tr>
@@ -344,7 +344,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <br/><table border="0" summary="Chi-related distributions">
          <caption>Summary for Chi-related distributions</caption>
-         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Chi-squared</td> <td>stats</td> <td>d, p, q, r</td> <td><code>chisq</code></td></tr>
          <tr><td>Chi-squared</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>chisq</code></td></tr>
          <tr><td>Chi-squared</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>chisq</code></td></tr>
@@ -400,7 +400,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <br/><table border="0" summary="Exponential-related distributions">
          <caption>Summary for exponential-related distributions</caption>
-         <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td>  <td><code>exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td> <td><code>exponential</code></td></tr>
@@ -470,7 +470,7 @@ If you think information is not accurate or not complete, please let me know.</p
     
     <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
-        <tr><td><em>Distribution</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+        <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
         <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td> <td><code>gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td><code>gamma</code></td></tr>
@@ -490,29 +490,54 @@ If you think information is not accurate or not complete, please let me know.</p
 	 </li>
      
      <li><i>Gaussian (or normal) distribution and its extensions</i>: Base R provides
-     the d, p, q, r functions for this distribution (see above). 
+     the d, p, q, r functions for this distribution (see above).
+     <pkg>actuar</pkg>
+     provides the moment generating function and moments.
 	 <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions.
+     
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
 	 univariate gaussian distribution as well as functions for the first two moments.
-	 <pkg>actuar</pkg>
-     provides the moment generating function and moments.
+     <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
+     <pkg>copulaedas</pkg> provides p, q functions of the truncated normal distribution.
+     <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
+     
      <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
-     <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg> and <pkg>fBasics</pkg>
-     also implement
-     the folded and the skewed normal distribution, and
-	 <pkg>fBasics</pkg> the normal inverse Gaussian and standardized
-	 normal inverse Gaussian distributions.
-	 <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
+     <pkg>VGAM</pkg> implements the folded and the skewed normal distribution, and
+     <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
+
+    <pkg>CompQuadForm</pkg> provides the distribution function of quadratic forms
 	 in normal variates.
 	 <pkg>NormalGamma</pkg> provides the density of the sum of a gaussian and a gamma random variables.
-     <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
-     <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
-     <pkg>copulaedas</pkg> provides p, q functions of the truncated normal distribution.
-     <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
-     <pkg>NormalLaplace</pkg> provides d, p, q, r functions for the normal-laplace distribution.
-	 </li>
+     <pkg>NormalLaplace</pkg> provides d, p, q, r functions for the sum of a normal and a Laplace random variables.
+	 
+     
+     <br/><table border="0" summary="Gaussian-related distributions">
+         <caption>Summary for Gaussian-related distributions</caption>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+         <tr><td>Normal</td> <td>stats</td> <td>d, p, q, r</td> <td><code>norm</code></td></tr>
+         <tr><td>Normal</td> <td><pkg>actuar</pkg></td> <td>m, mgf</td> <td><code>norm</code></td></tr>
+         <tr><td>Normal</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td><code>norm</code></td></tr>
+         <tr><td>Normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal</code></td></tr>
+         
+         <tr><td>Truncated normal</td> <td><pkg>truncnorm</pkg></td> <td>d, p, q, r, m</td> <td><code>truncnorm</code></td></tr>
+         <tr><td>Truncated normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal_trunc_ab</code></td></tr>
+         <tr><td>Truncated normal</td> <td><pkg>copulaedas</pkg></td> <td>d, p, q, r</td> </tr>
+         <tr><td>Truncated normal</td> <td><pkg>mvrtn</pkg></td> <td>r, m</td>  <td><code>tn</code></td> </tr>
+         
+         <tr><td>Generalized normal</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td>  <td><code>gno</code></td> </tr>
+         
+         <tr><td>Exponentially modified Gaussian</td> <td><pkg>emg</pkg></td> <td>d, p, q, r</td> <td><code>emg</code></td></tr>
+         <tr><td>Exponentially modified Gaussian</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>exGAUSS</code></td></tr>
+         <tr><td>Exponentially modified Gaussian</td> <td><pkg>retimes</pkg></td> <td>d, p, q, r</td> <td><code>exgauss</code></td></tr>
+         
+         <tr><td>Folded and skew normal</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>SN1, SN2</code></td></tr>
+         <tr><td>Closed skew normal</td> <td><pkg>csn</pkg></td> <td>d, p, q, r</td> <td><code>csn</code></td></tr>
+         
+     </table><br/>
+     
+     </li>
      
 
      <li><i>General Error Distribution (also known as exponential power distribution)</i>:
@@ -568,6 +593,11 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>SuppDists</pkg> and <pkg>STAR</pkg>.
      <pkg>SuppDists</pkg> also provides a function that returns moments, skewness, kurtosis.
       <pkg>ActuDistns</pkg> provides d, q functions as well as (integrated) hazard function.
+      
+      <pkg>fBasics</pkg> the normal inverse Gaussian and standardized
+      normal inverse Gaussian distributions.
+
+      
      The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
