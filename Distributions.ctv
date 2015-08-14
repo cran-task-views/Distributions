@@ -730,7 +730,7 @@ If you think information is not accurate or not complete, please let me know.</p
      limited expected values for the Pareto I and II, the inverse Pareto, the 'generalized pareto'
      distributions, the Burr and the inverse Burr distributions. A fast random generator for the
 	 Burr and the Pareto II distribution is implemented in <pkg>Runuran</pkg> as well as the density.
-     <pkg>ActuDistns</pkg> also provides q, p, q, h functions of the Pareto II distribution and
+     <pkg>ActuDistns</pkg> also provides d, p, q, h functions of the Pareto II distribution and
 	 the Burr-X distribution.
      <pkg>ExtDist</pkg> provides the Burr distribution.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>,
@@ -739,7 +739,39 @@ If you think information is not accurate or not complete, please let me know.</p
 	 depending the shape parameter's value a Pareto II distribution, 
 	 a shifted exponential distribution or a generalized beta I distribution.
      <pkg>ParetoPosStable</pkg> implements the Pareto positive stable distribution.
-     Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>.</li>
+     Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>.
+     
+     <br/><table border="0" summary="Pareto-related distributions">
+         <caption>Summary for Pareto-related distributions</caption>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+         <tr><td>Pareto I</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoI</code></td></tr>
+         <tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
+         <tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto</code></td></tr>
+         <tr><td>Pareto II</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>pareto</code></td></tr>
+         <tr><td>Pareto II</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>pareto</code></td></tr>
+         <tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
+         <tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
+
+         <tr><td>Inverse Pareto</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invpareto</code></td></tr>
+
+        <tr><td>Extended Pareto</td> <td><pkg>RTDE</pkg></td> <td>d, p, q, r</td> <td><code>EPD</code></td></tr>
+        
+         <tr><td>Gen. Pareto (actuarial)</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>genpareto</code></td></tr>
+         
+        
+         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td> <td><code>gpa</code></td></tr>
+         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evd</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evir</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+         
+         <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
+         <tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
+         <tr><td>Inverse Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invburr</code></td></tr>
+         
+     </table><br/>
+
+     
+     </li>
      
      <li><i>Pearson's distributions</i>: Pearson type III available 
 	 in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
