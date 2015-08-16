@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-08-10</version>
+<version>2015-08-16</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
