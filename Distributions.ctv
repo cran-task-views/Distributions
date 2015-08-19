@@ -171,8 +171,6 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Mana Clash distribution</i>: provided in <pkg>RMKdiscrete</pkg>.</li>
           
-          <li><i>Multinomial distribution</i>: </li>
-          
           <li><i>Negative binomial distribution</i>: provided in <pkg>stats</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
@@ -295,11 +293,11 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>GB1</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB1</code></td></tr>
      </table><br/>
 
-    <br/><table border="0" summary="Beta-related distributions">
-        <caption>Summary for second kind Beta-related distributions</caption>
+    <br/><table border="0" summary="Beta 2-related distributions">
+        <caption>Summary for Beta-2-related distributions</caption>
         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
         <tr><td>Beta (2nd kind)</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
-        <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
+        <tr><td>GB2</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
         <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB2</code></td></tr>
         <tr><td>GB2</td> <td><pkg>GB2</pkg></td> <td>d, p, q, r</td> <td><code>gb2</code></td></tr>
     </table><br/>
@@ -624,6 +622,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Kappa-mu distribution</i>: provided in <pkg>lmomco</pkg>.</li>     
 	 
      <li><i>Kendall's tau distribution</i>: provided in <pkg>SuppDists</pkg>.</li>
+     
+     <li><i>Kiener distribution</i>:
+         a family of distributions generalizing hyperbolic sine distributions (see hyperbolic sine section),
+         d, p, q, r, m provided in <pkg>FatTailsR</pkg>.</li>
      
      <li><i>Kolmogorov distribution</i>: p function provided in <pkg>kolmim</pkg>.</li>
      
