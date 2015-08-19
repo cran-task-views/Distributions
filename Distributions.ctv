@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-08-16</version>
+<version>2015-08-19</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -115,6 +115,8 @@ If you think information is not accurate or not complete, please let me know.</p
               d, p, q, r, m for disc. Weib. type 1, d, p, q, r, m, h for disc. Weib. type 3.</li>
           
           <li><i>Felix distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Lindley distribution</i>: provided in <pkg>gambin</pkg>.</li>
           
           <li><i>Geometric distribution</i>: provided in <pkg>stats</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
@@ -922,6 +924,8 @@ If you think information is not accurate or not complete, please let me know.</p
     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
     normal distribution.
     <pkg>EMMIXskew</pkg> provide the multivariate skew normal distribution (d, r).
+    <pkg>mnormpow</pkg> computes the expected product of the components of a multivariate Gaussian vector.
+    
     
 </li>
 
@@ -1447,6 +1451,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>FMStable</pkg>
   <pkg>fpow</pkg>
   <pkg>frmqa</pkg>
+  <pkg>gambin</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
@@ -1492,6 +1497,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>MixedTS</pkg>
   <pkg>mixtools</pkg>
   <pkg>MM</pkg>
+  <pkg>mnormpow</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
