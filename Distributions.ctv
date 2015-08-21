@@ -690,11 +690,35 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
      <pkg>actuar</pkg> and <pkg>VGAM</pkg> provide d, p, q, r  functions for
      the log logistic (also called Fisk), the paralogistic and the inverse paralogistic distributions.
+     <pkg>FAdist</pkg>
+     the log-logistic distribution with two and three parameters.
 	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
-	 in <pkg>lmomco</pkg>, <pkg>sld</pkg> and <pkg>glogis</pkg>.  <pkg>FAdist</pkg>
-	 the log-logistic distribution with two and three parameters. Finally,
+	 in <pkg>lmomco</pkg>, <pkg>sld</pkg>, <pkg>SCI</pkg> and <pkg>glogis</pkg>. Finally,
 	  <pkg>ActuDistns</pkg>  implements the log-logistic distribution.
       <pkg>ExtDist</pkg> implements the logistic distribution.
+      
+      <br/><table border="0" summary="Logistic-related distributions">
+          <caption>Summary for Logistic-related distributions</caption>
+          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+          <tr><td>Logistic</td> <td>stats</td> <td>d, p, q, r</td> <td><code>logis</code></td></tr>
+          <tr><td>Logistic</td> <td><pkg>actuar</pkg></td> <td>m, mgf</td> <td><code>logis</code></td></tr>
+          <tr><td>Logistic</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>  <td><code>logis</code></td></tr>
+          <tr><td>Logistic</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Logistic</code></td></tr>
+          <tr><td>Log logistic</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>llogis</code></td></tr>
+          <tr><td>Log logistic</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>fisk</code></td></tr>
+          <tr><td>Log logistic</td> <td><pkg>FAdist</pkg></td> <td>d, p, q, r</td> <td><code>llog, llog3</code></td></tr>
+          <tr><td>Log logistic</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td>  <td><code>loglogistic</code></td></tr>
+          <tr><td>Paralogistic</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>paralogis</code></td></tr>
+          <tr><td>Paralogistic</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paralogistic</code></td></tr>
+          <tr><td>Inv. paralogistic</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invparalogis</code></td></tr>
+          <tr><td>Inv. paralogistic</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>inv.paralogistic</code></td></tr>
+          <tr><td>Generalized logistic</td> <td><pkg>glogis</pkg></td> <td>d, p, q, r</td> <td><code>glogis</code></td></tr>
+          <tr><td>Generalized logistic</td> <td><pkg>SCI</pkg></td> <td>d, p, q</td> <td><code>genlog</code></td></tr>
+          <tr><td>Generalized logistic</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td> <td><code>glo</code></td></tr>
+          <tr><td>Generalized logistic</td> <td><pkg>sld</pkg></td> <td>d, p, q, r</td> <td><code>sl</code></td></tr>
+          
+      </table><br/>
+
       
      </li>
      
