@@ -980,6 +980,10 @@ are provided in <pkg>TTmoment</pkg>.
 <p><strong>Mixture of probability laws (and composite):</strong></p>
    
    <ul>
+       <li><i>Bernoulli-dist mixture</i>: d, p, q, r functions
+           for Bernoulli-exponential, Bernoulli-Gamma, Bernoulli-lognormal,
+           Bernoulli-Weibull distributions are provided in <pkg>qmap</pkg>.</li>
+       
       <li><i>Cauchy-polynomial quantile mixture</i>: d, p, q, r functions are
 	  provided in <pkg>Lmoments</pkg>.</li>
    
@@ -1529,6 +1533,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>prob</pkg>
+  <pkg>qmap</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
