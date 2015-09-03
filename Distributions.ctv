@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-08-21</version>
+<version>2015-09-03</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -324,7 +324,8 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Cauchy distribution</i>: Base R provides
      the d, p, q, r functions for this distribution (see above). Other
-     implementations are available in <pkg>lmomco</pkg>.</li>     
+     implementations are available in <pkg>lmomco</pkg> and <pkg>sgt</pkg>.
+     The skew Cauchy distribution is provided in <pkg>sgt</pkg>.</li>     
 	  
      <li><i>Chen distribution</i>: provided in <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.
      </li>
@@ -390,11 +391,14 @@ If you think information is not accurate or not complete, please let me know.</p
      Exponential Power distribution is also known as General Error Distribution:
 	 d, p, q, r functions for the power and the skew power exponential type 1-4 distributions are implemented
 	 in <pkg>gamlss.dist</pkg> and <pkg>lmomco</pkg>.
-     The power exponential distribution is also provided in <pkg>normalp</pkg>.
+     The power exponential distribution is also provided in <pkg>normalp</pkg> and <pkg>sgt</pkg>.
+     The skew power exponential is provided <pkg>sgt</pkg>.
+     
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> provide 
 	 the generalized exponential, the inverse generalized exponential,
 	 the logistic exponential, the Marshall-Olkin Extended Exponential and 
 	 the exponential extension distributions.
+	 
       <pkg>ExtDist</pkg> also provides d, p, q, r functions for the exponential distribution.
 	 A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.<br/>
@@ -505,6 +509,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
+	 <pkg>sgt</pkg> implements the skew normal distribution.
      <pkg>VGAM</pkg> implements the folded and the skewed normal distribution, and
      <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
 
@@ -535,6 +540,7 @@ If you think information is not accurate or not complete, please let me know.</p
          
          <tr><td>Folded and skew normal</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>SN1, SN2</code></td></tr>
          <tr><td>Closed skew normal</td> <td><pkg>csn</pkg></td> <td>d, p, q, r</td> <td><code>csn</code></td></tr>
+         <tr><td>Skew normal</td> <td><pkg>sgt</pkg></td> <td>d, p, q, r</td> <td><code>sn</code></td></tr>
          
      </table><br/>
      
@@ -668,12 +674,16 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>   
 
      <li><i>Laplace (also called double exponential distribution)
-         and asymetric Laplace distribution</i>: provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>,
-	 <pkg>VGAM</pkg>, <pkg>ExtDist</pkg> and <pkg>HyperbolicDist</pkg> packages.
+         and asymetric Laplace distribution</i>: 
+         provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>,
+	 <pkg>VGAM</pkg>, <pkg>ExtDist</pkg>, <pkg>sgt</pkg> 
+	 and <pkg>HyperbolicDist</pkg> packages.
      Asymetric Laplace distribution is implemented in <pkg>ald</pkg>.
 	 A fast random generator is available for the Laplace distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
-	 <pkg>smoothmest</pkg> implements the density and the random generator.</li>
+	 <pkg>smoothmest</pkg> implements the density and the random generator.
+	 The skew Laplace distribution is available in <pkg>sgt</pkg>.
+	 </li>
 
 	 <li><i>Linear failure rate distribution</i>: provided in <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
