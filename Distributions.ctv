@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-09-03</version>
+<version>2015-10-25</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -90,7 +90,7 @@ If you think information is not accurate or not complete, please let me know.</p
               implemented in <pkg>gamlss.dist</pkg>. </li>
           <li><i>Beta-geometric distribution</i>: provided in <pkg>VGAM</pkg>.</li>
           
-          <li><i>Binomial (including Bernoulli) distribution</i>: provided in stats.
+          <li><i>Binomial (including Bernoulli) distribution</i>: provided in <pkg>stats</pkg>.
           Zero-modified, zero-inflated, truncated versions are provided
           in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
           </li>
@@ -132,7 +132,7 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Lindley distribution</i>: provided in <pkg>gambin</pkg>.</li>
           
-          <li><i>Geometric distribution</i>: provided in stats.
+          <li><i>Geometric distribution</i>: provided in <pkg>stats</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
           </li>
@@ -149,7 +149,8 @@ If you think information is not accurate or not complete, please let me know.</p
           
           
 
-          <li><i>Hypergeometric distribution</i>: provided in stats.
+          <li><i>Hypergeometric distribution</i>:
+              provided in <pkg>stats</pkg>.
               Extented hypergeometric distribution
               can be found in <pkg>BiasedUrn</pkg> package, which provides
               not only p, d, q, r functions but also mean, variance, mode functions.
@@ -173,7 +174,7 @@ If you think information is not accurate or not complete, please let me know.</p
               is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
           </li>
           
-          <li><i>Poisson distribution</i>: provided in stats and in <pkg>poweRlaw</pkg>.
+          <li><i>Poisson distribution</i>: provided in <pkg>stats</pkg> and in <pkg>poweRlaw</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
           </li>
@@ -184,7 +185,7 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Mana Clash distribution</i>: provided in <pkg>RMKdiscrete</pkg>.</li>
           
-          <li><i>Negative binomial distribution</i>: provided in stats.
+          <li><i>Negative binomial distribution</i>: provided in <pkg>stats</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
           New parametrization of the negative binomial distribution is available in <pkg>RMKdiscrete</pkg>.
@@ -502,7 +503,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
 	 univariate gaussian distribution as well as functions for the first two moments.
      <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
-     <pkg>copulaedas</pkg> provides p, q functions of the truncated normal distribution.
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
      
      <pkg>lmomco</pkg> implements the generalized normal distribution.
@@ -528,7 +528,6 @@ If you think information is not accurate or not complete, please let me know.</p
          
          <tr><td>Truncated normal</td> <td><pkg>truncnorm</pkg></td> <td>d, p, q, r, m</td> <td><code>truncnorm</code></td></tr>
          <tr><td>Truncated normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal_trunc_ab</code></td></tr>
-         <tr><td>Truncated normal</td> <td><pkg>copulaedas</pkg></td> <td>d, p, q, r</td> </tr>
          <tr><td>Truncated normal</td> <td><pkg>mvrtn</pkg></td> <td>r, m</td>  <td><code>tn</code></td> </tr>
          
          <tr><td>Generalized normal</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td>  <td><code>gno</code></td> </tr>
@@ -1236,9 +1235,9 @@ are provided in <pkg>TTmoment</pkg>.
       <li><i>Plackett</i>: provided in <pkg>VGAM</pkg>, <pkg>copBasic</pkg> 
 	  and <pkg>copula</pkg>.</li>
       
-	  <li><i>Vine copulas</i>: Packages <pkg>CDVine</pkg>, <pkg>VineCopula</pkg> 
-	  provide functions for C- and D-vine copulas and for general 
-	  R-vine copulas, respectively.</li>
+	  <li><i>Vine copulas</i>: Packages <pkg>CDVine</pkg>, <pkg>vines</pkg>
+	  provide functions for C- and D-vine copulas and
+	  <pkg>VineCopula</pkg> for general R-vine copulas.</li>
       </ul>
 
 <p><strong>Random Number Generators:</strong></p>
@@ -1549,8 +1548,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg priority="core">mvtnorm</pkg>
   <pkg>Newdistns</pkg>
   <pkg>nCDunnett</pkg>
-  <pkg>nor1mix</pkg>
-  <pkg>NormalLaplace</pkg>
+  <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>normalp</pkg>
   <pkg>npde</pkg>
@@ -1584,7 +1582,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>Runuran</pkg>
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
-  <pkg>SCI</pkg>
   <pkg>setRNG</pkg>
   <pkg>sfsmisc</pkg> 
   <pkg>sgt</pkg>
@@ -1614,6 +1611,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
   <pkg>VineCopula</pkg> 
+  <pkg>vines</pkg>
   <pkg>zipfR</pkg> 
 </packagelist> 
 
