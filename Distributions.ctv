@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-10-25</version>
+<version>2015-10-30</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1186,7 +1186,6 @@ are provided in <pkg>TTmoment</pkg>.
 	  many existing copulas themselves, <pkg>copBasic</pkg> is primarily oriented 
 	  around utility functions for the general mathematics of copulas 
 	  as described in the well known introduction to copulas by Nelsen.
-      <pkg>copulaedas</pkg> provides a copula approach to estimate distribution algorithms (EDA).
       </li>
 
       <li><i>Archimedean copulas</i>:
@@ -1452,7 +1451,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
-  <pkg>copulaedas</pkg>
   <pkg>csn</pkg>
   <pkg>Davies</pkg>
   <pkg>degreenet</pkg>
