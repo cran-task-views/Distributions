@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-10-30</version>
+<version>2015-11-06</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1198,6 +1198,7 @@ are provided in <pkg>TTmoment</pkg>.
           The Frank bivariate distribution is available in <pkg>RTDE</pkg>.
       	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
 	   Clayton, Gumbel, Frank, Joe, BB1, BB6, BB7 and BB8 copulas.
+       Nested Archimedean copulas are available in the <pkg>HAC</pkg> package.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
       </li>
@@ -1211,7 +1212,7 @@ are provided in <pkg>TTmoment</pkg>.
       
       <li><i>Dirichlet copula</i>: Not yet implemented?</li>
 	  
-	  <li><i>Empirical copula</i>: provided in <pkg>copBasic</pkg>.
+	  <li><i>Empirical copula</i>: provided in <pkg>copBasic</pkg> and in <pkg>HAC</pkg>.
       <pkg>GenOrd</pkg> provides sampling function for multivariate discrete random vectors
       with a specified correlation matrix.</li>
       
@@ -1508,6 +1509,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>GMD</pkg>
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
+  <pkg>HAC</pkg>
   <pkg>hermite</pkg>
   <pkg>HI</pkg>
   <pkg>HistogramTools</pkg>
