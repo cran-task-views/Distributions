@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-11-06</version>
+<version>2015-11-13</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -223,8 +223,7 @@ If you think information is not accurate or not complete, please let me know.</p
     </li>
 
     <li><i>Negative multinomial distribution</i>:
-        New parametrization of the bivariate
-        negative binomial distribution is available in
+        A bivariate distribution with negative-binomial marginals is available in
         <pkg>RMKdiscrete</pkg>.
         The multiplicative multinomial distribution is implemented in <pkg>MM</pkg>.
     </li>
