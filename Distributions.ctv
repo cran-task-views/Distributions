@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2015-11-13</version>
+<version>2016-04-27</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -26,7 +26,7 @@ are available in contributed packages.</p>
 Hankin, Mathias Kohl, G. Jay Kerns, Kjetil Halvorsen, William Asquith for their useful comments/suggestions.
 If you think information is not accurate or not complete, please let me know.</p>
 
-<p><strong>Base functionality:</strong></p>
+<h2><a name="Base">Base functionnality:</a></h2>
    <ul><li>
      Base R provides probability distribution functions <code>p</code><i>foo</i><code>()</code>
      density functions <code>d</code><i>foo</i><code>()</code>, quantile functions
@@ -81,8 +81,7 @@ If you think information is not accurate or not complete, please let me know.</p
   </ul>
 
 
-
-<p><strong>Discrete univariate distributions:</strong></p>
+<h2><a name="UnivariateDiscrete">Discrete univariate distributions:</a></h2>
 	  <ul>
           
           <li><i>Beta-binomial distribution</i>: provided in <pkg>VGAM</pkg>.
@@ -214,8 +213,8 @@ If you think information is not accurate or not complete, please let me know.</p
 
 
 	   	  </ul>
-      
-<p><strong>Discrete multivariate distributions:</strong></p>
+
+<h2><a name="MultivariateDiscrete">Discrete multivariate distributions:</a></h2>      
 	  <ul>
           
     <li><i>Multinomial distribution</i>:
@@ -250,9 +249,8 @@ If you think information is not accurate or not complete, please let me know.</p
 </li>
 
 	  </ul>
-      
-<p><strong>Continuous univariate distributions:</strong></p>
 
+<h2><a name="UnivariateContinuous">Continuous univariate distributions:</a></h2>      
 	  <ul>
 	    <li><i>Arcsine distribution</i>: implemented in package <pkg>distr</pkg>.</li>
 		
@@ -455,8 +453,10 @@ If you think information is not accurate or not complete, please let me know.</p
 
      <li><i>Gamma distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for this distribution (see above).
-     <pkg>ExtDist</pkg> provides d, p, q, r functions for exponential distribution.
-     <pkg>actuar</pkg> provides d, p, q, r functions for the inverse, the inverse
+     <pkg>EnvStats</pkg> provides d, p, q, r functions of the gamma
+     parametrized by the mean and the coefficient of variation.
+     <pkg>ExtDist</pkg> provides d, p, q, r functions of exponential distribution.
+     <pkg>actuar</pkg> provides d, p, q, r functions of the inverse, the inverse
      transformed and the log gamma distributions
      while <pkg>ghyp</pkg> provides those functions for the variance gamma distribution.
 	 <pkg>VarianceGamma</pkg> provides d, p, q, r functions for the variance gamma distribution
@@ -479,6 +479,8 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>ActuDistns</pkg></td> <td>h, i</td>  <td><code>gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Gamma</code></td></tr>
+        <tr><td>Gamma</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>gammaAlt</code></td></tr>
+        
         <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td><code>invgamma</code></td></tr>
         <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>lgamma</code></td></tr>
         <tr><td>Log-gamma</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, r, h, i</td> <td><code>lgammad</code></td></tr>
@@ -500,9 +502,12 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions.
      
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
-	 univariate gaussian distribution as well as functions for the first two moments.
+	  gaussian distribution as well as functions for the first two moments.
      <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
+     <pkg>EnvStats</pkg> provides d, p, q, r functions for the truncated normal distribution
+     and the zero-modified distribution.
+     
      
      <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
@@ -528,9 +533,10 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Truncated normal</td> <td><pkg>truncnorm</pkg></td> <td>d, p, q, r, m</td> <td><code>truncnorm</code></td></tr>
          <tr><td>Truncated normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal_trunc_ab</code></td></tr>
          <tr><td>Truncated normal</td> <td><pkg>mvrtn</pkg></td> <td>r, m</td>  <td><code>tn</code></td> </tr>
+         <tr><td>Truncated normal</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td>  <td><code>normTrunc</code></td> </tr>
          
          <tr><td>Generalized normal</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td>  <td><code>gno</code></td> </tr>
-         
+         <tr><td>Zero modified Gaussian</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>zmnorm</code></td></tr>
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>emg</pkg></td> <td>d, p, q, r</td> <td><code>emg</code></td></tr>
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>exGAUSS</code></td></tr>
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>retimes</pkg></td> <td>d, p, q, r</td> <td><code>exgauss</code></td></tr>
@@ -548,8 +554,8 @@ If you think information is not accurate or not complete, please let me know.</p
      see <i>exponential</i> item.</li>
      
      <li><i>Generalized extreme value distribution</i>: provided in <pkg>lmomco</pkg>
-     (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>
-     and <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
+     (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>,
+     <pkg>EnvStats</pkg> and <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
 	 additional functions for GEV distribution using MCMC. </li>         
      
      
@@ -564,7 +570,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
      <li><i>Gumbel distribution</i>: provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, 
-	 <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>, <pkg>ExtDist</pkg> and <pkg>evd</pkg>.
+	 <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>, <pkg>ExtDist</pkg>, 
+	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
 	 A fast random generator is available for the Gumbel distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
@@ -736,13 +743,20 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Log-normal distribution and its extensions</i>:
          The log normal distribution is implemented in Base R (see above)
-         and <pkg>poweRlaw</pkg>, but the 3-parameter lognormal
-         distribution is available in <pkg>lmomco</pkg> and <pkg>FAdist</pkg>.
+         and <pkg>poweRlaw</pkg>. 
+         The log normal distribution parametrized by its mean and 
+         its coefficient of variation is also provided in <pkg>EnvStats</pkg>.
+         The truncated lognormal distribution is provided in <pkg>EnvStats</pkg>
+         with two possible parametrizations.
+         The 3-parameter lognormal
+         distribution is available in <pkg>lmomco</pkg>, <pkg>EnvStats</pkg> and <pkg>FAdist</pkg>.
          <pkg>ActuDistns</pkg> provides hazard (h) and integrated hazard rate (i) functions
          for the lognormal distribution.
          The package
          <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
          as well as the raw moment, the expected value and the variance functions.
+         <pkg>EnvStats</pkg> provides d, p, q, r functions for the zero-modified lognormal
+         distribution with two possible parametrizations.
 	 </li>
      
 	 <li><i>Makeham distribution</i>: provided in <pkg>VGAM</pkg> and
@@ -766,6 +780,7 @@ If you think information is not accurate or not complete, please let me know.</p
      limited expected values for the Pareto I and II, the inverse Pareto, the 'generalized pareto'
      distributions, the Burr and the inverse Burr distributions. A fast random generator for the
 	 Burr and the Pareto II distribution is implemented in <pkg>Runuran</pkg> as well as the density.
+	 <pkg>EnvStats</pkg> provides d, p, q, r functions for Pareto I distribution.
      <pkg>ActuDistns</pkg> also provides d, p, q, h functions of the Pareto II distribution and
 	 the Burr-X distribution.
      <pkg>ExtDist</pkg> provides the Burr distribution.
@@ -782,6 +797,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
          <tr><td>Pareto I</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoI</code></td></tr>
          <tr><td>Pareto I</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto1</code></td></tr>
+         <tr><td>Pareto I</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
          <tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
          <tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto, pareto2</code></td></tr>
          <tr><td>Pareto II</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>pareto</code></td></tr>
@@ -844,9 +860,10 @@ If you think information is not accurate or not complete, please let me know.</p
      and <pkg>lmomco</pkg>. Generalized and logistic Rayleigh distributions are available in
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.</li>
 
-    <li><i>Response time distribution</i>: <pkg>rtdists</pkg> provides d, p, r functions
-    for Ratcliff distribution and linear ballistic accumulator (LBA) with different
-    underlying drift-distributions (Normal, Gamma, Frechet, and log-normal).
+    <li><i>Response time distribution</i>: <pkg>rtdists</pkg> 
+    provides d, p, q, r functions for the (Ratcliff) diffusion distribution and 
+    for the linear ballistic accumulator (LBA) with different underlying 
+    drift-distributions (Normal, Gamma, Frechet, and log-normal).
     </li>
 
 
@@ -883,8 +900,8 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
      
      <li><i>Triangle/trapezoidal distribution</i>: packages <pkg>triangle</pkg>,
-         <pkg>mc2d</pkg>, <pkg>ExtDist</pkg> and
-     <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle distribution, while the package
+         <pkg>mc2d</pkg>, <pkg>ExtDist</pkg>, <pkg>EnvStats</pkg> and
+     <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle or triangular distribution, while the package
 	 <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized Trapezoidal Distribution.
 	 A fast random generator is available for the triangle distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.</li>    
@@ -931,11 +948,8 @@ If you think information is not accurate or not complete, please let me know.</p
   </ul>
       
       
-      
-<p><strong>Continuous multivariate distributions:</strong></p>
+<h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
-          
-          
 <li><i>Dirichlet distribution</i>:
     not yet implemented?
 </li>
@@ -952,7 +966,7 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
     <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
-    multivariate normal distribution; <pkg>sparseMVN</pkg> implements very
+    multivariate normal distribution. <pkg>sparseMVN</pkg> implements very
     fast algorithms to compute the density and generate random variates of
     a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
@@ -995,8 +1009,7 @@ are provided in <pkg>TTmoment</pkg>.
 
       </ul>
       
-      
-<p><strong>Mixed-type distributions:</strong></p>
+<h2><a name="MixedType">Mixed-type distributions:</a></h2>                  
 <ul>
     <li><i>Maxwell-Boltzmann-Bose-Einstein-Fermie-Dirac (MBBEFD) distribution </i>:
         provided in <pkg>mbbefd</pkg>.
@@ -1008,8 +1021,8 @@ are provided in <pkg>TTmoment</pkg>.
           
 </ul>
 
-<p><strong>Mixture of probability laws (and composite):</strong></p>
-   
+<h2><a name="Mixture">Mixture of probability laws (and composite):</a></h2>                  
+
    <ul>
        <li><i>Bernoulli-dist mixture</i>: d, p, q, r functions
            for Bernoulli-exponential, Bernoulli-Gamma, Bernoulli-lognormal,
@@ -1024,7 +1037,10 @@ are provided in <pkg>TTmoment</pkg>.
    
       <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>
       package when dealing with finite mixture models. <pkg>nor1mix</pkg> provides
-	  d, p, r functions for Gaussian mixture.</li>
+	  d, p, r functions for Gaussian mixture.
+	  <pkg>EnvStats</pkg> provides d, p, q, r functions for mixture of two normal
+	  distributions.
+	  </li>
 
       <li><i>Gamma mixture</i>: Gamma shape mixtures are implemented (d, p, r)
       in the <pkg>GSM</pkg> package.</li>
@@ -1032,6 +1048,9 @@ are provided in <pkg>TTmoment</pkg>.
       <li><i>Generic mixtures</i>: there is an implementation via S4-class 
       UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
 	  uses the <pkg>gamlss.dist</pkg> package.</li>
+	  
+	   <li><i>Log normal mixture</i>: d, p, q, r functions are provided
+	   in <pkg>EnvStats</pkg> with two possible parametrizations.</li>
 	  
       <li><i>Normal-polynomial quantile mixture</i>: d, p, q, r functions are
 	  provided in <pkg>Lmoments</pkg>.</li>
@@ -1056,7 +1075,7 @@ are provided in <pkg>TTmoment</pkg>.
 	  
    </ul>
 
-<p><strong>Compound, exponentiated and tranformation of distributions:</strong></p>
+<h2><a name="Transform">Compound, exponentiated and tranformation of distributions:</a></h2>                  
    <ul>
     
     <li><i>Compound distribution</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
@@ -1088,26 +1107,35 @@ are provided in <pkg>TTmoment</pkg>.
     </li>
    </ul>
 
-<p><strong>Moments, skewness, kurtosis and etc:</strong></p>
-   
+<h2><a name="Moments">Moments, skewness, kurtosis and etc:</a></h2>
    <ul>
-      <li><i>Empirical moments</i>: base R provides <code>mean()</code>, 
+      <li><i>Empirical mean, standard deviation and variance</i>: base R provides <code>mean()</code>, 
 	  <code>sd()</code>, <code>var()</code> functions to compute
-	  the mean, standard deviation and variance, respectively.
-	  The skewness is available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
+	  the mean, standard deviation and variance, respectively. </li>
+	  
+	  <li><i>Empirical skewness</i>:
+	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
       <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
-      <pkg>DistributionUtils</pkg> packages.
-	  The kurtosis is available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
-      <pkg>e1071</pkg>,
+      <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg> packages.</li>
+      
+    <li><i>Empirical kurtosis</i>:  
+	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
+      <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>,
 	  <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
-      <pkg>moments</pkg>. 
-	  L-moments are available in <pkg>lmom</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg>, <pkg>GLDEX</pkg>,
+      <pkg>moments</pkg>. </li>
+      
+    <li><i>Empirical L-moments</i>:  
+	  L-moments are available in <pkg>lmom</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg>, 
+	  <pkg>GLDEX</pkg>, <pkg>EnvStats</pkg>, 
 	  trimmed L-moments are available in <pkg>lmomco</pkg>, and <pkg>Lmoments</pkg>, 
 	  right-censored L-moments are available in <pkg>lmomco</pkg>,
-	  and cumulants in <pkg>GLDEX</pkg>.
+	  and cumulants in <pkg>GLDEX</pkg>.</li>
+	  
+	  <li><i>Empirical probability weighted moments</i>:
+	  Probability weighted moments are available in <pkg>EnvStats</pkg>.
 	  </li>
       
       <li><i>Mode estimation</i>:
@@ -1145,8 +1173,7 @@ are provided in <pkg>TTmoment</pkg>.
 
    </ul>
    
-<p><strong>Random matrices:</strong></p>
-
+<h2><a name="Matrix">Random matrices:</a></h2>   
       <ul>
 	  
 	  <li><i>Wishart and inverse Wishart distributions</i>:
@@ -1176,8 +1203,7 @@ are provided in <pkg>TTmoment</pkg>.
                    
       </ul>   
     
-<p><strong>Copulas:</strong></p>
-
+<h2><a name="Copulas">Copulas:</a></h2>    
       <ul>
       <li><i>Unified approaches</i>:
 	  The packages <pkg>fCopulae</pkg>, <pkg>copula</pkg>, and <pkg>copBasic</pkg> provide a lot of 
@@ -1239,9 +1265,7 @@ are provided in <pkg>TTmoment</pkg>.
 	  <pkg>VineCopula</pkg> for general R-vine copulas.</li>
       </ul>
 
-<p><strong>Random Number Generators:</strong></p>
-    	   
-     
+<h2><a name="Random">Random number generators (RNG):</a></h2>
    <ul>
      <li><i>Basic functionality</i>: R provides several random number generators (RNGs).
      The random seed can be provided via <code>set.seed</code> and the kind of RNG can be specified
@@ -1307,7 +1331,7 @@ are provided in <pkg>TTmoment</pkg>.
 	See the <view>HighPerformanceComputing</view> task view for more details.</li>
    </ul>     
 
-<p><strong>Miscellaneous:</strong></p>
+<h2><a name="Misc">Miscellaneous:</a></h2>
 
 	<ul>
 	
@@ -1417,7 +1441,8 @@ are provided in <pkg>TTmoment</pkg>.
 	 multivariate Gaussian probability density functions
 	 Package <pkg>MASS</pkg> implements the flexible <code>fitdistr</code>
      function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
-     the tools to fit probability distributions.
+     the tools to fit any probability distribution.
+     <pkg>EnvStats</pkg> also provides tools to fit most common distributions.
 	  <pkg>flexsurv</pkg> and <pkg>msm</pkg> provides a quantile
 	function for a generic distribution based on numerical 
 	computation based on a dichotomic search.
@@ -1474,6 +1499,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>emdbook</pkg>
   <pkg>emg</pkg>
   <pkg>EMMIXskew</pkg>
+  <pkg>EnvStats</pkg>
   <pkg>ExtDist</pkg>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
@@ -1619,10 +1645,20 @@ are provided in <pkg>TTmoment</pkg>.
 <links> 
   <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
+  <a href="http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg"> Diagram of discrete
+  distribution relationships</a>
+  <a href="http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&#38;B.pdf"> Diagram of continuous
+  distribution relationships</a>
+  
+  <a href="http://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf">List and diagram
+  of distribution relationship.</a>
+  
+  <a href="http://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf">Compendium
+  of distributions.</a>
+  
+  
   <a href="https://en.wikipedia.org/wiki/Statistical_data_type">A comprehensive list of data types</a>
   
-  <a href="http://www.actuar-project.org/">actuar: An R package for actuarial science</a>
-  <a href="http://www.rmetrics.org/">fCopulae, fBasics, randtoolbox packages, part of the Rmetrics project</a>
   <a href="http://www.jstatsoft.org/v16/c02/">Journal of Statistical Software: R programs for truncated distributions</a> 
   <a href="http://distr.r-forge.r-project.org/">The "distrXXX"-family of R-packages</a>
   <a href="http://www-m4.ma.tum.de/forschung/vine-copula-models/#c662">Overview of vine copula models</a>
