@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-04-27</version>
+<version>2016-04-28</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -305,10 +305,14 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Benini distribution</i>: provided in <pkg>VGAM</pkg>.
      </li>
 	 
+	    <li><i>Birnbaum-Saunders distribution</i>: provided in package
+     <pkg>VGAM</pkg>.</li>
 	 
-	 
-     <li><i>Birnbaum-Saunders distribution</i>: provided in package
-     <pkg>VGAM</pkg>.</li>    
+     <li><i>Bridge distribution</i>: provided in <pkg>bridgedist</pkg>, 
+     as detailed in Wang and Louis (2003).
+     The distribution of random intercept that allows a marginalized 
+     random intercept logistic regression to also be logistic 
+     regression.</li>    
      
      <li><i>Box Cox distribution</i>: <pkg>gamlss.dist</pkg> provides the Box-Cox normal,
      the Box-Cox power exponential and the Box-Cox t distributions.</li>
@@ -1466,6 +1470,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>BivarP</pkg>
+  <pkg>bridgedist</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
   <pkg>CompGLM</pkg>
