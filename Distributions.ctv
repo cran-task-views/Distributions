@@ -325,6 +325,10 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Benini distribution</i>: provided in <pkg>VGAM</pkg>.
      </li>
+     
+     <li><i>Bhattacharjee (normal+uniform) distribution</i>: provided in package
+      <pkg>extraDistr</pkg>.</li>
+     
 	 
 	    <li><i>Birnbaum-Saunders distribution</i>: provided in package
      <pkg>VGAM</pkg> and <pkg>extraDistr</pkg>.</li>
@@ -619,7 +623,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>Huber distribution</i>: 
 	 Huber's least favourable distribution provided in package <pkg>smoothmest</pkg> (d, r),
-         and in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg> (d, p, q, r).</li>
+         and in <pkg>VGAM</pkg>, <pkg>marg</pkg>, <pkg>extraDistr</pkg> (d, p, q, r).</li>
          
          
      
@@ -1644,6 +1648,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg priority="core">lmomco</pkg>
   <pkg>Lmoments</pkg>
   <pkg>MASS</pkg>
+  <pkg>marg</pkg>
   <pkg>mbbefd</pkg>
   <pkg>mc2d</pkg>
   <pkg>MCMCpack</pkg>
