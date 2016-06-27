@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-06-11</version>
+<version>2016-06-27</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -964,7 +964,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Skew St. Type 1-5</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>ST1, ST2, ST3, ST4, ST5</code></td></tr>
          
          <tr><td>Gen. Student</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GT</code></td></tr>
-         <tr><td>Gen. Hyp. Student</td> <td><pkg>fbasics</pkg></td> <td>d, p, q, r</td> <td><code>ght</code></td></tr>
+         <tr><td>Gen. Hyp. Student</td> <td><pkg>fBasics</pkg></td> <td>d, p, q, r</td> <td><code>ght</code></td></tr>
      </table><br/>
      
      </li>
