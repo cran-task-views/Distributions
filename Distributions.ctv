@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-07-02</version>
+<version>2016-07-19</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -993,6 +993,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>ActuDistns</pkg> provides hazard and integrated hazard rate functions.
 	 <pkg>HI</pkg> generates
 	 uniformly random points on a bounded convex set, in particular the unit ball.
+	 <pkg>KScorrect</pkg> provides d, p, q, r functions for the log-uniform distribution.
      </li>
      
      <li><i>Upsilon distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
@@ -1122,9 +1123,10 @@ are provided in <pkg>TTmoment</pkg>.
    
       <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>
       package when dealing with finite mixture models. 
-      <pkg>nor1mix</pkg>, <pkg>extraDistr</pkg> provides d, p, r functions for Gaussian mixture.
-	  <pkg>EnvStats</pkg> provides d, p, q, r functions for mixture of two normal
-	  distributions.
+      <pkg>nor1mix</pkg>, <pkg>extraDistr</pkg>, <pkg>mclust</pkg>,
+      <pkg>KScorrect</pkg> provides d, p, r functions for Gaussian mixture.
+	  <pkg>EnvStats</pkg>   provides d, p, q, r functions 
+	  for mixture of two normal distributions.
 	  </li>
 
 
@@ -1643,6 +1645,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>ihs</pkg>
   <pkg>JohnsonDistribution</pkg>
   <pkg>kolmim</pkg>
+  <pkg>KScorrect</pkg>
   <pkg>LambertW</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
@@ -1656,6 +1659,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>marg</pkg>
   <pkg>mbbefd</pkg>
   <pkg>mc2d</pkg>
+  <pkg>mclust</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mgpd</pkg>
   <pkg>minimax</pkg>
