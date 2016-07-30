@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-07-19</version>
+<version>2016-07-30</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -117,6 +117,7 @@ If you think information is not accurate or not complete, please let me know.</p
           </li>
           
           <li><i>Discrete Laplace distribution</i>:
+            The discrete Laplace distribution is provided in <pkg>extraDistr</pkg> (d, p, r).
               The skew discrete Laplace distribution has two parametrization (DSL and ADSL),
               both provided in <pkg>DiscreteLaplace</pkg> and DSL in <pkg>disclap</pkg>.
           </li>
@@ -245,8 +246,10 @@ If you think information is not accurate or not complete, please let me know.</p
     provided in <pkg>extraDistr</pkg>.
     </li>
     
-    <li><i>Multivariate Polya-Eggenberger distribution</i>:
-        not yet implemented?
+    <li><i>Multivariate Polya distribution</i>:
+        functions d, r of the Dirichlet Multinomial (also known as multivariate Polya) 
+  distribution are provided in <pkg>extraDistr</pkg>.
+  Multivariate Polya-Eggenberger?
     </li>
     
     <li><i>Multivariate Ewens distribution</i>:
@@ -283,7 +286,8 @@ If you think information is not accurate or not complete, please let me know.</p
      
      
      The beta prime (or beta of the second kind), which is the distribution of X/(1-X) when
-     X follows a beta distribution, is provided in <pkg>VGAM</pkg> and <pkg>mc2d</pkg>.
+     X follows a beta distribution, is provided in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg> 
+     and <pkg>mc2d</pkg>.
      The zero and one inflated beta distribution can be found in <pkg>gamlss.dist</pkg>.
      The generalized beta of the first kind (GB1) is provided in <pkg>gamlss.dist</pkg>, <pkg>mbbefd</pkg>.
      The generalized beta of the second kind (GB2) is provided in <pkg>gamlss.dist</pkg>, <pkg>GB2</pkg>.
@@ -316,6 +320,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <caption>Summary for Beta-2-related distributions</caption>
         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
         <tr><td>Beta (2nd kind)</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
+        <tr><td>Beta (2nd kind)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>betapr</code></td></tr>
         <tr><td>GB2</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
         <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB2</code></td></tr>
         <tr><td>GB2</td> <td><pkg>GB2</pkg></td> <td>d, p, q, r</td> <td><code>gb2</code></td></tr>
@@ -395,10 +400,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Davies distribution</i>: The Davies distribution is provided
      in <pkg>Davies</pkg> package.</li>	   
      
-     <li><i>Dirichlet distribution</i>: functions d, r
-	 are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
-     <pkg>dirmult</pkg> and <pkg>bayesm</pkg>. The standard and generalized
-     hyperdirichlet distributions are provided in <pkg>hyperdirichlet</pkg>.</li>
+     
      
      <li><i>(non-central) Dunnett's test distribution</i>: provided
          in <pkg>nCDunnett</pkg>.</li>
@@ -1024,8 +1026,11 @@ If you think information is not accurate or not complete, please let me know.</p
       
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
-<li><i>Dirichlet distribution</i>:
-    not yet implemented?
+<li><i>Multinomial Dirichlet distribution</i>:
+  functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
+  <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>. The standard and generalized
+  hyperdirichlet distributions are provided in <pkg>hyperdirichlet</pkg>.
+       
 </li>
           
 <li><i>Multivariate exponential distribution</i>:
