@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-07-30</version>
+<version>2016-08-06</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -248,7 +248,7 @@ If you think information is not accurate or not complete, please let me know.</p
     
     <li><i>Multivariate Polya distribution</i>:
         functions d, r of the Dirichlet Multinomial (also known as multivariate Polya) 
-  distribution are provided in <pkg>extraDistr</pkg>.
+  distribution are provided in <pkg>extraDistr</pkg> and <pkg>Compositional</pkg>.
   Multivariate Polya-Eggenberger?
     </li>
     
@@ -1041,7 +1041,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-    <pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r).
+    <pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r) .
     <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
     <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
@@ -1053,6 +1053,8 @@ If you think information is not accurate or not complete, please let me know.</p
     normal distribution.
     <pkg>EMMIXskew</pkg> provide the multivariate skew normal distribution (d, r).
     <pkg>mnormpow</pkg> computes the expected product of the components of a multivariate Gaussian vector.
+    <pkg>Compositional</pkg> provides random generator for the multivariate normal
+    distribution on the simplex and multivariate skew normal distribution on the simplex.
     
     
 </li>
@@ -1080,7 +1082,7 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 
 <li><i>Multivariate Student distribution</i>:
 The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r).
+<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r).
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
 <pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r).
@@ -1577,6 +1579,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
   <pkg>Compounding</pkg>
+  <pkg>Compositional</pkg>
   <pkg>CompQuadForm</pkg>
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
