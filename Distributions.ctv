@@ -1152,7 +1152,7 @@ are provided in <pkg>TTmoment</pkg>.
       <li><i>Normal-polynomial quantile mixture</i>: d, p, q, r functions are
 	  provided in <pkg>Lmoments</pkg>.</li>
 
-    <li><i>Pareto distribution</i>: <pkg>extremfit</pkg> implements
+    <li><i>Pareto distribution</i>: <pkg>extremefit</pkg> implements
 	  the mixture of two Pareto I distributions.</li>
 	  
 	  <li><i>Poisson Binomial distribution</i>: <pkg>poibin</pkg> implements
