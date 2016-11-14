@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-08-06</version>
+<version>2016-11-14</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -595,9 +595,10 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>General error distribution (also known as exponential power distribution)</i>:
      see <i>exponential</i> item.</li>
      
-     <li><i>Generalized extreme value distribution</i>: provided in <pkg>lmomco</pkg>
-     (d, p, q) , <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
-     <pkg>EnvStats</pkg> and <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
+     <li><i>Generalized extreme value distribution</i>: provided in <pkg>lmomco</pkg> (d, p, q); 
+     <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, 
+     <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>QRM</pkg> and 
+     <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
 	 additional functions for GEV distribution using MCMC. </li>         
      
      
@@ -612,7 +613,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
      <li><i>Gumbel distribution</i>: provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
-	 <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>, <pkg>ExtDist</pkg>, 
+	 <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>, <pkg>ExtDist</pkg>, <pkg>QRM</pkg>,
 	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
 	 A fast random generator is available for the Gumbel distribution 
@@ -629,9 +630,10 @@ If you think information is not accurate or not complete, please let me know.</p
          
          
      
-     <li><i>Hyperbolic distribuion</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
+     <li><i>(generalized) Hyperbolic distribuion</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
-     provide d, p, q, r functions for the generalized hyperbolic distributions. 
+     provide d, p, q, r functions for the generalized hyperbolic distribution. 
+     <pkg>QRM</pkg> provides d, r functions for  the generalized hyperbolic distribution.
 	 <pkg>SkewHyperbolic</pkg> provides the skewed Hyperbolic Student t-Distribution. 
 	 	 <pkg>fBasics</pkg> also implements the standardized generalized Hyperbolic distribution.
 	 A fast random generator is available for the hyperbolic distribution 
@@ -654,7 +656,8 @@ If you think information is not accurate or not complete, please let me know.</p
       normal inverse Gaussian distributions.
 
       
-     The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>
+     The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>,
+     <pkg>QRM</pkg>
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
      <pkg>GIGrvg</pkg> generates random variables from the generalized inverse Gaussian distribution.
@@ -831,7 +834,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <pkg>extremefit</pkg> provides the Burr, the Pareto II, mixture of Pareto I distributions
 	  and a composite distribution of two Pareto I distributions.
      <pkg>ExtDist</pkg> provides the Burr distribution.
-     <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, <pkg>extraDistr</pkg>,
+     <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, <pkg>extraDistr</pkg>, <pkg>QRM</pkg>
 	 <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
@@ -840,42 +843,43 @@ If you think information is not accurate or not complete, please let me know.</p
      Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>
      and the shifted truncated (to unit interval) Pareto is implemented in <pkg>mbbefd</pkg>.
      
-     <br/><table border="0" summary="Pareto-related distributions">
-         <caption>Summary for Pareto-related distributions</caption>
-         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
-         <tr><td>Pareto I</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoI</code></td></tr>
-         <tr><td>Pareto I</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto1</code></td></tr>
-         <tr><td>Pareto I</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
-         <tr><td>Pareto I</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
+  <br/><table border="0" summary="Pareto-related distributions">
+     <caption>Summary for Pareto-related distributions</caption>
+<tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
+<tr><td>Pareto I</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoI</code></td></tr>
+<tr><td>Pareto I</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto1</code></td></tr>
+<tr><td>Pareto I</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
+<tr><td>Pareto I</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
          
-         <tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
-         <tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto, pareto2</code></td></tr>
-         <tr><td>Pareto II</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>pareto</code></td></tr>
-         <tr><td>Pareto II</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>pareto</code></td></tr>
-         <tr><td>Pareto II</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, h</td>  <td><code>lomax</code></td></tr>
-         <tr><td>Pareto II</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, h</td>  <td><code>pareto</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto, pareto2</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>pareto</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>pareto</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, h</td>  <td><code>lomax</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, h</td>  <td><code>pareto</code></td></tr>
          
-         <tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
-         <tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
+<tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
+<tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
          
-         <tr><td>Inverse Pareto</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invpareto</code></td></tr>
+<tr><td>Inverse Pareto</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invpareto</code></td></tr>
 
-        <tr><td>Extended Pareto</td> <td><pkg>RTDE</pkg></td> <td>d, p, q, r</td> <td><code>EPD</code></td></tr>
-        <tr><td>Shift. trunc. Pareto</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>stpareto</code></td></tr>
+<tr><td>Extended Pareto</td> <td><pkg>RTDE</pkg></td> <td>d, p, q, r</td> <td><code>EPD</code></td></tr>
+<tr><td>Shift. trunc. Pareto</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>stpareto</code></td></tr>
         
-         <tr><td>Gen. Pareto (actuarial)</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>genpareto</code></td></tr>
+<tr><td>Gen. Pareto (actuarial)</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>genpareto</code></td></tr>
          
-         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td> <td><code>gpa</code></td></tr>
-         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evd</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
-         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
-         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evir</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
-         <tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td> <td><code>gpa</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>evd</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>evir</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
          
-         <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
-         <tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
-         <tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
+<tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
+<tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
+<tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
          
-         <tr><td>Inverse Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invburr</code></td></tr>
+<tr><td>Inverse Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invburr</code></td></tr>
          
      </table><br/>
 
@@ -1056,11 +1060,19 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>Compositional</pkg> provides random generator for the multivariate normal
     distribution on the simplex and multivariate skew normal distribution on the simplex.
     
-    
+</li>
+
+<li><i>Multivariate generalized hyperbolic distribution</i>:
+<pkg>QRM</pkg> provides d, r functions of the standard and
+the symmetric multivariate generalized hyperbolic distribution.
+<pkg>ghyp</pkg> provides d, p, r functions of the standard 
+ multivariate generalized hyperbolic distribution.
+
 </li>
 
 <li><i>Multivariate generalized extreme value distribution</i>:
-    Both bivariate and multivariate Extreme Value distributions as well as order/maxima/minima distributions
+    Both bivariate and multivariate Extreme Value distributions 
+    as well as order/maxima/minima distributions
     are implemented in <pkg>evd</pkg> (d, p, r).
 </li>
 
@@ -1082,7 +1094,8 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 
 <li><i>Multivariate Student distribution</i>:
 The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r).
+<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r),
+<pkg>QRM</pkg> (d, r).
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
 <pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r).
@@ -1332,6 +1345,7 @@ are provided in <pkg>TTmoment</pkg>.
        Nested Archimedean copulas are available in the <pkg>HAC</pkg> package.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
+      <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula. 
       </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
@@ -1349,7 +1363,9 @@ are provided in <pkg>TTmoment</pkg>.
       
       <li><i>Elliptical copulas</i>: Gaussian, Student and Cauchy copulas are implemented in
       <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, <pkg>VGAM</pkg>,
-	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copula.</li>
+	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copulas.
+	  <pkg>QRM</pkg> provides pdf and random generator for Gaussian, Student copulas. 
+	  </li>
       
       <li><i>Extreme value copulas</i>: <pkg>fCopulae</pkg> provides the following copulas
       Gumbel, Galambos, Husler-Reiss, Tawn, or BB5. <pkg>copula</pkg> implements
@@ -1705,6 +1721,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>poweRlaw</pkg>
   <pkg>prob</pkg>
   <pkg>qmap</pkg>
+  <pkg>QRM</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
