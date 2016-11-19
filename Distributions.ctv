@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-11-14</version>
+<version>2016-11-19</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -91,7 +91,8 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Binomial (including Bernoulli) distribution</i>: provided in <b>stats</b>.
           Zero-modified, zero-inflated, truncated versions are provided
-          in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg> and in <pkg>VGAM</pkg>.
+          in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
+          <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
           </li>
           
           <li><i>Benford distribution</i>: provided in <pkg>VGAM</pkg>.</li>
@@ -142,7 +143,7 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Geometric distribution</i>: provided in <b>stats</b>.
               Zero-modified, zero-inflated, truncated versions are provided
-              in <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+              in <pkg>gamlss.dist</pkg>, <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
           </li>
           
           <li><i>Geometric (compound) Poisson distribution
@@ -155,8 +156,7 @@ If you think information is not accurate or not complete, please let me know.</p
           <li><i>Generalized Hermite distribution</i>: provided in
               <pkg>hermite</pkg>.</li>
           
-          
-
+        
           <li><i>Hypergeometric distribution</i>:
               provided in <b>stats</b>.
               Extented hypergeometric distribution
@@ -177,14 +177,17 @@ If you think information is not accurate or not complete, please let me know.</p
           <li><i>Lindley distribution</i>: provided in <pkg>VGAM</pkg>.</li>
           
           <li><i>Logarithmic distribution</i>: This can be found in <pkg>extraDistr</pkg>,
-              <pkg>VGAM</pkg>	and <pkg>gamlss.dist</pkg>. A fast random generator is
+              <pkg>VGAM</pkg>, <pkg>actuar</pkg>	and <pkg>gamlss.dist</pkg>. 
+              Zero-modified and zero-truncated versions is provided in <pkg>actuar</pkg>.
+              A fast random generator is
               available for the logarithmic distribution
               is implemented in <pkg>Runuran</pkg> as well as the 'density' function.
           </li>
           
           <li><i>Poisson distribution</i>: provided in <b>stats</b> and in <pkg>poweRlaw</pkg>.
               Zero-modified, zero-inflated, truncated versions are provided
-              in <pkg>extraDistr</pkg>, <pkg>gamlss.dist</pkg> and in <pkg>VGAM</pkg>.
+              in <pkg>extraDistr</pkg>, <pkg>gamlss.dist</pkg>, 
+              <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
               <pkg>extraDistr</pkg> provides the truncated Poisson distribution.
           </li>
           
@@ -196,8 +199,10 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Negative binomial distribution</i>: provided in <b>stats</b>.
               Zero-modified, zero-inflated, truncated versions are provided
-              in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg> and in <pkg>VGAM</pkg>.
-          New parametrization of the negative binomial distribution is available in <pkg>RMKdiscrete</pkg>.
+              in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
+              <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
+          New parametrization of the negative binomial distribution 
+          is available in <pkg>RMKdiscrete</pkg>.
           </li>
           
           <li><i>Sichel distribution</i>: provided in
@@ -280,20 +285,26 @@ If you think information is not accurate or not complete, please let me know.</p
 	 provides hazard and integrated hazard rate functions.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for doubly non central beta distribution for computing d, p, q, r functions.
-     The four-parameter beta (with location and scale param), the symmetric reflected truncated
+     The four-parameter beta (with location and scale parameters), the symmetric reflected truncated
      beta (both for two-parameter and four-parameter beta) are available in <pkg>ExtDist</pkg>.
      <pkg>extraDistr</pkg> provides the four-parameter beta with lower and upper bounds.
+     The generalized beta of the first kind (GB1) (exponentation of beta 1) 
+     is provided in <pkg>gamlss.dist</pkg>, <pkg>mbbefd</pkg>, <pkg>actuar</pkg>.
+     
      
      
      The beta prime (or beta of the second kind), which is the distribution of X/(1-X) when
-     X follows a beta distribution, is provided in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg> 
-     and <pkg>mc2d</pkg>.
+     X follows a beta distribution of the first kind, 
+     is provided in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg> and <pkg>mc2d</pkg>.
      The zero and one inflated beta distribution can be found in <pkg>gamlss.dist</pkg>.
-     The generalized beta of the first kind (GB1) is provided in <pkg>gamlss.dist</pkg>, <pkg>mbbefd</pkg>.
-     The generalized beta of the second kind (GB2) is provided in <pkg>gamlss.dist</pkg>, <pkg>GB2</pkg>.
-     Several special cases of
-     the generalized beta distribution are also implemented in <pkg>VGAM</pkg>:
-     Lomax, inverse Lomax, Dagum and Singh-Maddala distribution and in <pkg>mc2d</pkg>: Pert.
+     The generalized beta of the second kind (GB2) is provided in <pkg>gamlss.dist</pkg>, 
+     <pkg>GB2</pkg>.
+     Several special cases of the generalized beta distribution are 
+     also implemented in <pkg>VGAM</pkg>, 
+     <pkg>mc2d</pkg>: Lomax, inverse Lomax, Dagum, Singh-Maddala, Pert distributions.
+     <pkg>actuar</pkg> provides the transformed beta 2 distribution which includes
+     as special cases Burr, loglogistic, paralogistic, generalized Pareto, Pareto, 
+     see also the Pareto subsection.
      
      <br/><table border="0" summary="Beta-related distributions">
          <caption>Summary for Beta-related distributions</caption>
@@ -313,6 +324,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>one-infl beta</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>oibeta</code></td></tr>
          <tr><td>GB1</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB1</code></td></tr>
          <tr><td>GB1</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>gbeta</code></td></tr>
+         <tr><td>GB1</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>genbeta</code></td></tr>
          <tr><td>one-infl GB1</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>oigbeta</code></td></tr>
      </table><br/>
 
@@ -324,6 +336,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>GB2</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>genbetaII</code></td></tr>
         <tr><td>GB2</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GB2</code></td></tr>
         <tr><td>GB2</td> <td><pkg>GB2</pkg></td> <td>d, p, q, r</td> <td><code>gb2</code></td></tr>
+        <tr><td>Trans beta 2</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>trbeta</code></td></tr>
     </table><br/>
 
      </li>
@@ -615,6 +628,8 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
 	 <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>, <pkg>ExtDist</pkg>, <pkg>QRM</pkg>,
 	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
+	 <pkg>actuar</pkg> provides the raw moments and the moment generating function (mgf)
+	 in addition to the d, p, q, r functions.
 	 <pkg>ActuDistns</pkg> also provides hazard (h) and integrated hazard rate (i) functions.
 	 A fast random generator is available for the Gumbel distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
@@ -649,6 +664,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Inverse Gaussian (also known Wald) distribution</i>:
      d, p, q, and r functions of the inverse Gaussian are provided in <pkg>statmod</pkg>,
      <pkg>extraDistr</pkg>, <pkg>SuppDists</pkg> and <pkg>STAR</pkg>.
+     <pkg>actuar</pkg> provides d, p, q, r, m, lev, mgf functions for the Inverse Gaussian
+     distribution.
      <pkg>SuppDists</pkg> also provides a function that returns moments, skewness, kurtosis.
       <pkg>ActuDistns</pkg> provides d, q functions as well as (integrated) hazard function.
       
@@ -826,7 +843,9 @@ If you think information is not accurate or not complete, please let me know.</p
      Pareto type I) and the (upper/lower) truncated Pareto distribution.
      In an actuarial context, <pkg>actuar</pkg> provides d, p, q, r functions as well as moments and
      limited expected values for the Pareto I and II, the inverse Pareto, the 'generalized pareto'
-     distributions, the Burr and the inverse Burr distributions. A fast random generator for the
+     distributions, the Burr and the inverse Burr distributions, all special cases of the
+     transformed beta II distribution. 
+     A fast random generator for the
 	 Burr and the Pareto II distribution is implemented in <pkg>Runuran</pkg> as well as the density.
 	 <pkg>EnvStats</pkg> provides d, p, q, r functions for Pareto I distribution.
      <pkg>ActuDistns</pkg> also provides d, p, q, h functions of the Pareto II distribution and
@@ -1754,7 +1773,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>stabledist</pkg>
   <pkg>statmod</pkg>
   <pkg>STAR</pkg>
-  <pkg priority="core">SuppDists</pkg>
+  <pkg>SuppDists</pkg>
   <pkg>symmoments</pkg>
   <pkg>tmvtnorm</pkg>
   <pkg>tolerance</pkg>
