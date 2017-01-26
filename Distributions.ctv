@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2016-11-19</version>
+<version>2017-01-26</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -305,6 +305,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>actuar</pkg> provides the transformed beta 2 distribution which includes
      as special cases Burr, loglogistic, paralogistic, generalized Pareto, Pareto, 
      see also the Pareto subsection.
+     
      
      <br/><table border="0" summary="Beta-related distributions">
          <caption>Summary for Beta-related distributions</caption>
@@ -859,8 +860,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 depending the shape parameter's value a Pareto II distribution, 
 	 a shifted exponential distribution or a generalized beta I distribution.
      <pkg>ParetoPosStable</pkg> implements the Pareto positive stable distribution.
-     Finally, the extended Pareto distribution is implemented in <pkg>RTDE</pkg>
+     The extended Pareto distribution is implemented in <pkg>RTDE</pkg>
      and the shifted truncated (to unit interval) Pareto is implemented in <pkg>mbbefd</pkg>.
+     <pkg>ReIns</pkg> provides Burr, extended Pareto, generalized Pareto, Pareto 1
+     distributions.
      
   <br/><table border="0" summary="Pareto-related distributions">
      <caption>Summary for Pareto-related distributions</caption>
@@ -869,6 +872,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Pareto I</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto1</code></td></tr>
 <tr><td>Pareto I</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
 <tr><td>Pareto I</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
+<tr><td>Pareto I</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
          
 <tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto, pareto2</code></td></tr>
@@ -883,6 +887,8 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Inverse Pareto</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invpareto</code></td></tr>
 
 <tr><td>Extended Pareto</td> <td><pkg>RTDE</pkg></td> <td>d, p, q, r</td> <td><code>EPD</code></td></tr>
+<tr><td>Extended Pareto</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>epd</code></td></tr>
+
 <tr><td>Shift. trunc. Pareto</td> <td><pkg>mbbefd</pkg></td> <td>d, p, q, r, m, ec</td> <td><code>stpareto</code></td></tr>
         
 <tr><td>Gen. Pareto (actuarial)</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>genpareto</code></td></tr>
@@ -893,10 +899,12 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evir</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
          
 <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
 <tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
+<tr><td>Burr</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
          
 <tr><td>Inverse Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invburr</code></td></tr>
          
@@ -1160,8 +1168,8 @@ are provided in <pkg>TTmoment</pkg>.
 	  provided in <pkg>CompLognormal</pkg>.
 	  </li>
    
-      <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>
-      package when dealing with finite mixture models. 
+      <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>,
+      <pkg>bmixture</pkg> package when dealing with finite mixture models. 
       <pkg>nor1mix</pkg>, <pkg>extraDistr</pkg>, <pkg>mclust</pkg>,
       <pkg>KScorrect</pkg> provides d, p, r functions for Gaussian mixture.
 	  <pkg>EnvStats</pkg>   provides d, p, q, r functions 
@@ -1172,7 +1180,7 @@ are provided in <pkg>TTmoment</pkg>.
     <li><i>Gamma Poisson</i>: provided in <pkg>extraDistr</pkg>.</li>
 
       <li><i>Gamma mixture</i>: Gamma shape mixtures are implemented (d, p, r)
-      in the <pkg>GSM</pkg> package.</li>
+      in the <pkg>GSM</pkg> package, <pkg>bmixture</pkg> provides d, r functions.</li>
 
       <li><i>Generic mixtures</i>: there is an implementation via S4-class 
       UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
@@ -1200,7 +1208,7 @@ are provided in <pkg>TTmoment</pkg>.
 
       <li><i>Student mixture</i>: The <pkg>AdMit</pkg> package provides d, r functions
       for Student mixtures in the context of Adaptive Mixture of Student-t distributions.
-      <pkg>MitISEM</pkg> package also provides d, r functions for mixture of Student-t distributions.
+      <pkg>MitISEM</pkg>, <pkg>bmixture</pkg> package also provide d, r functions for mixture of Student-t distributions.
       </li>
 
       <li><i>von Mises Fisher (or Langevin) mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
@@ -1242,6 +1250,11 @@ are provided in <pkg>TTmoment</pkg>.
         exponentiated Kumaraswamy G distributions, geometric exponential Poisson
         G distribution, truncated-exponential skew-symmetric G distribution, modified beta
         G distribution, and exponentiated exponential Poisson G distribution.
+    </li>
+    
+    <li><i>Truncated distribution</i>:
+    A generic code snippet is available <a href="https://www.jstatsoft.org/article/view/v016c02">in the JSS</a>.
+    For a given distribution, look at the corresponding subsection above.
     </li>
    </ul>
 
@@ -1607,6 +1620,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>BivarP</pkg>
+  <pkg>bmixture</pkg>
   <pkg>bridgedist</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
@@ -1745,6 +1759,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
   <pkg>RDieHarder</pkg>
+  <pkg>ReIns</pkg>
   <pkg priority="core">reliaR</pkg> 
   <pkg>retimes</pkg>
   <pkg>RMTstat</pkg>
