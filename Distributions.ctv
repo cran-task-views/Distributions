@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-01-26</version>
+<version>2017-02-08</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -370,7 +370,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Cauchy distribution</i>: Base R provides
      the d, p, q, r functions for this distribution (see above). Other
      implementations are available in <pkg>lmomco</pkg> and <pkg>sgt</pkg>.
-     The skew Cauchy distribution is provided in <pkg>sgt</pkg>.</li>     
+     The skew Cauchy distribution is provided in <pkg>sn</pkg>.</li>     
 	  
      <li><i>Chen distribution</i>: provided in <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg>.
      </li>
@@ -567,7 +567,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
-	 <pkg>sgt</pkg> implements the skew normal distribution.
+	 <pkg>sn</pkg> implements the skew normal distribution.
      <pkg>VGAM</pkg> implements the folded and the skewed normal distribution, and
      <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
 
@@ -599,7 +599,7 @@ If you think information is not accurate or not complete, please let me know.</p
          
          <tr><td>Folded and skew normal</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>SN1, SN2</code></td></tr>
          <tr><td>Closed skew normal</td> <td><pkg>csn</pkg></td> <td>d, p, q, r</td> <td><code>csn</code></td></tr>
-         <tr><td>Skew normal</td> <td><pkg>sgt</pkg></td> <td>d, p, q, r</td> <td><code>sn</code></td></tr>
+         <tr><td>Skew normal</td> <td><pkg>sn</pkg></td> <td>d, p, q, r</td> <td><code>sn</code></td></tr>
          
      </table><br/>
      
@@ -1001,6 +1001,7 @@ If you think information is not accurate or not complete, please let me know.</p
          
          <tr><td>Gen. Student</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>GT</code></td></tr>
          <tr><td>Gen. Hyp. Student</td> <td><pkg>fBasics</pkg></td> <td>d, p, q, r</td> <td><code>ght</code></td></tr>
+         <tr><td>Skew Gen. Student</td> <td><pkg>sgt</pkg></td> <td>d, p, q, r</td> <td><code>sgt</code></td></tr>
      </table><br/>
      
      </li>
@@ -1057,6 +1058,11 @@ If you think information is not accurate or not complete, please let me know.</p
       
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
+      
+<li><i>Multivariate Cauchy distribution</i>:   <pkg>sn</pkg> 
+provide d, p, r functions for the multivariate skew Cauchy distribution.
+</li>
+      
 <li><i>Multinomial Dirichlet distribution</i>:
   functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
   <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>. The standard and generalized
@@ -1082,7 +1088,12 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
     normal distribution.
-    <pkg>EMMIXskew</pkg> provide the multivariate skew normal distribution (d, r).
+    <pkg>EMMIXskew</pkg> provides some limited support for the multivariate skew-normal distribution 
+    in the sense of allowing computation of the density and generation of random numbers. 
+    Furthermore, <pkg>sn</pkg> besides providing facilities for their distribution functions, 
+    <pkg>sn</pkg> allows the creation of S4 objects which encapsulate these distributions and provide
+    facilities for plotting, summary, marginalization, conditioning, affine transformations 
+    of these S4 objects.
     <pkg>mnormpow</pkg> computes the expected product of the components of a multivariate Gaussian vector.
     <pkg>Compositional</pkg> provides random generator for the multivariate normal
     distribution on the simplex and multivariate skew normal distribution on the simplex.
@@ -1125,7 +1136,8 @@ The multivariate Student distribution is provided in the packages <pkg>mvtnorm</
 <pkg>QRM</pkg> (d, r).
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
-<pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r).
+<pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r),
+whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t distribution.
 </li>
 
       </ul>
