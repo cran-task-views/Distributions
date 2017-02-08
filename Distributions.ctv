@@ -93,6 +93,22 @@ If you think information is not accurate or not complete, please let me know.</p
           Zero-modified, zero-inflated, truncated versions are provided
           in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
           <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
+          
+          <br/><table border="0" summary="Binomial-related distributions">
+         <caption>Summary for Binomial-related distributions</caption>
+         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
+         <tr><td>binomial</td> <td>stats</td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
+         <tr><td>zero-infl. binomial</td> <td>extraDistr</td> <td>d, p, q, r</td> <td><code>zib</code></td></tr>
+         <tr><td>zero-infl. binomial</td> <td>VGAM</td> <td>d, p, q, r</td> <td><code>zibinom</code></td></tr>
+        <tr><td>zero-infl. binomial</td> <td>gamlss.dist</td> <td>d, p, q, r</td> <td><code>ZIBI</code></td></tr>
+         <tr><td>zero mod. binomial</td> <td>VGAM</td> <td>d, p, q, r</td> <td><code>zabinom</code></td></tr>
+         <tr><td>zero mod. binomial</td> <td>actuar</td> <td>d, p, q, r</td> <td><code>zmbinom</code></td></tr>
+         <tr><td>zero mod. binomial</td> <td>gamlss.dist</td> <td>d, p, q, r</td> <td><code>ZABI</code></td></tr>
+         <tr><td>zero trunc. binomial</td> <td>actuar</td> <td>d, p, q, r</td> <td><code>ztbinom</code></td></tr>
+         <tr><td>trunc. binomial</td> <td>extraDistr</td> <td>d, p, q, r</td> <td><code>tbinom</code></td></tr>
+     </table><br/>
+          
+          
           </li>
           
           <li><i>Benford distribution</i>: provided in <pkg>VGAM</pkg>.</li>
@@ -111,6 +127,8 @@ If you think information is not accurate or not complete, please let me know.</p
           
           
           <li><i>Discrete exponential distribution</i>: provided in <pkg>poweRlaw</pkg>.</li>
+          
+          <li><i>Discrete gamma distribution</i>: provided in <pkg>extraDistr</pkg>.</li>
           
           <li><i>Discrete inverse Weibull distribution</i>:
               <pkg>DiscreteInverseWeibull</pkg> provides d, p, q, r functions for the
@@ -163,7 +181,8 @@ If you think information is not accurate or not complete, please let me know.</p
               can be found in <pkg>BiasedUrn</pkg> package, which provides
               not only p, d, q, r functions but also mean, variance, mode functions.
               Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
-              Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>.
+              Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>,
+              <pkg>extraDistr</pkg>.
           </li>
           
           
@@ -619,7 +638,9 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Gompertz distribution</i>: provided in <pkg>reliaR</pkg>, <pkg>ActuDistns</pkg>,
          <pkg>flexsurv</pkg>, <pkg>extraDistr</pkg>.  <pkg>ActuDistns</pkg> and <pkg>flexsurv</pkg> also
-         provide hazard (h) and integrated hazard rate (i) functions.</li>
+         provide hazard (h) and integrated hazard rate (i) functions.
+         The shifted Gompertz distribution is implemented in <pkg>extraDistr</pkg>. 
+         </li>
 
 	 
 	 <li><i>Govindarajulu distribution</i>: provided in <pkg>lmomco</pkg>.</li>
@@ -713,8 +734,8 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Kumaraswamy distribution</i>: provided in packages <pkg>VGAM</pkg>, <pkg>ActuDistns</pkg>,
 	 <pkg>extraDistr</pkg> and <pkg>lmomco</pkg>.</li>
      
-     <li><i>(Tukey) Lambda distribution and its extensions</i>: The generalized Lambda 
-	 distribution (GLD) is well known for its wide range of shapes.
+     <li><i>(Tukey) Lambda distribution and its extensions</i>: 
+     The generalized Lambda distribution (GLD) is well known for its wide range of shapes.
      The original Tukey Lambda distribution can be obtained as a special
      case of the generalized Lambda distribution.
      There exists different parametrization of GLD in the literature:
@@ -725,7 +746,8 @@ If you think information is not accurate or not complete, please let me know.</p
      and AS (Asymmetry-steepness). The following packages implement such distributions
      (with d, p, q, r functions): <pkg>gld</pkg> (RS, FKML, FM5, GPD),
 	 <pkg>Davies</pkg> (RS), <pkg>gb</pkg> (RS),
-     <pkg>lmomco</pkg> (FMKL), <pkg>gldist</pkg> (AS).
+     <pkg>lmomco</pkg> (FMKL), <pkg>gldist</pkg> (AS), 
+     <pkg>extraDistr</pkg> (original Tukey).
 	 
 	  </li>
 	  
