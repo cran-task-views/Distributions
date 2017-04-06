@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-02-08</version>
+<version>2017-04-06</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1645,7 +1645,7 @@ whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t dist
 
 <packagelist>
   <pkg priority="core">actuar</pkg> 
-  <pkg priority="core">ActuDistns</pkg>
+  <pkg>ActuDistns</pkg>
   <pkg>AdMit</pkg>
   <pkg>agricolae</pkg>
   <pkg>ald</pkg>
@@ -1841,6 +1841,7 @@ whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t dist
 </packagelist> 
 
 <links> 
+  <a href="http://rpackages.io/views">download statistics per view</a>
   <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
   <a href="http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg"> Diagram of discrete
