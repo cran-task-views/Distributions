@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-04-06</version>
+<version>2017-04-07</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -746,7 +746,7 @@ If you think information is not accurate or not complete, please let me know.</p
      and AS (Asymmetry-steepness). The following packages implement such distributions
      (with d, p, q, r functions): <pkg>gld</pkg> (RS, FKML, FM5, GPD),
 	 <pkg>Davies</pkg> (RS), <pkg>gb</pkg> (RS),
-     <pkg>lmomco</pkg> (FMKL), <pkg>gldist</pkg> (AS), 
+     <pkg>lmomco</pkg> (FMKL),
      <pkg>extraDistr</pkg> (original Tukey).
 	 
 	  </li>
@@ -1720,7 +1720,6 @@ whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t dist
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>GIGrvg</pkg>
   <pkg>gld</pkg>
-  <pkg>gldist</pkg>
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
