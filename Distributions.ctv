@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-04-07</version>
+<version>2017-04-25</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1100,7 +1100,7 @@ provide d, p, r functions for the multivariate skew Cauchy distribution.
 
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-    <pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r) .
+    <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r) .
     <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
     <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
     Futhermore, <pkg>tmvtnorm</pkg> implements the truncated
@@ -1110,8 +1110,6 @@ provide d, p, r functions for the multivariate skew Cauchy distribution.
     <pkg>cmvnorm</pkg> implements the complex multivariate normal distribution (d, r).
     Finally, <pkg>condMVNorm</pkg> implements d, p, r functions for the conditional multivariate
     normal distribution.
-    <pkg>EMMIXskew</pkg> provides some limited support for the multivariate skew-normal distribution 
-    in the sense of allowing computation of the density and generation of random numbers. 
     Furthermore, <pkg>sn</pkg> besides providing facilities for their distribution functions, 
     <pkg>sn</pkg> allows the creation of S4 objects which encapsulate these distributions and provide
     facilities for plotting, summary, marginalization, conditioning, affine transformations 
@@ -1154,12 +1152,11 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 
 <li><i>Multivariate Student distribution</i>:
 The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-<pkg>mnormt</pkg> (d, p, r), <pkg>EMMIXskew</pkg> (d, r), <pkg>Compositional</pkg> (r),
+<pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r),
 <pkg>QRM</pkg> (d, r).
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
-<pkg>EMMIXskew</pkg> provide the multivariate skew t distribution (d, r),
-whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t distribution.
+<pkg>sn</pkg> provides d, p, r functions for the multivariate skew t distribution.
 </li>
 
       </ul>
@@ -1689,7 +1686,6 @@ whereas <pkg>sn</pkg> provide d, p, r functions for the multivariate skew t dist
   <pkg>e1071</pkg>
   <pkg>emdbook</pkg>
   <pkg>emg</pkg>
-  <pkg>EMMIXskew</pkg>
   <pkg>EnvStats</pkg>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
