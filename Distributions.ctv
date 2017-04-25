@@ -280,10 +280,6 @@ If you think information is not accurate or not complete, please let me know.</p
     not yet implemented?
     </li>
 
-<li><i>Permutation distribution</i>:
-    Mallows, generalized Mallows and weighted Mallows distributions are implemented in <pkg>PerMallows</pkg> (functions d, r).
-</li>
-
 	  </ul>
 
 <h2><a name="UnivariateContinuous">Continuous univariate distributions:</a></h2>      
@@ -1773,7 +1769,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
-  <pkg>PerMallows</pkg>
   <pkg>PhaseType</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
