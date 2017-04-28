@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-04-25</version>
+<version>2017-04-28</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -627,8 +627,8 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Generalized extreme value distribution</i>: provided in <pkg>lmomco</pkg> (d, p, q); 
      <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>QRM</pkg> and 
-     <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg> provides some
-	 additional functions for GEV distribution using MCMC. </li>         
+     <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg>,  <pkg>revdbayes</pkg>
+     provide d,p,q,r functions of the GEV distribution in a Bayesian setting. </li>
      
      
      
@@ -1786,6 +1786,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>ReIns</pkg>
   <pkg priority="core">reliaR</pkg> 
   <pkg>retimes</pkg>
+  <pkg>revdbayes</pkg>
   <pkg>RMTstat</pkg>
   <pkg>RMKdiscrete</pkg>
   <pkg>rngwell19937</pkg>
