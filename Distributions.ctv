@@ -873,7 +873,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  and a composite distribution of two Pareto I distributions.
      <pkg>ExtDist</pkg> provides the Burr distribution.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
-     <pkg>extraDistr</pkg>, <pkg>QRM</pkg>,  
+     <pkg>extraDistr</pkg>, <pkg>QRM</pkg>, <pkg>Renext</pkg>, 
      <pkg>revdbayes</pkg>, <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
@@ -899,6 +899,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Pareto II</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>pareto</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, h</td>  <td><code>lomax</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, h</td>  <td><code>pareto</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>Renext</pkg></td> <td>d, p, q, r</td>  <td><code>lomax</code></td></tr>
          
 <tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
 <tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
@@ -920,6 +921,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>revdbayes</pkg></td> <td>d, p, q, r</td> <td><code>gp</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>Renext</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
          
 <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
@@ -1065,10 +1067,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>reliaR</pkg> and <pkg>ActuDistns</pkg> implement the exponential Weibull, the flexible Weibull,
 	 the generalized power weibull, the Marshall-Olkin Extended Weibull and
 	 the Weibull extension distributions.
-     Finally, <pkg>lmomco</pkg>, <pkg>ExtDist</pkg> implements the Weibull distribution while
-     <pkg>evd</pkg> implements the reverse Weibull distribution. d, p, q, r functions for
-	 the reverse generalized extreme value distribution are provided in
-	 <pkg>gamlss.dist</pkg>.</li>
+     Furthermore, <pkg>lmomco</pkg>, <pkg>ExtDist</pkg> implements the Weibull distribution while
+     <pkg>evd</pkg> implements the reverse Weibull distribution. 
+    Finally, the reverse generalized extreme value distribution are provided in
+	 <pkg>gamlss.dist</pkg> (d, p, q, r) and the shifted left truncated Weibull distribution
+	 is provided in <pkg>Renext</pkg>.</li>
 
 	 <li><i>Xie distribution</i>: provided in <pkg>ActuDistns</pkg>.</li>
 
@@ -1787,6 +1790,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>RDieHarder</pkg>
   <pkg>ReIns</pkg>
   <pkg priority="core">reliaR</pkg> 
+  <pkg>Renext</pkg>
   <pkg>retimes</pkg>
   <pkg>revdbayes</pkg>
   <pkg>RMTstat</pkg>
@@ -1834,7 +1838,7 @@ are provided in <pkg>TTmoment</pkg>.
 </packagelist> 
 
 <links> 
-  <a href="http://rpackages.io/views">download statistics per view</a>
+  <a href="http://rpackages.io/views">Download statistics per view</a>
   <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
   <a href="http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg"> Diagram of discrete
