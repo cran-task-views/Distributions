@@ -872,8 +872,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <pkg>extremefit</pkg> provides the Burr, the Pareto II, mixture of Pareto I distributions
 	  and a composite distribution of two Pareto I distributions.
      <pkg>ExtDist</pkg> provides the Burr distribution.
-     <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, <pkg>extraDistr</pkg>, <pkg>QRM</pkg>
-	 <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
+     <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
+     <pkg>extraDistr</pkg>, <pkg>QRM</pkg>,  
+     <pkg>revdbayes</pkg>, <pkg>FAdist</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
 	 a shifted exponential distribution or a generalized beta I distribution.
@@ -918,6 +919,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>revdbayes</pkg></td> <td>d, p, q, r</td> <td><code>gp</code></td></tr>
          
 <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>ActuDistns</pkg></td> <td>d, p, q, h, i</td>  <td><code>burrx</code></td></tr>
