@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-04-28</version>
+<version>2017-06-29</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1087,9 +1087,8 @@ provide d, p, r functions for the multivariate skew Cauchy distribution.
 </li>
       
 <li><i>Multinomial Dirichlet distribution</i>:
-  functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>, <pkg>hyperdirichlet</pkg>,
-  <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>. The standard and generalized
-  hyperdirichlet distributions are provided in <pkg>hyperdirichlet</pkg>.
+  functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>,
+  <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>.
        
 </li>
           
@@ -1733,7 +1732,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>HI</pkg>
   <pkg>HistogramTools</pkg>
   <pkg>HyperbolicDist</pkg>
-  <pkg>hyperdirichlet</pkg>
   <pkg>ihs</pkg>
   <pkg>JohnsonDistribution</pkg>
   <pkg>kernelboot</pkg>
