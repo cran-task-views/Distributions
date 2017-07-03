@@ -285,8 +285,6 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="UnivariateContinuous">Continuous univariate distributions:</a></h2>      
 	  <ul>
 	    <li><i>Arcsine distribution</i>: implemented in package <pkg>distr</pkg>.</li>
-     </li>
-
 	    
      <li><i>Beta distribution and its extensions</i>:
          Base R and <pkg>ExtDist</pkg> provide
@@ -633,7 +631,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 A fast random generator is available for the Gumbel distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
      The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
-     and  <pkg>gamlss.dist</pkg>.
+     and  <pkg>gamlss.dist</pkg>.</li>
 	    
 	 <li><i>Huber distribution</i>: 
 	 Huber's least favourable distribution provided in package <pkg>smoothmest</pkg> (d, r),
