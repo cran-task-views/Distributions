@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-07-02</version>
+<version>2017-07-30</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -675,8 +675,6 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
 	 
 	 <li><i>Johnson distribution</i>: provided in <pkg>SuppDists</pkg>.
-     <pkg>JohnsonDistribution</pkg> provides functions to convert normal variate
-     to Johnson distribution and vice-versa.
      </li>
 
     <li><i>K-prime distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
@@ -1673,7 +1671,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>HistogramTools</pkg>
   <pkg>HyperbolicDist</pkg>
   <pkg>ihs</pkg>
-  <pkg>JohnsonDistribution</pkg>
   <pkg>kernelboot</pkg>
   <pkg>kolmim</pkg>
   <pkg>KScorrect</pkg>
