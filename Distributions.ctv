@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-07-30</version>
+<version>2017-09-12</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -56,15 +56,6 @@ If you think information is not accurate or not complete, please let me know.</p
      (only p and q), Wilcoxon signed rank distribution <code>signrank</code>, Wilcoxon
      rank sum distribution <code>wilcox</code>.
   </li>
-    <li> On base R distributions, <pkg>prob</pkg> provides the characteristic function, while 
-    graphical methods for illustrating probability distributions can be found 
-    in <pkg>denstrip</pkg>.
-    Following abbreviations are used: m for moments (both raw and centered) computation,
-    lm for L-moment, tlmr for trimmed L-moment ratio,
-    lev for limited expected value, mgf for moment generating function, pgf for probability
-    generating functions, h for hazard function, i for integrated hazard function.
-    </li>
-    
 	   <li>Probability generating function:
            
            <pkg>Compounding</pkg> provides pgf for <code>xxx</code> distribution,
@@ -1722,7 +1713,6 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>polyaAeppli</pkg>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
-  <pkg>prob</pkg>
   <pkg>qmap</pkg>
   <pkg>QRM</pkg>
   <pkg>randaes</pkg>
