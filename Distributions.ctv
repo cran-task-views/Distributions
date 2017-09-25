@@ -22,7 +22,7 @@ are available in contributed packages.</p>
  <li> Distributional Analysis with L-moment Statistics using the R Environment for Statistical Computing, Asquith (2011).</li>
 </ul>
 
-<p>The maintainer greatfully acknowledges Achim Zeileis, David Luethi, Tobias Verbeke, Robin
+<p>The maintainer gratefully acknowledges Achim Zeileis, David Luethi, Tobias Verbeke, Robin
 Hankin, Mathias Kohl, G. Jay Kerns, Kjetil Halvorsen, William Asquith for their useful comments/suggestions.
 If you think information is not accurate or not complete, please let me know.</p>
 
@@ -630,7 +630,7 @@ If you think information is not accurate or not complete, please let me know.</p
          
          
      
-     <li><i>(generalized) Hyperbolic distribuion</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
+     <li><i>(generalized) Hyperbolic distribution</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
      provide d, p, q, r functions for the generalized hyperbolic distribution. 
      <pkg>QRM</pkg> provides d, r functions for  the generalized hyperbolic distribution.
