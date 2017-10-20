@@ -478,6 +478,8 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Shifted exponential</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td> <td><code>2exp</code></td></tr>
          <tr><td>Truncated exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td> <td><code>texp</code></td></tr>
          
+         <tr><td>Truncated exponential</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>texp</code></td></tr>
+         
          <tr><td>Power exponential</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td>  <td><code>normp</code></td></tr>
          <tr><td>Power exponential</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>exp</code></td></tr>
          <tr><td>Skew power exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td><code>aep4</code></td></tr>
@@ -505,10 +507,11 @@ If you think information is not accurate or not complete, please let me know.</p
      and the denominator are given.
 	</li>
      
-     <li><i>Frechet distribution</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>
-     <pkg>extraDistr</pkg> and <pkg>evd</pkg>. A fast random generator is 
+     <li><i>Frechet distribution</i>: provided in <pkg>VGAM</pkg>, <pkg>RTDE</pkg>,
+     <pkg>ReIns</pkg>, <pkg>extraDistr</pkg> and <pkg>evd</pkg>. A fast random generator is 
      available for the Frechet distribution 
-	 is implemented in <pkg>Runuran</pkg> as well as the density function. </li>
+	 is implemented in <pkg>Runuran</pkg> as well as the density function.
+	  The truncated Frechet distribution is provided in <pkg>ReIns</pkg>.</li>
 	 
 	 <li><i>Friedman's Chi distribution</i>: provided in <pkg>SuppDists</pkg>.</li>     
 
@@ -804,7 +807,7 @@ If you think information is not accurate or not complete, please let me know.</p
          The log normal distribution parametrized by its mean and 
          its coefficient of variation is also provided in <pkg>EnvStats</pkg>.
          The truncated lognormal distribution is provided in <pkg>EnvStats</pkg>
-         with two possible parametrizations.
+         with two possible parametrizations as well as in <pkg>ReIns</pkg>.
          The 3-parameter lognormal
          distribution is available in <pkg>lmomco</pkg>, <pkg>EnvStats</pkg> and <pkg>FAdist</pkg>.
          The package
@@ -855,7 +858,9 @@ If you think information is not accurate or not complete, please let me know.</p
      The extended Pareto distribution is implemented in <pkg>RTDE</pkg>
      and the shifted truncated (to unit interval) Pareto is implemented in <pkg>mbbefd</pkg>.
      <pkg>ReIns</pkg> provides Burr, extended Pareto, generalized Pareto, Pareto 1
-     distributions.
+     distributions and their truncated version. 
+     
+    
      
   <br/><table border="0" summary="Pareto-related distributions">
      <caption>Summary for Pareto-related distributions</caption>
@@ -865,6 +870,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Pareto I</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
 <tr><td>Pareto I</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
 <tr><td>Pareto I</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>pareto</code></td></tr>
+<tr><td>Trunc. Pareto I</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>tpareto</code></td></tr>
          
 <tr><td>Pareto II</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoII</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>pareto, pareto2</code></td></tr>
@@ -892,6 +898,9 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Trunc. Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>tgpd</code></td></tr>
+
+
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>revdbayes</pkg></td> <td>d, p, q, r</td> <td><code>gp</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>Renext</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
          
@@ -899,6 +908,8 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
          
+<tr><td>Trunc. Burr</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>tburr</code></td></tr>
+
 <tr><td>Inverse Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>invburr</code></td></tr>
          
      </table><br/>
@@ -1034,9 +1045,11 @@ If you think information is not accurate or not complete, please let me know.</p
 	 the Weibull extension distributions.
      Furthermore, <pkg>lmomco</pkg>, <pkg>ExtDist</pkg> implements the Weibull distribution while
      <pkg>evd</pkg> implements the reverse Weibull distribution. 
-    Finally, the reverse generalized extreme value distribution are provided in
+    The reverse generalized extreme value distribution are provided in
 	 <pkg>gamlss.dist</pkg> (d, p, q, r) and the shifted left truncated Weibull distribution
-	 is provided in <pkg>Renext</pkg>.</li>
+	 is provided in <pkg>Renext</pkg>.
+	 The right truncated Weibull is provided in <pkg>ReIns</pkg>.
+	 </li>
 
   </ul>
       
