@@ -199,6 +199,9 @@ If you think information is not accurate or not complete, please let me know.</p
               in <pkg>extraDistr</pkg>, <pkg>gamlss.dist</pkg>, 
               <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
               <pkg>extraDistr</pkg> provides the truncated Poisson distribution.
+              
+              See the mixture section for mixture such as
+              Poisson-lognormal.
           </li>
           
           <li><i>Poisson-Lindley distribution</i>: provided in <pkg>tolerance</pkg>.</li>
@@ -241,6 +244,10 @@ If you think information is not accurate or not complete, please let me know.</p
 
 <h2><a name="MultivariateDiscrete">Discrete multivariate distributions:</a></h2>      
 	  <ul>
+	  
+	  <li><i>Bivariate Poisson-lognormal</i>:
+	   provided in <pkg>poilog</pkg>.
+	  </li>
           
     <li><i>Dirichlet distribution</i>:
     <pkg>Compositional</pkg> package provides d, r functions as well as a fitting function.
