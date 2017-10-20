@@ -242,6 +242,11 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateDiscrete">Discrete multivariate distributions:</a></h2>      
 	  <ul>
           
+    <li><i>Dirichlet distribution</i>:
+    <pkg>Compositional</pkg> package provides d, r functions as well as a fitting function.
+    </li>
+
+    
     <li><i>Multinomial distribution</i>:
     stats, <pkg>mc2d</pkg>, <pkg>extraDistr</pkg> packages provide d, r functions.
     </li>
