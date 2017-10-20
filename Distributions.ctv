@@ -816,6 +816,11 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Minimax distribution</i>: provided in <pkg>minimax</pkg>.
      </li>
      
+     
+     <li><i>Mittag-Leffler distribution</i>: d, p, q, r functions
+     provided in <pkg>MittagLeffleR</pkg>.
+     </li>
+     
      <li><i>Nakagami distribution</i>: provided in <pkg>VGAM</pkg>.
      </li>     
 
@@ -1697,6 +1702,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>mgpd</pkg>
   <pkg>minimax</pkg>
   <pkg>MitISEM</pkg>
+  <pkg>MittagLeffleR</pkg>
   <pkg>MixedTS</pkg>
   <pkg>mixtools</pkg>
   <pkg>MM</pkg>
