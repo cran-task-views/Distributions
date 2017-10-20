@@ -523,7 +523,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 gamma distribution with a location parameter.
 	  <pkg>flexsurv</pkg> provides d, p, q, r functions as well as
 	hazard (h) and integrated hazard rate (i) functions for 
-	the	generalized gamma distribution.<br/>
+	the	generalized gamma distribution.
+	<pkg>coga</pkg> provides d, p, r functions for a sum of independent but
+	not identically distributed gamma distributions.
+	<br/>
     
     <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
@@ -543,6 +546,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td> <td><code>gengamma</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td>  <td><code>GG</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>   <td><code>gengamma.stacy</code></td></tr>
+        <tr><td>convolution of gamma</td> <td><pkg>coga</pkg></td> <td>d, p, r </td>   <td><code>coga</code></td></tr>
     </table><br/>
 
 	 </li>
@@ -1597,6 +1601,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>bridgedist</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
+  <pkg>coga</pkg>
   <pkg>CompGLM</pkg>
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
