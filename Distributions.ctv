@@ -3,8 +3,8 @@
 
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
-<maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang</maintainer> 
-<version>2017-09-12</version>
+<maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
+<version>2017-10-20</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -956,7 +956,6 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
          
          <tr><td>Student</td> <td>stats</td> <td>d, p, q, r</td> <td><code>t</code></td></tr>
-         <tr><td>loc. scal. Student</td> <td>extraDistr</td> <td>d, p, q, r</td> <td><code>nst</code></td></tr>
          
          <tr><td>Doubly non central St.</td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>dnt</code></td></tr>
          <tr><td>Skew Student</td> <td><pkg>skewt</pkg></td> <td>d, p, q, r</td> <td><code>skt</code></td></tr>
