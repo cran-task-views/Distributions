@@ -246,6 +246,10 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>Compositional</pkg> package provides d, r functions as well as a fitting function.
     </li>
 
+
+    <li><i>Hyper Dirichlet distribution</i>:
+    provided in <pkg>hyper2</pkg> package.
+    </li>
     
     <li><i>Multinomial distribution</i>:
     stats, <pkg>mc2d</pkg>, <pkg>extraDistr</pkg> packages provide d, r functions.
@@ -1665,6 +1669,7 @@ are provided in <pkg>TTmoment</pkg>.
   <pkg>HI</pkg>
   <pkg>HistogramTools</pkg>
   <pkg>HyperbolicDist</pkg>
+  <pkg>hyper2</pkg>
   <pkg>ihs</pkg>
   <pkg>kernelboot</pkg>
   <pkg>kolmim</pkg>
