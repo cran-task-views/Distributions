@@ -1315,7 +1315,7 @@ omega or by the Cholesky decomposition of omega.
 	  
    </ul>
 
-<h2><a name="Transform">Compound, composite, 
+<h2><a name="Transform">Compound, composite, discretized,
 exponentiated and tranformation of distributions:</a></h2>                  
    <ul>
     
@@ -1341,6 +1341,13 @@ exponentiated and tranformation of distributions:</a></h2>
         logarithmic-Poisson, negative binomial, Neyman type A/B/C, Pascal-Poisson, Poisson,
         Poisson-binomial, Poisson-Lindley, Poisson-Pascal, Polya Aeppli, Thomas,
         Waring, Yule.
+    </li>
+    
+    <li><i>Discretized distribution</i>: 
+    <pkg>distcrete</pkg> allows discretised versions of continuous distribution by mapping 
+    continuous values to an underlying discrete grid, based on a (uniform) frequency of 
+    discretisation, a valid discretisation point, and an integration range.
+    
     </li>
        
     <li><i>G transformed distribution</i>:  implemented in <pkg>Newdistns</pkg>
@@ -1796,6 +1803,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>DiscreteInverseWeibull</pkg>
   <pkg>DiscreteLaplace</pkg>
   <pkg>DiscreteWeibull</pkg>
+  <pkg>distcrete</pkg>
   <pkg priority="core">distr</pkg>
   <pkg>distrDoc</pkg>
   <pkg>distrEllipse</pkg>
