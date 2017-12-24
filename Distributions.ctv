@@ -1344,7 +1344,9 @@ omega or by the Cholesky decomposition of omega.
     </li>
     
     <li><i>Truncated distribution</i>:
-    A generic code snippet is available <a href="https://www.jstatsoft.org/article/view/v016c02">in the JSS</a>.
+    A generic code snippet is available 
+    <a href="https://www.jstatsoft.org/article/view/v016c02">in the JSS</a>.
+    <pkg>LaplaceDemon</pkg> provides a generic function.
     For a given distribution, look at the corresponding subsection above.
     </li>
    </ul>
@@ -1583,6 +1585,9 @@ omega or by the Cholesky decomposition of omega.
 		package interfaces to the UNU.RAN library for universal non-uniform generation
 		as well as customised distributions based on polynomial interpolation of the inverse
 		cumulative distribution function.
+		<pkg>rust</pkg> performs non-uniform random variate generation from unimodal 
+		(low-dimensional) multivariate continuous distributions, using the 
+		generalized ratio-of-uniforms method. 
 		</li>
 		
 		<li> <pkg>kernelboot</pkg> provides functions for random generation from univariate 
@@ -1660,7 +1665,12 @@ omega or by the Cholesky decomposition of omega.
     <li><i>Empirical distribution</i>: Base R provides functions for univariate analysis:
 	(1) the empirical density (see density()), (2) the empirical cumulative
 	distribution function (see ecdf()), (3) the empirical quantile (see quantile())
-	and (4) random sampling (see sample()).</li>
+	and (4) random sampling (see sample()).
+	
+	<pkg>mded</pkg> provides a function for measuring the difference between two 
+	independent or non-independent empirical distributions and returning a 
+	significance level of the difference.
+	</li>
 
     <li><i>Non Parametric distributions </i>:
     <pkg>spd</pkg> provides the Semi Parametric Piecewise Distribution, while
@@ -1729,7 +1739,7 @@ omega or by the Cholesky decomposition of omega.
 	 Package <pkg>MASS</pkg> implements the flexible <code>fitdistr</code>
      function for parameter estimations. <pkg>fitdistrplus</pkg> greatly enlarges and enhances
      the tools to fit any probability distribution.
-     <pkg>EnvStats</pkg> also provides tools to fit most common distributions.
+     <pkg>EnvStats</pkg> and <pkg>fitteR</pkg> also provides tools to fit most common distributions.
 	  <pkg>flexsurv</pkg> and <pkg>msm</pkg> provides a quantile
 	function for a generic distribution based on numerical 
 	computation based on a dichotomic search.
@@ -1802,6 +1812,7 @@ omega or by the Cholesky decomposition of omega.
   <pkg>fExtremes</pkg>
   <pkg>fgac</pkg>
   <pkg>fitdistrplus</pkg>
+  <pkg>fitteR</pkg>
   <pkg>flexsurv</pkg>
   <pkg>FMStable</pkg>
   <pkg>fpow</pkg>
@@ -1850,6 +1861,7 @@ omega or by the Cholesky decomposition of omega.
   <pkg>mc2d</pkg>
   <pkg>mclust</pkg>
   <pkg>MCMCpack</pkg>
+  <pkg>mded</pkg>
   <pkg>mgpd</pkg>
   <pkg>minimax</pkg>
   <pkg>MitISEM</pkg>
@@ -1904,6 +1916,7 @@ omega or by the Cholesky decomposition of omega.
   <pkg>RTDE</pkg>
   <pkg>rtdists</pkg>
   <pkg>Runuran</pkg>
+  <pkg>rust</pkg>
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
   <pkg>SCI</pkg>
