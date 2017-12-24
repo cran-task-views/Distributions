@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2017-12-23</version>
+<version>2017-12-24</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1315,13 +1315,24 @@ omega or by the Cholesky decomposition of omega.
 	  
    </ul>
 
-<h2><a name="Transform">Compound, exponentiated and tranformation of distributions:</a></h2>                  
+<h2><a name="Transform">Compound, composite, 
+exponentiated and tranformation of distributions:</a></h2>                  
    <ul>
     
     <li><i>Absolute value or half distribution</i>:
-           Half-Cauchy, half normal and half-student are implemented in <pkg>extraDistr</pkg>.
+           Half-Cauchy, half normal and half-student are implemented 
+           both in <pkg>extraDistr</pkg> and in <pkg>LaplacesDemon</pkg>.
     </li>
     
+    <li><i>Composite distribution also known as spliced distribution</i>: 
+    
+    Composite lognormal distributions provided in <pkg>complognormal</pkg>.
+    
+    Split-normal (also known as the two-piece normal distribution) not yet implemented.
+    
+    Split-student provided in package <pkg>dng</pkg>.
+    
+    </li>
     
     <li><i>Compound distribution</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
         where the parent distribution is any continuous distribution and the compound distribution
