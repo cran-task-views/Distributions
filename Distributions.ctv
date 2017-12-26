@@ -1053,7 +1053,7 @@ If you think information is not accurate or not complete, please let me know.</p
          <caption>Summary for Student-related distributions</caption>
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
          
-         <tr><td>Student</td> <td>stats</td> <td>d, p, q, r</td> <td><code>t</code></td></tr>`
+         <tr><td>Student</td> <td>stats</td> <td>d, p, q, r</td> <td><code>t</code></td></tr>
          
          <tr><td>Student with loc. and scal.</td> <td>extraDistr</td> <td>d, p, q, r</td> <td><code>lst</code></td></tr>
          <tr><td>Student with loc. and scal.</td> <td>LaplacesDemon</td> <td>d, p, q, r</td> <td><code>st</code></td></tr>
@@ -1215,12 +1215,12 @@ The multivariate Student distribution is provided in the packages <pkg>mvtnorm</
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
 <pkg>sn</pkg> provides d, p, r functions for the multivariate skew t distribution.
-</li>
 
 <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
 Student distribution parametrized either by sigma,
 by the Cholesky decomposition of sigma, by the precision matrix 
 omega or by the Cholesky decomposition of omega.
+</li>
 
       </ul>
       
