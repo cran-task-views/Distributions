@@ -1326,12 +1326,11 @@ exponentiated and tranformation of distributions:</a></h2>
     
     <li><i>Composite distribution also known as spliced distribution</i>: 
     
-    Composite lognormal distributions provided in <pkg>complognormal</pkg>.
+    Composite lognormal distributions provided in <pkg>CompLognormal</pkg>.
     
     Split-normal (also known as the two-piece normal distribution) not yet implemented.
     
-    Split-student provided in package <pkg>dng</pkg>.
-    
+    Split-student provided in package <pkg>dng</pkg>.    
     </li>
     
     <li><i>Compound distribution</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
@@ -1364,7 +1363,7 @@ exponentiated and tranformation of distributions:</a></h2>
     <li><i>Truncated distribution</i>:
     A generic code snippet is available 
     <a href="https://www.jstatsoft.org/article/view/v016c02">in the JSS</a>.
-    <pkg>LaplaceDemon</pkg> provides a generic function.
+    <pkg>LaplacesDemon</pkg> provides a generic function.
     For a given distribution, look at the corresponding subsection above.
     </li>
    </ul>
@@ -1813,6 +1812,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>distrSim</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
+  <pkg>dng</pkg>
   <pkg>e1071</pkg>
   <pkg>ecd</pkg>
   <pkg>emdbook</pkg>
