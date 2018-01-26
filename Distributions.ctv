@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2017-12-24</version>
+<version>2018-01-26</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -309,15 +309,13 @@ If you think information is not accurate or not complete, please let me know.</p
 	    <li><i>Arcsine distribution</i>: implemented in package <pkg>distr</pkg>.</li>
 	    
      <li><i>Beta distribution and its extensions</i>:
-         Base R and <pkg>ExtDist</pkg> provide
+         Base R provides
      the d, p, q, r functions for this distribution (see above).
      <pkg>extraDistr</pkg> provides the beta distribution 
      parametrized by the mean and the precision.
      <pkg>actuar</pkg> provides moments and limited expected values.
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for doubly non central beta distribution for computing d, p, q, r functions.
-     The four-parameter beta (with location and scale parameters), the symmetric reflected truncated
-     beta (both for two-parameter and four-parameter beta) are available in <pkg>ExtDist</pkg>.
      <pkg>extraDistr</pkg> provides the four-parameter beta with lower and upper bounds.
      The generalized beta of the first kind (GB1) (exponentation of beta 1) 
      is provided in <pkg>gamlss.dist</pkg>, <pkg>mbbefd</pkg>, <pkg>actuar</pkg>.
@@ -345,11 +343,9 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Beta (1st kind)</td> <td>stats</td> <td>d, p, q, r</td> <td><code>beta</code></td></tr>
          <tr><td>Beta</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>beta</code></td></tr>
-         <tr><td>Beta</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Beta</code></td></tr>
          <tr><td>Beta</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>prop</code></td></tr>
          
          <tr><td>Doubly non central beta </td> <td><pkg>sadists</pkg></td> <td>d, p, q, r</td> <td><code>nbeta</code></td></tr>
-         <tr><td>4-param beta</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Beta_ab</code></td></tr>
          <tr><td>4-param beta</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>nsbeta</code></td></tr>
          
          
@@ -486,8 +482,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 the logistic exponential, the Marshall-Olkin Extended Exponential and 
 	 the exponential extension distributions.
 	 
-      <pkg>ExtDist</pkg> also provides d, p, q, r functions for the exponential distribution.
-	 A fast random generator is available for the power Exponential distribution 
+      <pkg>A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
 	 <pkg>rpgm</pkg> provides a fast random number generator for the exponential distribution.  
 	 <br/>
@@ -497,7 +492,6 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
          <tr><td>Exponential</td> <td>stats</td> <td>d, p, q, r</td>  <td><code>exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>exp</code></td></tr>
-         <tr><td>Exponential</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td>  <td><code>Exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td><code>EXP</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td> <td><code>exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>rpgm</pkg></td> <td>r</td> <td><code>rpgm.rexp</code></td></tr>
@@ -547,7 +541,6 @@ If you think information is not accurate or not complete, please let me know.</p
      the d, p, q, r functions for this distribution (see above).
      <pkg>EnvStats</pkg> provides d, p, q, r functions of the gamma
      parametrized by the mean and the coefficient of variation.
-     <pkg>ExtDist</pkg> provides d, p, q, r functions of exponential distribution.
      <pkg>actuar</pkg> provides d, p, q, r functions of the inverse, the inverse
      transformed and the log gamma distributions
      while <pkg>ghyp</pkg> provides those functions for the variance gamma distribution.
@@ -572,7 +565,6 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
         <tr><td>Gamma</td> <td>stats</td> <td>d, p, q, r</td> <td><code>gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>gamma</code></td></tr>
-        <tr><td>Gamma</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Gamma</code></td></tr>
         <tr><td>Gamma</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>gammaAlt</code></td></tr>
         
         <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td><code>invgamma</code></td></tr>
@@ -598,7 +590,6 @@ If you think information is not accurate or not complete, please let me know.</p
      provides the moment generating function and moments.
 	 The <pkg>truncnorm</pkg> package provides d, p, q, r functions for the truncated 
 	  gaussian distribution as well as functions for the first two moments.
-     <pkg>ExtDist</pkg> provides the normal, the truncated and the symmetric truncated distributions.
      <pkg>mvrtn</pkg> provides random variates for left/right truncated normal distributions.
      <pkg>EnvStats</pkg> provides d, p, q, r functions for the truncated normal distribution
      and the zero-modified distribution.
@@ -628,10 +619,8 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
          <tr><td>Normal</td> <td>stats</td> <td>d, p, q, r</td> <td><code>norm</code></td></tr>
          <tr><td>Normal</td> <td><pkg>actuar</pkg></td> <td>m, mgf</td> <td><code>norm</code></td></tr>
-         <tr><td>Normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal</code></td></tr>
          
          <tr><td>Truncated normal</td> <td><pkg>truncnorm</pkg></td> <td>d, p, q, r, m</td> <td><code>truncnorm</code></td></tr>
-         <tr><td>Truncated normal</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Normal_trunc_ab</code></td></tr>
          <tr><td>Truncated normal</td> <td><pkg>mvrtn</pkg></td> <td>r, m</td>  <td><code>tn</code></td> </tr>
          <tr><td>Truncated normal</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td>  <td><code>normTrunc</code></td> </tr>
          <tr><td>Truncated normal</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td>  <td><code>tnorm</code></td> </tr>
@@ -674,7 +663,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
      <li><i>Gumbel distribution</i>: provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
-	 <pkg>reliaR</pkg>, <pkg>ExtDist</pkg>, <pkg>QRM</pkg>,
+	 <pkg>reliaR</pkg>, <pkg>QRM</pkg>,
 	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
 	 <pkg>actuar</pkg> provides the raw moments and the moment generating function (mgf)
 	 in addition to the d, p, q, r functions.
@@ -784,7 +773,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Laplace (also called double exponential distribution)
          and asymetric Laplace distribution</i>: 
          provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>, <pkg>LaplacesDemon</pkg>,
-	 <pkg>VGAM</pkg>, <pkg>ExtDist</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>
+	 <pkg>VGAM</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>
 	 and <pkg>HyperbolicDist</pkg> packages.
 	 <pkg>LaplacesDemon</pkg> provides the Laplace distribution parametrized
 	 by the precision parameter as well as the skew Laplace distribution.
@@ -816,14 +805,12 @@ If you think information is not accurate or not complete, please let me know.</p
      the log-logistic distribution with two and three parameters.
 	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
 	 in <pkg>lmomco</pkg>, <pkg>sld</pkg>, <pkg>SCI</pkg> and <pkg>glogis</pkg>. Finally,
-      <pkg>ExtDist</pkg> implements the logistic distribution.
       
       <br/><table border="0" summary="Logistic-related distributions">
           <caption>Summary for Logistic-related distributions</caption>
           <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
           <tr><td>Logistic</td> <td>stats</td> <td>d, p, q, r</td> <td><code>logis</code></td></tr>
           <tr><td>Logistic</td> <td><pkg>actuar</pkg></td> <td>m, mgf</td> <td><code>logis</code></td></tr>
-          <tr><td>Logistic</td> <td><pkg>ExtDist</pkg></td> <td>d, p, q, r</td> <td><code>Logistic</code></td></tr>
           <tr><td>Log logistic</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>llogis</code></td></tr>
           <tr><td>Log logistic</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>fisk</code></td></tr>
           <tr><td>Log logistic</td> <td><pkg>FAdist</pkg></td> <td>d, p, q, r</td> <td><code>llog, llog3</code></td></tr>
@@ -896,7 +883,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 provides d, p, q, r functions for Pareto I distribution.
 	  <pkg>extremefit</pkg> provides the Burr, the Pareto II, mixture of Pareto I distributions
 	  and a composite distribution of two Pareto I distributions.
-     <pkg>ExtDist</pkg> provides the Burr distribution.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>QRM</pkg>, <pkg>Renext</pkg>, 
      <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg> and <pkg>evir</pkg> packages
@@ -1071,7 +1057,7 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
      
      <li><i>Triangle/trapezoidal distribution</i>: packages <pkg>triangle</pkg>,
-         <pkg>extraDistr</pkg>, <pkg>mc2d</pkg>, <pkg>ExtDist</pkg>, <pkg>EnvStats</pkg> and
+         <pkg>extraDistr</pkg>, <pkg>mc2d</pkg>, <pkg>EnvStats</pkg> and
      <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle or triangular distribution, while the package
 	 <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized Trapezoidal Distribution.
 	 A fast random generator is available for the triangle distribution 
@@ -1108,7 +1094,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>reliaR</pkg> implements the exponential Weibull, the flexible Weibull,
 	 the generalized power weibull, the Marshall-Olkin Extended Weibull and
 	 the Weibull extension distributions.
-     Furthermore, <pkg>lmomco</pkg>, <pkg>ExtDist</pkg> implements the Weibull distribution while
+     Furthermore, <pkg>lmomco</pkg> implements the Weibull distribution while
      <pkg>evd</pkg> implements the reverse Weibull distribution. 
     The reverse generalized extreme value distribution are provided in
 	 <pkg>gamlss.dist</pkg> (d, p, q, r) and the shifted left truncated Weibull distribution
@@ -1821,7 +1807,6 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
   <pkg>evir</pkg>
-  <pkg>ExtDist</pkg>
   <pkg>extraDistr</pkg>
   <pkg>extremefit</pkg>
   <pkg>FAdist</pkg>
