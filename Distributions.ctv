@@ -482,7 +482,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 the logistic exponential, the Marshall-Olkin Extended Exponential and 
 	 the exponential extension distributions.
 	 
-      <pkg>A fast random generator is available for the power Exponential distribution 
+         A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
 	 <pkg>rpgm</pkg> provides a fast random number generator for the exponential distribution.  
 	 <br/>
