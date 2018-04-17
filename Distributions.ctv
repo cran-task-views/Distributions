@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-01-26</version>
+<version>2018-04-17</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1363,14 +1363,14 @@ exponentiated and tranformation of distributions:</a></h2>
 	  <li><i>Empirical skewness</i>:
 	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
-      <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
+      <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
       <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg>, <pkg>rpgm</pkg> packages.</li>
       
     <li><i>Empirical kurtosis</i>:  
 	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
       <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>,
-	  <pkg>moments</pkg>, <pkg>npde</pkg>, <pkg>TSA</pkg>, <pkg>rpgm</pkg> packages.
+	  <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>rpgm</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. </li>
       
@@ -1888,7 +1888,6 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>NormalGamma</pkg> 
   <pkg>NormalLaplace</pkg>
   <pkg>normalp</pkg>
-  <pkg>npde</pkg>
   <pkg>ORDER2PARENT</pkg>
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
