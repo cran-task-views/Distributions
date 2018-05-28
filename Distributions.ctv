@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-04-17</version>
+<version>2018-05-28</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1729,8 +1729,6 @@ exponentiated and tranformation of distributions:</a></h2>
     <li><i>Histogram, tail plots, distance estimation</i>:
         <pkg>DistributionUtils</pkg> provides log-histogram,
         tail plots, functions for testing distributions using inversion tests and the Massart inequality.
-        <pkg>GMD</pkg> is a package for non-parametric distance measurement
-        between two discrete frequency distributions.
     </li>
 
 
@@ -1836,7 +1834,6 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
-  <pkg>GMD</pkg>
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
   <pkg>HAC</pkg>
