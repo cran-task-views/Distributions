@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-05-28</version>
+<version>2018-07-22</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -258,11 +258,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <li><i>Bivariate Poisson-lognormal</i>:
 	   provided in <pkg>poilog</pkg>.
 	  </li>
-          
-    <li><i>Dirichlet distribution</i>:
-    <pkg>Compositional</pkg> and <pkg>LaplacesDemon</pkg> packages 
-    provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
-    </li>
 
 
     <li><i>Hyper Dirichlet distribution</i>:
@@ -271,7 +266,17 @@ If you think information is not accurate or not complete, please let me know.</p
     
     <li><i>Multinomial distribution</i>:
     stats, <pkg>mc2d</pkg>, <pkg>extraDistr</pkg> packages provide d, r functions.
+    r is provided in <pkg>multiRNG</pkg>.
     </li>
+    
+    
+    
+<li><i>Multinomial Dirichlet distribution</i>:
+  functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>,
+  <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>.
+  r is provided in <pkg>multiRNG</pkg>.
+       
+</li>
 
     <li><i>Negative multinomial distribution</i>:
         A bivariate distribution with negative-binomial marginals is available in
@@ -1108,6 +1113,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
       
+      
 <li><i>Multivariate Cauchy distribution</i>:   <pkg>sn</pkg> 
 provide d, p, r functions for the multivariate skew Cauchy distribution,
 while <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
@@ -1116,11 +1122,12 @@ by the Cholesky decomposition of sigma, by the precision matrix
 omega or by the Cholesky decomposition of omega.
 </li>
       
-<li><i>Multinomial Dirichlet distribution</i>:
-  functions d, r are provided in <pkg>MCMCpack</pkg>, <pkg>mc2d</pkg>,
-  <pkg>dirmult</pkg>, <pkg>extraDistr</pkg> and <pkg>bayesm</pkg>.
-       
-</li>
+
+ 
+    <li><i>Dirichlet distribution</i>:
+    <pkg>Compositional</pkg> and <pkg>LaplacesDemon</pkg> packages 
+    provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
+    </li>
           
 <li><i>Multivariate exponential distribution</i>:
     while <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
@@ -1156,6 +1163,7 @@ or by the Cholesky decomposition of sigma.
     <pkg>Compositional</pkg> provides random generator for the multivariate normal
     distribution on the simplex and multivariate skew normal distribution on the simplex.
     
+  A random generator of the multivariate normal is provided in <pkg>multiRNG</pkg>.
 </li>
 
 <li><i>Multivariate generalized hyperbolic distribution</i>:
@@ -1176,6 +1184,7 @@ the symmetric multivariate generalized hyperbolic distribution.
 <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
 Laplace distribution parametrized either by sigma,
 or by the Cholesky decomposition of sigma.
+r is provided in <pkg>multiRNG</pkg>.
 </li>
 
 <li><i>Multivariate logistic distribution</i>:
@@ -1206,7 +1215,15 @@ are provided in <pkg>TTmoment</pkg>.
 Student distribution parametrized either by sigma,
 by the Cholesky decomposition of sigma, by the precision matrix 
 omega or by the Cholesky decomposition of omega.
+
+r is provided in <pkg>multiRNG</pkg>.
 </li>
+
+
+<li><i>Multivariate Uniform distribution</i>:
+    r is provided in <pkg>multiRNG</pkg>.
+</li>
+
 
       </ul>
       
@@ -1591,6 +1608,9 @@ exponentiated and tranformation of distributions:</a></h2>
 		<pkg>rust</pkg> performs non-uniform random variate generation from unimodal 
 		(low-dimensional) multivariate continuous distributions, using the 
 		generalized ratio-of-uniforms method. 
+		<pkg>univRNG</pkg> provides 17 non-uniform generators either using an
+		 acceptance/rejection algorithm or the inverse CDF method.
+		<pkg>multiRNG</pkg> provides 11 multivariate generators, see each distribution.
 		</li>
 		
 		<li> <pkg>kernelboot</pkg> provides functions for random generation from univariate 
@@ -1946,6 +1966,8 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>tsallisqexp</pkg>
   <pkg>TTmoment</pkg>
   <pkg>tweedie</pkg>
+  <pkg>univRNG</pkg>
+  <pkg>multiRNG</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
   <pkg>VineCopula</pkg> 
