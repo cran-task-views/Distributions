@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-07-22</version>
+<version>2018-06-10</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -175,11 +175,11 @@ If you think information is not accurate or not complete, please let me know.</p
               <pkg>hermite</pkg>.</li>
           
         
-          <li><i>Hypergeometric distribution</i>:
-              provided in <b>stats</b>.
-              Extented hypergeometric distribution
-              can be found in <pkg>BiasedUrn</pkg> package, which provides
+          <li><i>Hypergeometric distribution</i>: provided in <b>stats</b>.
+            Non-central hypergeometric distribution is provided in <pkg>MCMCpack</pkg> (d,r).
+              Extented hypergeometric distribution can be found in <pkg>BiasedUrn</pkg> package, which provides
               not only p, d, q, r functions but also mean, variance, mode functions.
+              
               Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
               Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>,
               <pkg>extraDistr</pkg>.
@@ -242,11 +242,18 @@ If you think information is not accurate or not complete, please let me know.</p
           <li><i>Zeta and Haight's Zeta distribution</i>: provided in
               <pkg>VGAM</pkg>, <pkg>tolerance</pkg>.</li>
 
-        <li><i>Zipf law</i>:
+        <li><i>Zipf distribution and extensions</i>:
             d, p, q, r functions of the Zipf and the Zipf-Mandelbrot distributions
             are provided in <pkg>tolerance</pkg>, <pkg>VGAM</pkg>.
             Package <pkg>zipfR</pkg> provides tools for distribution of word frequency,
-            such as the Zipf distribution.</li>
+            such as the Zipf distribution.
+            
+            <pkg>zipfextR</pkg> provides  three extensions of the Zipf distribution: 
+            the Marshall-Olkin Extended Zipf, 
+            the Zipf-Poisson Extreme and 
+            the Zipf-Poisson Stopped Sum distributions.
+            </li>
+
 
 
 
@@ -266,7 +273,7 @@ If you think information is not accurate or not complete, please let me know.</p
     
     <li><i>Multinomial distribution</i>:
     stats, <pkg>mc2d</pkg>, <pkg>extraDistr</pkg> packages provide d, r functions.
-    r is provided in <pkg>multiRNG</pkg>.
+    r is provided in <pkg>multiRNG</pkg> and <pkg>compositions</pkg>.
     </li>
     
     
@@ -285,7 +292,7 @@ If you think information is not accurate or not complete, please let me know.</p
     </li>
 
     <li><i>Multivariate Poisson distribution</i>:
-    not yet implemented?
+    <pkg>compositions</pkg> provides a random generator.
     </li>
 
     <li><i>Multivariate hypergeometric distribution</i>:
@@ -449,6 +456,11 @@ If you think information is not accurate or not complete, please let me know.</p
      
 	 </li>
 
+    <li><i>Continuous binomial distribution</i>: 
+    <pkg>cbinom</pkg> provides the d/p/q/r functions for a continuous analog to the standard discrete 
+    binomial with continuous size parameter and continuous support with x in [0, size + 1].
+    </li>
+
     <li><i>Dagum distribution</i>: see beta.</li>
     
      <li><i>Davies distribution</i>: The Davies distribution is provided
@@ -563,6 +575,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	the	generalized gamma distribution.
 	<pkg>coga</pkg> provides d, p, r functions for a sum of independent but
 	not identically distributed gamma distributions.
+	<pkg>MCMCpack</pkg> provides d, r functions of the Inverse Gamma.
+	
 	<br/>
     
     <br/><table border="0" summary="Gamma-related distributions">
@@ -575,6 +589,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Inverse gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev, mgf</td> <td><code>invgamma</code></td></tr>
         <tr><td>Inverse gamma</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>invgamma</code></td></tr>
         <tr><td>Inverse gamma</td> <td><pkg>LaplacesDemon</pkg></td> <td>d, r</td> <td><code>invgamma</code></td></tr>
+        <tr><td>Inverse gamma</td> <td><pkg>MCMCpack</pkg></td> <td>d, r</td> <td><code>invgamma</code></td></tr>
         
         
         <tr><td>Log-gamma</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>lgamma</code></td></tr>
@@ -1113,6 +1128,9 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
       
+      <li><i>Bivariate Pareto</i>:
+      <pkg>Bivariate.Pareto</pkg> provides a random generator for the bivariate Pareto distribution.
+      </li>
       
 <li><i>Multivariate Cauchy distribution</i>:   <pkg>sn</pkg> 
 provide d, p, r functions for the multivariate skew Cauchy distribution,
@@ -1125,8 +1143,9 @@ omega or by the Cholesky decomposition of omega.
 
  
     <li><i>Dirichlet distribution</i>:
-    <pkg>Compositional</pkg> and <pkg>LaplacesDemon</pkg> packages 
+    <pkg>Compositional</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>MCMCpack</pkg> packages 
     provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
+    <pkg>compositions</pkg>, <pkg>bayesm</pkg> provide r function.
     </li>
           
 <li><i>Multivariate exponential distribution</i>:
@@ -1139,7 +1158,9 @@ or by the Cholesky decomposition of sigma.
 
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
-    <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r) .
+    <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r), <pkg>compositions</pkg> (r).
+
+
     <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
     <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
     
@@ -1191,6 +1212,11 @@ r is provided in <pkg>multiRNG</pkg>.
     <pkg>VGAM</pkg> package  implements the bivariate logistic distribution.
 </li>
 
+<li><i>Multivariate lognormal distribution</i>:
+    <pkg>compositions</pkg> provides r function.
+</li>
+
+
 
 
 <li><i>Multivariate Pareto distribution</i>:
@@ -1206,7 +1232,9 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 <li><i>Multivariate Student distribution</i>:
 The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
 <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r),
-<pkg>QRM</pkg> (d, r).
+<pkg>QRM</pkg> (d, r),
+<pkg>bayesm</pkg> (r).
+
 First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
 are provided in <pkg>TTmoment</pkg>.
 <pkg>sn</pkg> provides d, p, r functions for the multivariate skew t distribution.
@@ -1222,6 +1250,8 @@ r is provided in <pkg>multiRNG</pkg>.
 
 <li><i>Multivariate Uniform distribution</i>:
     r is provided in <pkg>multiRNG</pkg>.
+    <pkg>compositions</pkg> provides a random generator
+    on the simplex.
 </li>
 
 
@@ -1251,7 +1281,7 @@ r is provided in <pkg>multiRNG</pkg>.
     
 </ul>
 
-<h2><a name="Mixture">Mixture of probability laws (and composite):</a></h2>                  
+<h2><a name="Mixture">Mixture of probability laws:</a></h2>                  
 
    <ul>
        <li><i>Bernoulli-dist mixture</i>: d, p, q, r functions
@@ -1260,10 +1290,8 @@ r is provided in <pkg>multiRNG</pkg>.
        
       <li><i>Cauchy-polynomial quantile mixture</i>: d, p, q, r functions are
 	  provided in <pkg>Lmoments</pkg>.</li>
-   
-	  <li><i>composite lognormal distribution</i>: d, p, q, r functions are
-	  provided in <pkg>CompLognormal</pkg>.
-	  </li>
+	  
+	   
    
       <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>,
       <pkg>bmixture</pkg> package when dealing with finite mixture models. 
@@ -1271,13 +1299,16 @@ r is provided in <pkg>multiRNG</pkg>.
       <pkg>KScorrect</pkg> provides d, p, r functions for Gaussian mixture.
 	  <pkg>EnvStats</pkg>   provides d, p, q, r functions 
 	  for mixture of two normal distributions.
+	  <pkg>bayesm</pkg> provides d function for the mixture of multivariate normals.
 	  </li>
 
 
     <li><i>Gamma Poisson</i>: provided in <pkg>extraDistr</pkg>.</li>
 
-      <li><i>Gamma mixture</i>: Gamma shape mixtures are implemented (d, p, r)
-      in the <pkg>GSM</pkg> package, <pkg>bmixture</pkg> provides d, r functions.</li>
+      <li><i>Gamma mixture</i>: Ga
+      <pkg>GSM</pkg> package provides d, p, r,
+      <pkg>bmixture</pkg> provides d, r,
+      <pkg>evmix</pkg> provides d, p, q, r.</li>
 
       <li><i>Generic mixtures</i>: there is an implementation via S4-class 
       UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
@@ -1334,6 +1365,10 @@ exponentiated and tranformation of distributions:</a></h2>
     Split-normal (also known as the two-piece normal distribution) not yet implemented.
     
     Split-student provided in package <pkg>dng</pkg>.    
+    
+    <pkg>evmix</pkg> provides d, p, q, r of the following composite distributions:
+    gamma-GPD, lognormal GPD, norma-GPD, Weibull-GPD.
+    
     </li>
     
     <li><i>Compound distribution</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
@@ -1343,6 +1378,8 @@ exponentiated and tranformation of distributions:</a></h2>
         logarithmic-Poisson, negative binomial, Neyman type A/B/C, Pascal-Poisson, Poisson,
         Poisson-binomial, Poisson-Lindley, Poisson-Pascal, Polya Aeppli, Thomas,
         Waring, Yule.
+        
+        <pkg>kdist</pkg> provides d, p, q, r functions of the K distribution.
     </li>
     
     <li><i>Discretized distribution</i>: 
@@ -1369,6 +1406,10 @@ exponentiated and tranformation of distributions:</a></h2>
     <pkg>LaplacesDemon</pkg> provides a generic function.
     For a given distribution, look at the corresponding subsection above.
     </li>
+    
+     <li><i> Wrapped G distribution</i>:
+     <pkg>Wrapped</pkg> provides d, p, q, r functions for a large family of distributions.
+     </li>
    </ul>
 
 <h2><a name="Moments">Moments, skewness, kurtosis and etc:</a></h2>
@@ -1452,6 +1493,7 @@ exponentiated and tranformation of distributions:</a></h2>
       decomposition.
       <pkg>LaplacesDemon</pkg> provides the scaled inverse 
       Wishart distribution.
+      <pkg>MCMCpack</pkg> provides the inverse Wishart distribution.
       </li>
 	  
       <li><i>Marcenko-Pastur distribution</i>:
@@ -1483,8 +1525,8 @@ exponentiated and tranformation of distributions:</a></h2>
 	  
 	  <li><i>Wishart distributions</i>:
 	  Base R provides the r function for the Wishart distribution.
-	  the d, r functions are provided in <pkg>MCMCpack</pkg>,
-	  <pkg>RMTstat</pkg>and <pkg>bayesm</pkg>.
+	  <pkg>MCMCpack</pkg>, <pkg>RMTstat</pkg>, <pkg>bayesm</pkg> provides d, r functions,
+	  <pkg>bayesm</pkg> provides r function.
 	  <pkg>LaplacesDemon</pkg> provides  Wishart distribution
       parametrized either by Sigma or by its Cholesky
       decomposition.
@@ -1527,7 +1569,8 @@ exponentiated and tranformation of distributions:</a></h2>
        Nested Archimedean copulas are available in the <pkg>HAC</pkg> package.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
-      <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula. 
+      <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula.
+      <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
       </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
@@ -1749,6 +1792,9 @@ exponentiated and tranformation of distributions:</a></h2>
     <li><i>Histogram, tail plots, distance estimation</i>:
         <pkg>DistributionUtils</pkg> provides log-histogram,
         tail plots, functions for testing distributions using inversion tests and the Massart inequality.
+        <pkg>visualize</pkg> provides functions to plot the pdf or pmf with highlights on area or when probability 
+        is present in user defined locations, as well as the graph is the mean and variance of the distribution.
+        <pkg>visualize</pkg> provides lower tail, bounded, upper tail, and two tail calculations. 
     </li>
 
 
@@ -1782,9 +1828,11 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>Bivariate.Pareto</pkg>
   <pkg>BivarP</pkg>
   <pkg>bmixture</pkg>
   <pkg>bridgedist</pkg>
+  <pkg>cbinom</pkg>
   <pkg>CDVine</pkg>
   <pkg>cmvnorm</pkg>
   <pkg>coga</pkg>
@@ -1793,6 +1841,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>compoisson</pkg>
   <pkg>Compounding</pkg>
   <pkg>Compositional</pkg>
+  <pkg>compositions</pkg>
   <pkg>CompQuadForm</pkg>
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
@@ -1825,6 +1874,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
   <pkg>evir</pkg>
+  <pkg>evmix</pkg>
   <pkg>extraDistr</pkg>
   <pkg>extremefit</pkg>
   <pkg>FAdist</pkg>
@@ -1863,6 +1913,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>HyperbolicDist</pkg>
   <pkg>hyper2</pkg>
   <pkg>ihs</pkg>
+  <pkg>kdist</pkg>
   <pkg>kernelboot</pkg>
   <pkg>kolmim</pkg>
   <pkg>KScorrect</pkg>
@@ -1972,7 +2023,10 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg priority="core">VGAM</pkg>
   <pkg>VineCopula</pkg> 
   <pkg>vines</pkg>
+  <pkg>visualize</pkg>
+  <pkg>zipfextR</pkg>
   <pkg>zipfR</pkg> 
+  
 </packagelist> 
 
 <links> 
