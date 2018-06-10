@@ -274,6 +274,7 @@ If you think information is not accurate or not complete, please let me know.</p
     <li><i>Multinomial distribution</i>:
     stats, <pkg>mc2d</pkg>, <pkg>extraDistr</pkg> packages provide d, r functions.
     r is provided in <pkg>multiRNG</pkg> and <pkg>compositions</pkg>.
+    p function is provided by <pkg>pmultinom</pkg>.
     </li>
     
     
@@ -1961,6 +1962,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
   <pkg>PhaseType</pkg>
+  <pkg>pmultinom</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
