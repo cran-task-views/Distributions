@@ -1652,7 +1652,7 @@ exponentiated and tranformation of distributions:</a></h2>
 		<pkg>rust</pkg> performs non-uniform random variate generation from unimodal 
 		(low-dimensional) multivariate continuous distributions, using the 
 		generalized ratio-of-uniforms method. 
-		<pkg>univRNG</pkg> provides 17 non-uniform generators either using an
+		<pkg>UnivRNG</pkg> provides 17 non-uniform generators either using an
 		 acceptance/rejection algorithm or the inverse CDF method.
 		<pkg>MultiRNG</pkg> provides 11 multivariate generators, see each distribution.
 		</li>
@@ -1948,6 +1948,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>moments</pkg>
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
+  <pkg>MultiRNG</pkg>
   <pkg>mvprpb</pkg>
   <pkg>mvrtn</pkg>
   <pkg priority="core">mvtnorm</pkg>
@@ -2019,8 +2020,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>tsallisqexp</pkg>
   <pkg>TTmoment</pkg>
   <pkg>tweedie</pkg>
-  <pkg>univRNG</pkg>
-  <pkg>MultiRNG</pkg>
+  <pkg>UnivRNG</pkg>
   <pkg>VarianceGamma</pkg>
   <pkg priority="core">VGAM</pkg>
   <pkg>VineCopula</pkg> 
