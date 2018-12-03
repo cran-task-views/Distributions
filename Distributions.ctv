@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-06-10</version>
+<version>2018-12-03</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -262,10 +262,21 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateDiscrete">Discrete multivariate distributions:</a></h2>      
 	  <ul>
 	  
+	  <li><i>Bivariate binomial</i>:
+	   d, p functions provided in <pkg>bivariate</pkg>.
+	  </li>
+	  
+	  <li><i>Bivariate Poisson</i>:
+	   d, p functions provided in <pkg>bivariate</pkg>.
+	  </li>
+	  
 	  <li><i>Bivariate Poisson-lognormal</i>:
 	   provided in <pkg>poilog</pkg>.
 	  </li>
 
+    <li><i>Bivariate uniform</i>:
+	   d, p functions provided in <pkg>bivariate</pkg>.
+	  </li>
 
     <li><i>Hyper Dirichlet distribution</i>:
     provided in <pkg>hyper2</pkg> package.
@@ -304,6 +315,8 @@ If you think information is not accurate or not complete, please let me know.</p
         functions d, r of the Dirichlet Multinomial (also known as multivariate Polya) 
   distribution are provided in <pkg>extraDistr</pkg>, <pkg>LaplacesDemon</pkg>
   and <pkg>Compositional</pkg>.
+    <pkg>pgdraw</pkg> provides a random generator of 
+    the Polya gamma distribution.
   
     </li>
     
@@ -1129,9 +1142,17 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
       
+      <li><i>Bivariate normal</i>:
+	   d, p functions provided in <pkg>bivariate</pkg>.
+	  </li>
+      
       <li><i>Bivariate Pareto</i>:
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the bivariate Pareto distribution.
       </li>
+      
+      <li><i>Bivariate uniform</i>:
+	   d, p functions provided in <pkg>bivariate</pkg>.
+	  </li>
       
 <li><i>Multivariate Cauchy distribution</i>:   <pkg>sn</pkg> 
 provide d, p, r functions for the multivariate skew Cauchy distribution,
@@ -1158,7 +1179,7 @@ or by the Cholesky decomposition of sigma.
           
 
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
-    The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
+    The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, p, r),
     <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r), <pkg>compositions</pkg> (r).
 
 
@@ -1368,7 +1389,8 @@ exponentiated and tranformation of distributions:</a></h2>
     Split-student provided in package <pkg>dng</pkg>.    
     
     <pkg>evmix</pkg> provides d, p, q, r of the following composite distributions:
-    gamma-GPD, lognormal GPD, norma-GPD, Weibull-GPD.
+    gamma-GPD, lognormal GPD, norma-GPD, Weibull-GPD
+    as well as bulk models such as GPD-normal-GPD distribution.
     
     </li>
     
@@ -1796,6 +1818,10 @@ exponentiated and tranformation of distributions:</a></h2>
         <pkg>visualize</pkg> provides functions to plot the pdf or pmf with highlights on area or when probability 
         is present in user defined locations, as well as the graph is the mean and variance of the distribution.
         <pkg>visualize</pkg> provides lower tail, bounded, upper tail, and two tail calculations. 
+        <pkg>visualize</pkg> contains convenience functions for constructing 
+        and plotting bivariate probability distributions (probability mass
+        functions, probability density functions and cumulative 
+        distribution functions). 
     </li>
 
 
@@ -1829,6 +1855,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BiasedUrn</pkg>
+  <pkg>bivariate</pkg>
   <pkg>Bivariate.Pareto</pkg>
   <pkg>BivarP</pkg>
   <pkg>bmixture</pkg>
@@ -1962,6 +1989,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
+  <pkg>pgdraw</pkg>
   <pkg>PhaseType</pkg>
   <pkg>pmultinom</pkg>
   <pkg>poibin</pkg>
