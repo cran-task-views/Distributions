@@ -2054,6 +2054,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>VineCopula</pkg> 
   <pkg>vines</pkg>
   <pkg>visualize</pkg>
+  <pkg>Wrapped</pkg>
   <pkg>zipfextR</pkg>
   <pkg>zipfR</pkg> 
   
