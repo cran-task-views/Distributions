@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2018-12-03</version>
+<version>2019-01-11</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -315,9 +315,6 @@ If you think information is not accurate or not complete, please let me know.</p
         functions d, r of the Dirichlet Multinomial (also known as multivariate Polya) 
   distribution are provided in <pkg>extraDistr</pkg>, <pkg>LaplacesDemon</pkg>
   and <pkg>Compositional</pkg>.
-    <pkg>pgdraw</pkg> provides a random generator of 
-    the Polya gamma distribution.
-  
     </li>
     
     <li><i>Multivariate Ewens distribution</i>:
@@ -1989,7 +1986,6 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg priority="core">PearsonDS</pkg>
-  <pkg>pgdraw</pkg>
   <pkg>PhaseType</pkg>
   <pkg>pmultinom</pkg>
   <pkg>poibin</pkg>
