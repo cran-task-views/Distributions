@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-01-11</version>
+<version>2019-01-26</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -84,7 +84,6 @@ If you think information is not accurate or not complete, please let me know.</p
           Zero-modified, zero-inflated, truncated versions are provided
           in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
           <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
-          <pkg>rpgm</pkg> provides a fast random number generator.
           <pkg>LaplacesDemon</pkg> provides dedicated functions for the Bernoulli distribution.
           
           <br/><table border="0" summary="Binomial-related distributions">
@@ -112,10 +111,6 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
               <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
-          
-          <li><i>Cantor distribution</i>: fast random generator provided in
-              <pkg>rpgm</pkg>.</li>
-              
           
           <li><i>Delaporte distribution</i>: provided in
               <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
@@ -161,7 +156,6 @@ If you think information is not accurate or not complete, please let me know.</p
           <li><i>Geometric distribution</i>: provided in <b>stats</b>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg>, <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
-              <pkg>rpgm</pkg> provides a fast random number generator.  
           </li>
           
           <li><i>Geometric (compound) Poisson distribution
@@ -512,7 +506,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
          A fast random generator is available for the power Exponential distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function.
-	 <pkg>rpgm</pkg> provides a fast random number generator for the exponential distribution.  
 	 <br/>
      
      <br/><table border="0" summary="Exponential-related distributions">
@@ -522,7 +515,6 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Exponential</td> <td><pkg>actuar</pkg></td> <td>m, mgf, lev</td> <td><code>exp</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td><code>EXP</code></td></tr>
          <tr><td>Exponential</td> <td><pkg>poweRlaw</pkg></td> <td>d, p, q, r</td> <td><code>exp</code></td></tr>
-         <tr><td>Exponential</td> <td><pkg>rpgm</pkg></td> <td>r</td> <td><code>rpgm.rexp</code></td></tr>
          <tr><td>Inverse exponential</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td>  <td><code>invexp</code></td></tr>
          <tr><td>Shifted exponential</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td> <td><code>exp</code></td></tr>
          <tr><td>Shifted exponential</td> <td><pkg>tolerance</pkg></td> <td>d, p, q, r</td> <td><code>2exp</code></td></tr>
@@ -625,7 +617,6 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>EnvStats</pkg> provides d, p, q, r functions for the truncated normal distribution
      and the zero-modified distribution.
      <pkg>extraDistr</pkg> provides the truncated normal.
-     <pkg>rpgm</pkg> provides a fast random number generator for the normal distribution.  
      <pkg>LaplacesDemon</pkg> provides d, p, q, r functions for the Half-normal
      distribution.
      
@@ -880,7 +871,6 @@ If you think information is not accurate or not complete, please let me know.</p
          as well as the raw moment, the expected value and the variance functions.
          <pkg>EnvStats</pkg> provides d, p, q, r functions for the zero-modified lognormal
          distribution with two possible parametrizations.
-         <pkg>rpgm</pkg> provides a fast random number generator for the lognormal distribution.  
 	 </li>
      
 	 <li><i>Makeham distribution</i>: provided in <pkg>VGAM</pkg> and
@@ -1064,7 +1054,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 can be found in <pkg>gamlss.dist</pkg>. <pkg>fBasics</pkg> provides d, p, q, r functions
 	 for the skew and the generalized hyperbolic t-distribution.
      The L-moments of the Student t (3-parameter) are provided in <pkg>lmomco</pkg>.
-     <pkg>rpgm</pkg> provides a fast random number generator for the student distribution.  
      
      <br/><table border="0" summary="Student-related distributions">
          <caption>Summary for Student-related distributions</caption>
@@ -1442,13 +1431,13 @@ exponentiated and tranformation of distributions:</a></h2>
 	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
       <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
-      <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg>, <pkg>rpgm</pkg> packages.</li>
+      <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg> packages.</li>
       
     <li><i>Empirical kurtosis</i>:  
 	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
       <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>,
-	  <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>rpgm</pkg> packages.
+	  <pkg>moments</pkg>, <pkg>TSA</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. </li>
       
@@ -2009,7 +1998,6 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>RMTstat</pkg>
   <pkg>RMKdiscrete</pkg>
   <pkg>rngwell19937</pkg>
-  <pkg>rpgm</pkg>
   <pkg>rstream</pkg>
   <pkg>RTDE</pkg>
   <pkg>rtdists</pkg>
