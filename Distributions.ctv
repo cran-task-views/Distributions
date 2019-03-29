@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-01-26</version>
+<version>2019-03-29</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -260,6 +260,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	   d, p functions provided in <pkg>bivariate</pkg>.
 	  </li>
 	  
+	  <li><i>Bivariate geometric</i>:
+	   d, r functions provided in <pkg>bivgeom</pkg>.
+	  </li>
+	  
 	  <li><i>Bivariate Poisson</i>:
 	   d, p functions provided in <pkg>bivariate</pkg>.
 	  </li>
@@ -390,6 +394,9 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>
      
      <li><i>Benini distribution</i>: provided in <pkg>VGAM</pkg>.
+     </li>
+     
+     <li><i>Bezier-Montenegro-Torres distribution</i>: provided in <pkg>BMT</pkg>.
      </li>
      
      <li><i>Bhattacharjee (normal+uniform) distribution</i>: provided in package
@@ -624,6 +631,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
 	 <pkg>retimes</pkg>.
 	 <pkg>sn</pkg> implements the skew normal distribution.
+	 <pkg>greybox</pkg> implements the folded normal distribution.
      <pkg>VGAM</pkg> implements the folded and the skewed normal distribution, and
      <pkg>csn</pkg> provides d, r functions for the closed skew normal distribution.
 
@@ -654,6 +662,8 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>retimes</pkg></td> <td>d, p, q, r</td> <td><code>exgauss</code></td></tr>
          
          <tr><td>Folded and skew normal</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>SN1, SN2</code></td></tr>
+         <tr><td>Folded normal</td> <td><pkg>greybox</pkg></td> <td>d, p, q, r</td> <td><code>fnorm</code></td></tr>
+         
          <tr><td>Closed skew normal</td> <td><pkg>csn</pkg></td> <td>d, p, q, r</td> <td><code>csn</code></td></tr>
          <tr><td>Skew normal</td> <td><pkg>sn</pkg></td> <td>d, p, q, r</td> <td><code>sn</code></td></tr>
          
@@ -698,7 +708,10 @@ If you think information is not accurate or not complete, please let me know.</p
 	 Huber's least favourable distribution provided in package <pkg>smoothmest</pkg> (d, r),
          and in <pkg>VGAM</pkg>, <pkg>marg</pkg>, <pkg>extraDistr</pkg> (d, p, q, r).</li>
          
-         
+    <li><i>(generalized) G-and-K, G-and-H distributions</i>:
+    <pkg>gk</pkg> provides d, p, q, r functions for the g-and-k and generalized g-and-h 
+    distributions which are nonlinear transforms of the Gaussian variables.
+    </li>
      
      <li><i>(generalized) Hyperbolic distribution</i>: <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
@@ -795,12 +808,13 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Laplace (also called double exponential distribution)
          and asymetric Laplace distribution</i>: 
          provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>, <pkg>LaplacesDemon</pkg>,
-	 <pkg>VGAM</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>
+	 <pkg>VGAM</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>, <pkg>greybox</pkg>
 	 and <pkg>HyperbolicDist</pkg> packages.
 	 <pkg>LaplacesDemon</pkg> provides the Laplace distribution parametrized
 	 by the precision parameter as well as the skew Laplace distribution.
 	 
-     Asymetric Laplace distribution is implemented in <pkg>ald</pkg>.
+     Asymetric Laplace distribution is implemented in <pkg>ald</pkg>,
+     <pkg>greybox</pkg>.
 	 A fast random generator is available for the Laplace distribution 
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
 	 <pkg>smoothmest</pkg> implements the density and the random generator.
@@ -864,8 +878,9 @@ If you think information is not accurate or not complete, please let me know.</p
          the precision parameter.
          The truncated lognormal distribution is provided in <pkg>EnvStats</pkg>
          with two possible parametrizations as well as in <pkg>ReIns</pkg>.
-         The 3-parameter lognormal
-         distribution is available in <pkg>lmomco</pkg>, <pkg>EnvStats</pkg> and <pkg>FAdist</pkg>.
+         The 3-parameter lognormal distribution is available in <pkg>lmomco</pkg>, 
+         <pkg>greybox</pkg>, 
+         <pkg>EnvStats</pkg> and <pkg>FAdist</pkg>.
          The package
          <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
          as well as the raw moment, the expected value and the variance functions.
@@ -906,7 +921,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	  and a composite distribution of two Pareto I distributions.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>QRM</pkg>, <pkg>Renext</pkg>, 
-     <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg> and <pkg>evir</pkg> packages
+     <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg>,
+     <pkg>qrmtools</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
 	 a shifted exponential distribution or a generalized beta I distribution.
@@ -965,6 +981,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>revdbayes</pkg></td> <td>d, p, q, r</td> <td><code>gp</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>Renext</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>qrmtools</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
          
 <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
@@ -1167,7 +1184,7 @@ or by the Cholesky decomposition of sigma.
 <li><i>Multivariate Gaussian (or normal) distribution</i>:
     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, p, r),
     <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r), <pkg>compositions</pkg> (r).
-
+    <pkg>pbv</pkg> provides d, p functions for bivariate normal distributions.
 
     <pkg>mvprpb</pkg> computes the orthant probability of the multivariate Gaussian distribution.
     <pkg>symmoments</pkg> computes central and non-central moments of the multivariate Gaussian distribution.
@@ -1407,6 +1424,8 @@ exponentiated and tranformation of distributions:</a></h2>
         exponentiated Kumaraswamy G distributions, geometric exponential Poisson
         G distribution, truncated-exponential skew-symmetric G distribution, modified beta
         G distribution, and exponentiated exponential Poisson G distribution.
+        <pkg>gendist</pkg> provides d, p, q, r functions for composite models, folded models, 
+        skewed symmetric models and arc tan models.
     </li>
     
     <li><i>Truncated distribution</i>:
@@ -1430,13 +1449,13 @@ exponentiated and tranformation of distributions:</a></h2>
 	  <li><i>Empirical skewness</i>:
 	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
-      <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>,
+      <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>, <pkg>fromo</pkg>, 
       <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg> packages.</li>
       
     <li><i>Empirical kurtosis</i>:  
 	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
       <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
-	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>,
+	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>fromo</pkg>,
 	  <pkg>moments</pkg>, <pkg>TSA</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. </li>
@@ -1449,7 +1468,12 @@ exponentiated and tranformation of distributions:</a></h2>
 	  and cumulants in <pkg>GLDEX</pkg>.</li>
 	  
 	  <li><i>Empirical probability weighted moments</i>:
-	  Probability weighted moments are available in <pkg>EnvStats</pkg>.
+	  Probability weighted moments are available in <pkg>EnvStats</pkg>
+	  and <pkg>fromo</pkg>.
+	  </li>
+	  
+	  <li><i>Empirical cumulants</i>: <pkg>fromo</pkg>
+	  provides centered and standardized cumulants.
 	  </li>
       
       <li><i>Mode estimation</i>:
@@ -1578,8 +1602,10 @@ exponentiated and tranformation of distributions:</a></h2>
        Nested Archimedean copulas are available in the <pkg>HAC</pkg> package.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
+      <pkg>copBasic</pkg> provides functions for Ali-Mikhail-Haq, Clayton, Frechet copulas.
       <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula.
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
+      <pkg>nCopula</pkg> provides hierachical archimedean copulas.
       </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
@@ -1745,6 +1771,9 @@ exponentiated and tranformation of distributions:</a></h2>
 	<pkg>mded</pkg> provides a function for measuring the difference between two 
 	independent or non-independent empirical distributions and returning a 
 	significance level of the difference.
+	
+	<pkg>MEPDF</pkg> provides functions to compute empirical density functions
+	for multivariate data.
 	</li>
 
     <li><i>Non Parametric distributions </i>:
@@ -1808,6 +1837,8 @@ exponentiated and tranformation of distributions:</a></h2>
         and plotting bivariate probability distributions (probability mass
         functions, probability density functions and cumulative 
         distribution functions). 
+        <pkg>vistributions</pkg> provides vizualition tools for a selected number of
+        distributions.
     </li>
 
 
@@ -1844,7 +1875,9 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>bivariate</pkg>
   <pkg>Bivariate.Pareto</pkg>
   <pkg>BivarP</pkg>
+  <pkg>bivgeom</pkg>
   <pkg>bmixture</pkg>
+  <pkg>BMT</pkg>
   <pkg>bridgedist</pkg>
   <pkg>cbinom</pkg>
   <pkg>CDVine</pkg>
@@ -1903,6 +1936,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>FMStable</pkg>
   <pkg>fpow</pkg>
   <pkg>frmqa</pkg>
+  <pkg>fromo</pkg>
   <pkg>gambin</pkg>
   <pkg priority="core">gamlss.dist</pkg>
   <pkg>gamlss.mx</pkg>
@@ -1914,10 +1948,12 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>GenOrd</pkg>
   <pkg>GeneralizedHyperbolic</pkg>
   <pkg>GIGrvg</pkg>
+  <pkg>gk</pkg>
   <pkg>gld</pkg>
   <pkg>GLDEX</pkg>
   <pkg>glogis</pkg>  
   <pkg>ghyp</pkg>
+  <pkg>greybox</pkg>
   <pkg>GSM</pkg>
   <pkg>gumbel</pkg>
   <pkg>HAC</pkg>
@@ -1948,6 +1984,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>mclust</pkg>
   <pkg>MCMCpack</pkg>
   <pkg>mded</pkg>
+  <pkg>MEPDF</pkg>
   <pkg>mgpd</pkg>
   <pkg>minimax</pkg>
   <pkg>MitISEM</pkg>
@@ -1965,8 +2002,9 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>mvprpb</pkg>
   <pkg>mvrtn</pkg>
   <pkg priority="core">mvtnorm</pkg>
-  <pkg>Newdistns</pkg>
+  <pkg>nCopula</pkg>
   <pkg>nCDunnett</pkg>
+  <pkg>Newdistns</pkg>
   <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>NormalLaplace</pkg>
@@ -1974,6 +2012,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>ORDER2PARENT</pkg>
   <pkg>OrdNor</pkg>
   <pkg>ParetoPosStable</pkg>
+  <pkg>pbv</pkg>
   <pkg priority="core">PearsonDS</pkg>
   <pkg>PhaseType</pkg>
   <pkg>pmultinom</pkg>
@@ -1985,6 +2024,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>poweRlaw</pkg>
   <pkg>qmap</pkg>
   <pkg>QRM</pkg>
+  <pkg>qrmtools</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
@@ -2037,6 +2077,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg priority="core">VGAM</pkg>
   <pkg>VineCopula</pkg> 
   <pkg>vines</pkg>
+  <pkg>vistributions</pkg>
   <pkg>visualize</pkg>
   <pkg>Wrapped</pkg>
   <pkg>zipfextR</pkg>
