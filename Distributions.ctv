@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-03-29</version>
+<version>2019-03-30</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1774,6 +1774,10 @@ exponentiated and tranformation of distributions:</a></h2>
 	
 	<pkg>MEPDF</pkg> provides functions to compute empirical density functions
 	for multivariate data.
+	
+	<pkg>probhat</pkg> computes nonparametric probability distributions (d, p, q) using 
+	kernel smoothing. <pkg>probhat</pkg> supports univariate, multivariate and conditional 
+	distributions, and weighted data. 
 	</li>
 
     <li><i>Non Parametric distributions </i>:
@@ -2020,6 +2024,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>poilog</pkg>
   <pkg>poistweedie</pkg>
   <pkg>polyaAeppli</pkg>
+  <pkg>probhat</pkg>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>qmap</pkg>
