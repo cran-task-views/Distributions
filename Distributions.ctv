@@ -1337,7 +1337,11 @@ r is provided in <pkg>MultiRNG</pkg>.
 
       <li><i>Generic mixtures</i>: there is an implementation via S4-class 
       UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
-	  uses the <pkg>gamlss.dist</pkg> package.</li>
+	  uses the <pkg>gamlss.dist</pkg> package.
+	  
+	  <pkg>gendist</pkg> provides d, p, q, r functions for two-distribution mixture 
+	  models working with any distribution defined by its d, p, q, r functions.
+	  </li>
 	  
 	  
 	  <li><i>Horseshoe distribution</i>: provided in <pkg>LaplacesDemon</pkg>. </li>
@@ -1395,6 +1399,9 @@ exponentiated and tranformation of distributions:</a></h2>
     gamma-GPD, lognormal GPD, norma-GPD, Weibull-GPD
     as well as bulk models such as GPD-normal-GPD distribution.
     
+    <pkg>gendist</pkg> provides d, p, q, r functions for composite models 
+    working with any distribution defined by its d, p, q, r functions.
+    
     </li>
     
     <li><i>Compound distribution</i>: d, p, q, r, m functions are implemented by <pkg>Compounding</pkg>
@@ -1406,6 +1413,7 @@ exponentiated and tranformation of distributions:</a></h2>
         Waring, Yule.
         
         <pkg>kdist</pkg> provides d, p, q, r functions of the K distribution.
+        
     </li>
     
     <li><i>Discretized distribution</i>: 
