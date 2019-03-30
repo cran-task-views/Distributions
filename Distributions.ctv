@@ -1415,7 +1415,8 @@ exponentiated and tranformation of distributions:</a></h2>
     
     </li>
        
-    <li><i>G transformed distribution</i>:  implemented in <pkg>Newdistns</pkg>
+    <li><i>transformed distribution</i>:  <pkg>Newdistns</pkg> provides G-transformed distributions
+        for a selected number of distributions
         which includes Marshall Olkin G distribution, exponentiated G distribution,
         beta G distribution, gamma G distribution, Kumaraswamy G distribution,
         generalized beta G distribution, beta extended G distribution, gamma G distribution,
@@ -1425,7 +1426,8 @@ exponentiated and tranformation of distributions:</a></h2>
         G distribution, truncated-exponential skew-symmetric G distribution, modified beta
         G distribution, and exponentiated exponential Poisson G distribution.
         <pkg>gendist</pkg> provides d, p, q, r functions for composite models, folded models, 
-        skewed symmetric models and arc tan models.
+        skewed symmetric models and arctan models working with any distribution
+        defined by its d, p, q, r functions.
     </li>
     
     <li><i>Truncated distribution</i>:
