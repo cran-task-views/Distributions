@@ -1957,6 +1957,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>gaussDiff</pkg>
   <pkg>gb</pkg>
   <pkg>GB2</pkg>
+  <pkg>gendist</pkg>
   <pkg>geoR</pkg>
   <pkg>GenBinomApps</pkg>
   <pkg>GenOrd</pkg>
