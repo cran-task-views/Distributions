@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-03-30</version>
+<version>2019-05-10</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -357,6 +357,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>actuar</pkg> provides the transformed beta 2 distribution which includes
      as special cases Burr, loglogistic, paralogistic, generalized Pareto, Pareto, 
      see also the Pareto subsection.
+     <pkg>llogis</pkg> provides the log-logistic parametrized by the median.
      
      
      <br/><table border="0" summary="Beta-related distributions">
@@ -675,10 +676,13 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>General error distribution (also known as exponential power distribution)</i>:
      see <i>exponential</i> item.</li>
      
-     <li><i>Generalized extreme value distribution</i>: provided in <pkg>lmomco</pkg> (d, p, q); 
+     <li><i>Generalized extreme value distribution</i>: 
+     d, p, q provided in <pkg>lmomco</pkg>;
+     d, p, q, r, provided in 
      <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, 
-     <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>QRM</pkg> and 
-     <pkg>fExtremes</pkg> (d, p, q, r). <pkg>evdbayes</pkg>,  <pkg>revdbayes</pkg>
+     <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>TLMoments</pkg>,
+      <pkg>QRM</pkg> and <pkg>fExtremes</pkg>. 
+     <pkg>evdbayes</pkg>,  <pkg>revdbayes</pkg>
      provide d,p,q,r functions of the GEV distribution in a Bayesian setting. </li>
      
      
@@ -695,7 +699,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
      <li><i>Gumbel distribution</i>: provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
-	 <pkg>reliaR</pkg>, <pkg>QRM</pkg>,
+	 <pkg>reliaR</pkg>, <pkg>QRM</pkg>, <pkg>TLMoments</pkg>,
 	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
 	 <pkg>actuar</pkg> provides the raw moments and the moment generating function (mgf)
 	 in addition to the d, p, q, r functions.
@@ -879,7 +883,7 @@ If you think information is not accurate or not complete, please let me know.</p
          The truncated lognormal distribution is provided in <pkg>EnvStats</pkg>
          with two possible parametrizations as well as in <pkg>ReIns</pkg>.
          The 3-parameter lognormal distribution is available in <pkg>lmomco</pkg>, 
-         <pkg>greybox</pkg>, 
+         <pkg>greybox</pkg>, <pkg>TLMoments</pkg>,
          <pkg>EnvStats</pkg> and <pkg>FAdist</pkg>.
          The package
          <pkg>loglognorm</pkg> implements d, p, q, r functions for the double lognormal distribution,
@@ -921,7 +925,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  and a composite distribution of two Pareto I distributions.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>QRM</pkg>, <pkg>Renext</pkg>, 
-     <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg>,
+     <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>TLMoments</pkg>
      <pkg>qrmtools</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
 	 depending the shape parameter's value a Pareto II distribution, 
@@ -973,6 +977,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>LaplacesDemon</pkg></td> <td>d, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>TLMoments</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 
 
 
@@ -1473,9 +1478,13 @@ exponentiated and tranformation of distributions:</a></h2>
     <li><i>Empirical L-moments</i>:  
 	  L-moments are available in <pkg>lmom</pkg>, <pkg>lmomco</pkg>, <pkg>Lmoments</pkg>, 
 	  <pkg>GLDEX</pkg>, <pkg>EnvStats</pkg>, 
-	  trimmed L-moments are available in <pkg>lmomco</pkg>, and <pkg>Lmoments</pkg>, 
+	  trimmed L-moments are available in <pkg>lmomco</pkg>, <pkg>TLMoments</pkg> 
+	  and <pkg>Lmoments</pkg>, 
 	  right-censored L-moments are available in <pkg>lmomco</pkg>,
-	  and cumulants in <pkg>GLDEX</pkg>.</li>
+	  and cumulants in <pkg>GLDEX</pkg>.
+	  <pkg>TLMoments</pkg> provides a function to convert them to some
+	  distribution parameters.
+	  </li>
 	  
 	  <li><i>Empirical probability weighted moments</i>:
 	  Probability weighted moments are available in <pkg>EnvStats</pkg>
@@ -1497,7 +1506,10 @@ exponentiated and tranformation of distributions:</a></h2>
       distribution function.
        </li>
       
-
+    <li><i>Empirical characteristic function</i>:
+	  <pkg>empichar</pkg> evaluates the empirical characteristic function of 
+	  univariate and multivariate samples.
+	  </li>
    
 	  <li><i>Theoretical moments</i>: 
 	  The <pkg>actuar</pkg> package implements raw moments, limited expected values 
@@ -1681,12 +1693,18 @@ exponentiated and tranformation of distributions:</a></h2>
 	 <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
      pseudorandom number generator (AES).
 	 <pkg>SuppDists</pkg>
-	 implements two RNGs of G. Marsaglia.    
+	 implements two RNGs of G. Marsaglia.   
+	 <pkg>dqrng</pkg> provides PCG family by O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ 
+	 by Blackman and Vigna (2018).
+	 The <pkg>qqid</pkg> package contains functions to retrieve true, quantum-random QQIDs, 
+	 to generate pseudo-random QQID.
 	 
 		<ul>
 		<li> Support for several independent streams: 
 		<pkg>rstream</pkg> focuses on multiple independent streams of random numbers
 		from different sources (in an object oriented approach).
+		<pkg>dqrng</pkg> provides RNG for parallel computation either in R
+		or in C++.
 		</li>
 
 		<li> For non-uniform generation, the <pkg>Runuran</pkg>  
@@ -1715,12 +1733,18 @@ exponentiated and tranformation of distributions:</a></h2>
      (hence Van Der Corput) sequence and the Torus sequence (also known as Kronecker
      sequence). <pkg>lhs</pkg> and <pkg>mc2d</pkg> packages implement the latin hypercube sampling,
      an hybrid quasi/pseudo random method. <pkg>sfsmisc</pkg> also provides
-     the Halton sequences.</li>
+     the Halton sequence.
+     <pkg>qrng</pkg> provides Korobov, generalize Halton and Sobol quasi-random sequences.
+     </li>
      
      <li><i>True randomness</i>: The <pkg>random</pkg>
      package provides several functions that access the 
      true random number service at <a href="http://random.org">
-     random.org</a>.</li>
+     random.org</a>.
+     The <pkg>qrandom</pkg> provides the ANU Quantum Random Number Generator provided 
+     by the Australian National University (based on measuring the quantum fluctuations 
+     of the vacuum). 
+     </li>
      
      <li><i>RNG tests</i>: <pkg>RDieHarder</pkg> offers
       numerous tests of RNGs based on a
@@ -1927,10 +1951,12 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>dng</pkg>
+  <pkg>dqrng</pkg>
   <pkg>e1071</pkg>
   <pkg>ecd</pkg>
   <pkg>emdbook</pkg>
   <pkg>emg</pkg>
+  <pkg>empichar</pkg>
   <pkg>EnvStats</pkg>
   <pkg>evd</pkg>
   <pkg>evdbayes</pkg>
@@ -1987,6 +2013,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg>LIHNPSD</pkg>
+  <pkg>llogis</pkg>
   <pkg>logitnorm</pkg>
   <pkg>loglognorm</pkg>
   <pkg>lmom</pkg>
@@ -2039,8 +2066,11 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>qmap</pkg>
+  <pkg>qqid</pkg>
+  <pkg>qrandom</pkg>
   <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
+  <pkg>qrng</pkg>
   <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
@@ -2086,6 +2116,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>truncnorm</pkg>
   <pkg>TSA</pkg>
   <pkg>tsallisqexp</pkg>
+  <pkg>TLMoments</pkg>
   <pkg>TTmoment</pkg>
   <pkg>tweedie</pkg>
   <pkg>UnivRNG</pkg>
