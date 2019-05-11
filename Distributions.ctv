@@ -357,7 +357,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>actuar</pkg> provides the transformed beta 2 distribution which includes
      as special cases Burr, loglogistic, paralogistic, generalized Pareto, Pareto, 
      see also the Pareto subsection.
-     <pkg>llogis</pkg> provides the log-logistic parametrized by the median.
+     <pkg>llogistic</pkg> provides the log-logistic parametrized by the median.
      
      
      <br/><table border="0" summary="Beta-related distributions">
@@ -2013,7 +2013,7 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg>LIHNPSD</pkg>
-  <pkg>llogis</pkg>
+  <pkg>llogistic</pkg>
   <pkg>logitnorm</pkg>
   <pkg>loglognorm</pkg>
   <pkg>lmom</pkg>
