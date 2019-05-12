@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-05-10</version>
+<version>2019-05-12</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -26,7 +26,7 @@ are available in contributed packages.</p>
 Hankin, Mathias Kohl, G. Jay Kerns, Kjetil Halvorsen, William Asquith for their useful comments/suggestions.
 If you think information is not accurate or not complete, please let me know.</p>
 
-<h2><a name="Base">Base functionnality:</a></h2>
+<h2><a name="Base">Base functionality:</a></h2>
    <ul><li>
      Base R provides probability distribution functions <code>p</code><i>foo</i><code>()</code>
      density functions <code>d</code><i>foo</i><code>()</code>, quantile functions
@@ -75,7 +75,9 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="UnivariateDiscrete">Discrete univariate distributions:</a></h2>
 	  <ul>
           
-          <li><i>Beta-binomial distribution</i>: provided in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg>.
+          <li><i>Beta-binomial distribution</i>: 
+          provided in <pkg>VGAM</pkg>, <pkg>extraDistr</pkg>, <pkg>rmutil</pkg>, 
+          <pkg>emdbook</pkg>.
               ZI/ZM beta binomial distributions are
               implemented in <pkg>gamlss.dist</pkg>. </li>
           <li><i>Beta-geometric distribution</i>: provided in <pkg>VGAM</pkg>.</li>
@@ -85,7 +87,10 @@ If you think information is not accurate or not complete, please let me know.</p
           in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
           <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
           <pkg>LaplacesDemon</pkg> provides dedicated functions for the Bernoulli distribution.
-          
+          <pkg>rmutil</pkg> provides the double binomial and the
+          multiplicative binomial distributions.
+
+
           <br/><table border="0" summary="Binomial-related distributions">
          <caption>Summary for Binomial-related distributions</caption>
          <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td> <td><em>Distribution suffix</em></td></tr>
@@ -153,6 +158,10 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Lindley distribution</i>: provided in <pkg>gambin</pkg>.</li>
           
+          <li><i>gamma count distribution</i>: provided in
+              <pkg>rmutil</pkg>.</li>
+          
+
           <li><i>Geometric distribution</i>: provided in <b>stats</b>.
               Zero-modified, zero-inflated, truncated versions are provided
               in <pkg>gamlss.dist</pkg>, <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
@@ -171,8 +180,8 @@ If you think information is not accurate or not complete, please let me know.</p
         
           <li><i>Hypergeometric distribution</i>: provided in <b>stats</b>.
             Non-central hypergeometric distribution is provided in <pkg>MCMCpack</pkg> (d,r).
-              Extented hypergeometric distribution can be found in <pkg>BiasedUrn</pkg> package, which provides
-              not only p, d, q, r functions but also mean, variance, mode functions.
+              Extended hypergeometric distribution can be found in <pkg>BiasedUrn</pkg> package,
+              which provides not only p, d, q, r functions but also mean, variance, mode functions.
               
               Generalized hypergeometric distribution is implemented in <pkg>SuppDists</pkg>.
               Negative hypergeometric distribution is provided in <pkg>tolerance</pkg>,
@@ -202,8 +211,10 @@ If you think information is not accurate or not complete, please let me know.</p
               in <pkg>extraDistr</pkg>, <pkg>gamlss.dist</pkg>, 
               <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
               <pkg>extraDistr</pkg> provides the truncated Poisson distribution.
-              
               <pkg>LaplacesDemon</pkg> provides the generalized Poisson distribution.
+              <pkg>rmutil</pkg> provides the double Poisson,
+              the multiplicative Poisson 
+              and the Power variance function Poisson distributions.
               
               See the mixture section such as the Poisson-lognormal mixture.
           </li>
@@ -216,7 +227,7 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Negative binomial distribution</i>: provided in <b>stats</b>.
               Zero-modified, zero-inflated, truncated versions are provided
-              in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>,
+              in <pkg>gamlss.dist</pkg>, <pkg>extraDistr</pkg>, <pkg>emdbook</pkg>,
               <pkg>actuar</pkg> and in <pkg>VGAM</pkg>.
           New parametrization of the negative binomial distribution 
           is available in <pkg>RMKdiscrete</pkg>.
@@ -319,7 +330,7 @@ If you think information is not accurate or not complete, please let me know.</p
     not yet implemented?
     </li>
     
-    <li><i>Truncated Stick-Breakin distribution</i>:
+    <li><i>Truncated Stick-Breaking distribution</i>:
     provided in <pkg>LaplacesDemon</pkg>.
     </li>
 
@@ -338,7 +349,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
      for doubly non central beta distribution for computing d, p, q, r functions.
      <pkg>extraDistr</pkg> provides the four-parameter beta with lower and upper bounds.
-     The generalized beta of the first kind (GB1) (exponentation of beta 1) 
+     The generalized beta of the first kind (GB1) (exponentiation of beta 1) 
      is provided in <pkg>gamlss.dist</pkg>, <pkg>mbbefd</pkg>, <pkg>actuar</pkg>.
       
      
@@ -414,7 +425,10 @@ If you think information is not accurate or not complete, please let me know.</p
      regression.</li>    
      
      <li><i>Box Cox distribution</i>: <pkg>gamlss.dist</pkg> provides the Box-Cox normal,
-     the Box-Cox power exponential and the Box-Cox t distributions.</li>
+     the Box-Cox power exponential and the Box-Cox t distributions.
+     <pkg>rmutil</pkg> provides the Box-Cox normal.
+     </li>
+
      
      
      <li><i>Burr distribution</i>: see Pareto.</li>
@@ -469,6 +483,9 @@ If you think information is not accurate or not complete, please let me know.</p
      
 	 </li>
 
+    <li><i>Consul distribution</i>: see <pkg>rmutil</pkg>.</li>
+
+
     <li><i>Continuous binomial distribution</i>: 
     <pkg>cbinom</pkg> provides the d/p/q/r functions for a continuous analog to the standard discrete 
     binomial with continuous size parameter and continuous support with x in [0, size + 1].
@@ -503,8 +520,8 @@ If you think information is not accurate or not complete, please let me know.</p
 	 d, p, q, r functions for the power and the skew power exponential 
 	 type 1-4 distributions are implemented
 	 in <pkg>gamlss.dist</pkg> and <pkg>lmomco</pkg>.
-     The power exponential distribution is also provided in <pkg>normalp</pkg>, 
-     <pkg>LaplacesDemon</pkg> and <pkg>sgt</pkg>.
+      The power exponential distribution is also provided in <pkg>normalp</pkg>, 
+     <pkg>rmutil</pkg>, <pkg>LaplacesDemon</pkg> and <pkg>sgt</pkg>.
      The skew power exponential is provided <pkg>sgt</pkg>.
      
 	 <pkg>reliaR</pkg> provides
@@ -532,6 +549,7 @@ If you think information is not accurate or not complete, please let me know.</p
          
          <tr><td>Power exponential</td> <td><pkg>normalp</pkg></td> <td>d, p, q, r</td>  <td><code>normp</code></td></tr>
          <tr><td>Power exponential</td> <td><pkg>Runuran</pkg></td> <td>d, r</td> <td><code>exp</code></td></tr>
+         <tr><td>Power exponential</td> <td><pkg>rmutil</pkg></td> <td>d, r</td> <td><code>powexp</code></td></tr>
          <tr><td>Skew power exp.</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r, lm, tlmr</td>  <td><code>aep4</code></td></tr>
          <tr><td>Power and skew power exp.</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td>  <td><code>PE, SEP</code></td></tr>
          <tr><td>Generalized and inverse gen. exp.</td> <td><pkg>reliaR</pkg></td> <td>d, p, q, r</td>  <td><code>gen.exp, inv.genexp</code></td> </tr>
@@ -587,7 +605,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	<pkg>coga</pkg> provides d, p, r functions for a sum of independent but
 	not identically distributed gamma distributions.
 	<pkg>MCMCpack</pkg> provides d, r functions of the Inverse Gamma.
-	
+	<pkg>rmutil</pkg> provides the generalized Gamma.
 	<br/>
     
     <br/><table border="0" summary="Gamma-related distributions">
@@ -610,6 +628,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Generalized gamma</td> <td><pkg>flexsurv</pkg></td> <td>d, p, q, r, h, i</td> <td><code>gengamma</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r </td>  <td><code>GG</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>   <td><code>gengamma.stacy</code></td></tr>
+        <tr><td>Generalized gamma</td> <td><pkg>rmutil</pkg></td> <td>d, p, q, r </td>   <td><code>ggamma</code></td></tr>
         <tr><td>convolution of gamma</td> <td><pkg>coga</pkg></td> <td>d, p, r </td>   <td><code>coga</code></td></tr>
     </table><br/>
 
@@ -681,6 +700,7 @@ If you think information is not accurate or not complete, please let me know.</p
      d, p, q, r, provided in 
      <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>TLMoments</pkg>,
+     <pkg>rmutil</pkg>,
       <pkg>QRM</pkg> and <pkg>fExtremes</pkg>. 
      <pkg>evdbayes</pkg>,  <pkg>revdbayes</pkg>
      provide d,p,q,r functions of the GEV distribution in a Bayesian setting. </li>
@@ -707,6 +727,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	 is implemented in <pkg>Runuran</pkg> as well as the density function. 
      The reverse Gumbel distribution is implemented in <pkg>lmomco</pkg>
      and  <pkg>gamlss.dist</pkg>.</li>
+     
+	 <li><i>Hjorth distribution</i>: provided in <pkg>rmutil</pkg>.
+	 </li>
 	    
 	 <li><i>Huber distribution</i>: 
 	 Huber's least favourable distribution provided in package <pkg>smoothmest</pkg> (d, r),
@@ -735,7 +758,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
 	 <li><i>Inverse Gaussian (also known Wald) distribution</i>:
      d, p, q, and r functions of the inverse Gaussian are provided in <pkg>statmod</pkg>,
-     <pkg>extraDistr</pkg>, <pkg>SuppDists</pkg> and <pkg>STAR</pkg>.
+     <pkg>extraDistr</pkg>, <pkg>SuppDists</pkg>, <pkg>rmutil</pkg> and <pkg>STAR</pkg>.
      <pkg>LaplacesDemon</pkg> provides d, r functions for the inverse Gaussian distribution.
      <pkg>actuar</pkg> provides d, p, q, r, m, lev, mgf functions for the Inverse Gaussian
      distribution.
@@ -746,7 +769,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
       
      The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>,
-     <pkg>QRM</pkg>
+     <pkg>QRM</pkg>, <pkg>rmutil</pkg>
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
      <pkg>GIGrvg</pkg> generates random variables from the generalized inverse Gaussian distribution.
@@ -810,9 +833,10 @@ If you think information is not accurate or not complete, please let me know.</p
      </li>   
 
      <li><i>Laplace (also called double exponential distribution)
-         and asymetric Laplace distribution</i>: 
+         and asymmetric Laplace distribution</i>: 
          provided in <pkg>distr</pkg>, <pkg>lmomco</pkg>, <pkg>LaplacesDemon</pkg>,
-	 <pkg>VGAM</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>, <pkg>greybox</pkg>
+	 <pkg>VGAM</pkg>, <pkg>sgt</pkg>, <pkg>extraDistr</pkg>, <pkg>greybox</pkg>,
+	 <pkg>rmutil</pkg>
 	 and <pkg>HyperbolicDist</pkg> packages.
 	 <pkg>LaplacesDemon</pkg> provides the Laplace distribution parametrized
 	 by the precision parameter as well as the skew Laplace distribution.
@@ -828,6 +852,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>LASSO distribution</i>: provided in <pkg>LaplacesDemon</pkg>.
      </li>   
+  
+	 <li><i>Lévy distribution</i>: provided in <pkg>rmutil</pkg>.
+     </li>     
 
 	 <li><i>Linear failure rate distribution</i>: provided in <pkg>reliaR</pkg>.
      </li>   
@@ -840,11 +867,14 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>Logistic distribution and its extensions</i>: Base R provides
      the d, p, q, r functions for this distribution (see above).
      <pkg>actuar</pkg> and <pkg>VGAM</pkg> provide d, p, q, r  functions for
-     the log logistic (also called Fisk), the paralogistic and the inverse paralogistic distributions.
+     the log logistic (also called Fisk), the paralogistic and 
+     the inverse paralogistic distributions.
      <pkg>FAdist</pkg>
      the log-logistic distribution with two and three parameters.
-	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) is provided
-	 in <pkg>lmomco</pkg>, <pkg>sld</pkg>, <pkg>SCI</pkg> and <pkg>glogis</pkg>. Finally,
+	 The generalized logistic distribution (Type I, also known as skew-logistic distribution) 
+	 is provided in <pkg>lmomco</pkg>, <pkg>sld</pkg>, <pkg>rmutil</pkg>, 
+	 <pkg>SCI</pkg> and <pkg>glogis</pkg>. 
+	 
       
       <br/><table border="0" summary="Logistic-related distributions">
           <caption>Summary for Logistic-related distributions</caption>
@@ -862,11 +892,13 @@ If you think information is not accurate or not complete, please let me know.</p
           <tr><td>Generalized logistic</td> <td><pkg>SCI</pkg></td> <td>d, p, q</td> <td><code>genlog</code></td></tr>
           <tr><td>Generalized logistic</td> <td><pkg>lmomco</pkg></td> <td>d, p, q, r</td> <td><code>glo</code></td></tr>
           <tr><td>Generalized logistic</td> <td><pkg>sld</pkg></td> <td>d, p, q, r</td> <td><code>sl</code></td></tr>
+          <tr><td>Generalized logistic</td> <td><pkg>rmutil</pkg></td> <td>d, p, q, r</td> <td><code>glogis</code></td></tr>
           
       </table><br/>
 
       
      </li>
+
      
      
      <li><i>Logit-normal distribution</i>:
@@ -938,7 +970,7 @@ If you think information is not accurate or not complete, please let me know.</p
      
     
      
-  <br/><table border="0" summary="Pareto-related distributions">
+   <br/><table border="0" summary="Pareto-related distributions">
      <caption>Summary for Pareto-related distributions</caption>
 <tr><td><em>Distribution name</em></td> <td><em>Packages</em></td> <td><em>Functions</em></td>  <td><em>Distribution suffix</em></td></tr>
 <tr><td>Pareto I</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoI</code></td></tr>
@@ -956,6 +988,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Pareto II</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, h</td>  <td><code>lomax</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, h</td>  <td><code>pareto</code></td></tr>
 <tr><td>Pareto II</td> <td><pkg>Renext</pkg></td> <td>d, p, q, r</td>  <td><code>lomax</code></td></tr>
+<tr><td>Pareto II</td> <td><pkg>rmutil</pkg></td> <td>d, p, q, r</td>  <td><code>pareto</code></td></tr>
          
 <tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
 <tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
@@ -991,6 +1024,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Burr</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r, m, lev</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>extremefit</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
 <tr><td>Burr</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
+<tr><td>Burr</td> <td><pkg>rmutil</pkg></td> <td>d, p, q, r</td> <td><code>burr</code></td></tr>
          
 <tr><td>Trunc. Burr</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>tburr</code></td></tr>
 
@@ -1022,7 +1056,10 @@ If you think information is not accurate or not complete, please let me know.</p
 
 
 	 <li><i>Power distribution</i>:  <pkg>reliaR</pkg> and <pkg>poweRlaw</pkg> implement the
-	 exponential power distribution.</li>
+	 exponential power distribution.
+	 Two-sided power distribution provided in <pkg>rmutil</pkg>.
+	 </li>
+
 
     <li><i>Proportion distribution</i>: this is the distribution for the difference
     between two independent beta distributions. d, p, q, r functions in <pkg>tolerance</pkg>.</li>
@@ -1042,6 +1079,9 @@ If you think information is not accurate or not complete, please let me know.</p
 
      <li><i>Rice distribution</i>: provided in <pkg>VGAM</pkg> and <pkg>lmomco</pkg>.
      </li>     
+
+    <li><i>Simplex distribution</i>: provided in <pkg>rmutil</pkg>.</li>
+
 
     <li><i>Singh-Maddala distribution</i>: see beta.</li>
 
@@ -1142,6 +1182,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <pkg>gamlss.dist</pkg> (d, p, q, r) and the shifted left truncated Weibull distribution
 	 is provided in <pkg>Renext</pkg>.
 	 The right truncated Weibull is provided in <pkg>ReIns</pkg>.
+	 The generalized Weibull is provided in <pkg>rmutil</pkg>.
 	 </li>
 
   </ul>
@@ -1290,7 +1331,7 @@ r is provided in <pkg>MultiRNG</pkg>.
 <h2><a name="MixedType">Mixed-type distributions:</a></h2>                  
 <ul>
 
-    <li><i>Maxwell-Boltzmann-Bose-Einstein-Fermie-Dirac (MBBEFD) distribution </i>:
+    <li><i>Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution </i>:
         provided in <pkg>mbbefd</pkg>.
     </li>
           
@@ -1321,6 +1362,10 @@ r is provided in <pkg>MultiRNG</pkg>.
       <li><i>Cauchy-polynomial quantile mixture</i>: d, p, q, r functions are
 	  provided in <pkg>Lmoments</pkg>.</li>
 	  
+	   <li><i>Chi-square mixture</i>: d, p, q, r functions are
+	  provided in <pkg>emdbook</pkg>.</li>
+	  
+   
 	   
    
       <li><i>Gaussian mixture</i>: Functions d, r are provided in <pkg>mixtools</pkg>,
@@ -1384,7 +1429,7 @@ r is provided in <pkg>MultiRNG</pkg>.
    </ul>
 
 <h2><a name="Transform">Compound, composite, discretized,
-exponentiated and tranformation of distributions:</a></h2>                  
+exponentiated and transformation of distributions:</a></h2>                  
    <ul>
     
     <li><i>Absolute value or half distribution</i>:
@@ -1401,7 +1446,7 @@ exponentiated and tranformation of distributions:</a></h2>
     Split-student provided in package <pkg>dng</pkg>.    
     
     <pkg>evmix</pkg> provides d, p, q, r of the following composite distributions:
-    gamma-GPD, lognormal GPD, norma-GPD, Weibull-GPD
+    gamma-GPD, lognormal GPD, normal-GPD, Weibull-GPD
     as well as bulk models such as GPD-normal-GPD distribution.
     
     <pkg>gendist</pkg> provides d, p, q, r functions for composite models 
@@ -1627,7 +1672,7 @@ exponentiated and tranformation of distributions:</a></h2>
       <pkg>copBasic</pkg> provides functions for Ali-Mikhail-Haq, Clayton, Frechet copulas.
       <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula.
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
-      <pkg>nCopula</pkg> provides hierachical archimedean copulas.
+      <pkg>nCopula</pkg> provides hierarchical archimedean copulas.
       </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
@@ -1875,12 +1920,12 @@ exponentiated and tranformation of distributions:</a></h2>
         and plotting bivariate probability distributions (probability mass
         functions, probability density functions and cumulative 
         distribution functions). 
-        <pkg>vistributions</pkg> provides vizualition tools for a selected number of
+        <pkg>vistributions</pkg> provides visualization tools for a selected number of
         distributions.
     </li>
 
 
-     <li><i>Paremeter estimation</i>: <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
+     <li><i>Parameter estimation</i>: <pkg>lmomco</pkg> and <pkg>Lmoments</pkg> focus on
      univariate/multivariate (L-)moments estimation. <pkg>VGAM</pkg> provides a lot of parameter
      estimation for usual and "exotic" distributions. 
 	 <pkg>gaussDiff</pkg> provides a collection difference measures for 
@@ -2081,8 +2126,9 @@ exponentiated and tranformation of distributions:</a></h2>
   <pkg>retimes</pkg>
   <pkg>revdbayes</pkg>
   <pkg>rlecuyer</pkg>
-  <pkg>RMTstat</pkg>
   <pkg>RMKdiscrete</pkg>
+  <pkg>RMTstat</pkg>
+  <pkg>rmutil</pkg>
   <pkg>rngwell19937</pkg>
   <pkg>rstream</pkg>
   <pkg>RTDE</pkg>
@@ -2134,7 +2180,7 @@ exponentiated and tranformation of distributions:</a></h2>
 
 <links> 
   <a href="http://rpackages.io/views">Download statistics per view</a>
-  <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advices to implement (new) distributions in R</a>
+  <a href="http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf">Advice to implement (new) distributions in R</a>
   <a href="http://www.johndcook.com/distribution_chart.html">Clickable diagram of distribution relationships</a>
   <a href="http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg"> Diagram of discrete
   distribution relationships</a>
