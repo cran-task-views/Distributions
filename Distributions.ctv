@@ -433,8 +433,14 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Burr distribution</i>: see Pareto.</li>
      
-     <li><i>Cardioid distribution</i>: provided in <pkg>VGAM</pkg>.
+     <li><i>Cardioid distribution</i>: provided in <pkg>VGAM</pkg> (d,p,q,r) and
+     <pkg>CircStats</pkg>, <pkg>circular</pkg> (d,r).
      </li>      
+     
+     <li><i>Carthwrite's Power-of-Cosine distribution</i>: provided in 
+     <pkg>circular</pkg> (d,r).
+     </li>      
+     
      
      <li><i>Cauchy distribution</i>: Base R provides
      the d, p, q, r functions for this distribution (see above). Other
@@ -442,6 +448,7 @@ If you think information is not accurate or not complete, please let me know.</p
      The skew Cauchy distribution is provided in <pkg>sn</pkg>.
      <pkg>LaplacesDemon</pkg> provides d, p, q, r functions for the Half-Cauchy
      distribution.
+     The wrapped Cauchy distribution is provided in <pkg>CircStats</pkg>.
      </li>     
 	  
      <li><i>Chen distribution</i>: provided in <pkg>reliaR</pkg>.
@@ -482,6 +489,10 @@ If you think information is not accurate or not complete, please let me know.</p
      </table><br/>
      
 	 </li>
+	 
+	 <li><i>Circular distribution</i>: uniform circular provided in <pkg>circular</pkg> (d,r); 
+     Generalized von Mises circular provided in <pkg>circular</pkg> (d).
+     </li>      
 
     <li><i>Consul distribution</i>: see <pkg>rmutil</pkg>.</li>
 
@@ -646,6 +657,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <pkg>extraDistr</pkg> provides the truncated normal.
      <pkg>LaplacesDemon</pkg> provides d, p, q, r functions for the Half-normal
      distribution.
+     The wrapped normal distribution is provided in <pkg>CircStats</pkg>.
      
      <pkg>lmomco</pkg> implements the generalized normal distribution.
 	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
@@ -778,6 +790,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>Johnson distribution</i>: provided in <pkg>SuppDists</pkg>.
      </li>
+  
+    <li><i>Jones and Pewsey distribution</i>: provided in <pkg>circular</pkg> (d).
+     </li>      
 
     <li><i>K-prime distribution</i>: <pkg>sadists</pkg> implements Gram Charlier, Edgeworth and Cornish-Fisher approximations
     for K-prime distribution for computing d, p, q, r functions. </li>
@@ -786,6 +801,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	<pkg>lmomco</pkg> and <pkg>FAdist</pkg>. </li>  
 	
 	 <li><i>Kappa-mu distribution</i>: provided in <pkg>lmomco</pkg>.</li>     
+	 
+	 <li><i>Kato-Jones distribution</i>: provided in <pkg>circular</pkg> (d, r).
+     </li>      
 	 
      <li><i>Kendall's tau distribution</i>: provided in <pkg>SuppDists</pkg>.</li>
      
@@ -1140,10 +1158,12 @@ If you think information is not accurate or not complete, please let me know.</p
      
      <li><i>Triangle/trapezoidal distribution</i>: packages <pkg>triangle</pkg>,
          <pkg>extraDistr</pkg>, <pkg>mc2d</pkg>, <pkg>EnvStats</pkg> and
-     <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle or triangular distribution, while the package
-	 <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized Trapezoidal Distribution.
-	 A fast random generator is available for the triangle distribution 
-	 is implemented in <pkg>Runuran</pkg> as well as the density function.</li>    
+     <pkg>VGAM</pkg> provide d, p, q, r functions for the triangle or triangular distribution,
+     while the package <pkg>trapezoid</pkg> provides d, p, q, r functions for the Generalized
+     Trapezoidal Distribution.
+     <pkg>CircStats</pkg>, <pkg>circular</pkg> provide d, r functions for triangular distribution.
+	   A fast random generator is available for the triangle distribution 
+	   is implemented in <pkg>Runuran</pkg> as well as the density function.</li>    
 
     <li><i>Tsallis or q-Exponential distribution</i>:
         <pkg>tsallisqexp</pkg> provides d, p, q, r functions for two parametrizations of
@@ -1165,6 +1185,10 @@ If you think information is not accurate or not complete, please let me know.</p
          for Upsilon distribution for computing d, p, q, r functions. </li>
      
 
+      <li><i>von Mises distribution</i>: 
+      The <pkg>CircStats</pkg> package provides d, p, r functions;
+      the <pkg>circular</pkg> package provides d, p, q, r functions.</li>
+      
      <li><i>Wakeby distribution</i>: A 5-parameter Wakeby is provided in <pkg>lmomco</pkg>.
      </li>
 
@@ -1423,7 +1447,8 @@ r is provided in <pkg>MultiRNG</pkg>.
       <pkg>MitISEM</pkg>, <pkg>bmixture</pkg> package also provide d, r functions for mixture of Student-t distributions.
       </li>
 
-      <li><i>von Mises Fisher (or Langevin) mixture</i>: The <pkg>movMF</pkg> package provides d, r functions
+      <li><i>von Mises Fisher (or Langevin) mixture</i>: 
+      The <pkg>movMF</pkg> and <pkg>CircStats</pkg> packages provide d, r functions
       for finite von Mises Fisher mixtures.</li>
 	  
    </ul>
@@ -1964,6 +1989,8 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>bridgedist</pkg>
   <pkg>cbinom</pkg>
   <pkg>CDVine</pkg>
+  <pkg>CircStats</pkg>
+  <pkg>circular</pkg>
   <pkg>cmvnorm</pkg>
   <pkg>coga</pkg>
   <pkg>CompGLM</pkg>
