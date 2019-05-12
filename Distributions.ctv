@@ -1876,8 +1876,8 @@ exponentiated and transformation of distributions:</a></h2>
 	independent or non-independent empirical distributions and returning a 
 	significance level of the difference.
 	
-	<pkg>MEPDF</pkg> provides functions to compute empirical density functions
-	for multivariate data.
+	<pkg>MEPDF</pkg>, <pkg>Emcdf</pkg> provide functions to compute and 
+	visualize empirical density functions for multivariate data.
 	
 	<pkg>probhat</pkg> computes nonparametric probability distributions (d, p, q) using 
 	kernel smoothing. <pkg>probhat</pkg> supports univariate, multivariate and conditional 
@@ -2026,6 +2026,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>dqrng</pkg>
   <pkg>e1071</pkg>
   <pkg>ecd</pkg>
+  <pkg>Emcdf</pkg>
   <pkg>emdbook</pkg>
   <pkg>emg</pkg>
   <pkg>empichar</pkg>
