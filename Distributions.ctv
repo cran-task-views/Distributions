@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-07-15</version>
+<version>2019-08-21</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -108,11 +108,14 @@ If you think information is not accurate or not complete, please let me know.</p
           
           </li>
           
-          <li><i>Benford distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          <li><i>Benford distribution</i>: provided in <pkg>VGAM</pkg> and <pkg>BenfordTests</pkg>.</li>
           
           <li><i>Bernoulli distribution</i>: provided in <pkg>extraDistr</pkg>.</li>
           
           <li><i>Borel-Tanner distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          
+          <li><i>Complex Pearson distribution</i>: <pkg>cpd</pkg> provides
+          the complex biparamtric and triparametric Pearson distribution.</li>
           
           <li><i>Conway-Maxwell-Poisson distribution</i>: provided in
               <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
@@ -156,8 +159,6 @@ If you think information is not accurate or not complete, please let me know.</p
           
           <li><i>Felix distribution</i>: provided in <pkg>VGAM</pkg>.</li>
           
-          <li><i>Lindley distribution</i>: provided in <pkg>gambin</pkg>.</li>
-          
           <li><i>gamma count distribution</i>: provided in
               <pkg>rmutil</pkg>.</li>
           
@@ -196,7 +197,8 @@ If you think information is not accurate or not complete, please let me know.</p
               univariate and the bivariate Lagrangian Poisson distribution.
           </li>
           
-          <li><i>Lindley distribution</i>: provided in <pkg>VGAM</pkg>.</li>
+          <li><i>Lindley's power series distribution</i>:
+           provided in <pkg>LindleyPowerSeries</pkg>.</li>
           
           <li><i>Logarithmic distribution</i>: This can be found in <pkg>extraDistr</pkg>,
               <pkg>VGAM</pkg>, <pkg>actuar</pkg>	and <pkg>gamlss.dist</pkg>. 
@@ -273,6 +275,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  
 	  <li><i>Bivariate geometric</i>:
 	   d, r functions provided in <pkg>bivgeom</pkg>.
+	   <pkg>BivGeo</pkg> provides the Basu-Dhar bivariate geometric distribution.
 	  </li>
 	  
 	  <li><i>Bivariate Poisson</i>:
@@ -617,7 +620,9 @@ If you think information is not accurate or not complete, please let me know.</p
 	not identically distributed gamma distributions.
 	<pkg>MCMCpack</pkg> provides d, r functions of the Inverse Gamma.
 	<pkg>rmutil</pkg> provides the generalized Gamma.
+	<pkg>distTails</pkg> provides the full-tail gamma distribution
 	<br/>
+	
     
     <br/><table border="0" summary="Gamma-related distributions">
         <caption>Summary for gamma-related distributions</caption>
@@ -641,6 +646,7 @@ If you think information is not accurate or not complete, please let me know.</p
         <tr><td>Generalized gamma</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r </td>   <td><code>gengamma.stacy</code></td></tr>
         <tr><td>Generalized gamma</td> <td><pkg>rmutil</pkg></td> <td>d, p, q, r </td>   <td><code>ggamma</code></td></tr>
         <tr><td>convolution of gamma</td> <td><pkg>coga</pkg></td> <td>d, p, r </td>   <td><code>coga</code></td></tr>
+        <tr><td>Full-taill gamma</td> <td><pkg>distTails</pkg></td> <td>d, p, r </td>   <td><code>dFTG</code></td></tr>
     </table><br/>
 
 	 </li>
@@ -873,6 +879,8 @@ If you think information is not accurate or not complete, please let me know.</p
   
 	 <li><i>Lévy distribution</i>: provided in <pkg>rmutil</pkg>.
      </li>     
+
+    <li><i>Lindley distribution</i>: provided in <pkg>VGAM</pkg> and <pkg>gambin</pkg>.</li>
 
 	 <li><i>Linear failure rate distribution</i>: provided in <pkg>reliaR</pkg>.
      </li>   
@@ -1207,6 +1215,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 is provided in <pkg>Renext</pkg>.
 	 The right truncated Weibull is provided in <pkg>ReIns</pkg>.
 	 The generalized Weibull is provided in <pkg>rmutil</pkg>.
+	 The tail Weibull is provided in <pkg>distTails</pkg>.
 	 </li>
 
   </ul>
@@ -1241,6 +1250,7 @@ omega or by the Cholesky decomposition of omega.
     <pkg>Compositional</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>MCMCpack</pkg> packages 
     provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
     <pkg>compositions</pkg>, <pkg>bayesm</pkg> provide r function.
+    <pkg>bivariate</pkg> provides d function for the trivariate Dirichlet.
     </li>
           
 <li><i>Multivariate exponential distribution</i>:
@@ -1703,6 +1713,7 @@ exponentiated and transformation of distributions:</a></h2>
       <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula.
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
       <pkg>nCopula</pkg> provides hierarchical archimedean copulas.
+      <pkg>lcopula</pkg> provides the Liouville copula.
       </li>
 	  
 	  <li><i>Blomqvist copula</i>: provided in <pkg>copBasic</pkg>.</li>	  
@@ -1984,11 +1995,13 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
+  <pkg>BenfordTests</pkg>
   <pkg>BiasedUrn</pkg>
   <pkg>bivariate</pkg>
   <pkg>Bivariate.Pareto</pkg>
   <pkg>BivarP</pkg>
   <pkg>bivgeom</pkg>
+  <pkg>BivGeo</pkg>
   <pkg>bmixture</pkg>
   <pkg>BMT</pkg>
   <pkg>bridgedist</pkg>
@@ -2008,6 +2021,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>condMVNorm</pkg>
   <pkg>copBasic</pkg>
   <pkg priority="core">copula</pkg>
+  <pkg>cpd</pkg>
   <pkg>csn</pkg>
   <pkg>Davies</pkg>
   <pkg>degreenet</pkg>
@@ -2025,6 +2039,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>DistributionUtils</pkg>
   <pkg>distrMod</pkg>   
   <pkg>distrSim</pkg>
+  <pkg>distTails</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>dng</pkg>
@@ -2088,9 +2103,11 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>KScorrect</pkg>
   <pkg>LambertW</pkg>
   <pkg>LaplacesDemon</pkg>
+  <pkg>lcopula</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
   <pkg>LIHNPSD</pkg>
+  <pkg>LindleyPowerSeries</pkg>
   <pkg>llogistic</pkg>
   <pkg>logitnorm</pkg>
   <pkg>loglognorm</pkg>
