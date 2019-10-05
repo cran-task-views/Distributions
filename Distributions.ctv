@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-08-21</version>
+<version>2019-10-05</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1919,7 +1919,7 @@ exponentiated and transformation of distributions:</a></h2>
     <li><i>Distribution handling</i>:
     <ul>
         
-     <li><i>Object-orientation</i>: 
+     <li><i>S4 Object-orientation</i>: 
      General discrete and continuous distributions are implemented in package
      <pkg>distr</pkg> respectively via S4-class DiscreteDistribution and 
      AbscontDistribution providing the classic d, p, q and r functions. <pkg>distrEx</pkg>
@@ -1930,6 +1930,14 @@ exponentiated and transformation of distributions:</a></h2>
      criterion estimators (maximum likelihood and minimum distance estimators). See other
      packages of the distr-family (<pkg>distrSim</pkg>, <pkg>distrTEst</pkg>, 
      <pkg>distrTeach</pkg>, <pkg>distrDoc</pkg>, <pkg>distrEllipse</pkg>).
+     </li>
+     
+     <li><i>R6 Object-orientation</i>: 
+     <pkg>distr6</pkg> provides a complete R6 Probability Distributions Interface
+     for 42 probability distributions and 11 kernels including functionality for
+     multiple scientific types. 
+     Additionally, <pkg>distr6</pkg> gives some functionalities for composite 
+     distributions and numerical imputation.
      </li>
      
 	 <li><i>Transformation</i>: Lebesgue decomposition are implemented
@@ -2033,6 +2041,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>DiscreteWeibull</pkg>
   <pkg>distcrete</pkg>
   <pkg priority="core">distr</pkg>
+  <pkg>distr6</pkg>
   <pkg>distrDoc</pkg>
   <pkg>distrEllipse</pkg>
   <pkg>distrEx</pkg>
