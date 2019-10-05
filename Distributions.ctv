@@ -1349,7 +1349,9 @@ Student distribution parametrized either by sigma,
 by the Cholesky decomposition of sigma, by the precision matrix 
 omega or by the Cholesky decomposition of omega.
 
-r is provided in <pkg>MultiRNG</pkg>.
+Random generator r is provided in <pkg>MultiRNG</pkg>.
+A special case of a bivariate noncentral t-distribution called Owen distribution
+is provided in <pkg>OwenQ</pkg>.
 </li>
 
 
@@ -1545,13 +1547,15 @@ exponentiated and transformation of distributions:</a></h2>
 	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
       <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>, <pkg>fromo</pkg>, 
-      <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg> packages.</li>
+      <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg>,
+      <pkg>parameters</pkg> packages.</li>
       
     <li><i>Empirical kurtosis</i>:  
 	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
       <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>fromo</pkg>,
-	  <pkg>moments</pkg>, <pkg>TSA</pkg> packages.
+	  <pkg>moments</pkg>, <pkg>TSA</pkg>,
+	  <pkg>parameters</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. </li>
       
@@ -2169,6 +2173,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>normalp</pkg>
   <pkg>ORDER2PARENT</pkg>
   <pkg>OrdNor</pkg>
+  <pkg>OwenQ</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg>pbv</pkg>
   <pkg priority="core">PearsonDS</pkg>
