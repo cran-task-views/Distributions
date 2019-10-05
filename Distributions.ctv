@@ -1916,9 +1916,17 @@ exponentiated and transformation of distributions:</a></h2>
      provides poisson/gamma, beta/binomial,
      normal/normal and multinomial/Dirichlet models.</li>    
 
-    <li><i>Distribution handling</i>:
+    <li><i>Unified interface to handle distributions</i>:
     <ul>
-        
+     
+     <li><i>S3 Object-orientation</i>: 
+     <pkg>distributions3</pkg> provides tools to create and to manipulate 
+     probability distributions using S3. 
+     With <pkg>distributions3</pkg>, generics <code>random()</code>, <code>pdf()</code>, 
+     <code>cdf()</code> and <code>quantile()</code> 
+     provide replacements for base R's <code>r/d/p/q</code> style functions.
+     </li>
+     
      <li><i>S4 Object-orientation</i>: 
      General discrete and continuous distributions are implemented in package
      <pkg>distr</pkg> respectively via S4-class DiscreteDistribution and 
@@ -2049,6 +2057,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>distrMod</pkg>   
   <pkg>distrSim</pkg>
   <pkg>distTails</pkg>
+  <pkg>distributions3</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>dng</pkg>
