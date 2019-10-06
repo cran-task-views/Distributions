@@ -1274,8 +1274,11 @@ or by the Cholesky decomposition of sigma.
   by the Cholesky decomposition of sigma, by the precision matrix 
   omega or by the Cholesky decomposition of omega.
     
-    Futhermore, <pkg>tmvtnorm</pkg> and <pkg>tmvmixnorm</pkg> implement the truncated
-    multivariate normal distribution, yet <pkg>tmvmixnorm</pkg> provides a faster algorithm. 
+    Futhermore, the multivariate truncated normal is implemented in 
+<pkg>TruncatedNormal</pkg> for d, p, r functions;
+<pkg>tmvtnorm</pkg> for p, q, r, m(oments) functions;
+<pkg>tmvmixnorm</pkg> for a fast RNG.
+    
     <pkg>sparseMVN</pkg> implements very
     fast algorithms to compute the density and generate random variates of
     a multivariate normal distribution for which the covariance matrix or precision matrix is sparse.
@@ -1340,8 +1343,12 @@ The multivariate Student distribution is provided in the packages <pkg>mvtnorm</
 <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r), <pkg>tmvmixnorm</pkg> (r),
 <pkg>QRM</pkg> (d, r), <pkg>bayesm</pkg> (r).
 
-First two moments (m) and sampling (r) of the Truncated Multivariate t Distribution
-are provided in <pkg>TTmoment</pkg>.
+The multivariate truncated student is implemented in 
+<pkg>TTmoment</pkg> for r (sampling) and moments (m); 
+<pkg>TruncatedNormal</pkg> for d, p, r functions;
+<pkg>tmvtnorm</pkg> for d, p, q, r functions.
+
+
 <pkg>sn</pkg> provides d, p, r functions for the multivariate skew t distribution.
 
 <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
@@ -2244,6 +2251,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>trapezoid</pkg>
   <pkg>triangle</pkg>
   <pkg>truncnorm</pkg>
+  <pkg>TruncatedNormal</pkg>
   <pkg>TSA</pkg>
   <pkg>tsallisqexp</pkg>
   <pkg>TLMoments</pkg>
