@@ -1631,10 +1631,13 @@ exponentiated and transformation of distributions:</a></h2>
 	      <pkg>GLDEX</pkg> also provides the mean, variance, skewness, 
 	      kurtosis of generalized Lambda distribution.
 	      </li>
-        <li><i>Normal:</i>
+        <li><i>Normal distribution:</i>
         <pkg>mvrtn</pkg> provides mean, variance for left/right truncated normal distributions.
-        </li><i>multivariate distributions:</i> 
-        <li>
+        </li>
+        <li><i>multivariate distributions:</i>
+        <pkg>MomTrunc</pkg> provides mean vector, covariance matrices and
+        raw moments for truncated or folded of the following multivariate 
+        distributions: normal, skew normal, extended skew normal and student.
         </li>
       </ul>
       </li>
@@ -2188,6 +2191,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg priority="core">mnormt</pkg>
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
+  <pkg>MomTrunc</pkg>
   <pkg>movMF</pkg>
   <pkg>msm</pkg>
   <pkg>MultiRNG</pkg>
