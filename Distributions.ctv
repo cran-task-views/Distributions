@@ -1535,8 +1535,11 @@ exponentiated and transformation of distributions:</a></h2>
     <li><i>Truncated distribution</i>:
     A generic code snippet is available 
     <a href="https://www.jstatsoft.org/article/view/v016c02">in the JSS</a>.
-    <pkg>LaplacesDemon</pkg> provides a generic function.
-    For a given distribution, look at the corresponding subsection above.
+    This code is now available in two packages:
+    <pkg>truncdist</pkg> is a dedicated package providing d, p, q, r, m(oments)
+    functions for a univariate truncated distribution given a user-supplied
+    distribution;
+    <pkg>LaplacesDemon</pkg> provides a generic function in a Bayesian environment.
     </li>
     
      <li><i> Wrapped G distribution</i>:
@@ -2250,6 +2253,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>tolerance</pkg>
   <pkg>trapezoid</pkg>
   <pkg>triangle</pkg>
+  <pkg>truncdist</pkg>
   <pkg>truncnorm</pkg>
   <pkg>TruncatedNormal</pkg>
   <pkg>TSA</pkg>
