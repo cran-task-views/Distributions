@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-10-05</version>
+<version>2019-10-06</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1662,6 +1662,12 @@ exponentiated and transformation of distributions:</a></h2>
 	  are 1 (Gaussian Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), 
 	  and 4 (Gaussian Symplectic Ensemble). </li>
 
+      <li><i>Sparse matrix</i>:
+      <pkg>spam</pkg> provides functionalities to draw random numbers
+      from a user-supplied RNG (e.g. <code>rexp</code>) or from a
+      multivariate normal distribution for large sparse matrices: typically 
+      for sparse covariance matrices. 
+      </li>
 
       <li><i>Spiked Wishart Maximum Eigenvalue Distribution</i>:
       provided in <pkg>RMTstat</pkg>, <pkg>MCMCpack</pkg> and 
@@ -2224,6 +2230,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>smoothmest</pkg>
   <pkg>SMR</pkg>
   <pkg>sn</pkg>
+  <pkg>spam</pkg>
   <pkg>sparseMVN</pkg>
   <pkg>spd</pkg>
   <pkg>stabledist</pkg>
