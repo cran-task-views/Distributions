@@ -2208,6 +2208,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>ORDER2PARENT</pkg>
   <pkg>OrdNor</pkg>
   <pkg>OwenQ</pkg>
+  <pkg>parameters</pkg>
   <pkg>ParetoPosStable</pkg>
   <pkg>pbv</pkg>
   <pkg priority="core">PearsonDS</pkg>
