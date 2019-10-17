@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-10-06</version>
+<version>2019-10-17</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -118,7 +118,7 @@ If you think information is not accurate or not complete, please let me know.</p
           the complex biparamtric and triparametric Pearson distribution.</li>
           
           <li><i>Conway-Maxwell-Poisson distribution:</i> provided in
-              <pkg>compoisson</pkg> and <pkg>CompGLM</pkg>.</li>
+              <pkg>compoisson</pkg>.</li>
           
           <li><i>Delaporte distribution:</i> provided in
               <pkg>gamlss.dist</pkg> and <pkg>Delaporte</pkg>.</li>
@@ -2064,7 +2064,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>circular</pkg>
   <pkg>cmvnorm</pkg>
   <pkg>coga</pkg>
-  <pkg>CompGLM</pkg>
   <pkg>CompLognormal</pkg>
   <pkg>compoisson</pkg>
   <pkg>Compounding</pkg>
