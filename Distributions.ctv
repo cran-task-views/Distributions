@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2019-10-17</version>
+<version>2020-01-17</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1074,8 +1074,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
 	 <li><i>Planck's distribution:</i> a random generator is available in <pkg>Runuran</pkg>.</li> 		     
      
-     <li><i>Phase-type distribution:</i> provided in <pkg>actuar</pkg>, see also
-	 <pkg>PhaseType</pkg> for inference.</li>
+     <li><i>Phase-type distribution:</i> provided in <pkg>actuar</pkg></li>
 
     <li><i>Poisson subordinated distributions:</i> provided in <pkg>LIHNPSD</pkg>
         (d, p, q, r, m functions).</li>
@@ -2211,7 +2210,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>ParetoPosStable</pkg>
   <pkg>pbv</pkg>
   <pkg priority="core">PearsonDS</pkg>
-  <pkg>PhaseType</pkg>
   <pkg>pmultinom</pkg>
   <pkg>poibin</pkg>
   <pkg>poilog</pkg>
