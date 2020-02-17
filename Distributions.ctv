@@ -715,7 +715,7 @@ If you think information is not accurate or not complete, please let me know.</p
      d, p, q, r, provided in 
      <pkg>VGAM</pkg>, <pkg>evd</pkg>, <pkg>evir</pkg>, <pkg>FAdist</pkg>, 
      <pkg>extraDistr</pkg>, <pkg>EnvStats</pkg>, <pkg>TLMoments</pkg>,
-     <pkg>rmutil</pkg>, and <pkg>fExtremes</pkg>. 
+     <pkg>rmutil</pkg>, <pkg>QRM</pkg>, and <pkg>fExtremes</pkg>. 
      <pkg>evdbayes</pkg>,  <pkg>revdbayes</pkg>
      provide d,p,q,r functions of the GEV distribution in a Bayesian setting. </li>
      
@@ -733,7 +733,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	 
      <li><i>Gumbel distribution:</i> provided in packages <pkg>lmomco</pkg>, 
      <pkg>VGAM</pkg>, <pkg>gamlss.dist</pkg>, <pkg>FAdist</pkg>, <pkg>extraDistr</pkg>,
-	 <pkg>reliaR</pkg>, <pkg>TLMoments</pkg>,
+	 <pkg>reliaR</pkg>, <pkg>QRM</pkg>, <pkg>TLMoments</pkg>,
 	 <pkg>EnvStats</pkg> and <pkg>evd</pkg>.
 	 <pkg>actuar</pkg> provides the raw moments and the moment generating function (mgf)
 	 in addition to the d, p, q, r functions.
@@ -757,6 +757,7 @@ If you think information is not accurate or not complete, please let me know.</p
      <li><i>(generalized) Hyperbolic distribution:</i> <pkg>fBasics</pkg>, <pkg>ghyp</pkg>, 
 	 <pkg>GeneralizedHyperbolic</pkg> and <pkg>HyperbolicDist</pkg> packages
      provide d, p, q, r functions for the generalized hyperbolic distribution. 
+     <pkg>QRM</pkg> provides d, r functions for  the generalized hyperbolic distribution.
 	 <pkg>SkewHyperbolic</pkg> provides the skewed Hyperbolic Student t-Distribution. 
 	 	 <pkg>fBasics</pkg> also implements the standardized generalized Hyperbolic distribution.
 	 A fast random generator is available for the hyperbolic distribution 
@@ -782,7 +783,7 @@ If you think information is not accurate or not complete, please let me know.</p
 
       
      The generalized inverse gaussian distribution can be found in <pkg>gamlss.dist</pkg>,
-     <pkg>rmutil</pkg>,
+     <pkg>QRM</pkg>, <pkg>rmutil</pkg>,
      and <pkg>HyperbolicDist</pkg>. A random generator is available for the (generalized)
      Inverse Gaussian distribution is implemented in <pkg>Runuran</pkg> as well as the density function.
      <pkg>GIGrvg</pkg> generates random variables from the generalized inverse Gaussian distribution.
@@ -977,7 +978,7 @@ If you think information is not accurate or not complete, please let me know.</p
 	  <pkg>extremefit</pkg> provides the Burr, the Pareto II, mixture of Pareto I distributions
 	  and a composite distribution of two Pareto I distributions.
      <pkg>lmomco</pkg>, <pkg>evd</pkg>, <pkg>fExtremes</pkg>, 
-     <pkg>extraDistr</pkg>, <pkg>Renext</pkg>, 
+     <pkg>extraDistr</pkg>, <pkg>QRM</pkg>, <pkg>Renext</pkg>, 
      <pkg>revdbayes</pkg>, <pkg>FAdist</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>TLMoments</pkg>
      <pkg>qrmtools</pkg> and <pkg>evir</pkg> packages
      implement the Generalized Pareto Distribution (from Extreme Value Theory), which is 
@@ -1028,6 +1029,7 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>fExtremes</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>evir</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>extraDistr</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
+<tr><td>Gen. Pareto (EVT)</td> <td><pkg>QRM</pkg></td> <td>d, p, q, r</td> <td><code>GPD</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>ReIns</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>LaplacesDemon</pkg></td> <td>d, r</td> <td><code>gpd</code></td></tr>
 <tr><td>Gen. Pareto (EVT)</td> <td><pkg>TLMoments</pkg></td> <td>d, p, q, r</td> <td><code>gpd</code></td></tr>
@@ -1290,6 +1292,8 @@ or by the Cholesky decomposition of sigma.
 </li>
 
 <li><i>Multivariate generalized hyperbolic distribution:</i>
+<pkg>QRM</pkg> provides d, r functions of the standard and
+the symmetric multivariate generalized hyperbolic distribution.
 <pkg>ghyp</pkg> provides d, p, r functions of the standard 
  multivariate generalized hyperbolic distribution.
 
@@ -1332,7 +1336,7 @@ of type II, while <pkg>evd</pkg> provides the density for type I.
 <li><i>Multivariate Student distribution:</i>
 The multivariate Student distribution is provided in the packages <pkg>mvtnorm</pkg> (d, r),
 <pkg>mnormt</pkg> (d, p, r), <pkg>Compositional</pkg> (r), <pkg>tmvmixnorm</pkg> (r),
-<pkg>bayesm</pkg> (r).
+<pkg>QRM</pkg> (d, r), <pkg>bayesm</pkg> (r).
 
 The multivariate truncated student is implemented in 
 <pkg>TTmoment</pkg> for r (sampling) and moments (m); 
@@ -1738,6 +1742,7 @@ exponentiated and transformation of distributions:</a></h2>
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
       <pkg>BivarP</pkg> provides cdf, pdf and survival function for Clayton, Gumbel and Frank copula.
       <pkg>copBasic</pkg> provides functions for Ali-Mikhail-Haq, Clayton, Frechet copulas.
+      <pkg>QRM</pkg> provides pdf and random generator for Clayton, Gumbel, Frank, BB9 copula.
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
       <pkg>nCopula</pkg> provides hierarchical archimedean copulas.
       <pkg>lcopula</pkg> provides the Liouville copula.
@@ -1759,6 +1764,7 @@ exponentiated and transformation of distributions:</a></h2>
       <li><i>Elliptical copulas:</i> Gaussian, Student and Cauchy copulas are implemented in
       <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, <pkg>VGAM</pkg>,
 	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copulas.
+	  <pkg>QRM</pkg> provides pdf and random generator for Gaussian, Student copulas. 
 	  </li>
       
       <li><i>Extreme value copulas:</i> <pkg>fCopulae</pkg> provides the following copulas
@@ -2209,6 +2215,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>qmap</pkg>
   <pkg>qqid</pkg>
   <pkg>qrandom</pkg>
+  <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
   <pkg>qrng</pkg>
   <pkg>randaes</pkg>
