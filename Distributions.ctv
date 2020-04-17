@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-02-17</version>
+<version>2020-04-17</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1814,8 +1814,6 @@ exponentiated and transformation of distributions:</a></h2>
 	 implements two RNGs of G. Marsaglia.   
 	 <pkg>dqrng</pkg> provides PCG family by O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ 
 	 by Blackman and Vigna (2018).
-	 The <pkg>qqid</pkg> package contains functions to retrieve true, quantum-random QQIDs, 
-	 to generate pseudo-random QQID.
 	 
 		<ul>
 		<li> Support for several independent streams: 
@@ -2213,7 +2211,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>qmap</pkg>
-  <pkg>qqid</pkg>
   <pkg>qrandom</pkg>
   <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
