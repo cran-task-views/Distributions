@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-04-17</version>
+<version>2020-05-05</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1551,7 +1551,7 @@ exponentiated and transformation of distributions:</a></h2>
 	  <li><i>Empirical skewness:</i>
 	  available in <pkg>agricolae</pkg>, <pkg>e1071</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>modeest</pkg>,
-      <pkg>moments</pkg>, <pkg>TSA</pkg>, <pkg>s20x</pkg>, <pkg>fromo</pkg>, 
+      <pkg>moments</pkg>, <pkg>s20x</pkg>, <pkg>fromo</pkg>, 
       <pkg>DistributionUtils</pkg>, <pkg>EnvStats</pkg>,
       <pkg>parameters</pkg> packages.</li>
       
@@ -1559,7 +1559,7 @@ exponentiated and transformation of distributions:</a></h2>
 	   available in <pkg>agricolae</pkg>, <pkg>DistributionUtils</pkg>,
       <pkg>e1071</pkg>, <pkg>EnvStats</pkg>,
 	  <pkg>GLDEX</pkg>, <pkg>HyperbolicDist</pkg>, <pkg>fromo</pkg>,
-	  <pkg>moments</pkg>, <pkg>TSA</pkg>,
+	  <pkg>moments</pkg>, 
 	  <pkg>parameters</pkg> packages.
 	  The raw or centered moments are provided in <pkg>e1071</pkg>,
       <pkg>moments</pkg>. </li>
@@ -2263,7 +2263,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>truncdist</pkg>
   <pkg>truncnorm</pkg>
   <pkg>TruncatedNormal</pkg>
-  <pkg>TSA</pkg>
   <pkg>tsallisqexp</pkg>
   <pkg>TLMoments</pkg>
   <pkg>TTmoment</pkg>
