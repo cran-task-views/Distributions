@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-05-05</version>
+<version>2020-06-05</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1984,13 +1984,6 @@ exponentiated and transformation of distributions:</a></h2>
      of two distributions. See Object-orientation above.</li>
 	 
 	 
-	 <li><i>User Interface:</i>
-	 <pkg>AtelieR</pkg> package provides a GTK GUI for teaching basic 
-	 concepts in statistical inference, implementing all the R base distributions
-	 as well as the generalized Student, the inverse Chi-square, the inverse gamma
-	 and the lambda-prime distributions. 
-	 </li>
-     
      </ul>
     </li>
 	
@@ -2038,7 +2031,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>AdMit</pkg>
   <pkg>agricolae</pkg>
   <pkg>ald</pkg>
-  <pkg>AtelieR</pkg> 
   <pkg>bayesm</pkg>
   <pkg>benchden</pkg>
   <pkg>BenfordTests</pkg>
