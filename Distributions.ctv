@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-06-05</version>
+<version>2020-08-30</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1857,9 +1857,6 @@ exponentiated and transformation of distributions:</a></h2>
      package provides several functions that access the 
      true random number service at <a href="http://random.org">
      random.org</a>.
-     The <pkg>qrandom</pkg> provides the ANU Quantum Random Number Generator provided 
-     by the Australian National University (based on measuring the quantum fluctuations 
-     of the vacuum). 
      </li>
      
      <li><i>RNG tests:</i> <pkg>RDieHarder</pkg> offers
@@ -2203,7 +2200,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
   <pkg>qmap</pkg>
-  <pkg>qrandom</pkg>
   <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
   <pkg>qrng</pkg>
