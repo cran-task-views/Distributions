@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-08-30</version>
+<version>2020-09-04</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1423,8 +1423,7 @@ is provided in <pkg>OwenQ</pkg>.
       <pkg>evmix</pkg> provides d, p, q, r.</li>
 
       <li><i>Generic mixtures:</i> there is an implementation via S4-class 
-      UnivarMixingDistribution in package <pkg>distr</pkg>. <pkg>gamlss.mx</pkg>
-	  uses the <pkg>gamlss.dist</pkg> package.
+      UnivarMixingDistribution in package <pkg>distr</pkg>.
 	  
 	  <pkg>gendist</pkg> provides d, p, q, r functions for two-distribution mixture 
 	  models working with any distribution defined by its d, p, q, r functions.
@@ -2105,7 +2104,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>fromo</pkg>
   <pkg>gambin</pkg>
   <pkg priority="core">gamlss.dist</pkg>
-  <pkg>gamlss.mx</pkg>
   <pkg>gaussDiff</pkg>
   <pkg>gb</pkg>
   <pkg>GB2</pkg>
