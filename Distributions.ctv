@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-09-04</version>
+<version>2020-09-11</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1229,31 +1229,43 @@ If you think information is not accurate or not complete, please let me know.</p
       <li><i>Bivariate uniform:</i>
 	   d, p functions provided in <pkg>bivariate</pkg>.
 	  </li>
+	  
+	  <li><i>Multivariate beta distribution:</i>
+	  <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions
+	  for inverted beta distribution.
+	  </li>
+	  
+	  <li><i>Multivariate Burr distribution:</i>
+	  <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions.
+	  </li>
       
-<li><i>Multivariate Cauchy distribution:</i>   <pkg>sn</pkg> 
-provide d, p, r functions for the multivariate skew Cauchy distribution,
-while <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
-Cauchy distribution parametrized either by sigma,
-by the Cholesky decomposition of sigma, by the precision matrix 
-omega or by the Cholesky decomposition of omega.
-</li>
+    <li><i>Multivariate Cauchy distribution:</i>   <pkg>sn</pkg> 
+    provide d, p, r functions for the multivariate skew Cauchy distribution,
+    while <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
+    Cauchy distribution parametrized either by sigma,
+    by the Cholesky decomposition of sigma, by the precision matrix 
+    omega or by the Cholesky decomposition of omega.</li>
       
+      <li><i>Cook-Johnson’s Multivariate Uniform Distribution:</i>
+	  <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions.
+	  </li>
 
  
-    <li><i>Dirichlet distribution:</i>
+    <li><i>Multivariate Dirichlet distribution:</i>
     <pkg>Compositional</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>MCMCpack</pkg> packages 
     provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
     <pkg>compositions</pkg>, <pkg>bayesm</pkg> provide r function.
     <pkg>bivariate</pkg> provides d function for the trivariate Dirichlet.
     </li>
           
-<li><i>Multivariate exponential distribution:</i>
+    <li><i>Multivariate exponential distribution:</i>
     while <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
-power exponential distribution parametrized either by sigma,
-or by the Cholesky decomposition of sigma.
-</li>
+    power exponential distribution parametrized either by sigma,
+    or by the Cholesky decomposition of sigma.</li>
           
-          
+    <li><i>Multivariate F distribution:</i>
+	  <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions.
+	  </li>          
 
 <li><i>Multivariate Gaussian (or normal) distribution:</i>
     The multivariate Gaussian distribution is provided in the packages <pkg>mvtnorm</pkg> (d, p, r),
@@ -1290,42 +1302,49 @@ or by the Cholesky decomposition of sigma.
   A random generator of the multivariate normal is provided in <pkg>MultiRNG</pkg>.
 </li>
 
-<li><i>Multivariate generalized hyperbolic distribution:</i>
-<pkg>QRM</pkg> provides d, r functions of the standard and
-the symmetric multivariate generalized hyperbolic distribution.
-<pkg>ghyp</pkg> provides d, p, r functions of the standard 
- multivariate generalized hyperbolic distribution.
+    <li><i>Multivariate generalized hyperbolic distribution:</i>
+    <pkg>QRM</pkg> provides d, r functions of the standard and
+    the symmetric multivariate generalized hyperbolic distribution.
+    <pkg>ghyp</pkg> provides d, p, r functions of the standard 
+    multivariate generalized hyperbolic distribution.</li>
 
-</li>
-
-<li><i>Multivariate generalized extreme value distribution:</i>
+    <li><i>Multivariate generalized extreme value distribution:</i>
     Both bivariate and multivariate Extreme Value distributions 
     as well as order/maxima/minima distributions
-    are implemented in <pkg>evd</pkg> (d, p, r).
-</li>
+    are implemented in <pkg>evd</pkg> (d, p, r).</li>
 
-<li><i>Multivariate Laplace distribution:</i> 
-<pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
-Laplace distribution parametrized either by sigma,
-or by the Cholesky decomposition of sigma.
-r is provided in <pkg>MultiRNG</pkg>.
-</li>
+    <li><i>Multivariate Laplace distribution:</i> 
+    <pkg>LaplacesDemon</pkg> provides d, r functions for the multivariate
+    Laplace distribution parametrized either by sigma,
+    or by the Cholesky decomposition of sigma.
+    r is provided in <pkg>MultiRNG</pkg>.
+    </li>
 
-<li><i>Multivariate logistic distribution:</i>
-    <pkg>VGAM</pkg> package  implements the bivariate logistic distribution.
-</li>
+    <li><i>Multivariate logistic distribution:</i>
+    <pkg>VGAM</pkg> package  implements the bivariate logistic distribution,
+    while <pkg>NonNorMvtDist</pkg> implements the multivariate logistic
+    distribution.
+    </li>
 
-<li><i>Multivariate lognormal distribution:</i>
+    <li><i>Multivariate lognormal distribution:</i>
     <pkg>compositions</pkg> provides r function.
-</li>
+    </li>
 
 
 
 
-<li><i>Multivariate Pareto distribution:</i>
-<pkg>mgpd</pkg> provides the density for the multivariate generalized Pareto distribution
-of type II, while <pkg>evd</pkg> provides the density for type I.
-</li>
+    <li><i>Multivariate Pareto distribution:</i>
+    <pkg>mgpd</pkg> provides the density for the multivariate 
+    generalized Pareto distribution of type II, while <pkg>evd</pkg> 
+    provides the density for type I.
+
+    <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions for 
+    multivariate Lomax (type II) distributions and its generalized
+    version.
+    
+    <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions for 
+    Mardia's Multivariate Pareto Type I Distribution
+    </li>
 
 <li><i>Multivariate Stable distribution:</i>
     not yet implemented?
@@ -1443,6 +1462,8 @@ is provided in <pkg>OwenQ</pkg>.
     <li><i>Pareto distribution:</i> <pkg>extremefit</pkg> implements
 	  the mixture of two Pareto I distributions.</li>
 	  
+	  <li><i>Poisson beta distribution:</i> provided in <pkg>scModels</pkg>.</li>
+	  
 	  <li><i>Poisson Binomial distribution:</i> <pkg>poibin</pkg> implements
 	  the Poisson Binomial distribution.</li>
 
@@ -1520,6 +1541,25 @@ exponentiated and transformation of distributions:</a></h2>
         exponentiated Kumaraswamy G distributions, geometric exponential Poisson
         G distribution, truncated-exponential skew-symmetric G distribution, modified beta
         G distribution, and exponentiated exponential Poisson G distribution.
+        
+        <pkg>MPS</pkg> provides also G-transformed distributions, such as 
+        beta exponential G distribution, beta G distribution, 
+        exponentiated exponential Poisson G distribution,
+        exponentiated G distribution, exponentiated generalized G distribution,  
+        exponentiated Kumaraswamy G distribution, gamma uniform G distribution,
+        gamma uniform type I/II G distribution, 
+        generalized beta G distribution, geometric exponential Poisson G distribution, 
+        gamma-X family of modified beta exponential G distribution, 
+        exponentiated exponential Poisson G distribution,
+        gamma-X generated of log-logistic-X familiy of G distribution,
+        Kumaraswamy G distribution, log gamma G type I/II distribution,
+        modified beta G distribution, Marshall-Olkin Kumaraswamy G distribution,
+        odd log-logistic G distribution, 
+        truncated-exponential skew-symmetric G distribution,
+        T-X{log-logistic}G distribution, Weibull G distribution.
+        
+        
+        
         <pkg>gendist</pkg> provides d, p, q, r functions for composite models, folded models, 
         skewed symmetric models and arctan models working with any distribution
         defined by its d, p, q, r functions.
@@ -2168,6 +2208,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>moments</pkg>
   <pkg>MomTrunc</pkg>
   <pkg>movMF</pkg>
+  <pkg>MPS</pkg>
   <pkg>msm</pkg>
   <pkg>MultiRNG</pkg>
   <pkg>mvprpb</pkg>
@@ -2176,6 +2217,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>nCopula</pkg>
   <pkg>nCDunnett</pkg>
   <pkg>Newdistns</pkg>
+  <pkg>NonNorMvtDist</pkg>
   <pkg>nor1mix</pkg> 
   <pkg>NormalGamma</pkg> 
   <pkg>NormalLaplace</pkg>
@@ -2221,6 +2263,7 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
   <pkg>SCI</pkg>
+  <pkg>scModels</pkg>
   <pkg>setRNG</pkg>
   <pkg>sfsmisc</pkg> 
   <pkg>sgt</pkg>
