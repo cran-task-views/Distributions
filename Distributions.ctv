@@ -1035,10 +1035,8 @@ If you think information is not accurate or not complete, please let me know.</p
 <tr><td>zero-inflated Pareto II</td> <td><pkg>CaDENCE</pkg></td> <td>d, p, q, r</td>  <td><code>bpareto2</code></td></tr>
 
          
-<tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</cod
-e></td></tr>
-<tr><td>Pareto III</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r</td> <td><code>pareto3</cod
-e></td></tr>
+<tr><td>Pareto III</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIII</code></td></tr>
+<tr><td>Pareto III</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r</td> <td><code>pareto3</code></td></tr>
 <tr><td>Pareto IV</td> <td><pkg>VGAM</pkg></td> <td>d, p, q, r</td> <td><code>paretoIV</code></td></tr>
 <tr><td>Pareto IV</td> <td><pkg>actuar</pkg></td> <td>d, p, q, r</td> <td><code>pareto4</code></td></tr>
          
