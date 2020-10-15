@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-09-13</version>
+<version>2020-10-15</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1819,7 +1819,7 @@ exponentiated and transformation of distributions:</a></h2>
           <pkg>VGAM</pkg>  provides Ali-Mikhail-Haq, Clayton, Frank, Frechet copulas.
           <pkg>copula</pkg> provides Ali-Mikhail-Haq, Clayton, Frank, Gumbel and Joe copulas.
           The Frank bivariate distribution is available in <pkg>RTDE</pkg>.
-      	   <pkg>CDVine</pkg> and <pkg>VineCopula</pkg> provide
+      	   <pkg>VineCopula</pkg> provides
 	   Clayton, Gumbel, Frank, Joe, BB1, BB6, BB7 and BB8 copulas.
        Nested Archimedean copulas are available in the <pkg>HAC</pkg> package.
 	  Generalized Archimedean copulas are implemented in the <pkg>fgac</pkg> package.
@@ -1848,7 +1848,7 @@ exponentiated and transformation of distributions:</a></h2>
       with a specified correlation matrix.</li>
       
       <li><i>Elliptical copulas:</i> Gaussian, Student and Cauchy copulas are implemented in
-      <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>CDVine</pkg>, <pkg>VGAM</pkg>,
+      <pkg>fCopulae</pkg> for the bivariate cases. <pkg>copula</pkg>, <pkg>VGAM</pkg>,
 	  <pkg>VineCopula</pkg> provide the Gaussian and the Student copulas.
 	  <pkg>QRM</pkg> provides pdf and random generator for Gaussian, Student copulas. 
 	  </li>
@@ -1868,8 +1868,8 @@ exponentiated and transformation of distributions:</a></h2>
       <li><i>Plackett:</i> provided in <pkg>VGAM</pkg>, <pkg>copBasic</pkg> 
 	  and <pkg>copula</pkg>.</li>
       
-	  <li><i>Vine copulas:</i> Packages <pkg>CDVine</pkg>, <pkg>vines</pkg>
-	  provide functions for C- and D-vine copulas and
+	  <li><i>Vine copulas:</i> Package <pkg>vines</pkg>
+	  provides functions for C- and D-vine copulas and
 	  <pkg>VineCopula</pkg> for general R-vine copulas.</li>
       </ul>
 
@@ -2142,7 +2142,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>bridgedist</pkg>
   <pkg>CaDENCE</pkg>
   <pkg>cbinom</pkg>
-  <pkg>CDVine</pkg>
   <pkg>CircStats</pkg>
   <pkg>circular</pkg>
   <pkg>cmvnorm</pkg>
