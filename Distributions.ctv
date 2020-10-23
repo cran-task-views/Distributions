@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-10-15</version>
+<version>2020-10-23</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1612,10 +1612,6 @@ exponentiated and transformation of distributions:</a></h2>
     distribution;
     <pkg>LaplacesDemon</pkg> provides a generic function in a Bayesian environment.
     </li>
-    
-     <li><i> Wrapped G distribution:</i>
-     <pkg>Wrapped</pkg> provides d, p, q, r functions for a large family of distributions.
-     </li>
    </ul>
 
 <h2><a name="Moments">Moments, skewness, kurtosis and etc:</a></h2>
@@ -2377,7 +2373,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>vines</pkg>
   <pkg>vistributions</pkg>
   <pkg>visualize</pkg>
-  <pkg>Wrapped</pkg>
   <pkg>zipfextR</pkg>
   <pkg>zipfR</pkg> 
   
