@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2020-10-23</version>
+<version>2021-01-29</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -676,8 +676,7 @@ If you think information is not accurate or not complete, please let me know.</p
      The wrapped normal distribution is provided in <pkg>CircStats</pkg>.
      
      <pkg>lmomco</pkg> implements the generalized normal distribution.
-	 The Exponentially modified Gaussian is available in <pkg>emg</pkg>, <pkg>gamlss.dist</pkg> and
-	 <pkg>retimes</pkg>.
+	 The Exponentially modified Gaussian is available in <pkg>emg</pkg> and <pkg>gamlss.dist</pkg>
 	 <pkg>sn</pkg> implements the skew normal distribution.
 	 <pkg>greybox</pkg> implements the folded normal distribution.
      <pkg>VGAM</pkg> implements the folded and the skewed normal distribution, and
@@ -707,7 +706,6 @@ If you think information is not accurate or not complete, please let me know.</p
          <tr><td>Zero modified Gaussian</td> <td><pkg>EnvStats</pkg></td> <td>d, p, q, r</td> <td><code>zmnorm</code></td></tr>
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>emg</pkg></td> <td>d, p, q, r</td> <td><code>emg</code></td></tr>
          <tr><td>Exponentially modified Gaussian</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>exGAUSS</code></td></tr>
-         <tr><td>Exponentially modified Gaussian</td> <td><pkg>retimes</pkg></td> <td>d, p, q, r</td> <td><code>exgauss</code></td></tr>
          
          <tr><td>Folded and skew normal</td> <td><pkg>gamlss.dist</pkg></td> <td>d, p, q, r</td> <td><code>SN1, SN2</code></td></tr>
          <tr><td>Folded normal</td> <td><pkg>greybox</pkg></td> <td>d, p, q, r</td> <td><code>fnorm</code></td></tr>
@@ -2318,7 +2316,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>ReIns</pkg>
   <pkg priority="core">reliaR</pkg> 
   <pkg>Renext</pkg>
-  <pkg>retimes</pkg>
   <pkg>revdbayes</pkg>
   <pkg>rlecuyer</pkg>
   <pkg>RMKdiscrete</pkg>
