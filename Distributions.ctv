@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2021-01-29</version>
+<version>2021-03-22</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -203,7 +203,7 @@ If you think information is not accurate or not complete, please let me know.</p
            provided in <pkg>LindleyPowerSeries</pkg>.</li>
           
           <li><i>Logarithmic distribution:</i> This can be found in <pkg>extraDistr</pkg>,
-              <pkg>VGAM</pkg>, <pkg>actuar</pkg>, <pkg>Distributacalcul</pkg>	
+              <pkg>VGAM</pkg>, <pkg>actuar</pkg>,
               and <pkg>gamlss.dist</pkg>. 
               Zero-modified and zero-truncated versions is provided in <pkg>actuar</pkg>.
               A fast random generator is
@@ -1823,8 +1823,6 @@ exponentiated and transformation of distributions:</a></h2>
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the Frank copula with Pareto margins.
       <pkg>nCopula</pkg>, <pkg>HAC</pkg> provide hierarchical archimedean copulas.
       <pkg>lcopula</pkg> provides the Liouville copula.
-      <pkg>Distributacalcul</pkg> provides Ali-Mikhail-Haq, Clayton, EFGM, Frank,
-      Gumbel, Marshall-Olkin copulas.
       </li>
 	  
 	  <li><i>Blomqvist copula:</i> provided in <pkg>copBasic</pkg>.</li>	  
@@ -2173,7 +2171,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>distTails</pkg>
   <pkg>distributional</pkg>
   <pkg>distributions3</pkg>
-  <pkg>Distributacalcul</pkg>
   <pkg>distrTeach</pkg>
   <pkg>distrTEst</pkg> 
   <pkg>dng</pkg>
