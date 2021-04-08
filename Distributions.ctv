@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2021-03-22</version>
+<version>2021-04-08</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1325,7 +1325,6 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>sn</pkg> allows the creation of S4 objects which encapsulate these distributions and provide
     facilities for plotting, summary, marginalization, conditioning, affine transformations 
     of these S4 objects.
-    <pkg>mnormpow</pkg> computes the expected product of the components of a multivariate Gaussian vector.
     <pkg>Compositional</pkg> provides random generator for the multivariate normal
     distribution on the simplex and multivariate skew normal distribution on the simplex.
     
@@ -2265,7 +2264,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>mixtools</pkg>
   <pkg>MM</pkg>
   <pkg>mniw</pkg>
-  <pkg>mnormpow</pkg>
   <pkg priority="core">mnormt</pkg>
   <pkg>modeest</pkg>
   <pkg>moments</pkg>
