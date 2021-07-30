@@ -274,25 +274,13 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateDiscrete">Discrete multivariate distributions:</a></h2>      
 	  <ul>
 	  
-	  <li><i>Bivariate binomial:</i>
-	   d, p functions provided in <pkg>bivariate</pkg>.
-	  </li>
-	  
 	  <li><i>Bivariate geometric:</i>
 	   d, r functions provided in <pkg>bivgeom</pkg>.
 	   <pkg>BivGeo</pkg> provides the Basu-Dhar bivariate geometric distribution.
 	  </li>
 	  
-	  <li><i>Bivariate Poisson:</i>
-	   d, p functions provided in <pkg>bivariate</pkg>.
-	  </li>
-	  
 	  <li><i>Bivariate Poisson-lognormal:</i>
 	   provided in <pkg>poilog</pkg>.
-	  </li>
-
-    <li><i>Bivariate uniform:</i>
-	   d, p functions provided in <pkg>bivariate</pkg>.
 	  </li>
 
     <li><i>Hyper Dirichlet distribution:</i>
@@ -1247,18 +1235,10 @@ If you think information is not accurate or not complete, please let me know.</p
 <h2><a name="MultivariateContinuous">Continuous multivariate distributions:</a></h2>            
       <ul>
       
-      <li><i>Bivariate normal:</i>
-	   d, p functions provided in <pkg>bivariate</pkg>.
-	  </li>
-      
       <li><i>Bivariate Pareto:</i>
       <pkg>Bivariate.Pareto</pkg> provides a random generator for the bivariate Pareto distribution.
       </li>
       
-      <li><i>Bivariate uniform:</i>
-	   d, p functions provided in <pkg>bivariate</pkg>.
-	  </li>
-	  
 	  <li><i>Multivariate beta distribution:</i>
 	  <pkg>NonNorMvtDist</pkg> provides d, p, q, r, s functions
 	  for inverted beta distribution.
@@ -1284,7 +1264,6 @@ If you think information is not accurate or not complete, please let me know.</p
     <pkg>Compositional</pkg>, <pkg>LaplacesDemon</pkg>, <pkg>MCMCpack</pkg> packages 
     provide d, r functions as well as a fitting function for <pkg>Compositional</pkg>.
     <pkg>compositions</pkg>, <pkg>bayesm</pkg> provide r function.
-    <pkg>bivariate</pkg> provides d function for the trivariate Dirichlet.
     </li>
           
     <li><i>Multivariate exponential distribution:</i>
@@ -2119,7 +2098,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>BenfordTests</pkg>
   <pkg>betafunctions</pkg>
   <pkg>BiasedUrn</pkg>
-  <pkg>bivariate</pkg>
   <pkg>Bivariate.Pareto</pkg>
   <pkg>BivarP</pkg>
   <pkg>bivgeom</pkg>
