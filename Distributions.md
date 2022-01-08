@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2021-12-29
+version: 2022-01-08
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -77,23 +77,24 @@ repository linked above.
     `r pkg("VGAM")`. `r pkg("LaplacesDemon")`
     provides dedicated functions for the Bernoulli distribution.
     `r pkg("rmutil")` provides the double binomial and the
-    multiplicative binomial distributions.\
-      ---------------------- ------------- ------------- -----------------------
-      *Distribution name*    *Packages*    *Functions*   *Distribution suffix*
-      binomial               stats         d, p, q, r    `binom`
-      zero-infl. binomial    extraDistr    d, p, q, r    `zib`
-      zero-infl. binomial    VGAM          d, p, q, r    `zibinom`
-      zero-infl. binomial    gamlss.dist   d, p, q, r    `ZIBI`
-      zero mod. binomial     VGAM          d, p, q, r    `zabinom`
-      zero mod. binomial     actuar        d, p, q, r    `zmbinom`
-      zero mod. binomial     gamlss.dist   d, p, q, r    `ZABI`
-      zero trunc. binomial   actuar        d, p, q, r    `ztbinom`
-      trunc. binomial        extraDistr    d, p, q, r    `tbinom`
-      ---------------------- ------------- ------------- -----------------------
+    multiplicative binomial distributions.
+    
+      ---------------------- ------------- ------------------ -----------------------
+      *Distribution name*    *Packages*    *Functions*          *Distribution suffix*
+      binomial               stats         `d`, `p`, `q`, `r`   `binom`
+      zero-infl. binomial    extraDistr    `d`, `p`, `q`, `r`   `zib`
+      zero-infl. binomial    VGAM          `d`, `p`, `q`, `r`   `zibinom`
+      zero-infl. binomial    gamlss.dist   `d`, `p`, `q`, `r`   `ZIBI`
+      zero mod. binomial     VGAM          `d`, `p`, `q`, `r`   `zabinom`
+      zero mod. binomial     actuar        `d`, `p`, `q`, `r`   `zmbinom`
+      zero mod. binomial     gamlss.dist   `d`, `p`, `q`, `r`   `ZABI`
+      zero trunc. binomial   actuar        `d`, `p`, `q`, `r`   `ztbinom`
+      trunc. binomial        extraDistr    `d`, `p`, `q`, `r`   `tbinom`
+      ---------------------- ------------- ------------------ -----------------------
 
       :  Summary for Binomial-related distributions
 
-    \
+    
 -   *Benford distribution:* provided in `r pkg("VGAM")` and
     `r pkg("BenfordTests")`.
 -   *Bernoulli distribution:* provided in
@@ -293,42 +294,42 @@ repository linked above.
     provides the Feller-Pareto distribution as special cases Burr,
     loglogistic, paralogistic, generalized Pareto, Pareto, see also the
     Pareto subsection. `r pkg("llogistic")` provides the
-    log-logistic parametrized by the median.\
-      ------------------------- -------------------------------------- -------------------- -----------------------
-      *Distribution name*       *Packages*                             *Functions*          *Distribution suffix*
-      Beta (1st kind)           stats                                  d, p, q, r           `beta`
-      Beta                      `r pkg("actuar")`          m, mgf, lev          `beta`
-      Beta                      `r pkg("betafunctions")`   d, p, q, r           `Beta.4P`
-      Doubly non central beta   `r pkg("sadists")`         d, p, q, r           `nbeta`
-      4-param beta              `r pkg("extraDistr")`      d, p, q, r           `nsbeta`
-      4-param beta              `r pkg("extraDistr")`      d, p, q, r           `nsbeta`
-      zero-infl beta            `r pkg("gamlss.dist")`     d, p, q, r           `BEZI`
-      one-infl beta             `r pkg("gamlss.dist")`     d, p, q, r           `BEOI`
-      one-infl beta             `r pkg("mbbefd")`          d, p, q, r, m, ec    `oibeta`
-      GB1                       `r pkg("gamlss.dist")`     d, p, q, r           `GB1`
-      GB1                       `r pkg("mbbefd")`          d, p, q, r, m, ec    `gbeta`
-      GB1                       `r pkg("actuar")`          d, p, q, r, m, lev   `genbeta`
-      one-infl GB1              `r pkg("mbbefd")`          d, p, q, r, m, ec    `oigbeta`
-      ------------------------- -------------------------------------- -------------------- -----------------------
+    log-logistic parametrized by the median.
+    
+      ------------------------- -------------- -------------------  -----------------------
+      *Distribution name*       *Packages*     *Functions*           *Distribution suffix*
+      Beta (1st kind)           stats           d, p, q, r           `beta`
+      Beta                      actuar          m, mgf, lev          `beta`
+      Beta                      betafunctions   d, p, q, r           `Beta.4P`
+      Doubly non central beta   sadists         d, p, q, r           `nbeta`
+      4-param beta              extraDistr      d, p, q, r           `nsbeta`
+      zero-infl beta            gamlss.dist     d, p, q, r           `BEZI`
+      one-infl beta             gamlss.dist     d, p, q, r           `BEOI`
+      one-infl beta             mbbefd          d, p, q, r, m, ec    `oibeta`
+      GB1                       gamlss.dist     d, p, q, r           `GB1`
+      GB1                       mbbefd          d, p, q, r, m, ec    `gbeta`
+      GB1                       actuar          d, p, q, r, m, lev   `genbeta`
+      one-infl GB1              mbbefd          d, p, q, r, m, ec    `oigbeta`
+      ------------------------- --------------- -------------------- -----------------------
 
       :  Summary for Beta-related distributions
 
-    \
-    \
-      --------------------- -------------------------------------- -------------------- -----------------------
-      *Distribution name*   *Packages*                             *Functions*          *Distribution suffix*
-      Beta (2nd kind)       `r pkg("VGAM")`            d, p, q, r           `beta`
-      Beta (2nd kind)       `r pkg("extraDistr")`      d, p, q, r           `invbeta`
-      Beta (2nd kind)       `r pkg("LaplacesDemon")`   d, r                 `betapr`
-      GB2                   `r pkg("VGAM")`            d, p, q, r           `genbetaII`
-      GB2                   `r pkg("gamlss.dist")`     d, p, q, r           `GB2`
-      GB2                   `r pkg("GB2")`             d, p, q, r           `gb2`
-      Trans beta 2          `r pkg("actuar")`          d, p, q, r, m, lev   `trbeta`
-      --------------------- -------------------------------------- -------------------- -----------------------
+    
+    
+      --------------------- ------------------------  -------------------- ---------------------
+      *Distribution name*   *Packages*                *Functions*          *Distribution suffix*
+      Beta (2nd kind)       VGAM                      d, p, q, r           `beta`
+      Beta (2nd kind)       extraDistr                d, p, q, r           `invbeta`
+      Beta (2nd kind)       LaplacesDemon             d, r                 `betapr`
+      GB2                   VGAM                      d, p, q, r           `genbetaII`
+      GB2                   gamlss.dist               d, p, q, r           `GB2`
+      GB2                   GB2                       d, p, q, r           `gb2`
+      Trans beta 2          actuar                    d, p, q, r, m, lev   `trbeta`
+      --------------------- ------------------------  -------------------- ---------------------
 
       :  Summary for Beta-2-related distributions
 
-    \
+    
 -   *Benini distribution:* provided in `r pkg("VGAM")`.
 -   *Bezier-Montenegro-Torres distribution:* provided in
     `r pkg("BMT")`.
@@ -379,25 +380,25 @@ repository linked above.
     implements Gram Charlier, Edgeworth and Cornish-Fisher
     approximations for sums of non central chi-squared raised to powers
     distribution and sums of log of non central chi-squared for
-    computing d, p, q, r functions.\
-    \
-      ---------------------------- ----------------------------------- ------------- -----------------------
-      *Distribution name*          *Packages*                          *Functions*   *Distribution suffix*
-      Chi-squared                  stats                               d, p, q, r    `chisq`
-      Chi-squared                  `r pkg("actuar")`       m, mgf, lev   `chisq`
-      Chi-squared                  `r pkg("Runuran")`      d, r          `chisq`
-      Chi-bar-squared              `r pkg("emdbook")`      d, p, q, r    `chibarsq`
-      Chi                          `r pkg("Runuran")`      d, r          `chi`
-      Inverse Chi-squared          `r pkg("geoR")`         d, r          `invchisq`
-      Inverse Chi-squared          `r pkg("extraDistr")`   d, p, q, r    `invchisq`
-      Scaled Inverse Chi-squared   `r pkg("extraDistr")`   d, p, q, r    `invchisq`
-      Sum of power Chi-squared     `r pkg("sadists")`      d, p, q, r    `sumchisqpow`
-      Sum of log Chi-squared       `r pkg("sadists")`      d, p, q, r    `sumlogchisq`
-      ---------------------------- ----------------------------------- ------------- -----------------------
+    computing d, p, q, r functions.
+    
+      ---------------------------- -----------------------  ------------- -----------------------
+      *Distribution name*          *Packages*               *Functions*   *Distribution suffix*
+      Chi-squared                  stats                    d, p, q, r    `chisq`
+      Chi-squared                  actuar                   m, mgf, lev   `chisq`
+      Chi-squared                  Runuran                  d, r          `chisq`
+      Chi-bar-squared              emdbook                  d, p, q, r    `chibarsq`
+      Chi                          Runuran                  d, r          `chi`
+      Inverse Chi-squared          geoR                     d, r          `invchisq`
+      Inverse Chi-squared          extraDistr               d, p, q, r    `invchisq`
+      Scaled Inverse Chi-squared   extraDistr               d, p, q, r    `invchisq`
+      Sum of power Chi-squared     sadists                  d, p, q, r    `sumchisqpow`
+      Sum of log Chi-squared       sadists                  d, p, q, r    `sumlogchisq`
+      ---------------------------- -----------------------  ------------- -----------------------
 
       :  Summary for Chi-related distributions
 
-    \
+    
 -   *Circular distribution:* uniform circular provided in
     `r pkg("circular")` (d,r); Generalized von Mises
     circular provided in `r pkg("circular")` (d).
@@ -437,31 +438,31 @@ repository linked above.
     Exponential and the exponential extension distributions. A fast
     random generator is available for the power Exponential distribution
     is implemented in `r pkg("Runuran")` as well as the
-    density function.\
-    \
-      -------------------------------------------------- ------------------------------------ ---------------------- ----------------------------
-      *Distribution name*                                *Packages*                           *Functions*            *Distribution suffix*
-      Exponential                                        stats                                d, p, q, r             `exp`
-      Exponential                                        `r pkg("actuar")`        m, mgf, lev            `exp`
-      Exponential                                        `r pkg("gamlss.dist")`   d, p, q, r             `EXP`
-      Exponential                                        `r pkg("poweRlaw")`      d, p, q, r             `exp`
-      Inverse exponential                                `r pkg("actuar")`        d, p, q, r, m, lev     `invexp`
-      Shifted exponential                                `r pkg("lmomco")`        d, p, q, r, lm, tlmr   `exp`
-      Shifted exponential                                `r pkg("tolerance")`     d, p, q, r             `2exp`
-      Truncated exponential                              `r pkg("lmomco")`        d, p, q, r, lm, tlmr   `texp`
-      Truncated exponential                              `r pkg("ReIns")`         d, p, q, r             `texp`
-      Power exponential                                  `r pkg("normalp")`       d, p, q, r             `normp`
-      Power exponential                                  `r pkg("Runuran")`       d, r                   `exp`
-      Power exponential                                  `r pkg("rmutil")`        d, r                   `powexp`
-      Skew power exp.                                    `r pkg("lmomco")`        d, p, q, r, lm, tlmr   `aep4`
-      Power and skew power exp.                          `r pkg("gamlss.dist")`   d, p, q, r             `PE, SEP`
-      Generalized and inverse gen. exp.                  `r pkg("reliaR")`        d, p, q, r             `gen.exp, inv.genexp`
-      Logistic, Marshall-Olkin Ext. exp. and exp. ext.   `r pkg("reliaR")`        d, p, q, r             `logis.exp, moee, exp.ext`
-      -------------------------------------------------- ------------------------------------ ---------------------- ----------------------------
+    density function.
+    
+      --------------------------------------------------  ---------------------   ---------------------- ----------------------------
+      *Distribution name*                                 *Packages*             *Functions*             *Distribution suffix*
+      Exponential                                         stats                   d, p, q, r             `exp`
+      Exponential                                         actuar                  m, mgf, lev            `exp`
+      Exponential                                         gamlss.dist             d, p, q, r             `EXP`
+      Exponential                                         poweRlaw                d, p, q, r             `exp`
+      Inverse exponential                                 actuar                  d, p, q, r, m, lev     `invexp`
+      Shifted exponential                                 lmomco                  d, p, q, r, lm, tlmr   `exp`
+      Shifted exponential                                 tolerance               d, p, q, r             `2exp`
+      Truncated exponential                               lmomco                  d, p, q, r, lm, tlmr   `texp`
+      Truncated exponential                               ReIns                   d, p, q, r             `texp`
+      Power exponential                                   normalp                 d, p, q, r             `normp`
+      Power exponential                                   Runuran                 d, r                   `exp`
+      Power exponential                                   rmutil                  d, r                   `powexp`
+      Skew power exp.                                     lmomco                  d, p, q, r, lm, tlmr   `aep4`
+      Power and skew power exp.                           gamlss.dist             d, p, q, r             `PE, SEP`
+      Generalized and inverse gen. exp.                   reliaR                  d, p, q, r             `gen.exp, inv.genexp`
+      Logistic, Marshall-Olkin Ext. exp. and exp. ext.    reliaR                  d, p, q, r             `logis.exp, moee, exp.ext`
+      -------------------------------------------------- ----------------------   ---------------------- ----------------------------
 
       :  Summary for exponential-related distributions
 
-    \
+    
 -   *Externally studentized midrange distribution:* Package
     `r pkg("SMR")` computes the studentized midrange
     distribution (d, p, q, r).
@@ -516,34 +517,34 @@ repository linked above.
     provides d, r functions of the Inverse Gamma.
     `r pkg("rmutil")` provides the generalized Gamma.
     `r pkg("distTails")` provides the full-tail gamma
-    distribution\
-    \
-      ---------------------- -------------------------------------- ------------------------- -----------------------
-      *Distribution name*    *Packages*                             *Functions*               *Distribution suffix*
-      Gamma                  stats                                  d, p, q, r                `gamma`
-      Gamma                  `r pkg("actuar")`          m, mgf, lev               `gamma`
-      Gamma                  `r pkg("EnvStats")`        d, p, q, r                `gammaAlt`
-      zero-inflated Gamma    `r pkg("CaDENCE")`         d, p, q, r                `bgamma`
-      Inverse gamma          `r pkg("actuar")`          d, p, q, r, m, lev, mgf   `invgamma`
-      Inverse gamma          `r pkg("extraDistr")`      d, p, q, r                `invgamma`
-      Inverse gamma          `r pkg("LaplacesDemon")`   d, r                      `invgamma`
-      Inverse gamma          `r pkg("MCMCpack")`        d, r                      `invgamma`
-      Log-gamma              `r pkg("actuar")`          d, p, q, r, m, lev        `lgamma`
-      Log-gamma              `r pkg("VGAM")`            d, p, q, r                `lgamma`
-      Variance gamma         `r pkg("ghyp")`            d, p, q, r                `VG`
-      Variance gamma         `r pkg("VarianceGamma")`   d, p, q, r, m             `vg`
-      Generalized gamma      `r pkg("flexsurv")`        d, p, q, r, h, i          `gengamma`
-      Generalized gamma      `r pkg("gamlss.dist")`     d, p, q, r                `GG`
-      Generalized gamma      `r pkg("VGAM")`            d, p, q, r                `gengamma.stacy`
-      Generalized gamma      `r pkg("rmutil")`          d, p, q, r                `ggamma`
-      Generalized gamma      `r pkg("ggamma")`          d, p, q, r                `ggamma`
-      convolution of gamma   `r pkg("coga")`            d, p, r                   `coga`
-      Full-taill gamma       `r pkg("distTails")`       d, p, r                   `dFTG`
-      ---------------------- -------------------------------------- ------------------------- -----------------------
+    distribution
+    
+      ---------------------- ------------------   ------------------------- -----------------------
+      *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
+      Gamma                  stats                d, p, q, r                `gamma`
+      Gamma                  actuar               m, mgf, lev               `gamma`
+      Gamma                  EnvStats             d, p, q, r                `gammaAlt`
+      zero-inflated Gamma    CaDENCE              d, p, q, r                `bgamma`
+      Inverse gamma          actuar               d, p, q, r, m, lev, mgf   `invgamma`
+      Inverse gamma          extraDistr           d, p, q, r                `invgamma`
+      Inverse gamma          LaplacesDemon        d, r                      `invgamma`
+      Inverse gamma          MCMCpack             d, r                      `invgamma`
+      Log-gamma              actuar               d, p, q, r, m, lev        `lgamma`
+      Log-gamma              VGAM                 d, p, q, r                `lgamma`
+      Variance gamma         ghyp                 d, p, q, r                `VG`
+      Variance gamma         VarianceGamma        d, p, q, r, m             `vg`
+      Generalized gamma      flexsurv             d, p, q, r, h, i          `gengamma`
+      Generalized gamma      gamlss.dist          d, p, q, r                `GG`
+      Generalized gamma      VGAM                 d, p, q, r                `gengamma.stacy`
+      Generalized gamma      rmutil               d, p, q, r                `ggamma`
+      Generalized gamma      ggamma               d, p, q, r                `ggamma`
+      convolution of gamma   coga                 d, p, r                   `coga`
+      Full-taill gamma       distTails            d, p, r                   `dFTG`
+      ---------------------- ------------------   ------------------------- -----------------------
 
       :  Summary for gamma-related distributions
 
-    \
+    
 -   *Gaussian (or normal) distribution and its extensions:* Base R
     provides the d, p, q, r functions for this distribution (see above).
     `r pkg("actuar")` provides the moment generating
@@ -573,28 +574,29 @@ repository linked above.
     `r pkg("NormalLaplace")` provides d, p, q, r functions
     for the sum of a normal and a Laplace random variables, while
     `r pkg("LaplacesDemon")` provides d, r function of the
-    sum of a normal and a Laplace random variables.\
-      --------------------------------- ------------------------------------ --------------- -----------------------
-      *Distribution name*               *Packages*                           *Functions*     *Distribution suffix*
-      Normal                            stats                                d, p, q, r      `norm`
-      Normal                            `r pkg("actuar")`        m, mgf          `norm`
-      Truncated normal                  `r pkg("truncnorm")`     d, p, q, r, m   `truncnorm`
-      Truncated normal                  `r pkg("mvrtn")`         r, m            `tn`
-      Truncated normal                  `r pkg("EnvStats")`      d, p, q, r      `normTrunc`
-      Truncated normal                  `r pkg("extraDistr")`    d, p, q, r      `tnorm`
-      Generalized normal                `r pkg("lmomco")`        d, p, q, r      `gno`
-      Zero modified Gaussian            `r pkg("EnvStats")`      d, p, q, r      `zmnorm`
-      Exponentially modified Gaussian   `r pkg("emg")`           d, p, q, r      `emg`
-      Exponentially modified Gaussian   `r pkg("gamlss.dist")`   d, p, q, r      `exGAUSS`
-      Folded and skew normal            `r pkg("gamlss.dist")`   d, p, q, r      `SN1, SN2`
-      Folded normal                     `r pkg("greybox")`       d, p, q, r      `fnorm`
-      Closed skew normal                `r pkg("csn")`           d, p, q, r      `csn`
-      Skew normal                       `r pkg("sn")`            d, p, q, r      `sn`
-      --------------------------------- ------------------------------------ --------------- -----------------------
+    sum of a normal and a Laplace random variables.
+    
+      --------------------------------- -----------------   --------------- -----------------------
+      *Distribution name*               *Packages*          *Functions*     *Distribution suffix*
+      Normal                            stats               d, p, q, r      `norm`
+      Normal                            actuar              m, mgf          `norm`
+      Truncated normal                  truncnorm           d, p, q, r, m   `truncnorm`
+      Truncated normal                  mvrtn               r, m            `tn`
+      Truncated normal                  EnvStats            d, p, q, r      `normTrunc`
+      Truncated normal                  extraDistr          d, p, q, r      `tnorm`
+      Generalized normal                lmomco              d, p, q, r      `gno`
+      Zero modified Gaussian            EnvStats            d, p, q, r      `zmnorm`
+      Exponentially modified Gaussian   emg                 d, p, q, r      `emg`
+      Exponentially modified Gaussian   gamlss.dist         d, p, q, r      `exGAUSS`
+      Folded and skew normal            gamlss.dist         d, p, q, r      `SN1, SN2`
+      Folded normal                     greybox             d, p, q, r      `fnorm`
+      Closed skew normal                csn                 d, p, q, r      `csn`
+      Skew normal                       sn                  d, p, q, r      `sn`
+      --------------------------------- -----------------   --------------- -----------------------
 
       :  Summary for Gaussian-related distributions
 
-    \
+    
 -   *General error distribution (also known as exponential power
     distribution):* see *exponential* item.
 -   *Generalized extreme value distribution:* d, p, q provided in
@@ -763,28 +765,29 @@ repository linked above.
     also known as skew-logistic distribution) is provided in
     `r pkg("lmomco")`, `r pkg("sld")`,
     `r pkg("rmutil")`, `r pkg("SCI")` and
-    `r pkg("glogis")`.\
-      ---------------------- ------------------------------- -------------------- -----------------------
-      *Distribution name*    *Packages*                      *Functions*          *Distribution suffix*
-      Logistic               stats                           d, p, q, r           `logis`
-      Logistic               `r pkg("actuar")`   m, mgf               `logis`
-      Log logistic           `r pkg("actuar")`   d, p, q, r, m, lev   `llogis`
-      Log logistic           `r pkg("VGAM")`     d, p, q, r           `fisk`
-      Log logistic           `r pkg("FAdist")`   d, p, q, r           `llog, llog3`
-      Paralogistic           `r pkg("actuar")`   d, p, q, r, m, lev   `paralogis`
-      Paralogistic           `r pkg("VGAM")`     d, p, q, r           `paralogistic`
-      Inv. paralogistic      `r pkg("actuar")`   d, p, q, r, m, lev   `invparalogis`
-      Inv. paralogistic      `r pkg("VGAM")`     d, p, q, r           `inv.paralogistic`
-      Generalized logistic   `r pkg("glogis")`   d, p, q, r           `glogis`
-      Generalized logistic   `r pkg("SCI")`      d, p, q              `genlog`
-      Generalized logistic   `r pkg("lmomco")`   d, p, q, r           `glo`
-      Generalized logistic   `r pkg("sld")`      d, p, q, r           `sl`
-      Generalized logistic   `r pkg("rmutil")`   d, p, q, r           `glogis`
-      ---------------------- ------------------------------- -------------------- -----------------------
+    `r pkg("glogis")`.
+    
+      ---------------------- --------------   -------------------- -----------------------
+      *Distribution name*    *Packages*       *Functions*          *Distribution suffix*
+      Logistic               stats            d, p, q, r           `logis`
+      Logistic               actuar           m, mgf               `logis`
+      Log logistic           actuar           d, p, q, r, m, lev   `llogis`
+      Log logistic           VGAM             d, p, q, r           `fisk`
+      Log logistic           FAdist           d, p, q, r           `llog, llog3`
+      Paralogistic           actuar           d, p, q, r, m, lev   `paralogis`
+      Paralogistic           VGAM             d, p, q, r           `paralogistic`
+      Inv. paralogistic      actuar           d, p, q, r, m, lev   `invparalogis`
+      Inv. paralogistic      VGAM             d, p, q, r           `inv.paralogistic`
+      Generalized logistic   glogis           d, p, q, r           `glogis`
+      Generalized logistic   SCI              d, p, q              `genlog`
+      Generalized logistic   lmomco           d, p, q, r           `glo`
+      Generalized logistic   sld              d, p, q, r           `sl`
+      Generalized logistic   rmutil           d, p, q, r           `glogis`
+      ---------------------- --------------   -------------------- -----------------------
 
       :  Summary for Logistic-related distributions
 
-    \
+    
 -   *Logit-normal distribution:* provided in
     `r pkg("logitnorm")`.
 -   *Log-normal distribution and its extensions:* The log normal
@@ -848,62 +851,63 @@ repository linked above.
     `r pkg("mbbefd")`. `r pkg("ReIns")` provides
     Burr, extended Pareto, generalized Pareto, Pareto 1 distributions
     and their truncated version. `r pkg("CaDENCE")` provides
-    the Pareto 2 and the zero-inflated Pareto 2 distribution.\
-      -------------------------- ---------------------------------------- -------------------- -----------------------
-      *Distribution name*        *Packages*                               *Functions*          *Distribution suffix*
-      Pareto I                   `r pkg("VGAM")`              d, p, q, r           `paretoI`
-      Pareto I                   `r pkg("actuar")`            d, p, q, r, m, lev   `pareto1`
-      Pareto I                   `r pkg("EnvStats")`          d, p, q, r           `pareto`
-      Pareto I                   `r pkg("extraDistr")`        d, p, q, r           `pareto`
-      Pareto I                   `r pkg("ReIns")`             d, p, q, r           `pareto`
-      Pareto I                   `r pkg("LaplacesDemon")`     d, p, q, r           `pareto`
-      Pareto I                   `r pkg("distributionsrd")`   d, p, q, r           `pareto`
-      Trunc. Pareto I            `r pkg("ReIns")`             d, p, q, r           `tpareto`
-      Pareto II                  `r pkg("VGAM")`              d, p, q, r           `paretoII`
-      Pareto II                  `r pkg("actuar")`            d, p, q, r, m, lev   `pareto, pareto2`
-      Pareto II                  `r pkg("Runuran")`           d, r                 `pareto`
-      Pareto II                  `r pkg("extraDistr")`        d, p, q, h           `lomax`
-      Pareto II                  `r pkg("extremefit")`        d, p, q, h           `pareto`
-      Pareto II                  `r pkg("Renext")`            d, p, q, r           `lomax`
-      Pareto II                  `r pkg("rmutil")`            d, p, q, r           `pareto`
-      Pareto II                  `r pkg("CaDENCE")`           d, p, q, r           `pareto2`
-      zero-inflated Pareto II    `r pkg("CaDENCE")`           d, p, q, r           `bpareto2`
-      Pareto III                 `r pkg("VGAM")`              d, p, q, r           `paretoIII`
-      Pareto III                 `r pkg("actuar")`            d, p, q, r           `pareto3`
-      Pareto IV                  `r pkg("VGAM")`              d, p, q, r           `paretoIV`
-      Pareto IV                  `r pkg("actuar")`            d, p, q, r           `pareto4`
-      Inverse Pareto             `r pkg("actuar")`            d, p, q, r, m, lev   `invpareto`
-      Inverse Pareto             `r pkg("distributionsrd")`   d, p, q, r, m, lev   `invpareto`
-      Extended Pareto            `r pkg("RTDE")`              d, p, q, r           `EPD`
-      Extended Pareto            `r pkg("ReIns")`             d, p, q, r           `epd`
-      Shift. trunc. Pareto       `r pkg("mbbefd")`            d, p, q, r, m, ec    `stpareto`
-      Gen. Pareto (actuarial)    `r pkg("actuar")`            d, p, q, r, m, lev   `genpareto`
-      Gen. Pareto (EVT)          `r pkg("lmomco")`            d, p, q, r           `gpa`
-      Gen. Pareto (EVT)          `r pkg("evd")`               d, p, q, r           `gpd`
-      Gen. Pareto (EVT)          `r pkg("fExtremes")`         d, p, q, r           `gpd`
-      Gen. Pareto (EVT)          `r pkg("evir")`              d, p, q, r           `gpd`
-      Gen. Pareto (EVT)          `r pkg("extraDistr")`        d, p, q, r           `gpd`
-      Gen. Pareto (EVT)          `r pkg("QRM")`               d, p, q, r           `GPD`
-      Gen. Pareto (EVT)          `r pkg("ReIns")`             d, p, q, r           `gpd`
-      Gen. Pareto (EVT)          `r pkg("LaplacesDemon")`     d, r                 `gpd`
-      Gen. Pareto (EVT)          `r pkg("TLMoments")`         d, p, q, r           `gpd`
-      Trunc. Gen. Pareto (EVT)   `r pkg("ReIns")`             d, p, q, r           `tgpd`
-      Gen. Pareto (EVT)          `r pkg("revdbayes")`         d, p, q, r           `gp`
-      Gen. Pareto (EVT)          `r pkg("Renext")`            d, p, q, r           `GPD`
-      Gen. Pareto (EVT)          `r pkg("qrmtools")`          d, p, q, r           `GPD`
-      Gen. Pareto (EVT)          `r pkg("ROOPSD")`            d, p, q, r           `gpd`
-      Feller-Pareto              `r pkg("actuar")`            d, p, q, r, m, lev   `fpareto`
-      Burr                       `r pkg("actuar")`            d, p, q, r, m, lev   `burr`
-      Burr                       `r pkg("extremefit")`        d, p, q, r           `burr`
-      Burr                       `r pkg("ReIns")`             d, p, q, r           `burr`
-      Burr                       `r pkg("rmutil")`            d, p, q, r           `burr`
-      Trunc. Burr                `r pkg("ReIns")`             d, p, q, r           `tburr`
-      Inverse Burr               `r pkg("actuar")`            d, p, q, r, m, lev   `invburr`
-      -------------------------- ---------------------------------------- -------------------- -----------------------
+    the Pareto 2 and the zero-inflated Pareto 2 distribution.
+    
+      -------------------------- ----------------- -------------------- -----------------------
+      *Distribution name*        *Packages*        *Functions*          *Distribution suffix*
+      Pareto I                   VGAM              d, p, q, r           `paretoI`
+      Pareto I                   actuar            d, p, q, r, m, lev   `pareto1`
+      Pareto I                   EnvStats          d, p, q, r           `pareto`
+      Pareto I                   extraDistr        d, p, q, r           `pareto`
+      Pareto I                   ReIns             d, p, q, r           `pareto`
+      Pareto I                   LaplacesDemon     d, p, q, r           `pareto`
+      Pareto I                   distributionsrd   d, p, q, r           `pareto`
+      Trunc. Pareto I            ReIns             d, p, q, r           `tpareto`
+      Pareto II                  VGAM              d, p, q, r           `paretoII`
+      Pareto II                  actuar            d, p, q, r, m, lev   `pareto, pareto2`
+      Pareto II                  Runuran           d, r                 `pareto`
+      Pareto II                  extraDistr        d, p, q, h           `lomax`
+      Pareto II                  extremefit        d, p, q, h           `pareto`
+      Pareto II                  Renext            d, p, q, r           `lomax`
+      Pareto II                  rmutil            d, p, q, r           `pareto`
+      Pareto II                  CaDENCE           d, p, q, r           `pareto2`
+      zero-inflated Pareto II    CaDENCE           d, p, q, r           `bpareto2`
+      Pareto III                 VGAM              d, p, q, r           `paretoIII`
+      Pareto III                 actuar            d, p, q, r           `pareto3`
+      Pareto IV                  VGAM              d, p, q, r           `paretoIV`
+      Pareto IV                  actuar            d, p, q, r           `pareto4`
+      Inverse Pareto             actuar            d, p, q, r, m, lev   `invpareto`
+      Inverse Pareto             distributionsrd   d, p, q, r, m, lev   `invpareto`
+      Extended Pareto            RTDE              d, p, q, r           `EPD`
+      Extended Pareto            ReIns             d, p, q, r           `epd`
+      Shift. trunc. Pareto       mbbefd            d, p, q, r, m, ec    `stpareto`
+      Gen. Pareto (actuarial)    actuar            d, p, q, r, m, lev   `genpareto`
+      Gen. Pareto (EVT)          lmomco            d, p, q, r           `gpa`
+      Gen. Pareto (EVT)          evd               d, p, q, r           `gpd`
+      Gen. Pareto (EVT)          fExtremes         d, p, q, r           `gpd`
+      Gen. Pareto (EVT)          evir              d, p, q, r           `gpd`
+      Gen. Pareto (EVT)          extraDistr        d, p, q, r           `gpd`
+      Gen. Pareto (EVT)          QRM               d, p, q, r           `GPD`
+      Gen. Pareto (EVT)          ReIns             d, p, q, r           `gpd`
+      Gen. Pareto (EVT)          LaplacesDemon     d, r                 `gpd`
+      Gen. Pareto (EVT)          TLMoments         d, p, q, r           `gpd`
+      Trunc. Gen. Pareto (EVT)   ReIns             d, p, q, r           `tgpd`
+      Gen. Pareto (EVT)          revdbayes         d, p, q, r           `gp`
+      Gen. Pareto (EVT)          Renext            d, p, q, r           `GPD`
+      Gen. Pareto (EVT)          qrmtools          d, p, q, r           `GPD`
+      Gen. Pareto (EVT)          ROOPSD            d, p, q, r           `gpd`
+      Feller-Pareto              actuar            d, p, q, r, m, lev   `fpareto`
+      Burr                       actuar            d, p, q, r, m, lev   `burr`
+      Burr                       extremefit        d, p, q, r           `burr`
+      Burr                       ReIns             d, p, q, r           `burr`
+      Burr                       rmutil            d, p, q, r           `burr`
+      Trunc. Burr                ReIns             d, p, q, r           `tburr`
+      Inverse Burr               actuar            d, p, q, r, m, lev   `invburr`
+      -------------------------- ----------------  -------------------- -----------------------
 
       :  Summary for Pareto-related distributions
 
-    \
+    
 -   *Pearson's distribution:* Pearson type III available in
     `r pkg("lmomco")` and `r pkg("FAdist")`. A
     log-Pearson type III distribution is also available in
@@ -968,24 +972,25 @@ repository linked above.
     `r pkg("gamlss.dist")`. `r pkg("fBasics")`
     provides d, p, q, r functions for the skew and the generalized
     hyperbolic t-distribution. The L-moments of the Student t
-    (3-parameter) are provided in `r pkg("lmomco")`.\
-      ----------------------------- ------------------------------------ ------------- ---------------------------
-      *Distribution name*           *Packages*                           *Functions*   *Distribution suffix*
-      Student                       stats                                d, p, q, r    `t`
-      Student with loc. and scal.   extraDistr                           d, p, q, r    `lst`
-      Student with loc. and scal.   LaplacesDemon                        d, p, q, r    `st`
-      Doubly non central St.        `r pkg("sadists")`       d, p, q, r    `dnt`
-      Skew Student                  `r pkg("skewt")`         d, p, q, r    `skt`
-      Skew Student                  `r pkg("sn")`            d, p, q, r    `st`
-      Skew St. Type 1-5             `r pkg("gamlss.dist")`   d, p, q, r    `ST1, ST2, ST3, ST4, ST5`
-      Gen. Student                  `r pkg("gamlss.dist")`   d, p, q, r    `GT`
-      Gen. Hyp. Student             `r pkg("fBasics")`       d, p, q, r    `ght`
-      Skew Gen. Student             `r pkg("sgt")`           d, p, q, r    `sgt`
-      ----------------------------- ------------------------------------ ------------- ---------------------------
+    (3-parameter) are provided in `r pkg("lmomco")`.
+    
+      ----------------------------- -----------------   ------------- ---------------------------
+      *Distribution name*           *Packages*          *Functions*   *Distribution suffix*
+      Student                       stats               d, p, q, r    `t`
+      Student with loc. and scal.   extraDistr          d, p, q, r    `lst`
+      Student with loc. and scal.   LaplacesDemon       d, p, q, r    `st`
+      Doubly non central St.        sadists             d, p, q, r    `dnt`
+      Skew Student                  skewt               d, p, q, r    `skt`
+      Skew Student                  sn                  d, p, q, r    `st`
+      Skew St. Type 1-5             gamlss.dist         d, p, q, r    `ST1, ST2, ST3, ST4, ST5`
+      Gen. Student                  gamlss.dist         d, p, q, r    `GT`
+      Gen. Hyp. Student             fBasics             d, p, q, r    `ght`
+      Skew Gen. Student             sgt                 d, p, q, r    `sgt`
+      ----------------------------- -----------------   ------------- ---------------------------
 
       :  Summary for Student-related distributions
 
-    \
+    
 -   *Triangle/trapezoidal distribution:* packages
     `r pkg("triangle")`, `r pkg("extraDistr")`,
     `r pkg("mc2d")`, `r pkg("EnvStats")` and
@@ -1723,7 +1728,6 @@ repository linked above.
 
 
 ### Links
--   [Download statistics per view](http://rpackages.io/views)
 -   [Advice to implement (new) distributions in R](http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf)
 -   [Clickable diagram of distribution relationships](http://www.johndcook.com/distribution_chart.html)
 -   [Diagram of discrete distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
@@ -1732,5 +1736,4 @@ repository linked above.
 -   [Compendium of distributions.](http://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
 -   [A comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
 -   [Journal of Statistical Software: R programs for truncated distributions](https://www.jstatsoft.org/v16/c02/)
--   [The "distrXXX"-family of R-packages](https://distr.R-Forge.R-project.org/)
--   [Overview of vine copula models](http://www-m4.ma.tum.de/forschung/vine-copula-models/#c662)
+
