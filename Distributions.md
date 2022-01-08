@@ -32,8 +32,8 @@ think information is not accurate or not complete, please send an e-mail
 to the maintainer or submit an issue or pull request in the GitHub
 repository linked above.
 
-[Base functionality:]{#Base}
-----------------------------
+# [Base functionality:]{#Base}
+
 
 -   Base R provides probability distribution functions `p` *foo* `()`
     density functions `d` *foo* `()`, quantile functions `q` *foo* `()`,
@@ -58,8 +58,10 @@ repository linked above.
     Pascal-Poisson, Poisson, Poisson-binomial, Poisson-Lindley,
     Poisson-Pascal, Polya Aeppli, Thomas, Waring, Yule.
 
-[Discrete univariate distributions:]{#UnivariateDiscrete}
----------------------------------------------------------
+# [Discrete distributions:]{#Discrete}
+
+## [Discrete univariate distributions:]{#UnivariateDiscrete}
+
 
 -   *Beta-binomial distribution:* provided in
     `r pkg("VGAM", priority = "core")`,
@@ -221,8 +223,8 @@ repository linked above.
     Zipf distribution: the Marshall-Olkin Extended Zipf, the
     Zipf-Poisson Extreme and the Zipf-Poisson Stopped Sum distributions.
 
-[Discrete multivariate distributions:]{#MultivariateDiscrete}
--------------------------------------------------------------
+## [Discrete multivariate distributions:]{#MultivariateDiscrete}
+
 
 -   *Bivariate geometric:* d, r functions provided in
     `r pkg("bivgeom")`. `r pkg("BivGeo")`
@@ -257,9 +259,11 @@ repository linked above.
 -   *Multivariate Ewens distribution:* not yet implemented?
 -   *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
+    
+# [Continuous distributions:]{#Continuous}     
 
-[Continuous univariate distributions:]{#UnivariateContinuous}
--------------------------------------------------------------
+## [Continuous univariate distributions:]{#UnivariateContinuous}
+
 
 -   *Arcsine distribution:* implemented in package
     `r pkg("distr")`.
@@ -1047,8 +1051,8 @@ repository linked above.
     `r pkg("CaDENCE")` provides the zero-inflated Weibull
     distribution.
 
-[Continuous multivariate distributions:]{#MultivariateContinuous}
------------------------------------------------------------------
+## [Continuous multivariate distributions:]{#MultivariateContinuous}
+
 
 -   *Bivariate Pareto:* `r pkg("Bivariate.Pareto")` provides
     a random generator for the bivariate Pareto distribution.
@@ -1168,8 +1172,10 @@ repository linked above.
     `r pkg("MultiRNG")`. `r pkg("compositions")`
     provides a random generator on the simplex.
 
-[Mixed-type distributions:]{#MixedType}
----------------------------------------
+# [Other distributions:]{#Other}
+
+## [Mixed-type distributions:]{#MixedType}
+
 
 -   *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
     :* provided in `r pkg("mbbefd")`.
@@ -1183,8 +1189,8 @@ repository linked above.
     provides the zero-modified normal distribution and the zero-modified
     lognormal distribution.
 
-[Mixture of probability laws:]{#Mixture}
-----------------------------------------
+## [Mixture of probability laws:]{#Mixture}
+
 
 -   *Bernoulli-dist mixture:* d, p, q, r functions for
     Bernoulli-exponential, Bernoulli-Gamma, Bernoulli-lognormal,
@@ -1242,8 +1248,8 @@ repository linked above.
     packages provide d, r functions for finite von Mises Fisher
     mixtures.
 
-[Compound, composite, discretized, exponentiated and transformation of distributions:]{#Transform}
---------------------------------------------------------------------------------------------------
+## [Compound, composite, discretized, exponentiated and transformation of distributions:]{#Transform}
+
 
 -   *Absolute value or half distribution:* Half-Cauchy, half normal and
     half-student are implemented both in
@@ -1317,8 +1323,8 @@ repository linked above.
     distribution; `r pkg("LaplacesDemon")` provides a
     generic function in a Bayesian environment.
 
-[Moments, skewness, kurtosis and etc:]{#Moments}
-------------------------------------------------
+# [Moments, skewness, kurtosis and etc:]{#Moments}
+
 
 -   *Empirical mean, standard deviation and variance:* base R provides
     `mean()`, `sd()`, `var()` functions to compute the mean, standard
@@ -1393,8 +1399,9 @@ repository linked above.
         truncated or folded of the following multivariate distributions:
         normal, skew normal, extended skew normal and student.
 
-[Random matrices:]{#Matrix}
----------------------------
+
+# [Random matrices:]{#Matrix}
+
 
 -   *Huang-Wan distribution:* provided in
     `r pkg("LaplacesDemon")`.
@@ -1453,8 +1460,8 @@ repository linked above.
 -   *Zellner distribution:* provided in
     `r pkg("LaplacesDemon")`.
 
-[Copulas:]{#Copulas}
---------------------
+# [Copulas:]{#Copulas}
+
 
 -   *Unified approaches:* The packages
     `r pkg("fCopulae", priority = "core")`,
@@ -1522,8 +1529,8 @@ repository linked above.
     functions for C- and D-vine copulas and
     `r pkg("VineCopula")` for general R-vine copulas.
 
-[Random number generators (RNG):]{#Random}
-------------------------------------------
+# [Random number generators (RNG):]{#Random}
+
 
 -   *Basic functionality:* R provides several random number generators
     (RNGs). The random seed can be provided via `set.seed` and the kind
@@ -1590,8 +1597,8 @@ repository linked above.
     package. See the `r view("HighPerformanceComputing")`
     task view for more details.
 
-[Miscellaneous:]{#Misc}
------------------------
+# [Miscellaneous:]{#Misc}
+
 
 -   *Computation:*
     -   *Approximation of d, p, q, r functions:*
