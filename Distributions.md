@@ -32,13 +32,36 @@ think information is not accurate or not complete, please send an e-mail
 to the maintainer or submit an issue or pull request in the GitHub
 repository linked above.
 
+### Table of contents
+- [Base functionality](#Base) 
+
+- [Discrete distributions](#Discrete) 
+  - [Univariate Discrete](#UnivariateDiscrete) 
+  - [Multivariate Discrete](#MultivariateDiscrete) 
+  
+- [Continuous distributions](#Continuous) 
+  - [Uniivariate Continuous](#UnivariateContinuous) 
+  - [Multivariate Continuous](#MultivariateContinuous) 
+
+- [Other distributions](#Other)
+  - [Mixed-type distributions:](#MixedType)
+  - [Mixture of probability laws:](#Mixture)
+  - [Compound, composite, discretized, exponentiated and transformation of distributions:](#Transform)
+
+- [Moments, skewness, kurtosis and etc:](#Moments) 
+- [Random matrices:](#Matrix) 
+- [Copulas:](#Copulas) 
+- [Random number generators (RNG):](#Random) 
+- [Miscellaneous:](#Misc) 
+
+
 # [Base functionality:]{#Base}
 
 
--   Base R provides probability distribution functions `p` *foo* `()`
-    density functions `d` *foo* `()`, quantile functions `q` *foo* `()`,
-    and random number generation `r` *foo* `()` where *foo* indicates
-    the type of distribution: beta ( *foo* = `beta`), binomial `binom`,
+-   Base R provides probability distribution functions `p`*foo*`()`
+    density functions `d`*foo*`()`, quantile functions `q`*foo*`()`,
+    and random number generation `r`*foo*`()` where *foo* indicates
+    the type of distribution: beta (*foo* = `beta`), binomial `binom`,
     Cauchy `cauchy`, chi-squared `chisq`, exponential `exp`, Fisher F
     `f`, gamma `gamma`, geometric `geom`, hypergeometric `hyper`,
     logistic `logis`, lognormal `lnorm`, negative binomial `nbinom`,
@@ -1587,7 +1610,7 @@ repository linked above.
     Sobol quasi-random sequences.
 -   *True randomness:* The `r pkg("random")` package
     provides several functions that access the true random number
-    service at [random.org](http://random.org) .
+    service at [random.org](https://www.random.org/) .
 -   *RNG tests:* `r pkg("RDieHarder")` offers numerous tests
     of RNGs based on a reimplementation and extension of Marsaglia's
     DieHarder battery. `r pkg("randtoolbox")` provides basic
@@ -1596,6 +1619,13 @@ repository linked above.
     computing are available via the `r pkg("rlecuyer")`
     package. See the `r view("HighPerformanceComputing")`
     task view for more details.
+-   *Multivariate random vectors:* for parametric multivariate distributions,
+    we refer to [Multivariate Continuous](#MultivariateContinuous)
+    and [Multivariate Discrete](#MultivariateDiscrete).
+    For non-parametric distributions, `r pkg("SimJoint")` offers 
+    various to simulate multivariate distributions with non-parametric marginals
+    given a Pearson or Spearman correlation matrix.
+    
 
 # [Miscellaneous:]{#Misc}
 
