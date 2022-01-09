@@ -660,6 +660,7 @@ repository linked above.
     `r pkg("flexsurv")` also provides hazard (h) and
     integrated hazard rate (i) functions. The shifted Gompertz
     distribution is implemented in `r pkg("extraDistr")`.
+    The unit-Gompertz is provided in `r pkg("ugomquantreg")`.
 -   *Govindarajulu distribution:* provided in
     `r pkg("lmomco")`.
 -   *Gumbel distribution:* provided in packages
