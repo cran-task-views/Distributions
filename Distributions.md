@@ -1791,10 +1791,12 @@ mode
         probability density functions Package
         `r pkg("MASS")` implements the flexible `fitdistr`
         function for parameter estimations.
-        `r pkg("fitdistrplus")` greatly enlarges and
-        enhances the tools to fit any probability distribution.
-        `r pkg("EnvStats")` and
-        `r pkg("fitteR")` also provides tools to fit most
+        `r pkg("fitdistrplus")` greatly enlarges `fitdistr` and
+        enhances the tools to fit a user-supplied probability distribution.
+        `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
+        one-step estimation procedures.
+        `r pkg("EnvStats")` and `r pkg("fitteR")` also provides tools to
+        fit a selected number of most
         common distributions. `r pkg("flexsurv")` and
         `r pkg("msm")` provides a quantile function for a
         generic distribution based on numerical computation based on a
