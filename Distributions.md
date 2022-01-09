@@ -673,8 +673,8 @@ repository linked above.
     for the Gumbel distribution is implemented in
     `r pkg("Runuran")` as well as the density function. The
     reverse Gumbel distribution is implemented in
-    `r pkg("lmomco")` and
-    `r pkg("gamlss.dist")`.
+    `r pkg("lmomco")` and `r pkg("gamlss.dist")`.
+    `r pkg("bgumbel")` provides the bimodel Gumbel distribution.
 -   *Hjorth distribution:* provided in `r pkg("rmutil")`.
 -   *Huber distribution:* Huber's least favourable distribution
     provided in package `r pkg("smoothmest")` (d, r), and in
