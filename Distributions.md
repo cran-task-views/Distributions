@@ -273,6 +273,9 @@ repository linked above.
     `r pkg("BivGeo")` provides the Basu-Dhar bivariate geometric distribution.
 -   *Multivariate hypergeometric distribution:* provided in
     `r pkg("extraDistr")`.
+-   *Multivariate logarithmic distribution:* the bivariate
+    logarithmic distribution is provided in
+    `r pkg("trawl")`.    
 -   *Multiplicative multinomial distribution:* The multiplicative multinomial
     distribution is implemented in `r pkg("MM")`.
 -   *Multivariate negative distribution:* A bivariate distribution with
