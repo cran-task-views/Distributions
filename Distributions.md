@@ -629,6 +629,7 @@ repository linked above.
       Truncated normal                  mvrtn               r, m            `tn`
       Truncated normal                  EnvStats            d, p, q, r      `normTrunc`
       Truncated normal                  extraDistr          d, p, q, r      `tnorm`
+      Truncated normal                  crch                d, p, q, r      `cnorm`
       Generalized normal                lmomco              d, p, q, r      `gno`
       Zero modified Gaussian            EnvStats            d, p, q, r      `zmnorm`
       Exponentially modified Gaussian   emg                 d, p, q, r      `emg`
@@ -826,6 +827,7 @@ repository linked above.
       Paralogistic           VGAM             d, p, q, r           `paralogistic`
       Inv. paralogistic      actuar           d, p, q, r, m, lev   `invparalogis`
       Inv. paralogistic      VGAM             d, p, q, r           `inv.paralogistic`
+      Truncated logistic     crch             d, p, q, r           `tlogis`
       Generalized logistic   glogis           d, p, q, r           `glogis`
       Generalized logistic   SCI              d, p, q              `genlog`
       Generalized logistic   lmomco           d, p, q, r           `glo`
@@ -1021,6 +1023,8 @@ repository linked above.
     provides d, p, q, r functions for the skew and the generalized
     hyperbolic t-distribution. The L-moments of the Student t
     (3-parameter) are provided in `r pkg("lmomco")`.
+    `r pkg("crch")` provides d, p, q, r functions for the 
+    truncated student distribution.
     
       ----------------------------- -----------------   ------------- ---------------------------
       *Distribution name*           *Packages*          *Functions*   *Distribution suffix*
@@ -1067,6 +1071,8 @@ repository linked above.
 -   *Upsilon distribution:* `r pkg("sadists")` implements
     Gram Charlier, Edgeworth and Cornish-Fisher approximations for
     Upsilon distribution for computing d, p, q, r functions.
+-   *Vasicek distribution:* `r pkg("vasicek")` implements
+    d, p, r functions.    
 -   *von Mises distribution:* The `r pkg("CircStats")`
     package provides d, p, r functions; the
     `r pkg("circular")` package provides d, p, q, r
@@ -1094,6 +1100,10 @@ repository linked above.
     provided in `r pkg("distTails")`.
     `r pkg("CaDENCE")` provides the zero-inflated Weibull
     distribution.
+-   *(first-passage time) of a Wiener process:*    
+    `r pkg("WienR")` provides d, p functions of the 
+    first-passage time of a diffusion model.
+mode
 
 ## [Continuous multivariate distributions:]{#MultivariateContinuous}
 
