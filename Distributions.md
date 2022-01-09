@@ -272,9 +272,11 @@ repository linked above.
     `r pkg("dirmult")`, `r pkg("extraDistr")`
     and `r pkg("bayesm")`. r is provided in
     `r pkg("MultiRNG")`.
--   *Negative multinomial distribution:* A bivariate distribution with
+-   *Multivariate negative distribution:* A bivariate distribution with
     negative-binomial marginals is available in
-    `r pkg("RMKdiscrete")`. The multiplicative multinomial
+    `r pkg("RMKdiscrete")`. `r pkg("MNB")` provides a generator and 
+    diagnostic tool for multivariate negative binomial distribution.  
+-   *Multiplicative multinomial distribution:* The multiplicative multinomial
     distribution is implemented in `r pkg("MM")`.
 -   *Multivariate Poisson distribution:*
     `r pkg("compositions")` provides a random generator.
