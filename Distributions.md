@@ -255,11 +255,6 @@ repository linked above.
 ## [Discrete multivariate distributions:]{#MultivariateDiscrete}
 
 
--   *Bivariate geometric:* d, r functions provided in
-    `r pkg("bivgeom")`. `r pkg("BivGeo")`
-    provides the Basu-Dhar bivariate geometric distribution.
--   *Bivariate Poisson-lognormal:* provided in
-    `r pkg("poilog")`.
 -   *Hyper Dirichlet distribution:* provided in
     `r pkg("hyper2")` package.
 -   *Multinomial distribution:* stats, `r pkg("mc2d")`,
@@ -272,22 +267,29 @@ repository linked above.
     `r pkg("dirmult")`, `r pkg("extraDistr")`
     and `r pkg("bayesm")`. r is provided in
     `r pkg("MultiRNG")`.
--   *Multivariate negative distribution:* A bivariate distribution with
-    negative-binomial marginals is available in
-    `r pkg("RMKdiscrete")`. `r pkg("MNB")` provides a generator and 
-    diagnostic tool for multivariate negative binomial distribution.  
--   *Multiplicative multinomial distribution:* The multiplicative multinomial
-    distribution is implemented in `r pkg("MM")`.
--   *Multivariate Poisson distribution:*
-    `r pkg("compositions")` provides a random generator.
+-   *Multivariate Ewens distribution:* not yet implemented?
+-   *Multivariate geometric:* d, r functions provided in
+    `r pkg("bivgeom")` for the bivariate geometric distribution. 
+    `r pkg("BivGeo")` provides the Basu-Dhar bivariate geometric distribution.
 -   *Multivariate hypergeometric distribution:* provided in
     `r pkg("extraDistr")`.
+-   *Multiplicative multinomial distribution:* The multiplicative multinomial
+    distribution is implemented in `r pkg("MM")`.
+-   *Multivariate negative distribution:* A bivariate distribution with
+    negative-binomial marginals is available in
+    `r pkg("RMKdiscrete")` and `r pkg("trawl")`. 
+    `r pkg("MNB")` provides a generator and 
+    diagnostic tool for multivariate negative binomial distribution.  
+-   *Multivariate Poisson distribution:*
+    `r pkg("compositions")` provides a random generator.
+-   *Multivariate Poisson-lognormal:* the bivariate
+    Poisson-lognormal distribution is provided in
+    `r pkg("poilog")`.
 -   *Multivariate Polya distribution:* functions d, r of the Dirichlet
     Multinomial (also known as multivariate Polya) distribution are
     provided in `r pkg("extraDistr")`,
     `r pkg("LaplacesDemon")` and
     `r pkg("Compositional")`.
--   *Multivariate Ewens distribution:* not yet implemented?
 -   *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
     
