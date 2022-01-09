@@ -272,7 +272,8 @@ repository linked above.
     `r pkg("bivgeom")` for the bivariate geometric distribution. 
     `r pkg("BivGeo")` provides the Basu-Dhar bivariate geometric distribution.
 -   *Multivariate hypergeometric distribution:* provided in
-    `r pkg("extraDistr")`.
+    `r pkg("extraDistr")`. The conditional hypergeometric distribution is
+    provided (d, p, q, r) in `r pkg("chyper")`.
 -   *Multivariate logarithmic distribution:* the bivariate
     logarithmic distribution is provided in
     `r pkg("trawl")`.    
