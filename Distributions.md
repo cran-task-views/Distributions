@@ -1391,6 +1391,8 @@ repository linked above.
 -   *Empirical characteristic function:* `r pkg("empichar")`
     evaluates the empirical characteristic function of univariate and
     multivariate samples.
+-   *Dispersion index:* Package `r pkg("GWI")` provides
+    univariate dispersion index against a particular distribution.    
 -   *Theoretical moments:*
     -   *common distributions:* The `r pkg("actuar")`
         package implements raw moments, limited expected values and
