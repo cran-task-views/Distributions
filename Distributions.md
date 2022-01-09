@@ -40,19 +40,19 @@ repository linked above.
   - [Multivariate Discrete](#MultivariateDiscrete) 
   
 - [Continuous distributions](#Continuous) 
-  - [Uniivariate Continuous](#UnivariateContinuous) 
+  - [Univariate Continuous](#UnivariateContinuous) 
   - [Multivariate Continuous](#MultivariateContinuous) 
 
 - [Other distributions](#Other)
-  - [Mixed-type distributions:](#MixedType)
-  - [Mixture of probability laws:](#Mixture)
-  - [Compound, composite, discretized, exponentiated and transformation of distributions:](#Transform)
+  - [Mixed-type distributions](#MixedType)
+  - [Mixture of probability laws](#Mixture)
+  - [Random matrices](#Matrix) 
+  - [Copulas](#Copulas) 
+  - [Compound, composite, discretized, exponentiated and transformation of distributions](#Transform)
 
-- [Moments, skewness, kurtosis and etc:](#Moments) 
-- [Random matrices:](#Matrix) 
-- [Copulas:](#Copulas) 
-- [Random number generators (RNG):](#Random) 
-- [Miscellaneous:](#Misc) 
+- [Moments, skewness, kurtosis and etc](#Moments) 
+- [Random number generators (RNG)](#Random) 
+- [Miscellaneous](#Misc) 
 
 
 # [Base functionality:]{#Base}
@@ -457,9 +457,9 @@ repository linked above.
     are implemented in `r pkg("gamlss.dist")` and
     `r pkg("lmomco")`. The power exponential distribution is
     also provided in `r pkg("normalp")`,
-    `r pkg("rmutil")`, `r pkg("LaplacesDemon")`
-    and `r pkg("sgt")`. The skew power exponential is
-    provided `r pkg("sgt")`. `r pkg("reliaR")`
+    `r pkg("rmutil")`, `r pkg("LaplacesDemon")`. 
+    The skew power exponential is
+    provided `r pkg("mixSPE")`. `r pkg("reliaR")`
     provides the generalized exponential, the inverse generalized
     exponential, the logistic exponential, the Marshall-Olkin Extended
     Exponential and the exponential extension distributions. A fast
@@ -481,7 +481,9 @@ repository linked above.
       Power exponential                                   normalp                 d, p, q, r             `normp`
       Power exponential                                   Runuran                 d, r                   `exp`
       Power exponential                                   rmutil                  d, r                   `powexp`
+      Power exponential                                   LaplacesDemon           d, p, q, r             `pe`
       Skew power exp.                                     lmomco                  d, p, q, r, lm, tlmr   `aep4`
+      Power and skew power exp.                           mixSPE                  r                      `pe, spe`
       Power and skew power exp.                           gamlss.dist             d, p, q, r             `PE, SEP`
       Generalized and inverse gen. exp.                   reliaR                  d, p, q, r             `gen.exp, inv.genexp`
       Logistic, Marshall-Olkin Ext. exp. and exp. ext.    reliaR                  d, p, q, r             `logis.exp, moee, exp.ext`
@@ -1270,6 +1272,136 @@ repository linked above.
     `r pkg("movMF")` and `r pkg("CircStats")`
     packages provide d, r functions for finite von Mises Fisher
     mixtures.
+    
+    
+## [Random matrices:]{#Matrix}
+
+
+-   *Huang-Wan distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+-   *Inverse matrix gamma distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+-   *Inverse Wishart distribution:* `r pkg("LaplacesDemon")`
+    provides inverse Wishart distribution parametrized either by Sigma
+    or by its Cholesky decomposition.
+    `r pkg("LaplacesDemon")` provides the scaled inverse
+    Wishart distribution. `r pkg("MCMCpack")` and
+    `r pkg("mniw")` provides the inverse Wishart
+    distribution.
+-   *Marcenko-Pastur distribution:* provided in
+    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+    `r pkg("bayesm")`.
+-   *Matrix gamma distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+-   *Matrix normal distribution:* `r pkg("MBSP")` (r)
+    provides a random generator using a Cholesky decomposition;
+    `r pkg("matrixsampling")` (r) provides a random
+    generator using a spectral decomposition;
+    `r pkg("LaplacesDemon")` and `r pkg("mniw")`
+    (d, r); `r pkg("matrixNormal")` (d, p, r) collects these
+    forms in one place and allows users to be flexible in simulating
+    random variates (Cholesky, spectral, SVD).
+-   *Matrix student distribution:* provided in
+    `r pkg("mniw")`.
+-   *Normal Inverse Wishart distribution:* provided in
+    `r pkg("LaplacesDemon")`, `r pkg("mniw")`.
+-   *Normal Wishart distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+-   *Tracy-Widom distribution:* provided in
+    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+    `r pkg("bayesm")`: supported beta values are 1 (Gaussian
+    Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), and 4 (Gaussian
+    Symplectic Ensemble).
+-   *Sparse matrix:* `r pkg("spam")` provides
+    functionalities to draw random numbers from a user-supplied RNG
+    (e.g. `rexp`) or from a multivariate normal distribution for large
+    sparse matrices: typically for sparse covariance matrices.
+-   *Spiked Wishart Maximum Eigenvalue Distribution:* provided in
+    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+    `r pkg("bayesm")`.
+-   *Wishart distributions:* Base R provides the r function for the
+    Wishart distribution. `r pkg("MCMCpack")`,
+    `r pkg("RMTstat")`, `r pkg("bayesm")`,
+    `r pkg("mniw")` provides d, r functions,
+    `r pkg("bayesm")` provides r function.
+    `r pkg("LaplacesDemon")` provides Wishart distribution
+    parametrized either by Sigma or by its Cholesky decomposition.
+-   *White Wishart Maximum Eigenvalue Distribution:* provided in
+    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+    `r pkg("bayesm")`.
+-   *Yang-Berger distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+-   *Zellner distribution:* provided in
+    `r pkg("LaplacesDemon")`.
+
+## [Copulas:]{#Copulas}
+
+
+-   *Unified approaches:* The packages
+    `r pkg("fCopulae", priority = "core")`,
+    `r pkg("copula", priority = "core")`, and
+    `r pkg("copBasic")` provide a lot of general
+    functionality for copulas. Although lacking support for many
+    existing copulas themselves, `r pkg("copBasic")` is
+    primarily oriented around utility functions for the general
+    mathematics of copulas as described in the well known introduction
+    to copulas by Nelsen.
+-   *Archimedean copulas:* `r pkg("gumbel")` is a standalone
+    package for the Gumbel copula `r pkg("fCopulae")`
+    implements the 22 Archimedean copulas of Nelsen (1998, *Introduction
+    to Copulas* , Springer-Verlag) including Gumbel, Frank, Clayton, and
+    Ali-Mikhail-Haq. `r pkg("VGAM")` provides
+    Ali-Mikhail-Haq, Clayton, Frank, Frechet copulas.
+    `r pkg("copula")` provides Ali-Mikhail-Haq, Clayton,
+    Frank, Gumbel and Joe copulas. The Frank bivariate distribution is
+    available in `r pkg("RTDE")`.
+    `r pkg("VineCopula")` provides Clayton, Gumbel, Frank,
+    Joe, BB1, BB6, BB7 and BB8 copulas. Nested Archimedean copulas are
+    available in the `r pkg("HAC")` package. Generalized
+    Archimedean copulas are implemented in the
+    `r pkg("fgac")` package. `r pkg("BivarP")`
+    provides cdf, pdf and survival function for Clayton, Gumbel and
+    Frank copula. `r pkg("copBasic")` provides functions for
+    Ali-Mikhail-Haq, Clayton, Frechet copulas.
+    `r pkg("QRM")` provides pdf and random generator for
+    Clayton, Gumbel, Frank, BB9 copula.
+    `r pkg("Bivariate.Pareto")` provides a random generator
+    for the Frank copula with Pareto margins.
+    `r pkg("nCopula")`, `r pkg("HAC")` provide
+    hierarchical archimedean copulas. `r pkg("lcopula")`
+    provides the Liouville copula.
+-   *Blomqvist copula:* provided in `r pkg("copBasic")`.
+-   *Composition of copula:* `r pkg("copBasic")` provides
+    functions for composition of a single symmetric copula and
+    composition of two copulas.
+-   *Cubic copula:* Not yet implemented?
+-   *Dirichlet copula:* Not yet implemented?
+-   *Empirical copula:* provided in `r pkg("copBasic")`,
+    `r pkg("HAC")` and `r pkg("cort")`.
+    `r pkg("GenOrd")` provides sampling function for
+    multivariate discrete random vectors with a specified correlation
+    matrix.
+-   *Elliptical copulas:* Gaussian, Student and Cauchy copulas are
+    implemented in `r pkg("fCopulae")` for the bivariate
+    cases. `r pkg("copula")`, `r pkg("VGAM")`,
+    `r pkg("VineCopula")` provide the Gaussian and the
+    Student copulas. `r pkg("QRM")` provides pdf and random
+    generator for Gaussian, Student copulas.
+-   *Extreme value copulas:* `r pkg("fCopulae")` provides
+    the following copulas Gumbel, Galambos, Husler-Reiss, Tawn, or BB5.
+    `r pkg("copula")` implements Gumbel, Galambos and
+    Husler-Reiss.
+-   *Eyraud-Farlie-Gumbel-Morgenstern copula:* provided in
+    `r pkg("VGAM")`, `r pkg("RTDE")`, and
+    `r pkg("copula")`.
+-   *Mardia copula:* Not yet implemented?
+-   *Nested copulas:* arbitrary nested versions of copulas can be
+    implemented in `r pkg("copula")`.
+-   *Plackett:* provided in `r pkg("VGAM")`,
+    `r pkg("copBasic")` and `r pkg("copula")`.
+-   *Vine copulas:* Package `r pkg("vines")` provides
+    functions for C- and D-vine copulas and
+    `r pkg("VineCopula")` for general R-vine copulas.
 
 ## [Compound, composite, discretized, exponentiated and transformation of distributions:]{#Transform}
 
@@ -1425,134 +1557,6 @@ repository linked above.
         normal, skew normal, extended skew normal and student.
 
 
-# [Random matrices:]{#Matrix}
-
-
--   *Huang-Wan distribution:* provided in
-    `r pkg("LaplacesDemon")`.
--   *Inverse matrix gamma distribution:* provided in
-    `r pkg("LaplacesDemon")`.
--   *Inverse Wishart distribution:* `r pkg("LaplacesDemon")`
-    provides inverse Wishart distribution parametrized either by Sigma
-    or by its Cholesky decomposition.
-    `r pkg("LaplacesDemon")` provides the scaled inverse
-    Wishart distribution. `r pkg("MCMCpack")` and
-    `r pkg("mniw")` provides the inverse Wishart
-    distribution.
--   *Marcenko-Pastur distribution:* provided in
-    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
-    `r pkg("bayesm")`.
--   *Matrix gamma distribution:* provided in
-    `r pkg("LaplacesDemon")`.
--   *Matrix normal distribution:* `r pkg("MBSP")` (r)
-    provides a random generator using a Cholesky decomposition;
-    `r pkg("matrixsampling")` (r) provides a random
-    generator using a spectral decomposition;
-    `r pkg("LaplacesDemon")` and `r pkg("mniw")`
-    (d, r); `r pkg("matrixNormal")` (d, p, r) collects these
-    forms in one place and allows users to be flexible in simulating
-    random variates (Cholesky, spectral, SVD).
--   *Matrix student distribution:* provided in
-    `r pkg("mniw")`.
--   *Normal Inverse Wishart distribution:* provided in
-    `r pkg("LaplacesDemon")`, `r pkg("mniw")`.
--   *Normal Wishart distribution:* provided in
-    `r pkg("LaplacesDemon")`.
--   *Tracy-Widom distribution:* provided in
-    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
-    `r pkg("bayesm")`: supported beta values are 1 (Gaussian
-    Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), and 4 (Gaussian
-    Symplectic Ensemble).
--   *Sparse matrix:* `r pkg("spam")` provides
-    functionalities to draw random numbers from a user-supplied RNG
-    (e.g. `rexp`) or from a multivariate normal distribution for large
-    sparse matrices: typically for sparse covariance matrices.
--   *Spiked Wishart Maximum Eigenvalue Distribution:* provided in
-    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
-    `r pkg("bayesm")`.
--   *Wishart distributions:* Base R provides the r function for the
-    Wishart distribution. `r pkg("MCMCpack")`,
-    `r pkg("RMTstat")`, `r pkg("bayesm")`,
-    `r pkg("mniw")` provides d, r functions,
-    `r pkg("bayesm")` provides r function.
-    `r pkg("LaplacesDemon")` provides Wishart distribution
-    parametrized either by Sigma or by its Cholesky decomposition.
--   *White Wishart Maximum Eigenvalue Distribution:* provided in
-    `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
-    `r pkg("bayesm")`.
--   *Yang-Berger distribution:* provided in
-    `r pkg("LaplacesDemon")`.
--   *Zellner distribution:* provided in
-    `r pkg("LaplacesDemon")`.
-
-# [Copulas:]{#Copulas}
-
-
--   *Unified approaches:* The packages
-    `r pkg("fCopulae", priority = "core")`,
-    `r pkg("copula", priority = "core")`, and
-    `r pkg("copBasic")` provide a lot of general
-    functionality for copulas. Although lacking support for many
-    existing copulas themselves, `r pkg("copBasic")` is
-    primarily oriented around utility functions for the general
-    mathematics of copulas as described in the well known introduction
-    to copulas by Nelsen.
--   *Archimedean copulas:* `r pkg("gumbel")` is a standalone
-    package for the Gumbel copula `r pkg("fCopulae")`
-    implements the 22 Archimedean copulas of Nelsen (1998, *Introduction
-    to Copulas* , Springer-Verlag) including Gumbel, Frank, Clayton, and
-    Ali-Mikhail-Haq. `r pkg("VGAM")` provides
-    Ali-Mikhail-Haq, Clayton, Frank, Frechet copulas.
-    `r pkg("copula")` provides Ali-Mikhail-Haq, Clayton,
-    Frank, Gumbel and Joe copulas. The Frank bivariate distribution is
-    available in `r pkg("RTDE")`.
-    `r pkg("VineCopula")` provides Clayton, Gumbel, Frank,
-    Joe, BB1, BB6, BB7 and BB8 copulas. Nested Archimedean copulas are
-    available in the `r pkg("HAC")` package. Generalized
-    Archimedean copulas are implemented in the
-    `r pkg("fgac")` package. `r pkg("BivarP")`
-    provides cdf, pdf and survival function for Clayton, Gumbel and
-    Frank copula. `r pkg("copBasic")` provides functions for
-    Ali-Mikhail-Haq, Clayton, Frechet copulas.
-    `r pkg("QRM")` provides pdf and random generator for
-    Clayton, Gumbel, Frank, BB9 copula.
-    `r pkg("Bivariate.Pareto")` provides a random generator
-    for the Frank copula with Pareto margins.
-    `r pkg("nCopula")`, `r pkg("HAC")` provide
-    hierarchical archimedean copulas. `r pkg("lcopula")`
-    provides the Liouville copula.
--   *Blomqvist copula:* provided in `r pkg("copBasic")`.
--   *Composition of copula:* `r pkg("copBasic")` provides
-    functions for composition of a single symmetric copula and
-    composition of two copulas.
--   *Cubic copula:* Not yet implemented?
--   *Dirichlet copula:* Not yet implemented?
--   *Empirical copula:* provided in `r pkg("copBasic")`,
-    `r pkg("HAC")` and `r pkg("cort")`.
-    `r pkg("GenOrd")` provides sampling function for
-    multivariate discrete random vectors with a specified correlation
-    matrix.
--   *Elliptical copulas:* Gaussian, Student and Cauchy copulas are
-    implemented in `r pkg("fCopulae")` for the bivariate
-    cases. `r pkg("copula")`, `r pkg("VGAM")`,
-    `r pkg("VineCopula")` provide the Gaussian and the
-    Student copulas. `r pkg("QRM")` provides pdf and random
-    generator for Gaussian, Student copulas.
--   *Extreme value copulas:* `r pkg("fCopulae")` provides
-    the following copulas Gumbel, Galambos, Husler-Reiss, Tawn, or BB5.
-    `r pkg("copula")` implements Gumbel, Galambos and
-    Husler-Reiss.
--   *Eyraud-Farlie-Gumbel-Morgenstern copula:* provided in
-    `r pkg("VGAM")`, `r pkg("RTDE")`, and
-    `r pkg("copula")`.
--   *Mardia copula:* Not yet implemented?
--   *Nested copulas:* arbitrary nested versions of copulas can be
-    implemented in `r pkg("copula")`.
--   *Plackett:* provided in `r pkg("VGAM")`,
-    `r pkg("copBasic")` and `r pkg("copula")`.
--   *Vine copulas:* Package `r pkg("vines")` provides
-    functions for C- and D-vine copulas and
-    `r pkg("VineCopula")` for general R-vine copulas.
 
 # [Random number generators (RNG):]{#Random}
 
