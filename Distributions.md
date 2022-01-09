@@ -1625,6 +1625,7 @@ repository linked above.
     `r pkg("sfsmisc")` also provides the Halton sequence.
     `r pkg("qrng")` provides Korobov, generalize Halton and
     Sobol quasi-random sequences.
+    `r pkg("spacefillr")` provides Halton and Sobol sequences.
 -   *True randomness:* The `r pkg("random")` package
     provides several functions that access the true random number
     service at [random.org](https://www.random.org/) .
