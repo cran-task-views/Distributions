@@ -764,7 +764,10 @@ repository linked above.
     `r pkg("extraDistr")` (original Tukey).
     `r pkg("ecd")` provides the elliptic lambda distribution
     and its use for financial pricing.
--   *Tukey's H distribution:* provided as a special case of Lambert W x
+-   *Tukey's G/ distribution:* 
+    Tukey's G and Tukey G-and-h distributions are provided in 
+    `r pkg("tukeyGH")`.
+    Tukey's H distribution is provided as a special case of Lambert W x
     F distribution.
 -   *Lambda-prime distribution:* `r pkg("sadists")`
     implements Gram Charlier, Edgeworth and Cornish-Fisher
