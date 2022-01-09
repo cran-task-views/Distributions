@@ -72,6 +72,12 @@ repository linked above.
     `birthday` (only p and q), studentized range distribution `tukey`
     (only p and q), Wilcoxon signed rank distribution `signrank`,
     Wilcoxon rank sum distribution `wilcox`.
+-   Base R provides various one-sample or two-sample tests for univariate
+    distributions, e.g., `ks.test`, `shapiro.test`, `ansari.test`, `chisq.test`,
+    `poisson.test`. `r pkg("Ecume")` provides non-parametric two-sample (or k-sample) 
+    distribution comparisons in the univariate or multivariate case allowing
+    observation weights and thresholds.
+
 -   Probability generating function: `r pkg("Compounding")`
     provides pgf for `xxx` distribution, inverse `xxx` distribution,
     first derivative of the `xxx` distribution, where `xxx` belongs to
@@ -547,6 +553,8 @@ repository linked above.
     `r pkg("rmutil")` provides the generalized Gamma.
     `r pkg("distTails")` provides the full-tail gamma
     distribution
+    `r pkg("sglg")` provides the generalized log-Gamma along with
+    various functions to fit semi-parametric regression models.
     
       ---------------------- ------------------   ------------------------- -----------------------
       *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
@@ -569,6 +577,7 @@ repository linked above.
       Generalized gamma      ggamma               d, p, q, r                `ggamma`
       convolution of gamma   coga                 d, p, r                   `coga`
       Full-taill gamma       distTails            d, p, r                   `dFTG`
+      Generalized log-gamma  sglg                 d, p, q, r                `glg`
       ---------------------- ------------------   ------------------------- -----------------------
 
       :  Summary for gamma-related distributions
