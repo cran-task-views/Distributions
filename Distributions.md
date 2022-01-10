@@ -1007,6 +1007,8 @@ repository linked above.
     distribution (d, p, q, r). `r pkg("FMStable")` provides
     (d, p, q) the extremal or maximally skew stable and the finite
     moment log stable distributions.
+    `r pkg("SymTS")` provides (d, p, q, r) functions for symmetric stable, symmetric 
+    classical tempered stable, and symmetric power tempered stable distributions.
 -   *Student distribution and its extensions:* Base R provides the d, p,
     q, r functions for Student and non central Student distribution (see
     above). `r pkg("extraDistr")` and
