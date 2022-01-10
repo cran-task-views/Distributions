@@ -1428,6 +1428,7 @@ mode
 -   *Eyraud-Farlie-Gumbel-Morgenstern copula:* provided in
     `r pkg("VGAM")`, `r pkg("RTDE")`, and
     `r pkg("copula")`.
+-   *Integrated gamma copula:* provided in `r pkg("igcop")`.
 -   *Mardia copula:* Not yet implemented?
 -   *Nested copulas:* arbitrary nested versions of copulas can be
     implemented in `r pkg("copula")`.
