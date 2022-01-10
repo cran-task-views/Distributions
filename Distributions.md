@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-01-08
+version: 2022-01-10
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1639,6 +1639,8 @@ mode
         generators either using an acceptance/rejection algorithm or the
         inverse CDF method. `r pkg("MultiRNG")` provides 11
         multivariate generators, see each distribution.
+        `r pkg("Tinflex")` provides a non-uniform random number generator 
+        for quite arbitrary distributions with piecewise twice differentiable densities.
     -   `r pkg("kernelboot")` provides functions for random
         generation from univariate and multivariate kernel densities (in
         particular multivariate Gaussian kernels).
