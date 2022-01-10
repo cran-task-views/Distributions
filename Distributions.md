@@ -1418,6 +1418,9 @@ mode
     `r pkg("VineCopula")` provide the Gaussian and the
     Student copulas. `r pkg("QRM")` provides pdf and random
     generator for Gaussian, Student copulas.
+    `r pkg("relliptical")` provides a random generator for multivariate
+    truncated Normal, Student-t, Power Exponential,
+    Pearson VII, Slash and Contaminated Normal distributions.
 -   *Extreme value copulas:* `r pkg("fCopulae")` provides
     the following copulas Gumbel, Galambos, Husler-Reiss, Tawn, or BB5.
     `r pkg("copula")` implements Gumbel, Galambos and
