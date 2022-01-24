@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-01-10
+version: 2022-01-24
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1616,8 +1616,6 @@ mode
     `r pkg("rngwell19937")` provides one of the WELL
     generators with 53 bit resolution of the output and allows seeding
     by a vector of integers of arbitrary length.
-    `r pkg("randaes")` provides the deterministic part of
-    the Fortuna cryptographic pseudorandom number generator (AES).
     `r pkg("SuppDists")` implements two RNGs of G.
     Marsaglia. `r pkg("dqrng")` provides PCG family by
     O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ by Blackman
