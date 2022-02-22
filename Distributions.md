@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-01-24
+version: 2022-02-22
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -973,8 +973,6 @@ repository linked above.
 -   *Planck's distribution:* a random generator is available in
     `r pkg("Runuran")`.
 -   *Phase-type distribution:* provided in `r pkg("actuar")`
--   *Poisson subordinated distributions:* provided in
-    `r pkg("LIHNPSD")` (d, p, q, r, m functions).
 -   *Power distribution:* `r pkg("reliaR")` and
     `r pkg("poweRlaw")` implement the exponential power
     distribution. Two-sided power distribution provided in
