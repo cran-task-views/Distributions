@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-02-22
+version: 2022-03-07
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -743,8 +743,6 @@ repository linked above.
 -   *Kiener distribution:* a family of distributions generalizing
     hyperbolic sine distributions (see hyperbolic sine section), d, p,
     q, r, m provided in `r pkg("FatTailsR")`.
--   *Kolmogorov distribution:* p function provided in
-    `r pkg("kolmim")`.
 -   *Kruskal Wallis distribution:* provided in
     `r pkg("SuppDists")`.
 -   *Kumaraswamy distribution:* provided in packages
