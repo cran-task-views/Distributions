@@ -1716,6 +1716,8 @@ mode
         provides the Semi Parametric Piecewise Distribution, while
         `r pkg("fBasics")` implements spline smoothed
         distributions.
+        A nonparametric density estimator based on the 
+        maximum-entropy method is implemented in `r pkg("PDFEstimator")`.
 -   *Hierarchical models:* Distributions whose some parameters are no
     longer constant but random according to a particular distribution.
     `r pkg("VGAM")` provides a lot of hierarchical models:
@@ -1807,7 +1809,7 @@ mode
 
 
 ### Links
--   [Advice to implement (new) distributions in R](http://www.rmetrics.org/Meielisalp2009/Presentations/Scott.pdf)
+
 -   [Clickable diagram of distribution relationships](http://www.johndcook.com/distribution_chart.html)
 -   [Diagram of discrete distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
 -   [Diagram of continuous distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&B.pdf)
