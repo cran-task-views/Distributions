@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-03-07
+version: 2022-08-04
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -132,8 +132,6 @@ repository linked above.
     `r pkg("extraDistr")`.
 -   *Borel-Tanner distribution:* provided in
     `r pkg("VGAM")`.
--   *Complex Pearson distribution:* `r pkg("cpd")` provides
-    the complex biparamtric and triparametric Pearson distribution.
 -   *Delaporte distribution:* provided in
     `r pkg("gamlss.dist")` and
     `r pkg("Delaporte")`.
@@ -401,8 +399,7 @@ repository linked above.
     provides d, p, q, r functions for the Half-Cauchy distribution. The
     wrapped Cauchy distribution is provided in
     `r pkg("CircStats")`.
--   *Chen distribution:* provided in
-    `r pkg("reliaR", priority = "core")`.
+-   *Chen distribution:* no longer implemented.
 -   *Chi(-squared or not) distribution:* Base R provides the d, p, q, r
     functions for the chi-squared distribution, both central and
     non-central (see above). Moments, limited expected values and the
@@ -411,7 +408,6 @@ repository linked above.
     provides d, p, q, r functions for inverse chi-squared distribution
     (standard and scaled). Only d,r functions are available for the
     inverse chi-squared distribution in package
-    `r pkg("geoR")` and
     `r pkg("LaplacesDemon")`. A fast random generator is
     available for the Chi distribution is implemented in
     `r pkg("Runuran")` as well as the density function. The
@@ -430,7 +426,6 @@ repository linked above.
       Chi-squared                  Runuran                  d, r          `chisq`
       Chi-bar-squared              emdbook                  d, p, q, r    `chibarsq`
       Chi                          Runuran                  d, r          `chi`
-      Inverse Chi-squared          geoR                     d, r          `invchisq`
       Inverse Chi-squared          extraDistr               d, p, q, r    `invchisq`
       Scaled Inverse Chi-squared   extraDistr               d, p, q, r    `invchisq`
       Sum of power Chi-squared     sadists                  d, p, q, r    `sumchisqpow`
@@ -473,10 +468,7 @@ repository linked above.
     also provided in `r pkg("normalp")`,
     `r pkg("rmutil")`, `r pkg("LaplacesDemon")`. 
     The skew power exponential is
-    provided `r pkg("mixSPE")`. `r pkg("reliaR")`
-    provides the generalized exponential, the inverse generalized
-    exponential, the logistic exponential, the Marshall-Olkin Extended
-    Exponential and the exponential extension distributions. A fast
+    provided `r pkg("mixSPE")`. A fast
     random generator is available for the power Exponential distribution
     is implemented in `r pkg("Runuran")` as well as the
     density function.
@@ -499,8 +491,6 @@ repository linked above.
       Skew power exp.                                     lmomco                  d, p, q, r, lm, tlmr   `aep4`
       Power and skew power exp.                           mixSPE                  r                      `pe, spe`
       Power and skew power exp.                           gamlss.dist             d, p, q, r             `PE, SEP`
-      Generalized and inverse gen. exp.                   reliaR                  d, p, q, r             `gen.exp, inv.genexp`
-      Logistic, Marshall-Olkin Ext. exp. and exp. ext.    reliaR                  d, p, q, r             `logis.exp, moee, exp.ext`
       -------------------------------------------------- ----------------------   ---------------------- ----------------------------
 
       :  Summary for exponential-related distributions
@@ -549,8 +539,7 @@ repository linked above.
     `r pkg("ggamma")` provide d, p, q, r functions of the
     log gamma and the generalized gamma distribution. The generalized
     gamma distribution can also be found in
-    `r pkg("gamlss.dist")`. `r pkg("reliaR")`
-    provides the log gamma distribution. See Pearson III for a
+    `r pkg("gamlss.dist")`. See Pearson III for a
     three-parameter gamma distribution with a location parameter.
     `r pkg("flexsurv")` provides d, p, q, r functions as
     well as hazard (h) and integrated hazard rate (i) functions for the
@@ -653,10 +642,10 @@ repository linked above.
     `r pkg("extraDistr")`, `r pkg("EnvStats")`,
     `r pkg("TLMoments")`, `r pkg("rmutil")`,
     `r pkg("QRM")`, `r pkg("ROOPSD")` and
-    `r pkg("fExtremes")`. `r pkg("evdbayes")`,
+    `r pkg("fExtremes")`. 
     `r pkg("revdbayes")` provide d,p,q,r functions of the
     GEV distribution in a Bayesian setting.
--   *Gompertz distribution:* provided in `r pkg("reliaR")`,
+-   *Gompertz distribution:* provided in 
     `r pkg("flexsurv")`, `r pkg("extraDistr")`.
     `r pkg("flexsurv")` also provides hazard (h) and
     integrated hazard rate (i) functions. The shifted Gompertz
@@ -667,7 +656,7 @@ repository linked above.
 -   *Gumbel distribution:* provided in packages
     `r pkg("lmomco")`, `r pkg("VGAM")`,
     `r pkg("gamlss.dist")`, `r pkg("FAdist")`,
-    `r pkg("extraDistr")`, `r pkg("reliaR")`,
+    `r pkg("extraDistr")`, 
     `r pkg("QRM")`, `r pkg("TLMoments")`,
     `r pkg("dgumbel")`, `r pkg("EnvStats")` and
     `r pkg("evd")`. `r pkg("actuar")` provides
@@ -707,8 +696,7 @@ repository linked above.
 -   *Inverse Gaussian (also known Wald) distribution:* d, p, q, and r
     functions of the inverse Gaussian are provided in
     `r pkg("statmod")`, `r pkg("extraDistr")`,
-    `r pkg("SuppDists")`, `r pkg("rmutil")` and
-    `r pkg("STAR")`. `r pkg("LaplacesDemon")`
+    `r pkg("SuppDists")`, `r pkg("rmutil")`. `r pkg("LaplacesDemon")`
     provides d, r functions for the inverse Gaussian distribution.
     `r pkg("actuar")` provides d, p, q, r, m, lev, mgf
     functions for the Inverse Gaussian distribution.
@@ -800,9 +788,8 @@ repository linked above.
 -   *Lévy distribution:* provided in `r pkg("rmutil")`.
 -   *Lindley distribution:* provided in `r pkg("VGAM")` and
     `r pkg("gambin")`.
--   *Linear failure rate distribution:* provided in
-    `r pkg("reliaR")`.
--   *Loglog distribution:* provided in `r pkg("reliaR")`
+-   *Linear failure rate distribution:* no longer implemented.
+-   *Loglog distribution:* no longer implemented.
 -   *Lomax distribution:* see beta.
 -   *Logistic distribution and its extensions:* Base R provides the d,
     p, q, r functions for this distribution (see above).
@@ -971,7 +958,7 @@ repository linked above.
 -   *Planck's distribution:* a random generator is available in
     `r pkg("Runuran")`.
 -   *Phase-type distribution:* provided in `r pkg("actuar")`
--   *Power distribution:* `r pkg("reliaR")` and
+-   *Power distribution:* `r 
     `r pkg("poweRlaw")` implement the exponential power
     distribution. Two-sided power distribution provided in
     `r pkg("rmutil")`.
@@ -980,8 +967,7 @@ repository linked above.
     functions in `r pkg("tolerance")`.
 -   *Rayleigh distribution:* provided in packages
     `r pkg("VGAM")`, `r pkg("extraDistr")` and
-    `r pkg("lmomco")`. Generalized and logistic Rayleigh
-    distributions are available in `r pkg("reliaR")`.
+    `r pkg("lmomco")`. 
 -   *Response time distribution:* `r pkg("rtdists")`
     provides d, p, q, r functions for the (Ratcliff) diffusion
     distribution and for the linear ballistic accumulator (LBA) with
@@ -1084,11 +1070,8 @@ repository linked above.
     Weibull is provided in `r pkg("actuar")` package and
     also the moments and the limited expected value for both the raw and
     the inverse Weibull distribution. `r pkg("FAdist")`
-    implements the three-parameter Weibull distribution, while
-    `r pkg("reliaR")` implements the exponential Weibull,
-    the flexible Weibull, the generalized power weibull, the
-    Marshall-Olkin Extended Weibull and the Weibull extension
-    distributions. Furthermore, `r pkg("lmomco")` implements
+    implements the three-parameter Weibull distribution. 
+    Furthermore, `r pkg("lmomco")` implements
     the Weibull distribution while `r pkg("evd")` implements
     the reverse Weibull distribution. The reverse generalized extreme
     value distribution are provided in
@@ -1146,8 +1129,6 @@ mode
     `r pkg("Compositional")` (r),
     `r pkg("compositions")` (r). `r pkg("pbv")`
     provides d, p functions for bivariate normal distributions.
-    `r pkg("mvprpb")` computes the orthant probability of
-    the multivariate Gaussian distribution.
     `r pkg("symmoments")` computes central and non-central
     moments of the multivariate Gaussian distribution.
     `r pkg("LaplacesDemon")` provides d, r functions for the
@@ -1194,10 +1175,9 @@ mode
     logistic distribution.
 -   *Multivariate lognormal distribution:*
     `r pkg("compositions")` provides r function.
--   *Multivariate Pareto distribution:* `r pkg("mgpd")`
-    provides the density for the multivariate generalized Pareto
-    distribution of type II, while `r pkg("evd")` provides
-    the density for type I. `r pkg("NonNorMvtDist")`
+-   *Multivariate Pareto distribution:* `r pkg("evd")` provides
+    the density for the multivariate generalized Pareto type I. 
+    `r pkg("NonNorMvtDist")`
     provides d, p, q, r, s functions for multivariate Lomax (type II)
     distributions and its generalized version.
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
@@ -1470,9 +1450,7 @@ mode
     (uniform) frequency of discretisation, a valid discretisation point,
     and an integration range.
 -   *Quantile-based asymmetric (QBA) family of distributions:*
-    `r pkg("QBAsyDist")` provides d, p, q, r functions for
-    QBA version of exponential power, Laplace, logistic, normal,
-    Student, generalized exponential distributions.
+    no longer implemented.
 -   *Transformed distribution:* `r pkg("Newdistns")`
     provides G-transformed distributions for a selected number of
     distributions which includes Marshall Olkin G distribution,
@@ -1609,9 +1587,6 @@ mode
     `r pkg("randtoolbox")` provides more recent RNGs such as
     SF Mersenne-Twister and WELL, which are generators of Mersenne
     Twister type, but with improved quality parameters.
-    `r pkg("rngwell19937")` provides one of the WELL
-    generators with 53 bit resolution of the output and allows seeding
-    by a vector of integers of arbitrary length.
     `r pkg("SuppDists")` implements two RNGs of G.
     Marsaglia. `r pkg("dqrng")` provides PCG family by
     O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ by Blackman
@@ -1686,12 +1661,7 @@ mode
         `r pkg("DPQ")`.
     -   For non-uniform generation, see the
         `r pkg("Runuran")` above.
-    -   *Benchmark:* A set of 28 densities suitable for comparing
-        nonparametric density estimators in simulation studies can be
-        found in the `r pkg("benchden")` package. The
-        densities vary greatly in degree of smoothness, number of modes
-        and other properties. The package provides d,p,q and r
-        functions.
+
 -   *Non parametric models:*
     -   *Binned Empirical distributions:* The
         `r pkg("HistogramTools")` package provides a number
