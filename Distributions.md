@@ -1508,8 +1508,6 @@ mode
     mode estimation for various distributions.
 -   *Order statistics:* Distribution function of the jth order statistic
     can be obtained with base R functions.
-    `r pkg("ORDER2PARENT")` transforms distribution function
-    of order statistics to its parent distribution function.
 -   *Empirical characteristic function:* `r pkg("empichar")`
     evaluates the empirical characteristic function of univariate and
     multivariate samples.
