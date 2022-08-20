@@ -579,8 +579,7 @@ repository linked above.
     function and moments. The `r pkg("truncnorm")` package
     provides d, p, q, r functions for the truncated gaussian
     distribution as well as functions for the first two moments.
-    `r pkg("mvrtn")` provides random variates for left/right
-    truncated normal distributions. `r pkg("EnvStats")`
+    `r pkg("EnvStats")`
     provides d, p, q, r functions for the truncated normal distribution
     and the zero-modified distribution.
     `r pkg("extraDistr")` provides the truncated normal.
@@ -609,7 +608,6 @@ repository linked above.
       Normal                            stats               d, p, q, r      `norm`
       Normal                            actuar              m, mgf          `norm`
       Truncated normal                  truncnorm           d, p, q, r, m   `truncnorm`
-      Truncated normal                  mvrtn               r, m            `tn`
       Truncated normal                  EnvStats            d, p, q, r      `normTrunc`
       Truncated normal                  extraDistr          d, p, q, r      `tnorm`
       Truncated normal                  crch                d, p, q, r      `cnorm`
@@ -1543,8 +1541,6 @@ mode
     -   *Lambda distribution:* `r pkg("GLDEX")` also
         provides the mean, variance, skewness, kurtosis of generalized
         Lambda distribution.
-    -   *Normal distribution:* `r pkg("mvrtn")` provides
-        mean, variance for left/right truncated normal distributions.
     -   *multivariate distributions:* `r pkg("MomTrunc")`
         provides mean vector, covariance matrices and raw moments for
         truncated or folded of the following multivariate distributions:
