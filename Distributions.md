@@ -1424,8 +1424,7 @@ mode
     `r pkg("extraDistr")` and in
     `r pkg("LaplacesDemon")`.
 -   *Composite distribution also known as spliced distribution:*
-    Composite lognormal distributions provided in
-    `r pkg("CompLognormal")`. Split-normal (also known as
+    Split-normal (also known as
     the two-piece normal distribution) not yet implemented.
     Split-student provided in package `r pkg("dng")`.
     `r pkg("evmix")` provides d, p, q, r of the following
