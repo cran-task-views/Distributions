@@ -1368,9 +1368,7 @@ mode
     Joe, BB1, BB6, BB7 and BB8 copulas. Nested Archimedean copulas are
     available in the `r pkg("HAC")` package. Generalized
     Archimedean copulas are implemented in the
-    `r pkg("fgac")` package. `r pkg("BivarP")`
-    provides cdf, pdf and survival function for Clayton, Gumbel and
-    Frank copula. `r pkg("copBasic")` provides functions for
+    `r pkg("fgac")` package. `r pkg("copBasic")` provides functions for
     Ali-Mikhail-Haq, Clayton, Frechet copulas.
     `r pkg("QRM")` provides pdf and random generator for
     Clayton, Gumbel, Frank, BB9 copula.
