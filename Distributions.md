@@ -1179,9 +1179,7 @@ mode
     `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
     (d, p, r), `r pkg("Compositional")` (r),
     `r pkg("tmvmixnorm")` (r), `r pkg("QRM")`
-    (d, r), `r pkg("bayesm")` (r). The multivariate
-    truncated student is implemented in `r pkg("TTmoment")`
-    for r (sampling) and moments (m);
+    (d, r), `r pkg("bayesm")` (r). 
     `r pkg("TruncatedNormal")` for d, p, r functions;
     `r pkg("tmvtnorm")` for d, p, q, r functions.
     `r pkg("sn")` provides d, p, r functions for the
