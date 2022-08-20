@@ -78,14 +78,7 @@ repository linked above.
     distribution comparisons in the univariate or multivariate case allowing
     observation weights and thresholds.
 
--   Probability generating function: `r pkg("Compounding")`
-    provides pgf for `xxx` distribution, inverse `xxx` distribution,
-    first derivative of the `xxx` distribution, where `xxx` belongs to
-    binomial, binomial-Poisson, geometric, hypergeometric,
-    hyper-Poisson, Katti type H1/H2, logarithmic, logarithmic-binomial,
-    logarithmic-Poisson, negative binomial, Neyman type A/B/C,
-    Pascal-Poisson, Poisson, Poisson-binomial, Poisson-Lindley,
-    Poisson-Pascal, Polya Aeppli, Thomas, Waring, Yule.
+-   Probability generating function: no longer implemented.
 
 # [Discrete distributions:]{#Discrete}
 
@@ -1431,14 +1424,7 @@ mode
     distribution. `r pkg("gendist")` provides d, p, q, r
     functions for composite models working with any distribution defined
     by its d, p, q, r functions.
--   *Compound distribution:* d, p, q, r, m functions are implemented by
-    `r pkg("Compounding")` where the parent distribution is
-    any continuous distribution and the compound distribution is any
-    distribution among the list: binomial, binomial-Poisson, geometric,
-    hypergeometric, hyper-Poisson, Katti type H1/H2, logarithmic,
-    logarithmic-binomial, logarithmic-Poisson, negative binomial, Neyman
-    type A/B/C, Pascal-Poisson, Poisson, Poisson-binomial,
-    Poisson-Lindley, Poisson-Pascal, Polya Aeppli, Thomas, Waring, Yule.
+-   *Compound distribution:* 
     `r pkg("kdist")` provides d, p, q, r functions of the K
     distribution.
 -   *Discretized distribution:* `r pkg("distcrete")` allows
