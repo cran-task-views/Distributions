@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-08-04
+version: 2022-08-23
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1505,7 +1505,12 @@ mode
 -   *Empirical cumulants:* `r pkg("fromo")` provides
     centered and standardized cumulants.
 -   *Mode estimation:* Package `r pkg("modeest")` provides
-    mode estimation for various distributions.
+    mode computation of known distributions and mode estimation 
+    on datasets in the unimodal case.
+    Package `r pkg("ModEstM")` provides mode estimation in unimodal 
+    and multimodal cases.
+    Package `r pkg("multimode")` provides for testing and exploring
+    the number of modes on data using non-parametric procedures.
 -   *Order statistics:* Distribution function of the jth order statistic
     can be obtained with base R functions.
 -   *Empirical characteristic function:* `r pkg("empichar")`
