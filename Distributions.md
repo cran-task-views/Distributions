@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-08-23
+version: 2022-08-27
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -948,7 +948,8 @@ repository linked above.
 -   *Perks distribution:* provided in `r pkg("VGAM")`.
 -   *Planck's distribution:* a random generator is available in
     `r pkg("Runuran")`.
--   *Phase-type distribution:* provided in `r pkg("actuar")`
+-   *Phase-type distribution:* provided in `r pkg("actuar")`,
+    `r pkg("mapfit")`, `r pkg("matrixdist")`, `r pkg("PhaseTypeR")`.
 -   *Power distribution:* `r 
     `r pkg("poweRlaw")` implement the exponential power
     distribution. Two-sided power distribution provided in
