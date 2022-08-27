@@ -596,8 +596,6 @@ repository linked above.
     provides d, r functions for the closed skew normal distribution.
     `r pkg("CompQuadForm")` provides the distribution
     function of quadratic forms in normal variates.
-    `r pkg("NormalGamma")` provides the density of the sum
-    of a gaussian and a gamma random variables.
     `r pkg("NormalLaplace")` provides d, p, q, r functions
     for the sum of a normal and a Laplace random variables, while
     `r pkg("LaplacesDemon")` provides d, r function of the
@@ -702,8 +700,6 @@ repository linked above.
     implemented in `r pkg("Runuran")` as well as the density
     function. `r pkg("GIGrvg")` generates random variables
     from the generalized inverse Gaussian distribution.
-    `r pkg("frmqa")` computes p function of the generalized
-    inverse Gaussian distribution.
 -   *Johnson distribution:* provided in
     `r pkg("SuppDists")`. `r pkg("ForestFit")`
     provides d, p of Johnson SB distribution.
@@ -1356,9 +1352,8 @@ mode
     available in `r pkg("RTDE")`.
     `r pkg("VineCopula")` provides Clayton, Gumbel, Frank,
     Joe, BB1, BB6, BB7 and BB8 copulas. Nested Archimedean copulas are
-    available in the `r pkg("HAC")` package. Generalized
-    Archimedean copulas are implemented in the
-    `r pkg("fgac")` package. `r pkg("copBasic")` provides functions for
+    available in the `r pkg("HAC")` package. 
+    `r pkg("copBasic")` provides functions for
     Ali-Mikhail-Haq, Clayton, Frechet copulas.
     `r pkg("QRM")` provides pdf and random generator for
     Clayton, Gumbel, Frank, BB9 copula.
