@@ -1701,12 +1701,7 @@ mode
         `r pkg("distrTeach")`,
         `r pkg("distrDoc")`,
         `r pkg("distrEllipse")`).
-    -   *R6 Object-orientation:* `r pkg("distr6")` provides
-        a complete R6 Probability Distributions Interface for 42
-        probability distributions and 11 kernels including functionality
-        for multiple scientific types. Additionally,
-        `r pkg("distr6")` gives some functionalities for
-        composite distributions and numerical imputation.
+    -   *R6 Object-orientation:* 
         `r pkg("ROOPSD")` provides a R6 class interface to
         classic statistical distribution.
     -   *Transformation:* Lebesgue decomposition are implemented in
