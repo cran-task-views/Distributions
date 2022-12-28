@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener
 email: Christophe.Dutang@ensimag.fr
-version: 2022-08-27
+version: 2022-12-28
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -79,6 +79,24 @@ repository linked above.
     observation weights and thresholds.
 
 -   Probability generating function: no longer implemented.
+
+Some packages may optionally provide the symbolic derivatives with respect 
+to the parameters for the probability functions. 
+For instance, the first and second derivatives of the log-density can be 
+of some help in estimation and inference tasks, and the derivatives of 
+the quantile function can help when inferring on a given quantile.
+For that purpose, the following base R functions can be used
+`stats::D()` for derivatives w.r.t. a single parameter, 
+or `stats::deriv()` for (partial) derivatives w.r.t. multiple parameters.
+The `r pkg("Deriv")` package provides a much more flexible 
+symbolic differentiation interface.
+One can also use Stan Math library through `r pkg("StanHeaders")` package,
+see e.g.
+[this blog](https://www.jchau.org/2022/01/24/automatic-differentiation-in-r-with-stan-math/).
+The `r pkg("nieve")` package provides symbolic differentiation for
+two probability distribution (Generalized Pareto and Generalized
+Extreme Value) in order to compute the log-likelihood for example.
+
 
 # [Discrete distributions:]{#Discrete}
 
@@ -1758,4 +1776,5 @@ mode
 -   [Compendium of distributions.](http://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
 -   [A comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
 -   [Journal of Statistical Software: R programs for truncated distributions](https://www.jstatsoft.org/v16/c02/)
+
 
