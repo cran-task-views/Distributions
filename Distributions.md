@@ -1,9 +1,9 @@
 ---
 name: Distributions
 topic: Probability Distributions
-maintainer: Christophe Dutang, Patrice Kiener
+maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: Christophe.Dutang@ensimag.fr
-version: 2022-12-28
+version: 2023-01-30
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -988,9 +988,11 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Spearman's Rho distribution:* provided in
     `r pkg("SuppDists")`.
 -   *Stable distribution:* d, p, q, r functions are available in
-    `r pkg("fBasics")` and
-    `r pkg("stabledist")`, the functions use the approach of
+    `r pkg("fBasics")`, `r pkg("libstableR")` (also provides a fitting function), 
+    and `r pkg("stabledist")`, the functions use the approach of
     J.P. Nolan for general stable distributions.
+    `r pkg("stable")` (d, p, q, r, h) is also used for general stable and uses
+    a modified Buck parametrization.
     `r pkg("MixedTS")` provides mixed tempered stable
     distribution (d, p, q, r). `r pkg("FMStable")` provides
     (d, p, q) the extremal or maximally skew stable and the finite
@@ -1188,7 +1190,10 @@ mode
     distributions and its generalized version.
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions for Mardia's Multivariate Pareto Type I Distribution
--   *Multivariate Stable distribution:* not yet implemented?
+-   *Multivariate Stable distribution:* For elliptically contoured (subgaussian 
+     stable), `r pkg("alphastable")` provides d, r functions as well as a 
+     fitting function, `r pkg("mvgb")` provides p function, and `r pkg("mvpd")` 
+     provides d, p, r functions as well as a fitting function.
 -   *Multivariate Student distribution:* The multivariate Student
     distribution is provided in the packages
     `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
