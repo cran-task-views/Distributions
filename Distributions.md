@@ -1058,8 +1058,6 @@ Extreme Value) in order to compute the log-likelihood for example.
     the Poisson distribution.
 -   *Uniform distribution:* d, p, q, r functions are of course provided
     in R. See section RNG for random number generation topics.
-    `r pkg("HI")` generates uniformly random points on a
-    bounded convex set, in particular the unit ball.
     `r pkg("KScorrect")` provides d, p, q, r functions for
     the log-uniform distribution.
 -   *Upsilon distribution:* `r pkg("sadists")` implements
