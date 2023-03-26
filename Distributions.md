@@ -2,8 +2,8 @@
 name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
-email: Christophe.Dutang@ensimag.fr
-version: 2023-01-30
+email: dutangc@gmail.com
+version: 2023-03-26
 source: https://github.com/cran-task-views/Distributions/
 ---
 
