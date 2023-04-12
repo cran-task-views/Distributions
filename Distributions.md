@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-03-26
+version: 2023-04-12
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -380,6 +380,15 @@ Extreme Value) in order to compute the log-likelihood for example.
       :  Summary for Beta-2-related distributions
 
     
+-   *Bell-G distribution:* `r pkg("BGFD")` provides d, p, q, r
+    functions for Bell exponential, Bell extended exponential, Bell
+    Weibull, Bell extended Weibull, Bell-Fisk, Bell-Lomax, Bell
+    Burr-XII, Bell Burr-X, complementary Bell exponential,
+    complementary Bell extended exponential, complementary Bell
+    Weibull, complementary Bell extended Weibull, complementary
+    Bell-Fisk, complementary Bell-Lomax, complementary Bell 
+    Burr-XII and complementary Bell Burr-X distribution.  
+    The package also provides hazard function and an estimation procedure.
 -   *Benini distribution:* provided in `r pkg("VGAM")`.
 -   *Bezier-Montenegro-Torres distribution:* provided in
     `r pkg("BMT")`.
