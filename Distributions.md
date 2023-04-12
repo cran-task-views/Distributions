@@ -903,6 +903,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     Burr, extended Pareto, generalized Pareto, Pareto 1 distributions
     and their truncated version. `r pkg("CaDENCE")` provides
     the Pareto 2 and the zero-inflated Pareto 2 distribution.
+    `r pkg("Pareto")` provides the Pareto 1, piecewise Pareto 
+    and the generalized Pareto (from actuarial theory).
     
       -------------------------- ----------------- -------------------- -----------------------
       *Distribution name*        *Packages*        *Functions*          *Distribution suffix*
@@ -913,6 +915,7 @@ Extreme Value) in order to compute the log-likelihood for example.
       Pareto I                   ReIns             d, p, q, r           `pareto`
       Pareto I                   LaplacesDemon     d, p, q, r           `pareto`
       Pareto I                   distributionsrd   d, p, q, r           `pareto`
+      Pareto I                   Pareto            d, p, q, r           `Pareto`
       Trunc. Pareto I            ReIns             d, p, q, r           `tpareto`
       Pareto II                  VGAM              d, p, q, r           `paretoII`
       Pareto II                  actuar            d, p, q, r, m, lev   `pareto, pareto2`
@@ -933,6 +936,7 @@ Extreme Value) in order to compute the log-likelihood for example.
       Extended Pareto            ReIns             d, p, q, r           `epd`
       Shift. trunc. Pareto       mbbefd            d, p, q, r, m, ec    `stpareto`
       Gen. Pareto (actuarial)    actuar            d, p, q, r, m, lev   `genpareto`
+      Gen. Pareto (actuarial)    Pareto            d, p, q, r           `GenPareto`
       Gen. Pareto (EVT)          lmomco            d, p, q, r           `gpa`
       Gen. Pareto (EVT)          evd               d, p, q, r           `gpd`
       Gen. Pareto (EVT)          fExtremes         d, p, q, r           `gpd`
