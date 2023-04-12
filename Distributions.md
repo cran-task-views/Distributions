@@ -1082,6 +1082,9 @@ Extreme Value) in order to compute the log-likelihood for example.
     package provides d, p, r functions; the
     `r pkg("circular")` package provides d, p, q, r
     functions.
+    `r pkg("rvMF")` package provides a fast random generator for von Mises
+    Fisher distribution.
+    
 -   *Wakeby distribution:* A 5-parameter Wakeby is provided in
     `r pkg("lmomco")`.
 -   *Weibull distribution and its extensions:* Base R provides the d, p,
