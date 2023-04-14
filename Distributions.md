@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-04-12
+version: 2023-04-14
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1406,7 +1406,7 @@ mode
 -   *Cubic copula:* Not yet implemented?
 -   *Dirichlet copula:* Not yet implemented?
 -   *Empirical copula:* provided in `r pkg("copBasic")`,
-    `r pkg("HAC")` and `r pkg("cort")`.
+    `r pkg("HAC")`.
     `r pkg("GenOrd")` provides sampling function for
     multivariate discrete random vectors with a specified correlation
     matrix.
