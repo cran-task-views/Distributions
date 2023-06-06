@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-04-14
+version: 2023-06-06
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -242,6 +242,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("actuar")` and in `r pkg("VGAM")`.
     New parametrization of the negative binomial distribution is
     available in `r pkg("RMKdiscrete")`.
+    `r pkg("nbconv")` provides p, q, r functions for convolutions
+    of negative binomial distributions.
 -   *Sichel distribution:* provided in
     `r pkg("gamlss.dist")`.
 -   *Skellam distribution:* provided in
@@ -293,8 +295,12 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("RMKdiscrete")` and `r pkg("trawl")`. 
     `r pkg("MNB")` provides a generator and 
     diagnostic tool for multivariate negative binomial distribution.  
+    `r pkg("bzinb")` provides a random generator for the bivariate negative
+    binomial (classic and zero-inflated) distribution.
 -   *Multivariate Poisson distribution:*
     `r pkg("compositions")` provides a random generator.
+    `r pkg("bzinb")` provides a random generator for the bivariate Poisson 
+    (classic and zero-inflated) distribution.
 -   *Multivariate Poisson-lognormal:* the bivariate
     Poisson-lognormal distribution is provided in
     `r pkg("poilog")`.
@@ -1213,7 +1219,7 @@ mode
     `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
     (d, p, r), `r pkg("Compositional")` (r),
     `r pkg("tmvmixnorm")` (r), `r pkg("QRM")`
-    (d, r), `r pkg("bayesm")` (r). 
+    (d, r), `r pkg("bayesm")` (r), `r pkg("MVT")` (r). 
     `r pkg("TruncatedNormal")` for d, p, r functions;
     `r pkg("tmvtnorm")` for d, p, q, r functions.
     `r pkg("sn")` provides d, p, r functions for the
@@ -1333,6 +1339,7 @@ mode
     (d, r); `r pkg("matrixNormal")` (d, p, r) collects these
     forms in one place and allows users to be flexible in simulating
     random variates (Cholesky, spectral, SVD).
+    
 -   *Matrix student distribution:* provided in
     `r pkg("mniw")`.
 -   *Normal Inverse Wishart distribution:* provided in
@@ -1493,6 +1500,12 @@ mode
     p, q, r functions for composite models, folded models, skewed
     symmetric models and arctan models working with any distribution
     defined by its d, p, q, r functions.
+    `r pkg("ComRiskModel")` provides also G-transformed such as
+     binomial-G, complementary negative binomial-G and complementary 
+     geometric-G families of distributions taking baseline models 
+     such as exponential, extended exponential, Weibull, extended 
+     Weibull, Fisk, Lomax, Burr-XII and Burr-X. 
+    
 -   *Truncated distribution:* A generic code snippet is available [in
     the JSS](https://www.jstatsoft.org/article/view/v016c02) . This code
     is now available in two packages: `r pkg("truncdist")`
@@ -1653,7 +1666,12 @@ mode
     For non-parametric distributions, `r pkg("SimJoint")` offers 
     various to simulate multivariate distributions with non-parametric marginals
     given a Pearson or Spearman correlation matrix.
-    
+-   *Unit sphere and other:* `r pkg("simdd")` provides a generator for the Fisher Bingham 
+    distribution on the unit sphere, the matrix Bingham distribution on
+    a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate 
+    von Mises sin model on the torus.
+    `r pkg("uniformly")` provides sampling on various geometric shapes, 
+    such as spheres, ellipsoids, simplices.
 
 # [Miscellaneous:]{#Misc}
 
@@ -1777,9 +1795,8 @@ mode
         enhances the tools to fit a user-supplied probability distribution.
         `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
         one-step estimation procedures.
-        `r pkg("EnvStats")` and `r pkg("fitteR")` also provides tools to
-        fit a selected number of most
-        common distributions. `r pkg("flexsurv")` and
+        `r pkg("EnvStats")`, `r pkg("fitteR")`, `r pkg("ExtDist")` also provide
+        tools to fit and select a set of probability distributions. `r pkg("flexsurv")` and
         `r pkg("msm")` provides a quantile function for a
         generic distribution based on numerical computation based on a
         dichotomic search.
