@@ -1676,6 +1676,8 @@ mode
     von Mises sin model on the torus.
     `r pkg("uniformly")` provides sampling on various geometric shapes, 
     such as spheres, ellipsoids, simplices.
+    `r pkg("watson")` allows simulating mixtures of Watson distributions.
+    
 
 # [Miscellaneous:]{#Misc}
 
