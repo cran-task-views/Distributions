@@ -188,8 +188,10 @@ Extreme Value) in order to compute the log-likelihood for example.
     provided in `r pkg("tvgeom")`.
 -   *Geometric (compound) Poisson distribution (also known Polya-Aeppli
     distribution):* provided in `r pkg("polyaAeppli")`.
--   *Generalized binomial distribution:* provided in
-    `r pkg("GenBinomApps")`.
+-   *Generalized/fractional binomial distribution:* 
+    `r pkg("GenBinomApps")` provides the generalized binomial distribution.
+    `r pkg("frbinom")` provides the fractional binomial distribution
+    where trials are from a generlized Bernoulli process.
 -   *Generalized Hermite distribution:* provided in
     `r pkg("hermite")`.
 -   *Hypergeometric distribution:* provided in **stats** . Non-central
