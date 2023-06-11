@@ -1410,6 +1410,8 @@ mode
     `r pkg("nCopula")`, `r pkg("HAC")` provide
     hierarchical archimedean copulas. `r pkg("lcopula")`
     provides the Liouville copula.
+    `r pkg("CopulaGAMM")` provides the bivariate version of Frank, FGM,
+    Galambos, Gumbel, Huesler-Reiss, Joe, MTCJ, Plackett copulas.
 -   *Blomqvist copula:* provided in `r pkg("copBasic")`.
 -   *Composition of copula:* `r pkg("copBasic")` provides
     functions for composition of a single symmetric copula and
@@ -1430,6 +1432,8 @@ mode
     `r pkg("relliptical")` provides a random generator for multivariate
     truncated Normal, Student-t, Power Exponential,
     Pearson VII, Slash and Contaminated Normal distributions.
+    `r pkg("CopulaGAMM")` provides the bivariate Gaussian and 
+    student copula.
 -   *Extreme value copulas:* `r pkg("fCopulae")` provides
     the following copulas Gumbel, Galambos, Husler-Reiss, Tawn, or BB5.
     `r pkg("copula")` implements Gumbel, Galambos and
