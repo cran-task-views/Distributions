@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-06-06
+version: 2023-06-11
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -426,6 +426,10 @@ Extreme Value) in order to compute the log-likelihood for example.
     wrapped Cauchy distribution is provided in
     `r pkg("CircStats")`.
 -   *Chen distribution:* no longer implemented.
+-   *Chernoff distribution:*  `r pkg("ChernoffDist")` provides
+    d, p, q functions of the distribution of the maximizer of the 
+    two-sided Brownian motion minus quadratic drift, known as Chernoff's
+    distribution.
 -   *Chi(-squared or not) distribution:* Base R provides the d, p, q, r
     functions for the chi-squared distribution, both central and
     non-central (see above). Moments, limited expected values and the
