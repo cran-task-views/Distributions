@@ -194,6 +194,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     where trials are from a generlized Bernoulli process.
 -   *Generalized Hermite distribution:* provided in
     `r pkg("hermite")`.
+-   *Good distribution:* provided in
+    `r pkg("good")`.
 -   *Hypergeometric distribution:* provided in **stats** . Non-central
     hypergeometric distribution is provided in
     `r pkg("MCMCpack")` (d,r). Extended hypergeometric
