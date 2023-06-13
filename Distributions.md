@@ -507,6 +507,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     random generator is available for the power Exponential distribution
     is implemented in `r pkg("Runuran")` as well as the
     density function.
+    `r pkg("AEP")` implements the Asymmetric Exponential Power Distribution.
     
       --------------------------------------------------  ---------------------   ---------------------- ----------------------------
       *Distribution name*                                 *Packages*             *Functions*             *Distribution suffix*
@@ -1153,6 +1154,8 @@ mode
     well as a fitting function for `r pkg("Compositional")`.
     `r pkg("compositions")`, `r pkg("bayesm")`
     provide r function.
+    `r pkg("SGB")` provides a generalization of the Dirichlet 
+    distribution called Simplicial Generalized Beta distribution.
 -   *Multivariate exponential distribution:* while
     `r pkg("LaplacesDemon")` provides d, r functions for the
     multivariate power exponential distribution parametrized either by
