@@ -584,6 +584,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     distribution
     `r pkg("sglg")` provides the generalized log-Gamma along with
     various functions to fit semi-parametric regression models.
+    `r pkg("ollggamma")` provides d, p, q, r for the Odd Log-Logistic Generalized Gamma. 
     
       ---------------------- ------------------   ------------------------- -----------------------
       *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
