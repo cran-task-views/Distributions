@@ -796,10 +796,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Lambert W x F distribution:* `r pkg("LambertW")`
     package provides d, p, q, r functions as well as the first 4 central
     moments and a qqplot.
--   *Laplace (also called double exponential distribution) and
-    asymmetric Laplace distribution:* provided in
+-   *Laplace (also called double exponential distribution) and asymmetric Laplace distribution:* provided in
     `r pkg("distr")`, `r pkg("lmomco")`,
-    `r pkg("LaplacesDemon")`, `r pkg("VGAM")`,
+    `r pkg("LaplacesDemon")`, `r pkg("L1pack")`, `r pkg("VGAM")`,
     `r pkg("sgt")`, `r pkg("extraDistr")`,
     `r pkg("greybox")`, `r pkg("rmutil")` and
     `r pkg("HyperbolicDist")` packages.
@@ -1210,6 +1209,8 @@ mode
     multivariate Laplace distribution parametrized either by sigma, or
     by the Cholesky decomposition of sigma. r is provided in
     `r pkg("MultiRNG")`.
+    `r pkg("L1pack")` provides d, r functions of the multivariate
+    Laplace distribution.
 -   *Multivariate logistic distribution:* `r pkg("VGAM")`
     package implements the bivariate logistic distribution, while
     `r pkg("NonNorMvtDist")` implements the multivariate
