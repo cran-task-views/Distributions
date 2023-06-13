@@ -832,6 +832,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("lmomco")`, `r pkg("sld")`,
     `r pkg("rmutil")`, `r pkg("SCI")` and
     `r pkg("glogis")`.
+    `r pkg("GTDL")` implements generalized Time-Dependent Logistic distribution.
     
       ---------------------- --------------   -------------------- -----------------------
       *Distribution name*    *Packages*       *Functions*          *Distribution suffix*
@@ -1092,8 +1093,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Upsilon distribution:* `r pkg("sadists")` implements
     Gram Charlier, Edgeworth and Cornish-Fisher approximations for
     Upsilon distribution for computing d, p, q, r functions.
--   *Vasicek distribution:* `r pkg("vasicek")` implements
-    d, p, r functions.    
+-   *Vasicek distribution:* 
+    `r pkg("vasicek")` implements d, p, r functions.
+    `r pkg("vasicekreg")` implements d, p, q, r functions.    
 -   *von Mises distribution:* The `r pkg("CircStats")`
     package provides d, p, r functions; the
     `r pkg("circular")` package provides d, p, q, r
