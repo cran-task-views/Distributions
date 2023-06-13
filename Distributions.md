@@ -136,7 +136,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 
       :  Summary for Binomial-related distributions
 
-    
+-   *Bell Touchard distribution:* standard and zero-inflated
+    provided in `r pkg("countDM")`.
 -   *Benford distribution:* provided in `r pkg("VGAM")` and
     `r pkg("BenfordTests")`.
 -   *Bernoulli distribution:* provided in
