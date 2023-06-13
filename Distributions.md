@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-06-11
+version: 2023-06-13
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1569,6 +1569,19 @@ mode
     the number of modes on data using non-parametric procedures.
 -   *Order statistics:* Distribution function of the jth order statistic
     can be obtained with base R functions.
+    `r pkg("orders")` allows to generate samples of k-th order statistics and 
+    others quantities of interest for the following distributions:
+    Burr, Feller-Pareto, Generalized Pareto, 
+    The Inverse Paralogistic, Marshall-Olkin G, 
+    exponentiated G, beta G, gamma G, 
+    Kumaraswamy G, generalized beta G, beta extended G, 
+    gamma G, gamma uniform G, beta exponential G, Weibull G, 
+    log gamma G I/II, exponentiated generalized G, 
+    exponentiated Kumaraswamy G, geometric exponential Poisson G,
+    truncated-exponential skew-symmetric G, modified beta G, 
+    exponentiated exponential Poisson G, Poisson-inverse gaussian, 
+    Skew normal type 1, Skew student t, Sinh-Arcsinh, 
+    Sichel, Zero inflated Poisson. 
 -   *Empirical characteristic function:* `r pkg("empichar")`
     evaluates the empirical characteristic function of univariate and
     multivariate samples.
