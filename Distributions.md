@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-06-13
+version: 2023-06-15
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -309,10 +309,10 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Multivariate Poisson-lognormal:* the bivariate
     Poisson-lognormal distribution is provided in
     `r pkg("poilog")`.
--   *Multivariate Polya distribution:* functions d, r of the Dirichlet
-    Multinomial (also known as multivariate Polya) distribution are
+-   *Multivariate Dirichlet (also known as Polya) distribution:* 
+    functions d, r of the Dirichlet distribution are
     provided in `r pkg("extraDistr")`,
-    `r pkg("LaplacesDemon")` and
+    `r pkg("LaplacesDemon")`, `r pkg("DirichletReg")` and
     `r pkg("Compositional")`.
 -   *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
