@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-crandb.rda
+*.rda
 Distributions.html
 Distributions.Rproj
 search-new-pkg.R
