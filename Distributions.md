@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-08-04
+version: 2023-08-09
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1017,8 +1017,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Spearman's Rho distribution:* provided in
     `r pkg("SuppDists")`.
 -   *Stable distribution:* d, p, q, r functions are available in
-    `r pkg("fBasics")`, `r pkg("libstableR")` (also provides a fitting function), 
-    and `r pkg("stabledist")`, the functions use the approach of
+    `r pkg("fBasics")` and `r pkg("stabledist")`, the functions use the approach of
     J.P. Nolan for general stable distributions.
     `r pkg("stable")` (d, p, q, r, h) is also used for general stable and uses
     a modified Buck parametrization.
@@ -1227,8 +1226,7 @@ mode
     functions for Mardia's Multivariate Pareto Type I Distribution
 -   *Multivariate Stable distribution:* For elliptically contoured (subgaussian 
      stable), `r pkg("alphastable")` provides d, r functions as well as a 
-     fitting function, `r pkg("mvgb")` provides p function, and `r pkg("mvpd")` 
-     provides d, p, r functions as well as a fitting function.
+     fitting function, `r pkg("mvgb")` provides p function.
 -   *Multivariate Student distribution:* The multivariate Student
     distribution is provided in the packages
     `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
@@ -1751,8 +1749,6 @@ mode
         provides the Semi Parametric Piecewise Distribution, while
         `r pkg("fBasics")` implements spline smoothed
         distributions.
-        A nonparametric density estimator based on the 
-        maximum-entropy method is implemented in `r pkg("PDFEstimator")`.
 -   *Hierarchical models:* Distributions whose some parameters are no
     longer constant but random according to a particular distribution.
     `r pkg("VGAM")` provides a lot of hierarchical models:
