@@ -616,6 +616,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 
       :  Summary for gamma-related distributions
 
+
+-   *Pólya–Gamma distribution:* r function random sampling routines for the distribution
+    are provided by `r pkg("BayesLogit")`, `r pkg("pg")`, and `r pkg("pgdraw")`.
     
 -   *Gaussian (or normal) distribution and its extensions:* Base R
     provides the d, p, q, r functions for this distribution (see above).
