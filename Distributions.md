@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-08-09
+version: 2023-08-17
 source: https://github.com/cran-task-views/Distributions/
 ---
 
