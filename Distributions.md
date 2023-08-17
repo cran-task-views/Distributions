@@ -55,7 +55,7 @@ repository linked above.
 - [Miscellaneous](#Misc) 
 
 
-# [Base functionality:]{#Base}
+# [Base functionality]{#Base}
 
 
 -   Base R provides probability distribution functions `p`*foo*`()`
@@ -98,9 +98,9 @@ two probability distribution (Generalized Pareto and Generalized
 Extreme Value) in order to compute the log-likelihood for example.
 
 
-# [Discrete distributions:]{#Discrete}
+# [Discrete distributions]{#Discrete}
 
-## [Discrete univariate distributions:]{#UnivariateDiscrete}
+## [Discrete univariate distributions]{#UnivariateDiscrete}
 
 
 -   *Beta-binomial distribution:* provided in
@@ -268,7 +268,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     Zipf distribution: the Marshall-Olkin Extended Zipf, the
     Zipf-Poisson Extreme and the Zipf-Poisson Stopped Sum distributions.
 
-## [Discrete multivariate distributions:]{#MultivariateDiscrete}
+## [Discrete multivariate distributions]{#MultivariateDiscrete}
 
 
 -   *Hyper Dirichlet distribution:* provided in
@@ -317,9 +317,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
     
-# [Continuous distributions:]{#Continuous}     
+# [Continuous distributions]{#Continuous}     
 
-## [Continuous univariate distributions:]{#UnivariateContinuous}
+## [Continuous univariate distributions]{#UnivariateContinuous}
 
 
 -   *Arcsine distribution:* implemented in package
@@ -1129,7 +1129,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     first-passage time of a diffusion model.
 mode
 
-## [Continuous multivariate distributions:]{#MultivariateContinuous}
+## [Continuous multivariate distributions]{#MultivariateContinuous}
 
 
 -   *Bivariate Pareto:* `r pkg("Bivariate.Pareto")` provides
@@ -1251,9 +1251,9 @@ mode
     `r pkg("MultiRNG")`. `r pkg("compositions")`
     provides a random generator on the simplex.
 
-# [Other distributions:]{#Other}
+# [Other distributions]{#Other}
 
-## [Mixed-type distributions:]{#MixedType}
+## [Mixed-type distributions]{#MixedType}
 
 
 -   *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
@@ -1268,7 +1268,7 @@ mode
     provides the zero-modified normal distribution and the zero-modified
     lognormal distribution.
 
-## [Mixture of probability laws:]{#Mixture}
+## [Mixture of probability laws]{#Mixture}
 
 
 -   *Bernoulli-dist mixture:* d, p, q, r functions for
@@ -1328,7 +1328,7 @@ mode
     mixtures.
     
     
-## [Random matrices:]{#Matrix}
+## [Random matrices]{#Matrix}
 
 
 -   *Huang-Wan distribution:* provided in
@@ -1389,7 +1389,7 @@ mode
 -   *Zellner distribution:* provided in
     `r pkg("LaplacesDemon")`.
 
-## [Copulas:]{#Copulas}
+## [Copulas]{#Copulas}
 
 
 -   *Unified approaches:* The packages
@@ -1463,7 +1463,7 @@ mode
     functions for C- and D-vine copulas and
     `r pkg("VineCopula")` for general R-vine copulas.
 
-## [Compound, composite, discretized, exponentiated and transformation of distributions:]{#Transform}
+## [Compound, composite, discretized, exponentiated and transformation of distributions]{#Transform}
 
 
 -   *Absolute value or half distribution:* Half-Cauchy, half normal and
@@ -1534,7 +1534,7 @@ mode
     distribution; `r pkg("LaplacesDemon")` provides a
     generic function in a Bayesian environment.
 
-# [Moments, skewness, kurtosis and etc:]{#Moments}
+# [Moments, skewness, kurtosis and etc]{#Moments}
 
 
 -   *Empirical mean, standard deviation and variance:* base R provides
@@ -1628,7 +1628,7 @@ mode
 
 
 
-# [Random number generators (RNG):]{#Random}
+# [Random number generators (RNG)]{#Random}
 
 
 -   *Basic functionality:* R provides several random number generators
@@ -1708,7 +1708,7 @@ mode
     `r pkg("watson")` allows simulating mixtures of Watson distributions.
     
 
-# [Miscellaneous:]{#Misc}
+# [Miscellaneous]{#Misc}
 
 
 -   *Computation:*
