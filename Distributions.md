@@ -187,8 +187,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("gamlss.dist")`, `r pkg("actuar")`
     and in `r pkg("VGAM")`. The time-varying geometric is
     provided in `r pkg("tvgeom")`.
--   *Geometric (compound) Poisson distribution (also known Polya-Aeppli
-    distribution):* provided in `r pkg("polyaAeppli")`.
+-   *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`.
 -   *Generalized/fractional binomial distribution:* 
     `r pkg("GenBinomApps")` provides the generalized binomial distribution.
     `r pkg("frbinom")` provides the fractional binomial distribution
@@ -254,7 +253,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Skellam distribution:* provided in
     `r pkg("extraDistr")`, `r pkg("VGAM")` and
     `r pkg("skellam")`.
--   *Waring distribution:* sampling in `r pkg("degreenet")`.
+-   *Waring distribution:* `r pkg("degreenet")` provides a random
+    generator, `r pkg("cpd")` provides d, p, q, r functions for extended
+    biparametric Waring.
 -   *Yule-Simon distribution:* provided in `r pkg("VGAM")`
     and sampling in `r pkg("degreenet")`.
 -   *Zeta and Haight's Zeta distribution:* provided in
@@ -989,6 +990,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("PearsonDS", priority = "core")` provides the d,
     p, q, r functions as well as the first four moments for the Pearson
     distributions: types I, II, III, IV, V, VI, VII.
+    `r pkg("cpd")` provides d, p, q, r for complex bi/triparametric
+    Pearson distributions. 
 -   *Pearson's Rho distribution:* provided in
     `r pkg("SuppDists")`.
 -   *Perks distribution:* provided in `r pkg("VGAM")`.
@@ -1030,6 +1033,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     moment log stable distributions.
     `r pkg("SymTS")` provides (d, p, q, r) functions for symmetric stable, symmetric 
     classical tempered stable, and symmetric power tempered stable distributions.
+    `r pkg("TempStable")` provides (d, p, q, r) functions for tempered stable
+    distributions.
 -   *Student distribution and its extensions:* Base R provides the d, p,
     q, r functions for Student and non central Student distribution (see
     above). `r pkg("extraDistr")` and
