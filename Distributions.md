@@ -1437,11 +1437,9 @@ mode
     composition of two copulas.
 -   *Cubic copula:* Not yet implemented?
 -   *Dirichlet copula:* Not yet implemented?
--   *Empirical copula:* provided in `r pkg("copBasic")`,
-    `r pkg("HAC")`.
-    `r pkg("GenOrd")` provides sampling function for
-    multivariate discrete random vectors with a specified correlation
-    matrix.
+-   *Empirical copula:* provided in `r pkg("copBasic")`, `r pkg("copent")`, `r pkg("HAC")`.
+    `r pkg("GenOrd")` provides sampling function for multivariate discrete random vectors 
+    with a specified correlation matrix.
 -   *Elliptical copulas:* Gaussian, Student and Cauchy copulas are
     implemented in `r pkg("fCopulae")` for the bivariate
     cases. `r pkg("copula")`, `r pkg("VGAM")`,
