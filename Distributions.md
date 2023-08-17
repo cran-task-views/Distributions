@@ -1035,6 +1035,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     classical tempered stable, and symmetric power tempered stable distributions.
     `r pkg("TempStable")` provides (d, p, q, r) functions for tempered stable
     distributions.
+    `r pkg("libstable4u")` provides (d, p, q, r) functions for skew stable distributions.
+    
 -   *Student distribution and its extensions:* Base R provides the d, p,
     q, r functions for Student and non central Student distribution (see
     above). `r pkg("extraDistr")` and
