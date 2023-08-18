@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-08-17
+version: 2023-08-18
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1031,12 +1031,12 @@ Extreme Value) in order to compute the log-likelihood for example.
     distribution (d, p, q, r). `r pkg("FMStable")` provides
     (d, p, q) the extremal or maximally skew stable and the finite
     moment log stable distributions.
-    `r pkg("SymTS")` provides (d, p, q, r) functions for symmetric stable, symmetric 
+    `r pkg("SymTS")` provides d, p, q, r functions for symmetric stable, symmetric 
     classical tempered stable, and symmetric power tempered stable distributions.
-    `r pkg("TempStable")` provides (d, p, q, r) functions for tempered stable
+    `r pkg("TempStable")` provides d, p, q, r functions for tempered stable
     distributions.
-    `r pkg("libstable4u")` provides (d, p, q, r) functions for skew stable distributions.
-    
+    `r pkg("libstable4u")` provides d, p, q, r functions for skew stable distributions.
+    `r pkg("dstabledist")` provides d, p, r functions for skew stable distributions.
 -   *Student distribution and its extensions:* Base R provides the d, p,
     q, r functions for Student and non central Student distribution (see
     above). `r pkg("extraDistr")` and
@@ -1153,6 +1153,8 @@ mode
     r functions for the multivariate Cauchy distribution parametrized
     either by sigma, by the Cholesky decomposition of sigma, by the
     precision matrix omega or by the Cholesky decomposition of omega.
+    `r pkg("mcauchyd")` provides d, r function of the multivariate 
+    Cauchy distribution.
 -   *Cook-Johnson's Multivariate Uniform Distribution:*
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions.
@@ -1205,6 +1207,8 @@ mode
     the multivariate normal distribution on the simplex and multivariate
     skew normal distribution on the simplex. A random generator of the
     multivariate normal is provided in `r pkg("MultiRNG")`.
+    `r pkg("mggd")` provides d, r function of the multivariate generalized
+    Gaussian distribution.
 -   *Multivariate generalized hyperbolic distribution:*
     `r pkg("QRM")` provides d, r functions of the standard
     and the symmetric multivariate generalized hyperbolic distribution.
