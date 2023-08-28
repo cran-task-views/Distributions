@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-08-18
+version: 2023-08-28
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -740,10 +740,10 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("SuppDists")` also provides a function that
     returns moments, skewness, kurtosis. `r pkg("fBasics")`
     the normal inverse Gaussian and standardized normal inverse Gaussian
-    distributions. The generalized inverse gaussian distribution can be
-    found in `r pkg("gamlss.dist")`,
-    `r pkg("QRM")`, `r pkg("rmutil")`, and
-    `r pkg("HyperbolicDist")`. A random generator is
+    distributions. The generalized inverse gaussian (GIG) distribution can be
+    found in `r pkg("gamlss.dist")`, `r pkg("ginormal")`, `r pkg("HyperbolicDist")`,
+    `r pkg("QRM")`, `r pkg("rmutil")`. The truncated GIG is also available
+    in `r pkg("ginormal")`. A random generator is
     available for the (generalized) Inverse Gaussian distribution is
     implemented in `r pkg("Runuran")` as well as the density
     function. `r pkg("GIGrvg")` generates random variables
