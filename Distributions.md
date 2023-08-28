@@ -406,8 +406,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("BMT")`.
 -   *Bhattacharjee (normal+uniform) distribution:* provided in package
     `r pkg("extraDistr")`.
--   *Birnbaum-Saunders distribution:* provided in package
-    `r pkg("VGAM")` and `r pkg("extraDistr")`.
+-   *Birnbaum-Saunders distribution:* provided in 
+    `r pkg("bsgof")`, `r pkg("extraDistr")`, `r pkg("VGAM")`.
 -   *Bridge distribution:* provided in
     `r pkg("bridgedist")`, as detailed in Wang and Louis
     (2003). The distribution of random intercept that allows a
