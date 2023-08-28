@@ -1177,6 +1177,7 @@ mode
     Gaussian distribution is provided in the packages
     `r pkg("mvtnorm", priority = "core")` (d, p, r),
     `r pkg("mnormt", priority = "core")` (d, p, r),
+    `r pkg("mnorm")` (d, p, r),
     `r pkg("mniw")` (d, r),
     `r pkg("Compositional")` (r),
     `r pkg("compositions")` (r). `r pkg("pbv")`
