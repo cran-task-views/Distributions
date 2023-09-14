@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-08-28
+version: 2023-09-14
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1721,7 +1721,7 @@ mode
 # [Miscellaneous]{#Misc}
 
 
--   *Computation:*
+-   *Computation/benchmark:*
     -   *Approximation of d, p, q, r functions:*
         `r pkg("PDQutils")` provides tools for computing the
         density, cumulative distribution, and quantile functions of a
@@ -1735,6 +1735,10 @@ mode
         approximations and alternative computations for d, p, q
         functions of probability distributions in R are given
         `r pkg("DPQ")`.
+    -   `r pkg("benchden")` implements the 28 distributions introduced 
+        as kernel benchmarks for nonparametric density estimation by 
+        [Berlinet and Devroye (1994)](https://hal.science/hal-03659919):
+        includes d, p, q, r functions as well as additional information on features of the densities.
     -   For non-uniform generation, see the
         `r pkg("Runuran")` above.
 
@@ -1747,9 +1751,9 @@ mode
         information loss metrics associated with binning.
     -   *Empirical distribution:* Base R provides functions for
         univariate analysis: (1) the empirical density (see
-        density()), (2) the empirical cumulative distribution function
-        (see ecdf()), (3) the empirical quantile (see quantile())
-        and (4) random sampling (see sample()).
+        `density()`), (2) the empirical cumulative distribution function
+        (see `ecdf()`), (3) the empirical quantile (see `quantile()`)
+        and (4) random sampling with or without replacement (see `sample()`).
         `r pkg("distributionsrd")` provides d, p, q, r
         user-friendly functions for the empirical distributions as well
         as moments. `r pkg("mded")` provides a function for
