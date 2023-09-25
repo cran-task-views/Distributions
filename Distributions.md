@@ -325,6 +325,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 
 -   *Arcsine distribution:* implemented in package
     `r pkg("distr")`.
+-   *Argus distribution:* implemented in package
+    `r pkg("argus")`.
 -   *Beta distribution and its extensions:* Base R provides the d, p, q,
     r functions for this distribution (see above).
     `r pkg("extraDistr")` provides the beta distribution
