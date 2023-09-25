@@ -15,16 +15,6 @@ many CRAN packages provide additional useful distributions. In
 particular, multivariate distributions as well as copulas are available
 in contributed packages.
 
-Ultimate bibles on probability distributions are:
-
--   Different volumes of N. L. Johnson, S. Kotz and N. Balakrishnan
-    books, e.g. Continuous Univariate Distributions, Vol. 1,
--   Thesaurus of univariate discrete probability distributions by G.
-    Wimmer and G. Altmann.
--   Statistical Distributions by M. Evans, N. Hastings, B. Peacock.
--   Distributional Analysis with L-moment Statistics using the R
-    Environment for Statistical Computing, Asquith (2011).
-
 The maintainers gratefully acknowledge Achim Zeileis, David Luethi,
 Tobias Verbeke, Robin Hankin, Mathias Kohl, G. Jay Kerns, Kjetil
 Halvorsen, William Asquith for their useful comments/suggestions. If you
@@ -1855,7 +1845,21 @@ mode
 
 
 
-### Links
+
+## Bibliography
+
+### Usual references
+- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1994). Continuous univariate distributions, Volume 1, Wiley. 
+- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1995). Continuous univariate distributions, Volume 2, Wiley. 
+- Samuel Kotz, Narayanaswamy Balakrishnan, Norman L. Johnson (2000). Continuous
+multivariate distributions Volume 1, Wiley
+- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1997). Discrete
+multivariate distributions, Wiley
+- Norman L. Johnson, Adrienne W. Kemp, Samuel Kotz (2008). Univariate discrete distributions, Wiley. `r doi("10.1002/0471715816")`
+- G. Wimmer (1999),  Thesaurus of univariate discrete probability distributions.
+- Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock (2010). Statistical Distributions, Wiley. `r doi("10.1002/9780470627242")`
+
+### External links
 
 -   [Clickable diagram of distribution relationships](http://www.johndcook.com/distribution_chart.html)
 -   [Diagram of discrete distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
