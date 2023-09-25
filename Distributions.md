@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-09-14
+version: 2023-09-25
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -646,8 +646,11 @@ Extreme Value) in order to compute the log-likelihood for example.
     function of quadratic forms in normal variates.
     `r pkg("NormalLaplace")` provides d, p, q, r functions
     for the sum of a normal and a Laplace random variables, while
-    `r pkg("LaplacesDemon")` provides d, r function of the
+    `r pkg("LaplacesDemon")` provides d, r functions of the
     sum of a normal and a Laplace random variables.
+    `r pkg("PSDistr")` provides d, p, q, r functions of transformations
+    of the normal distribution, such as expnormal and sinh-normal distributions.
+    
     
       --------------------------------- -----------------   --------------- -----------------------
       *Distribution name*               *Packages*          *Functions*     *Distribution suffix*
