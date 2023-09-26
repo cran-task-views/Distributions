@@ -43,6 +43,7 @@ repository linked above.
 - [Moments, skewness, kurtosis and etc](#Moments) 
 - [Random number generators (RNG)](#Random) 
 - [Miscellaneous](#Misc) 
+- [Bibliography](#Bibliography) 
 
 
 # [Base functionality]{#Base}
@@ -1848,25 +1849,34 @@ mode
 
 ## Bibliography
 
-### Usual references
-- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1994). Continuous univariate distributions, Volume 1, Wiley. 
-- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1995). Continuous univariate distributions, Volume 2, Wiley. 
-- Samuel Kotz, Narayanaswamy Balakrishnan, Norman L. Johnson (2000). Continuous
-multivariate distributions Volume 1, Wiley
-- Norman L. Johnson, Samuel Kotz, Narayanaswamy Balakrishnan (1997). Discrete
+### General books
+- N. L. Johnson, S. Kotz, N. Balakrishnan (1994). Continuous univariate distributions, Volume 1, Wiley. 
+- N. L. Johnson, S. Kotz, N. Balakrishnan (1995). Continuous univariate distributions, Volume 2, Wiley. 
+- N. L. Johnson, S. Kotz, N. Balakrishnan (1997). Discrete
 multivariate distributions, Wiley
-- Norman L. Johnson, Adrienne W. Kemp, Samuel Kotz (2008). Univariate discrete distributions, Wiley. `r doi("10.1002/0471715816")`
+- N. L. Johnson, A. W. Kemp, S. Kotz (2008). Univariate discrete distributions, Wiley. `r doi("10.1002/0471715816")`
+- S. Kotz, N. Balakrishnan, N. L. Johnson (2000). Continuous
+multivariate distributions Volume 1, Wiley
 - G. Wimmer (1999),  Thesaurus of univariate discrete probability distributions.
-- Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock (2010). Statistical Distributions, Wiley. `r doi("10.1002/9780470627242")`
+
+### Books dedicated to a distribution family
+- M. Ahsanullah, B.M. Golam Kibria, M. Shakil (2014). Normal and Student's t Distributions and Their Applications, Springer. `r doi("10.2991/978-94-6239-061-4")`
+- B. C. Arnold (2010). Pareto Distributions, Chapman and Hall. `r doi("10.1201/b18141")`
+- N. Balakrishnan (2014). Handbook of the Logistic Distribution, CRC Press. `r doi("10.1201/9781482277098 ")`
+
+### Books with applications
+- C. Forbes, M. Evans, N. Hastings, B. Peacock (2011). Statistical Distributions, Wiley. `r doi("10.1002/9780470627242")`
+- K. Krishnamoorthy (2015). Handbook of Statistical Distributions with Applications, Chapman and Hall. `r doi("10.1201/b19191")`
+- Z. A. Karian, E. J. Dudewicz, K. Shimizu (2010). Handbook of Fitting Statistical Distributions with R, CRC Press. `r doi("10.1201/b10159-3")` 
 
 ### External links
 
--   [Clickable diagram of distribution relationships](http://www.johndcook.com/distribution_chart.html)
--   [Diagram of discrete distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
--   [Diagram of continuous distribution relationships](http://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&B.pdf)
--   [List and diagram of distribution relationship.](http://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)
--   [Compendium of distributions.](http://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
--   [A comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
+-   [Clickable diagram of distribution relationships](https://www.johndcook.com/blog/distribution_chart/)
+-   [Compendium of distributions.](https://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
+-   [Comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
+-   [Diagram of discrete distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
+-   [Diagram of continuous distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&B.pdf)
 -   [Journal of Statistical Software: R programs for truncated distributions](https://www.jstatsoft.org/v16/c02/)
+-   [List and diagram of distribution relationship.](https://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)
 
 
