@@ -23,30 +23,26 @@ to the maintainer or submit an issue or pull request in the GitHub
 repository linked above.
 
 ### Table of contents
-- [Base functionality](#Base) 
-
-- [Discrete distributions](#Discrete) 
-  - [Univariate Discrete](#UnivariateDiscrete) 
-  - [Multivariate Discrete](#MultivariateDiscrete) 
-  
-- [Continuous distributions](#Continuous) 
-  - [Univariate Continuous](#UnivariateContinuous) 
-  - [Multivariate Continuous](#MultivariateContinuous) 
-
-- [Other distributions](#Other)
-  - [Mixed-type distributions](#MixedType)
-  - [Mixture of probability laws](#Mixture)
-  - [Random matrices](#Matrix) 
-  - [Copulas](#Copulas) 
-  - [Compound, composite, discretized, exponentiated and transformation of distributions](#Transform)
-
-- [Moments, skewness, kurtosis and etc](#Moments) 
-- [Random number generators (RNG)](#Random) 
-- [Miscellaneous](#Misc) 
-- [Bibliography](#Bibliography) 
+- [Base functionality](#base) 
+- [Discrete distributions](#discrete-distributions) 
+  - [Univariate Discrete](#discrete-univariate-distributions) 
+  - [Multivariate Discrete](#discrete-multivariate-distributions) 
+- [Continuous distributions](#continuous-distributions) 
+  - [Univariate Continuous](#continuous-univariate-distributions) 
+  - [Multivariate Continuous](#continuous-multivariate-distributions) 
+- [Other distributions](#other)
+  - [Mixed-type distributions](#mixedType)
+  - [Mixture of probability laws](#mixture)
+  - [Random matrices](#matrix) 
+  - [Copulas](#copulas) 
+  - [Compound, composite, discretized, exponentiated and transformation of distributions](#transform)
+- [Moments, skewness, kurtosis and etc](#moments) 
+- [Random number generators (RNG)](#random-number-generators) 
+- [Miscellaneous](#miscellaneous) 
+- [Bibliography](#bibliography) 
 
 
-# [Base functionality]{#Base}
+# [Base functionality]{#base}
 
 
 -   Base R provides probability distribution functions `p`*foo*`()`
@@ -89,10 +85,8 @@ two probability distribution (Generalized Pareto and Generalized
 Extreme Value) in order to compute the log-likelihood for example.
 
 
-# [Discrete distributions]{#Discrete}
-
-## [Discrete univariate distributions]{#UnivariateDiscrete}
-
+# Discrete distributions
+## Discrete univariate distributions
 
 -   *Beta-binomial distribution:* provided in
     `r pkg("VGAM", priority = "core")`,
@@ -260,7 +254,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     Zipf distribution: the Marshall-Olkin Extended Zipf, the
     Zipf-Poisson Extreme and the Zipf-Poisson Stopped Sum distributions.
 
-## [Discrete multivariate distributions]{#MultivariateDiscrete}
+## Discrete multivariate distributions
 
 
 -   *Hyper Dirichlet distribution:* provided in
@@ -309,9 +303,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 -   *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
     
-# [Continuous distributions]{#Continuous}     
+# Continuous distributions
 
-## [Continuous univariate distributions]{#UnivariateContinuous}
+## Continuous univariate distributions
 
 
 -   *Arcsine distribution:* implemented in package
@@ -1132,7 +1126,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     first-passage time of a diffusion model.
 mode
 
-## [Continuous multivariate distributions]{#MultivariateContinuous}
+## Continuous multivariate distributions
 
 
 -   *Bivariate Pareto:* `r pkg("Bivariate.Pareto")` provides
@@ -1259,9 +1253,9 @@ mode
     `r pkg("MultiRNG")`. `r pkg("compositions")`
     provides a random generator on the simplex.
 
-# [Other distributions]{#Other}
+# [Other distributions]{#other}
 
-## [Mixed-type distributions]{#MixedType}
+## [Mixed-type distributions]{#mixedType}
 
 
 -   *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
@@ -1276,7 +1270,7 @@ mode
     provides the zero-modified normal distribution and the zero-modified
     lognormal distribution.
 
-## [Mixture of probability laws]{#Mixture}
+## [Mixture of probability laws]{#mixture}
 
 
 -   *Bernoulli-dist mixture:* d, p, q, r functions for
@@ -1336,7 +1330,7 @@ mode
     mixtures.
     
     
-## [Random matrices]{#Matrix}
+## [Random matrices]{#matrix}
 
 
 -   *Huang-Wan distribution:* provided in
@@ -1397,7 +1391,7 @@ mode
 -   *Zellner distribution:* provided in
     `r pkg("LaplacesDemon")`.
 
-## [Copulas]{#Copulas}
+## Copulas
 
 
 -   *Unified approaches:* The packages
@@ -1469,7 +1463,7 @@ mode
     functions for C- and D-vine copulas and
     `r pkg("VineCopula")` for general R-vine copulas.
 
-## [Compound, composite, discretized, exponentiated and transformation of distributions]{#Transform}
+## [Compound, composite, discretized, exponentiated and transformation of distributions]{#transform}
 
 
 -   *Absolute value or half distribution:* Half-Cauchy, half normal and
@@ -1540,7 +1534,7 @@ mode
     distribution; `r pkg("LaplacesDemon")` provides a
     generic function in a Bayesian environment.
 
-# [Moments, skewness, kurtosis and etc]{#Moments}
+# [Moments, skewness, kurtosis and etc]{#moments}
 
 
 -   *Empirical mean, standard deviation and variance:* base R provides
@@ -1634,7 +1628,7 @@ mode
 
 
 
-# [Random number generators (RNG)]{#Random}
+# Random number generators
 
 
 -   *Basic functionality:* R provides several random number generators
@@ -1714,7 +1708,7 @@ mode
     `r pkg("watson")` allows simulating mixtures of Watson distributions.
     
 
-# [Miscellaneous]{#Misc}
+# Miscellaneous
 
 
 -   *Computation/benchmark:*
