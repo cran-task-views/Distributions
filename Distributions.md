@@ -45,7 +45,7 @@ repository linked above.
 # [Base functionality]{#base}
 
 
--   Base R provides probability distribution functions `p`*foo*`()`
+- Base R provides probability distribution functions `p`*foo*`()`
     density functions `d`*foo*`()`, quantile functions `q`*foo*`()`,
     and random number generation `r`*foo*`()` where *foo* indicates
     the type of distribution: beta (*foo* = `beta`), binomial `binom`,
@@ -59,13 +59,12 @@ repository linked above.
     `birthday` (only p and q), studentized range distribution `tukey`
     (only p and q), Wilcoxon signed rank distribution `signrank`,
     Wilcoxon rank sum distribution `wilcox`.
--   Base R provides various one-sample or two-sample tests for univariate
+- Base R provides various one-sample or two-sample tests for univariate
     distributions, e.g., `ks.test`, `shapiro.test`, `ansari.test`, `chisq.test`,
     `poisson.test`. `r pkg("Ecume")` provides non-parametric two-sample (or k-sample) 
     distribution comparisons in the univariate or multivariate case allowing
     observation weights and thresholds.
-
--   Probability generating function: no longer implemented.
+- Probability generating function: no longer implemented.
 
 Some packages may optionally provide the symbolic derivatives with respect 
 to the parameters for the probability functions. 
@@ -88,15 +87,15 @@ Extreme Value) in order to compute the log-likelihood for example.
 # Discrete distributions
 ## Discrete univariate distributions
 
--   *Beta-binomial distribution:* provided in
+- *Beta-binomial distribution:* provided in 
     `r pkg("VGAM", priority = "core")`,
     `r pkg("extraDistr")`, `r pkg("rmutil")`,
     `r pkg("emdbook")`. ZI/ZM beta binomial distributions
     are implemented in
     `r pkg("gamlss.dist", priority = "core")`.
--   *Beta-geometric distribution:* provided in
+- *Beta-geometric distribution:* provided in
     `r pkg("VGAM")`.
--   *Binomial (including Bernoulli) distribution:* provided in **stats**
+- *Binomial (including Bernoulli) distribution:* provided in **stats**
     . Zero-modified, zero-inflated, truncated versions are provided in
     `r pkg("gamlss.dist")`,
     `r pkg("extraDistr")`,
@@ -121,67 +120,67 @@ Extreme Value) in order to compute the log-likelihood for example.
 
       :  Summary for Binomial-related distributions
 
--   *Bell Touchard distribution:* standard and zero-inflated
+- *Bell Touchard distribution:* standard and zero-inflated
     provided in `r pkg("countDM")`.
--   *Benford distribution:* provided in `r pkg("VGAM")` and
+- *Benford distribution:* provided in `r pkg("VGAM")` and
     `r pkg("BenfordTests")`.
--   *Bernoulli distribution:* provided in
+- *Bernoulli distribution:* provided in
     `r pkg("extraDistr")`.
--   *Borel-Tanner distribution:* provided in
+- *Borel-Tanner distribution:* provided in
     `r pkg("VGAM")`.
--   *Delaporte distribution:* provided in
+- *Delaporte distribution:* provided in
     `r pkg("gamlss.dist")` and
     `r pkg("Delaporte")`.
--   *Dirac distribution:* provided in
+- *Dirac distribution:* provided in
     `r pkg("distr", priority = "core")`.
--   *Discrete categorical distribution:* provided in
+- *Discrete categorical distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Discrete exponential distribution:* provided in
+- *Discrete exponential distribution:* provided in
     `r pkg("poweRlaw")`.
--   *Discrete gamma distribution:* provided in
+- *Discrete gamma distribution:* provided in
     `r pkg("extraDistr")`.
--   *Discrete inverse Weibull distribution:*
+- *Discrete inverse Weibull distribution:*
     `r pkg("DiscreteInverseWeibull")` provides d, p, q, r
     functions for the inverse Weibull as well as hazard rate function
     and moments.
--   *Discrete Laplace distribution:* The discrete Laplace distribution
+- *Discrete Laplace distribution:* The discrete Laplace distribution
     is provided in `r pkg("extraDistr")` (d, p, r). The skew
     discrete Laplace distribution has two parametrization (DSL and
     ADSL), both provided in `r pkg("DiscreteLaplace")` and
     DSL in `r pkg("disclap")`.
     `r pkg("LaplacesDemon")` also provides the DSL
     parametrization only.
--   *Discrete lognormal distribution:* provided in
+- *Discrete lognormal distribution:* provided in
     `r pkg("poweRlaw")`.
--   *Discrete normal distribution:* provided in
+- *Discrete normal distribution:* provided in
     `r pkg("extraDistr")`.
--   *Discrete power law distribution:* provided in
+- *Discrete power law distribution:* provided in
     `r pkg("poweRlaw")`.
--   *Discrete uniform distribution:* can be easily obtained with the
+- *Discrete uniform distribution:* can be easily obtained with the
     functions `sum,cumsum,sample` and is provided in
     `r pkg("extraDistr")`.
--   *Discrete Weibull distribution:* provided in
+- *Discrete Weibull distribution:* provided in
     `r pkg("DiscreteWeibull")`: d, p, q, r, m for disc.
     Weib. type 1, d, p, q, r, m, h for disc. Weib. type 3.
     `r pkg("extraDistr")` provides d, p, q, r for Type 1.
--   *Felix distribution:* provided in `r pkg("VGAM")`.
--   *gamma count distribution:* provided in
+- *Felix distribution:* provided in `r pkg("VGAM")`.
+- *gamma count distribution:* provided in
     `r pkg("rmutil")`.
--   *Geometric distribution:* provided in **stats** . Zero-modified,
+- *Geometric distribution:* provided in **stats** . Zero-modified,
     zero-inflated, truncated versions are provided in
     `r pkg("gamlss.dist")`, `r pkg("actuar")`
     and in `r pkg("VGAM")`. The time-varying geometric is
     provided in `r pkg("tvgeom")`.
--   *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`.
--   *Generalized/fractional binomial distribution:* 
+- *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`.
+- *Generalized/fractional binomial distribution:* 
     `r pkg("GenBinomApps")` provides the generalized binomial distribution.
     `r pkg("frbinom")` provides the fractional binomial distribution
     where trials are from a generlized Bernoulli process.
--   *Generalized Hermite distribution:* provided in
+- *Generalized Hermite distribution:* provided in
     `r pkg("hermite")`.
--   *Good distribution:* provided in
+- *Good distribution:* provided in
     `r pkg("good")`.
--   *Hypergeometric distribution:* provided in **stats** . Non-central
+- *Hypergeometric distribution:* provided in **stats** . Non-central
     hypergeometric distribution is provided in
     `r pkg("MCMCpack")` (d,r). Extended hypergeometric
     distribution can be found in `r pkg("BiasedUrn")`
@@ -190,12 +189,12 @@ Extreme Value) in order to compute the log-likelihood for example.
     implemented in `r pkg("SuppDists")`. Negative
     hypergeometric distribution is provided in
     `r pkg("tolerance")`, `r pkg("extraDistr")`.
--   *Lagrangian Poisson distribution:*
+- *Lagrangian Poisson distribution:*
     `r pkg("RMKdiscrete")` provides d, p, q, r functions for
     the univariate and the bivariate Lagrangian Poisson distribution.
--   *Lindley's power series distribution:* provided in
+- *Lindley's power series distribution:* provided in
     `r pkg("LindleyPowerSeries")`.
--   *Logarithmic distribution:* This can be found in
+- *Logarithmic distribution:* This can be found in
     `r pkg("extraDistr")`, `r pkg("VGAM")`,
     `r pkg("actuar")`, and
     `r pkg("gamlss.dist")`. Zero-modified and zero-truncated
@@ -203,7 +202,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     generator is available for the logarithmic distribution is
     implemented in `r pkg("Runuran")` as well as the
     'density' function.
--   *Poisson distribution:* provided in **stats** and in
+- *Poisson distribution:* provided in **stats** and in
     `r pkg("poweRlaw")`. Zero-modified, zero-inflated,
     truncated versions are provided in
     `r pkg("extraDistr")`,
@@ -218,13 +217,13 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("PoissonBinomial")` provide the Poisson binomial
     distribution. See the mixture section such as the Poisson-lognormal
     mixture.
--   *Poisson-Lindley distribution:* provided in
+- *Poisson-Lindley distribution:* provided in
     `r pkg("tolerance")`.
--   *Power law distribution:* provided in
+- *Power law distribution:* provided in
     `r pkg("poweRlaw")`.
--   *Mana Clash distribution:* provided in
+- *Mana Clash distribution:* provided in
     `r pkg("RMKdiscrete")`.
--   *Negative binomial distribution:* provided in **stats** .
+- *Negative binomial distribution:* provided in **stats** .
     Zero-modified, zero-inflated, truncated versions are provided in
     `r pkg("gamlss.dist")`,
     `r pkg("extraDistr")`, `r pkg("emdbook")`,
@@ -233,19 +232,19 @@ Extreme Value) in order to compute the log-likelihood for example.
     available in `r pkg("RMKdiscrete")`.
     `r pkg("nbconv")` provides p, q, r functions for convolutions
     of negative binomial distributions.
--   *Sichel distribution:* provided in
+- *Sichel distribution:* provided in
     `r pkg("gamlss.dist")`.
--   *Skellam distribution:* provided in
+- *Skellam distribution:* provided in
     `r pkg("extraDistr")`, `r pkg("VGAM")` and
     `r pkg("skellam")`.
--   *Waring distribution:* `r pkg("degreenet")` provides a random
+- *Waring distribution:* `r pkg("degreenet")` provides a random
     generator, `r pkg("cpd")` provides d, p, q, r functions for extended
     biparametric Waring.
--   *Yule-Simon distribution:* provided in `r pkg("VGAM")`
+- *Yule-Simon distribution:* provided in `r pkg("VGAM")`
     and sampling in `r pkg("degreenet")`.
--   *Zeta and Haight's Zeta distribution:* provided in
+- *Zeta and Haight's Zeta distribution:* provided in
     `r pkg("VGAM")`, `r pkg("tolerance")`.
--   *Zipf distribution and extensions:* d, p, q, r functions of the Zipf
+- *Zipf distribution and extensions:* d, p, q, r functions of the Zipf
     and the Zipf-Mandelbrot distributions are provided in
     `r pkg("tolerance")`, `r pkg("VGAM")`.
     Package `r pkg("zipfR")` provides tools for distribution
@@ -257,50 +256,50 @@ Extreme Value) in order to compute the log-likelihood for example.
 ## Discrete multivariate distributions
 
 
--   *Hyper Dirichlet distribution:* provided in
+- *Hyper Dirichlet distribution:* provided in
     `r pkg("hyper2")` package.
--   *Multinomial distribution:* stats, `r pkg("mc2d")`,
+- *Multinomial distribution:* stats, `r pkg("mc2d")`,
     `r pkg("extraDistr")` packages provide d, r functions. r
     is provided in `r pkg("MultiRNG")` and
     `r pkg("compositions")`. p function is provided by
     `r pkg("pmultinom")`.
--   *Multinomial Dirichlet distribution:* functions d, r are provided in
+- *Multinomial Dirichlet distribution:* functions d, r are provided in
     `r pkg("MCMCpack")`, `r pkg("mc2d")`,
     `r pkg("dirmult")`, `r pkg("extraDistr")`
     and `r pkg("bayesm")`. r is provided in
     `r pkg("MultiRNG")`.
--   *Multivariate Ewens distribution:* not yet implemented?
--   *Multivariate geometric:* d, r functions provided in
+- *Multivariate Ewens distribution:* not yet implemented?
+- *Multivariate geometric:* d, r functions provided in
     `r pkg("bivgeom")` for the bivariate geometric distribution. 
     `r pkg("BivGeo")` provides the Basu-Dhar bivariate geometric distribution.
--   *Multivariate hypergeometric distribution:* provided in
+- *Multivariate hypergeometric distribution:* provided in
     `r pkg("extraDistr")`. The conditional hypergeometric distribution is
     provided (d, p, q, r) in `r pkg("chyper")`.
--   *Multivariate logarithmic distribution:* the bivariate
+- *Multivariate logarithmic distribution:* the bivariate
     logarithmic distribution is provided in
     `r pkg("trawl")`.    
--   *Multiplicative multinomial distribution:* The multiplicative multinomial
+- *Multiplicative multinomial distribution:* The multiplicative multinomial
     distribution is implemented in `r pkg("MM")`.
--   *Multivariate negative distribution:* A bivariate distribution with
+- *Multivariate negative distribution:* A bivariate distribution with
     negative-binomial marginals is available in
     `r pkg("RMKdiscrete")` and `r pkg("trawl")`. 
     `r pkg("MNB")` provides a generator and 
     diagnostic tool for multivariate negative binomial distribution.  
     `r pkg("bzinb")` provides a random generator for the bivariate negative
     binomial (classic and zero-inflated) distribution.
--   *Multivariate Poisson distribution:*
+- *Multivariate Poisson distribution:*
     `r pkg("compositions")` provides a random generator.
     `r pkg("bzinb")` provides a random generator for the bivariate Poisson 
     (classic and zero-inflated) distribution.
--   *Multivariate Poisson-lognormal:* the bivariate
+- *Multivariate Poisson-lognormal:* the bivariate
     Poisson-lognormal distribution is provided in
     `r pkg("poilog")`.
--   *Multivariate Dirichlet (also known as Polya) distribution:* 
+- *Multivariate Dirichlet (also known as Polya) distribution:* 
     functions d, r of the Dirichlet distribution are
     provided in `r pkg("extraDistr")`,
     `r pkg("LaplacesDemon")`, `r pkg("DirichletReg")` and
     `r pkg("Compositional")`.
--   *Truncated Stick-Breaking distribution:* provided in
+- *Truncated Stick-Breaking distribution:* provided in
     `r pkg("LaplacesDemon")`.
     
 # Continuous distributions
@@ -308,11 +307,11 @@ Extreme Value) in order to compute the log-likelihood for example.
 ## Continuous univariate distributions
 
 
--   *Arcsine distribution:* implemented in package
+- *Arcsine distribution:* implemented in package
     `r pkg("distr")`.
--   *Argus distribution:* implemented in package
+- *Argus distribution:* implemented in package
     `r pkg("argus")`.
--   *Beta distribution and its extensions:* Base R provides the d, p, q,
+- *Beta distribution and its extensions:* Base R provides the d, p, q,
     r functions for this distribution (see above).
     `r pkg("extraDistr")` provides the beta distribution
     parametrized by the mean and the precision.
@@ -379,7 +378,7 @@ Extreme Value) in order to compute the log-likelihood for example.
       :  Summary for Beta-2-related distributions
 
     
--   *Bell-G distribution:* `r pkg("BGFD")` provides d, p, q, r
+- *Bell-G distribution:* `r pkg("BGFD")` provides d, p, q, r
     functions for Bell exponential, Bell extended exponential, Bell
     Weibull, Bell extended Weibull, Bell-Fisk, Bell-Lomax, Bell
     Burr-XII, Bell Burr-X, complementary Bell exponential,
@@ -388,29 +387,29 @@ Extreme Value) in order to compute the log-likelihood for example.
     Bell-Fisk, complementary Bell-Lomax, complementary Bell 
     Burr-XII and complementary Bell Burr-X distribution.  
     The package also provides hazard function and an estimation procedure.
--   *Benini distribution:* provided in `r pkg("VGAM")`.
--   *Bezier-Montenegro-Torres distribution:* provided in
+- *Benini distribution:* provided in `r pkg("VGAM")`.
+- *Bezier-Montenegro-Torres distribution:* provided in
     `r pkg("BMT")`.
--   *Bhattacharjee (normal+uniform) distribution:* provided in package
+- *Bhattacharjee (normal+uniform) distribution:* provided in package
     `r pkg("extraDistr")`.
--   *Birnbaum-Saunders distribution:* provided in 
+- *Birnbaum-Saunders distribution:* provided in 
     `r pkg("bsgof")`, `r pkg("extraDistr")`, `r pkg("VGAM")`.
--   *Bridge distribution:* provided in
+- *Bridge distribution:* provided in
     `r pkg("bridgedist")`, as detailed in Wang and Louis
     (2003). The distribution of random intercept that allows a
     marginalized random intercept logistic regression to also be
     logistic regression.
--   *Box Cox distribution:* `r pkg("gamlss.dist")` provides
+- *Box Cox distribution:* `r pkg("gamlss.dist")` provides
     the Box-Cox normal, the Box-Cox power exponential and the Box-Cox t
     distributions. `r pkg("rmutil")` provides the Box-Cox
     normal.
--   *Burr distribution:* see Pareto.
--   *Cardioid distribution:* provided in `r pkg("VGAM")`
+- *Burr distribution:* see Pareto.
+- *Cardioid distribution:* provided in `r pkg("VGAM")`
     (d,p,q,r) and `r pkg("CircStats")`,
     `r pkg("circular")` (d,r).
--   *Carthwrite's Power-of-Cosine distribution:* provided in
+- *Carthwrite's Power-of-Cosine distribution:* provided in
     `r pkg("circular")` (d,r).
--   *Cauchy distribution:* Base R provides the d, p, q, r functions for
+- *Cauchy distribution:* Base R provides the d, p, q, r functions for
     this distribution (see above). Other implementations are available
     in `r pkg("lmomco", priority = "core")` and
     `r pkg("sgt")`. The skew Cauchy distribution is provided
@@ -418,12 +417,12 @@ Extreme Value) in order to compute the log-likelihood for example.
     provides d, p, q, r functions for the Half-Cauchy distribution. The
     wrapped Cauchy distribution is provided in
     `r pkg("CircStats")`.
--   *Chen distribution:* no longer implemented.
--   *Chernoff distribution:*  `r pkg("ChernoffDist")` provides
+- *Chen distribution:* no longer implemented.
+- *Chernoff distribution:*  `r pkg("ChernoffDist")` provides
     d, p, q functions of the distribution of the maximizer of the 
     two-sided Brownian motion minus quadratic drift, known as Chernoff's
     distribution.
--   *Chi(-squared or not) distribution:* Base R provides the d, p, q, r
+- *Chi(-squared or not) distribution:* Base R provides the d, p, q, r
     functions for the chi-squared distribution, both central and
     non-central (see above). Moments, limited expected values and the
     moment generating function are provided in
@@ -458,24 +457,24 @@ Extreme Value) in order to compute the log-likelihood for example.
       :  Summary for Chi-related distributions
 
     
--   *Circular distribution:* uniform circular provided in
+- *Circular distribution:* uniform circular provided in
     `r pkg("circular")` (d,r); Generalized von Mises
     circular provided in `r pkg("circular")` (d).
--   *Consul distribution:* see `r pkg("rmutil")`.
--   *Continuous binomial distribution:* `r pkg("cbinom")`
+- *Consul distribution:* see `r pkg("rmutil")`.
+- *Continuous binomial distribution:* `r pkg("cbinom")`
     provides the d/p/q/r functions for a continuous analog to the
     standard discrete binomial with continuous size parameter and
     continuous support with x in \[0, size + 1\].
--   *Dagum distribution:* see beta.
--   *Davies distribution:* The Davies distribution is provided in
+- *Dagum distribution:* see beta.
+- *Davies distribution:* The Davies distribution is provided in
     `r pkg("Davies")` package.
--   *(non-central) Dunnett's test distribution:* provided in
+- *(non-central) Dunnett's test distribution:* provided in
     `r pkg("nCDunnett")`.
--   *Eta-mu distribution:* provided in `r pkg("lmomco")`.
+- *Eta-mu distribution:* provided in `r pkg("lmomco")`.
     `r pkg("sadists")` implements Gram Charlier, Edgeworth
     and Cornish-Fisher approximations for doubly non central eta
     distribution for computing d, p, q, r functions.
--   *Exponential distribution and its extensions:* Base R provides the
+- *Exponential distribution and its extensions:* Base R provides the
     d, p, q, r functions for this distribution (see above).
     `r pkg("actuar")` provides additional functions such as
     the moment generating function, moments and limited expected values.
@@ -497,7 +496,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     density function.
     `r pkg("AEP")` implements the Asymmetric Exponential Power Distribution.
     
-      --------------------------------------------------  ---------------------   ---------------------- ----------------------------
+      --------------------------------------------------  --------------------- ---------------------- ----------------------------
       *Distribution name*                                 *Packages*             *Functions*             *Distribution suffix*
       Exponential                                         stats                   d, p, q, r             `exp`
       Exponential                                         actuar                  m, mgf, lev            `exp`
@@ -515,15 +514,15 @@ Extreme Value) in order to compute the log-likelihood for example.
       Skew power exp.                                     lmomco                  d, p, q, r, lm, tlmr   `aep4`
       Power and skew power exp.                           mixSPE                  r                      `pe, spe`
       Power and skew power exp.                           gamlss.dist             d, p, q, r             `PE, SEP`
-      -------------------------------------------------- ----------------------   ---------------------- ----------------------------
+      -------------------------------------------------- ---------------------- ---------------------- ----------------------------
 
       :  Summary for exponential-related distributions
 
     
--   *Externally studentized midrange distribution:* Package
+- *Externally studentized midrange distribution:* Package
     `r pkg("SMR")` computes the studentized midrange
     distribution (d, p, q, r).
--   *Fisher-Snedecor (or F) distribution:* Base R provides the d, p, q,
+- *Fisher-Snedecor (or F) distribution:* Base R provides the d, p, q,
     r functions for the F distribution, possibly with a non-central
     parameter. `r pkg("sadists")` implements Gram Charlier,
     Edgeworth and Cornish-Fisher approximations for doubly non central
@@ -535,7 +534,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     noncentrality parameter of the noncentral F distribution if
     probability of type I and type II error, degrees of freedom of the
     numerator and the denominator are given.
--   *Frechet distribution:* provided in `r pkg("VGAM")`,
+- *Frechet distribution:* provided in `r pkg("VGAM")`,
     `r pkg("RTDE")`, `r pkg("ReIns")`,
     `r pkg("extraDistr")`,
     `r pkg("distributionsrd")` and
@@ -544,9 +543,9 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("Runuran")` as well as the density function. The
     truncated Frechet distribution is provided in
     `r pkg("ReIns")`.
--   *Friedman's Chi distribution:* provided in
+- *Friedman's Chi distribution:* provided in
     `r pkg("SuppDists")`.
--   *Gamma distribution and its extensions:* Base R provides the d, p,
+- *Gamma distribution and its extensions:* Base R provides the d, p,
     q, r functions for this distribution (see above).
     `r pkg("EnvStats")` provides d, p, q, r functions of the
     gamma parametrized by the mean and the coefficient of variation.
@@ -578,7 +577,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     various functions to fit semi-parametric regression models.
     `r pkg("ollggamma")` provides d, p, q, r for the Odd Log-Logistic Generalized Gamma. 
     
-      ---------------------- ------------------   ------------------------- -----------------------
+      ---------------------- ------------------ ------------------------- -----------------------
       *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
       Gamma                  stats                d, p, q, r                `gamma`
       Gamma                  actuar               m, mgf, lev               `gamma`
@@ -600,15 +599,15 @@ Extreme Value) in order to compute the log-likelihood for example.
       convolution of gamma   coga                 d, p, r                   `coga`
       Full-taill gamma       distTails            d, p, r                   `dFTG`
       Generalized log-gamma  sglg                 d, p, q, r                `glg`
-      ---------------------- ------------------   ------------------------- -----------------------
+      ---------------------- ------------------ ------------------------- -----------------------
 
       :  Summary for gamma-related distributions
 
 
--   *Pólya–Gamma distribution:* r function random sampling routines for the distribution
+- *Pólya–Gamma distribution:* r function random sampling routines for the distribution
     are provided by `r pkg("BayesLogit")`, `r pkg("pg")`, and `r pkg("pgdraw")`.
     
--   *Gaussian (or normal) distribution and its extensions:* Base R
+- *Gaussian (or normal) distribution and its extensions:* Base R
     provides the d, p, q, r functions for this distribution (see above).
     `r pkg("actuar")` provides the moment generating
     function and moments. The `r pkg("truncnorm")` package
@@ -639,7 +638,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     of the normal distribution, such as expnormal and sinh-normal distributions.
     
     
-      --------------------------------- -----------------   --------------- -----------------------
+      --------------------------------- ----------------- --------------- -----------------------
       *Distribution name*               *Packages*          *Functions*     *Distribution suffix*
       Normal                            stats               d, p, q, r      `norm`
       Normal                            actuar              m, mgf          `norm`
@@ -655,14 +654,14 @@ Extreme Value) in order to compute the log-likelihood for example.
       Folded normal                     greybox             d, p, q, r      `fnorm`
       Closed skew normal                csn                 d, p, q, r      `csn`
       Skew normal                       sn                  d, p, q, r      `sn`
-      --------------------------------- -----------------   --------------- -----------------------
+      --------------------------------- ----------------- --------------- -----------------------
 
       :  Summary for Gaussian-related distributions
 
     
--   *General error distribution (also known as exponential power
+- *General error distribution (also known as exponential power
     distribution):* see *exponential* item.
--   *Generalized extreme value distribution:* d, p, q provided in
+- *Generalized extreme value distribution:* d, p, q provided in
     `r pkg("lmomco")`; d, p, q, r, provided in
     `r pkg("VGAM")`, `r pkg("evd")`,
     `r pkg("evir")`, `r pkg("FAdist")`,
@@ -672,15 +671,15 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("fExtremes")`. 
     `r pkg("revdbayes")` provide d,p,q,r functions of the
     GEV distribution in a Bayesian setting.
--   *Gompertz distribution:* provided in 
+- *Gompertz distribution:* provided in 
     `r pkg("flexsurv")`, `r pkg("extraDistr")`.
     `r pkg("flexsurv")` also provides hazard (h) and
     integrated hazard rate (i) functions. The shifted Gompertz
     distribution is implemented in `r pkg("extraDistr")`.
     The unit-Gompertz is provided in `r pkg("ugomquantreg")`.
--   *Govindarajulu distribution:* provided in
+- *Govindarajulu distribution:* provided in
     `r pkg("lmomco")`.
--   *Gumbel distribution:* provided in packages
+- *Gumbel distribution:* provided in packages
     `r pkg("lmomco")`, `r pkg("VGAM")`,
     `r pkg("gamlss.dist")`, `r pkg("FAdist")`,
     `r pkg("extraDistr")`, 
@@ -694,16 +693,16 @@ Extreme Value) in order to compute the log-likelihood for example.
     reverse Gumbel distribution is implemented in
     `r pkg("lmomco")` and `r pkg("gamlss.dist")`.
     `r pkg("bgumbel")` provides the bimodel Gumbel distribution.
--   *Hjorth distribution:* provided in `r pkg("rmutil")`.
--   *Huber distribution:* Huber's least favourable distribution
+- *Hjorth distribution:* provided in `r pkg("rmutil")`.
+- *Huber distribution:* Huber's least favourable distribution
     provided in package `r pkg("smoothmest")` (d, r), and in
     `r pkg("VGAM")`, `r pkg("marg")`,
     `r pkg("extraDistr")` (d, p, q, r).
--   *(generalized) G-and-K, G-and-H distributions:*
+- *(generalized) G-and-K, G-and-H distributions:*
     `r pkg("gk")` provides d, p, q, r functions for the
     g-and-k and generalized g-and-h distributions which are nonlinear
     transforms of the Gaussian variables.
--   *(generalized) Hyperbolic distribution:*
+- *(generalized) Hyperbolic distribution:*
     `r pkg("fBasics")`, `r pkg("ghyp")`,
     `r pkg("GeneralizedHyperbolic")` and
     `r pkg("HyperbolicDist")` packages provide d, p, q, r
@@ -716,11 +715,11 @@ Extreme Value) in order to compute the log-likelihood for example.
     fast random generator is available for the hyperbolic distribution
     is implemented in `r pkg("Runuran")` as well as the
     density function.
--   *Hyperbolic sine distribution and extension:*
+- *Hyperbolic sine distribution and extension:*
     `r pkg("gamlss.dist")` provides the sinh and the asinh
     distributions. Generalized Power Hyperbolic sine distributions are
     provided in `r pkg("FatTailsR")`.
--   *Inverse Gaussian (also known Wald) distribution:* d, p, q, and r
+- *Inverse Gaussian (also known Wald) distribution:* d, p, q, and r
     functions of the inverse Gaussian are provided in
     `r pkg("statmod")`, `r pkg("extraDistr")`,
     `r pkg("SuppDists")`, `r pkg("rmutil")`. `r pkg("LaplacesDemon")`
@@ -738,32 +737,32 @@ Extreme Value) in order to compute the log-likelihood for example.
     implemented in `r pkg("Runuran")` as well as the density
     function. `r pkg("GIGrvg")` generates random variables
     from the generalized inverse Gaussian distribution.
--   *Johnson distribution:* provided in
+- *Johnson distribution:* provided in
     `r pkg("SuppDists")`. `r pkg("ForestFit")`
     provides d, p of Johnson SB distribution.
--   *Jones and Pewsey distribution:* provided in
+- *Jones and Pewsey distribution:* provided in
     `r pkg("circular")` (d).
--   *K-prime distribution:* `r pkg("sadists")` implements
+- *K-prime distribution:* `r pkg("sadists")` implements
     Gram Charlier, Edgeworth and Cornish-Fisher approximations for
     K-prime distribution for computing d, p, q, r functions.
--   *Kappa distribution:* A 4-parameter Kappa distribution is provided
+- *Kappa distribution:* A 4-parameter Kappa distribution is provided
     in `r pkg("lmomco")` and `r pkg("FAdist")`.
--   *Kappa-mu distribution:* provided in `r pkg("lmomco")`.
--   *Kato-Jones distribution:* provided in
+- *Kappa-mu distribution:* provided in `r pkg("lmomco")`.
+- *Kato-Jones distribution:* provided in
     `r pkg("circular")` (d, r).
--   *Kendall's tau distribution:* provided in
+- *Kendall's tau distribution:* provided in
     `r pkg("SuppDists")`.
--   *Kiener distribution:* a family of distributions generalizing
+- *Kiener distribution:* a family of distributions generalizing
     hyperbolic sine distributions (see hyperbolic sine section), d, p,
     q, r, m provided in `r pkg("FatTailsR")`.
--   *Kruskal Wallis distribution:* provided in
+- *Kruskal Wallis distribution:* provided in
     `r pkg("SuppDists")`.
--   *Kumaraswamy distribution:* provided in packages
+- *Kumaraswamy distribution:* provided in packages
     `r pkg("VGAM")`, `r pkg("extraDistr")` and
     `r pkg("lmomco")`. `r pkg("elfDistr")`
     provides the Kumaraswamy Complementary Weibull Geometric Probability
     Distribution.
--   *(Tukey) Lambda distribution and its extensions:* The generalized
+- *(Tukey) Lambda distribution and its extensions:* The generalized
     Lambda distribution (GLD) is well known for its wide range of
     shapes. The original Tukey Lambda distribution can be obtained as a
     special case of the generalized Lambda distribution. There exists
@@ -778,18 +777,18 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("extraDistr")` (original Tukey).
     `r pkg("ecd")` provides the elliptic lambda distribution
     and its use for financial pricing.
--   *Tukey's G/H distribution:* 
+- *Tukey's G/H distribution:* 
     no longer provided directly, but
     Tukey's H distribution is provided as a special case of Lambert W x
     F distribution.
--   *Lambda-prime distribution:* `r pkg("sadists")`
+- *Lambda-prime distribution:* `r pkg("sadists")`
     implements Gram Charlier, Edgeworth and Cornish-Fisher
     approximations for K-prime distribution for computing d, p, q, r
     functions.
--   *Lambert W x F distribution:* `r pkg("LambertW")`
+- *Lambert W x F distribution:* `r pkg("LambertW")`
     package provides d, p, q, r functions as well as the first 4 central
     moments and a qqplot.
--   *Laplace (also called double exponential distribution) and asymmetric Laplace distribution:* provided in
+- *Laplace (also called double exponential distribution) and asymmetric Laplace distribution:* provided in
     `r pkg("distr")`, `r pkg("lmomco")`,
     `r pkg("LaplacesDemon")`, `r pkg("L1pack")`, `r pkg("VGAM")`,
     `r pkg("sgt")`, `r pkg("extraDistr")`,
@@ -806,15 +805,15 @@ Extreme Value) in order to compute the log-likelihood for example.
     random generator. The skew Laplace distribution is available in
     `r pkg("sgt")`. `r pkg("LaplacesDemon")`
     provides the log-Laplace distribution.
--   *LASSO distribution:* provided in
+- *LASSO distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Lévy distribution:* provided in `r pkg("rmutil")`.
--   *Lindley distribution:* provided in `r pkg("VGAM")` and
+- *Lévy distribution:* provided in `r pkg("rmutil")`.
+- *Lindley distribution:* provided in `r pkg("VGAM")` and
     `r pkg("gambin")`.
--   *Linear failure rate distribution:* no longer implemented.
--   *Loglog distribution:* no longer implemented.
--   *Lomax distribution:* see beta.
--   *Logistic distribution and its extensions:* Base R provides the d,
+- *Linear failure rate distribution:* no longer implemented.
+- *Loglog distribution:* no longer implemented.
+- *Lomax distribution:* see beta.
+- *Logistic distribution and its extensions:* Base R provides the d,
     p, q, r functions for this distribution (see above).
     `r pkg("actuar")` and `r pkg("VGAM")`
     provide d, p, q, r functions for the log logistic (also called
@@ -827,7 +826,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("glogis")`.
     `r pkg("GTDL")` implements generalized Time-Dependent Logistic distribution.
     
-      ---------------------- --------------   -------------------- -----------------------
+      ---------------------- -------------- -------------------- -----------------------
       *Distribution name*    *Packages*       *Functions*          *Distribution suffix*
       Logistic               stats            d, p, q, r           `logis`
       Logistic               actuar           m, mgf               `logis`
@@ -844,14 +843,14 @@ Extreme Value) in order to compute the log-likelihood for example.
       Generalized logistic   lmomco           d, p, q, r           `glo`
       Generalized logistic   sld              d, p, q, r           `sl`
       Generalized logistic   rmutil           d, p, q, r           `glogis`
-      ---------------------- --------------   -------------------- -----------------------
+      ---------------------- -------------- -------------------- -----------------------
 
       :  Summary for Logistic-related distributions
 
     
--   *Logit-normal distribution:* provided in
+- *Logit-normal distribution:* provided in
     `r pkg("logitnorm")`.
--   *Log-normal distribution and its extensions:* The log normal
+- *Log-normal distribution and its extensions:* The log normal
     distribution is implemented in Base R (see above) and
     `r pkg("poweRlaw")`. The log normal distribution
     parametrized by its mean and its coefficient of variation is also
@@ -872,13 +871,13 @@ Extreme Value) in order to compute the log-likelihood for example.
     parametrizations. `r pkg("distributionsrd")` provides
     the double Pareto-lognormal distribution, the left Pareto-lognormal
     distribution, the truncated lognormal distribution.
--   *Makeham distribution:* provided in `r pkg("VGAM")` and
--   *Maxwell distribution:* provided in `r pkg("VGAM")`.
--   *Minimax distribution:* provided in `r pkg("minimax")`.
--   *Mittag-Leffler distribution:* d, p, q, r functions provided in
+- *Makeham distribution:* provided in `r pkg("VGAM")` and
+- *Maxwell distribution:* provided in `r pkg("VGAM")`.
+- *Minimax distribution:* provided in `r pkg("minimax")`.
+- *Mittag-Leffler distribution:* d, p, q, r functions provided in
     `r pkg("MittagLeffleR")`.
--   *Nakagami distribution:* provided in `r pkg("VGAM")`.
--   *Pareto distribution:* d, p, q, r functions are implemented in
+- *Nakagami distribution:* provided in `r pkg("VGAM")`.
+- *Pareto distribution:* d, p, q, r functions are implemented in
     `r pkg("VGAM")` for the Pareto distribution type IV
     (which includes Burr's distribution, Pareto type III, Pareto type
     II (also called the lomax distribution) and Pareto type I) and the
@@ -973,7 +972,7 @@ Extreme Value) in order to compute the log-likelihood for example.
       :  Summary for Pareto-related distributions
 
     
--   *Pearson's distribution:* Pearson type III available in
+- *Pearson's distribution:* Pearson type III available in
     `r pkg("lmomco")` and `r pkg("FAdist")`. A
     log-Pearson type III distribution is also available in
     `r pkg("FAdist")`.
@@ -982,37 +981,37 @@ Extreme Value) in order to compute the log-likelihood for example.
     distributions: types I, II, III, IV, V, VI, VII.
     `r pkg("cpd")` provides d, p, q, r for complex bi/triparametric
     Pearson distributions. 
--   *Pearson's Rho distribution:* provided in
+- *Pearson's Rho distribution:* provided in
     `r pkg("SuppDists")`.
--   *Perks distribution:* provided in `r pkg("VGAM")`.
--   *Planck's distribution:* a random generator is available in
+- *Perks distribution:* provided in `r pkg("VGAM")`.
+- *Planck's distribution:* a random generator is available in
     `r pkg("Runuran")`.
--   *Phase-type distribution:* provided in `r pkg("actuar")`,
+- *Phase-type distribution:* provided in `r pkg("actuar")`,
     `r pkg("mapfit")`, `r pkg("matrixdist")`, `r pkg("PhaseTypeR")`.
--   *Power distribution:* `r 
+- *Power distribution:* `r 
     `r pkg("poweRlaw")` implement the exponential power
     distribution. Two-sided power distribution provided in
     `r pkg("rmutil")`.
--   *Proportion distribution:* this is the distribution for the
+- *Proportion distribution:* this is the distribution for the
     difference between two independent beta distributions. d, p, q, r
     functions in `r pkg("tolerance")`.
--   *Rayleigh distribution:* provided in packages
+- *Rayleigh distribution:* provided in packages
     `r pkg("VGAM")`, `r pkg("extraDistr")` and
     `r pkg("lmomco")`. 
--   *Response time distribution:* `r pkg("rtdists")`
+- *Response time distribution:* `r pkg("rtdists")`
     provides d, p, q, r functions for the (Ratcliff) diffusion
     distribution and for the linear ballistic accumulator (LBA) with
     different underlying drift-distributions (Normal, Gamma, Frechet,
     and log-normal).
--   *Rice distribution:* provided in `r pkg("VGAM")` and
+- *Rice distribution:* provided in `r pkg("VGAM")` and
     `r pkg("lmomco")`.
--   *Simplex distribution:* provided in `r pkg("rmutil")`.
--   *Singh-Maddala distribution:* see beta.
--   *Slash distribution:* provided in `r pkg("lmomco")`,
+- *Simplex distribution:* provided in `r pkg("rmutil")`.
+- *Singh-Maddala distribution:* see beta.
+- *Slash distribution:* provided in `r pkg("lmomco")`,
     `r pkg("extraDistr")` and `r pkg("VGAM")`.
--   *Spearman's Rho distribution:* provided in
+- *Spearman's Rho distribution:* provided in
     `r pkg("SuppDists")`.
--   *Stable distribution:* d, p, q, r functions are available in
+- *Stable distribution:* d, p, q, r functions are available in
     `r pkg("fBasics")` and `r pkg("stabledist")`, the functions use the approach of
     J.P. Nolan for general stable distributions.
     `r pkg("stable")` (d, p, q, r, h) is also used for general stable and uses
@@ -1027,7 +1026,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     distributions.
     `r pkg("libstable4u")` provides d, p, q, r functions for skew stable distributions.
     `r pkg("dstabledist")` provides d, p, r functions for skew stable distributions.
--   *Student distribution and its extensions:* Base R provides the d, p,
+- *Student distribution and its extensions:* Base R provides the d, p,
     q, r functions for Student and non central Student distribution (see
     above). `r pkg("extraDistr")` and
     `r pkg("LaplacesDemon")` provides the Student
@@ -1048,7 +1047,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("crch")` provides d, p, q, r functions for the 
     truncated student distribution.
     
-      ----------------------------- -----------------   ------------- ---------------------------
+      ----------------------------- ----------------- ------------- ---------------------------
       *Distribution name*           *Packages*          *Functions*   *Distribution suffix*
       Student                       stats               d, p, q, r    `t`
       Student with loc. and scal.   extraDistr          d, p, q, r    `lst`
@@ -1060,12 +1059,12 @@ Extreme Value) in order to compute the log-likelihood for example.
       Gen. Student                  gamlss.dist         d, p, q, r    `GT`
       Gen. Hyp. Student             fBasics             d, p, q, r    `ght`
       Skew Gen. Student             sgt                 d, p, q, r    `sgt`
-      ----------------------------- -----------------   ------------- ---------------------------
+      ----------------------------- ----------------- ------------- ---------------------------
 
       :  Summary for Student-related distributions
 
     
--   *Triangle/trapezoidal distribution:* packages
+- *Triangle/trapezoidal distribution:* packages
     `r pkg("triangle")`, `r pkg("extraDistr")`,
     `r pkg("mc2d")`, `r pkg("EnvStats")` and
     `r pkg("VGAM")` provide d, p, q, r functions for the
@@ -1076,34 +1075,34 @@ Extreme Value) in order to compute the log-likelihood for example.
     provide d, r functions for triangular distribution. A fast random
     generator is available for the triangle distribution is implemented
     in `r pkg("Runuran")` as well as the density function.
--   *Tsallis or q-Exponential distribution:*
+- *Tsallis or q-Exponential distribution:*
     `r pkg("tsallisqexp")` provides d, p, q, r functions for
     two parametrizations of the Tsallis distribution and also implements
     a left-censored version.
--   *Tweedie distribution:* the Tweedie distribution is implemented in
+- *Tweedie distribution:* the Tweedie distribution is implemented in
     package `r pkg("tweedie")`. Let us note that the Tweedie
     distribution is not necessarily continuous, a special case of it is
     the Poisson distribution.
--   *Uniform distribution:* d, p, q, r functions are of course provided
+- *Uniform distribution:* d, p, q, r functions are of course provided
     in R. See section RNG for random number generation topics.
     `r pkg("KScorrect")` provides d, p, q, r functions for
     the log-uniform distribution.
--   *Upsilon distribution:* `r pkg("sadists")` implements
+- *Upsilon distribution:* `r pkg("sadists")` implements
     Gram Charlier, Edgeworth and Cornish-Fisher approximations for
     Upsilon distribution for computing d, p, q, r functions.
--   *Vasicek distribution:* 
+- *Vasicek distribution:* 
     `r pkg("vasicek")` implements d, p, r functions.
     `r pkg("vasicekreg")` implements d, p, q, r functions.    
--   *von Mises distribution:* The `r pkg("CircStats")`
+- *von Mises distribution:* The `r pkg("CircStats")`
     package provides d, p, r functions; the
     `r pkg("circular")` package provides d, p, q, r
     functions.
     `r pkg("rvMF")` package provides a fast random generator for von Mises
     Fisher distribution.
     
--   *Wakeby distribution:* A 5-parameter Wakeby is provided in
+- *Wakeby distribution:* A 5-parameter Wakeby is provided in
     `r pkg("lmomco")`.
--   *Weibull distribution and its extensions:* Base R provides the d, p,
+- *Weibull distribution and its extensions:* Base R provides the d, p,
     q, r functions for this distribution (see above). The inverse
     Weibull is provided in `r pkg("actuar")` package and
     also the moments and the limited expected value for both the raw and
@@ -1121,7 +1120,7 @@ Extreme Value) in order to compute the log-likelihood for example.
     provided in `r pkg("distTails")`.
     `r pkg("CaDENCE")` provides the zero-inflated Weibull
     distribution.
--   *(first-passage time) of a Wiener process:*    
+- *(first-passage time) of a Wiener process:*    
     `r pkg("WienR")` provides d, p functions of the 
     first-passage time of a diffusion model.
 mode
@@ -1129,15 +1128,15 @@ mode
 ## Continuous multivariate distributions
 
 
--   *Bivariate Pareto:* `r pkg("Bivariate.Pareto")` provides
+- *Bivariate Pareto:* `r pkg("Bivariate.Pareto")` provides
     a random generator for the bivariate Pareto distribution.
--   *Multivariate beta distribution:*
+- *Multivariate beta distribution:*
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions for inverted beta distribution.
--   *Multivariate Burr distribution:*
+- *Multivariate Burr distribution:*
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions.
--   *Multivariate Cauchy distribution:* `r pkg("sn")`
+- *Multivariate Cauchy distribution:* `r pkg("sn")`
     provide d, p, r functions for the multivariate skew Cauchy
     distribution, while `r pkg("LaplacesDemon")` provides d,
     r functions for the multivariate Cauchy distribution parametrized
@@ -1145,10 +1144,10 @@ mode
     precision matrix omega or by the Cholesky decomposition of omega.
     `r pkg("mcauchyd")` provides d, r function of the multivariate 
     Cauchy distribution.
--   *Cook-Johnson's Multivariate Uniform Distribution:*
+- *Cook-Johnson's Multivariate Uniform Distribution:*
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions.
--   *Multivariate Dirichlet distribution:*
+- *Multivariate Dirichlet distribution:*
     `r pkg("Compositional")`,
     `r pkg("LaplacesDemon")`,
     `r pkg("MCMCpack")` packages provide d, r functions as
@@ -1157,13 +1156,13 @@ mode
     provide r function.
     `r pkg("SGB")` provides a generalization of the Dirichlet 
     distribution called Simplicial Generalized Beta distribution.
--   *Multivariate exponential distribution:* while
+- *Multivariate exponential distribution:* while
     `r pkg("LaplacesDemon")` provides d, r functions for the
     multivariate power exponential distribution parametrized either by
     sigma, or by the Cholesky decomposition of sigma.
--   *Multivariate F distribution:* `r pkg("NonNorMvtDist")`
+- *Multivariate F distribution:* `r pkg("NonNorMvtDist")`
     provides d, p, q, r, s functions.
--   *Multivariate Gaussian (or normal) distribution:* The multivariate
+- *Multivariate Gaussian (or normal) distribution:* The multivariate
     Gaussian distribution is provided in the packages
     `r pkg("mvtnorm", priority = "core")` (d, p, r),
     `r pkg("mnormt", priority = "core")` (d, p, r),
@@ -1200,39 +1199,39 @@ mode
     multivariate normal is provided in `r pkg("MultiRNG")`.
     `r pkg("mggd")` provides d, r function of the multivariate generalized
     Gaussian distribution.
--   *Multivariate generalized hyperbolic distribution:*
+- *Multivariate generalized hyperbolic distribution:*
     `r pkg("QRM")` provides d, r functions of the standard
     and the symmetric multivariate generalized hyperbolic distribution.
     `r pkg("ghyp")` provides d, p, r functions of the
     standard multivariate generalized hyperbolic distribution.
--   *Multivariate generalized extreme value distribution:* Both
+- *Multivariate generalized extreme value distribution:* Both
     bivariate and multivariate Extreme Value distributions as well as
     order/maxima/minima distributions are implemented in
     `r pkg("evd")` (d, p, r).
--   *Multivariate Laplace distribution:*
+- *Multivariate Laplace distribution:*
     `r pkg("LaplacesDemon")` provides d, r functions for the
     multivariate Laplace distribution parametrized either by sigma, or
     by the Cholesky decomposition of sigma. r is provided in
     `r pkg("MultiRNG")`.
     `r pkg("L1pack")` provides d, r functions of the multivariate
     Laplace distribution.
--   *Multivariate logistic distribution:* `r pkg("VGAM")`
+- *Multivariate logistic distribution:* `r pkg("VGAM")`
     package implements the bivariate logistic distribution, while
     `r pkg("NonNorMvtDist")` implements the multivariate
     logistic distribution.
--   *Multivariate lognormal distribution:*
+- *Multivariate lognormal distribution:*
     `r pkg("compositions")` provides r function.
--   *Multivariate Pareto distribution:* `r pkg("evd")` provides
+- *Multivariate Pareto distribution:* `r pkg("evd")` provides
     the density for the multivariate generalized Pareto type I. 
     `r pkg("NonNorMvtDist")`
     provides d, p, q, r, s functions for multivariate Lomax (type II)
     distributions and its generalized version.
     `r pkg("NonNorMvtDist")` provides d, p, q, r, s
     functions for Mardia's Multivariate Pareto Type I Distribution
--   *Multivariate Stable distribution:* For elliptically contoured (subgaussian 
+- *Multivariate Stable distribution:* For elliptically contoured (subgaussian 
      stable), `r pkg("alphastable")` provides d, r functions as well as a 
      fitting function, `r pkg("mvgb")` provides p function.
--   *Multivariate Student distribution:* The multivariate Student
+- *Multivariate Student distribution:* The multivariate Student
     distribution is provided in the packages
     `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
     (d, p, r), `r pkg("Compositional")` (r),
@@ -1249,7 +1248,7 @@ mode
     provided in `r pkg("MultiRNG")`. A special case of a
     bivariate noncentral t-distribution called Owen distribution is
     provided in `r pkg("OwenQ")`.
--   *Multivariate Uniform distribution:* r is provided in
+- *Multivariate Uniform distribution:* r is provided in
     `r pkg("MultiRNG")`. `r pkg("compositions")`
     provides a random generator on the simplex.
 
@@ -1258,30 +1257,30 @@ mode
 ## [Mixed-type distributions]{#mixedType}
 
 
--   *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
+- *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
     :* provided in `r pkg("mbbefd")`.
--   *Mixed ordinal and normal distribution:* provided in
+- *Mixed ordinal and normal distribution:* provided in
     `r pkg("OrdNor")`.
--   *One-inflated distributions:* a generic distribution as well as
+- *One-inflated distributions:* a generic distribution as well as
     special cases (OI-beta, OI-uniform, OI-GB1, OI-Pareto) are provided
     in `r pkg("mbbefd")`. The zero and one inflated beta
     distribution can be found in `r pkg("gamlss.dist")`.
--   *Zero-modified distributions:* `r pkg("EnvStats")`
+- *Zero-modified distributions:* `r pkg("EnvStats")`
     provides the zero-modified normal distribution and the zero-modified
     lognormal distribution.
 
 ## [Mixture of probability laws]{#mixture}
 
 
--   *Bernoulli-dist mixture:* d, p, q, r functions for
+- *Bernoulli-dist mixture:* d, p, q, r functions for
     Bernoulli-exponential, Bernoulli-Gamma, Bernoulli-lognormal,
     Bernoulli-Weibull distributions are provided in
     `r pkg("qmap")`.
--   *Cauchy-polynomial quantile mixture:* d, p, q, r functions are
+- *Cauchy-polynomial quantile mixture:* d, p, q, r functions are
     provided in `r pkg("Lmoments")`.
--   *Chi-square mixture:* d, p, q, r functions are provided in
+- *Chi-square mixture:* d, p, q, r functions are provided in
     `r pkg("emdbook")`.
--   *Gaussian mixture:* Functions d, r are provided in
+- *Gaussian mixture:* Functions d, r are provided in
     `r pkg("mixtools")`, `r pkg("bmixture")`
     package when dealing with finite mixture models.
     `r pkg("nor1mix")`, `r pkg("extraDistr")`,
@@ -1291,40 +1290,40 @@ mode
     r functions for mixture of two normal distributions.
     `r pkg("bayesm")` provides d function for the mixture of
     multivariate normals.
--   *Gamma Poisson:* provided in `r pkg("extraDistr")`.
--   *Gamma mixture:* Ga `r pkg("GSM")` package provides d,
+- *Gamma Poisson:* provided in `r pkg("extraDistr")`.
+- *Gamma mixture:* Ga `r pkg("GSM")` package provides d,
     p, r, `r pkg("bmixture")` provides d, r,
     `r pkg("evmix")` provides d, p, q, r.
--   *Generic mixtures:* there is an implementation via S4-class
+- *Generic mixtures:* there is an implementation via S4-class
     UnivarMixingDistribution in package `r pkg("distr")`.
     `r pkg("gendist")` provides d, p, q, r functions for
     two-distribution mixture models working with any distribution
     defined by its d, p, q, r functions.
--   *Horseshoe distribution:* provided in
+- *Horseshoe distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Laplace mixture distribution:* provided in
+- *Laplace mixture distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Log normal mixture:* d, p, q, r functions are provided in
+- *Log normal mixture:* d, p, q, r functions are provided in
     `r pkg("EnvStats")` with two possible parametrizations.
--   *Normal-polynomial quantile mixture:* d, p, q, r functions are
+- *Normal-polynomial quantile mixture:* d, p, q, r functions are
     provided in `r pkg("Lmoments")`.
--   *Pareto distribution:* `r pkg("extremefit")` implements
+- *Pareto distribution:* `r pkg("extremefit")` implements
     the mixture of two Pareto I distributions.
--   *Poisson beta distribution:* provided in
+- *Poisson beta distribution:* provided in
     `r pkg("scModels")`.
--   *Poisson Binomial distribution:* `r pkg("poibin")`
+- *Poisson Binomial distribution:* `r pkg("poibin")`
     implements the Poisson Binomial distribution.
--   *Poisson lognormal distribution:* `r pkg("poilog")`
+- *Poisson lognormal distribution:* `r pkg("poilog")`
     implements the Poisson lognormal distribution.
--   *Poisson mixture:* provided in `r pkg("extraDistr")`.
--   *Poisson-Tweedie exponential family models:* provided in
+- *Poisson mixture:* provided in `r pkg("extraDistr")`.
+- *Poisson-Tweedie exponential family models:* provided in
     `r pkg("poistweedie")`.
--   *Student mixture:* The `r pkg("AdMit")` package provides
+- *Student mixture:* The `r pkg("AdMit")` package provides
     d, r functions for Student mixtures in the context of Adaptive
     Mixture of Student-t distributions. `r pkg("bmixture")`
     package also provide d, r functions for mixture of Student-t
     distributions.
--   *von Mises Fisher (or Langevin) mixture:* The
+- *von Mises Fisher (or Langevin) mixture:* The
     `r pkg("movMF")` and `r pkg("CircStats")`
     packages provide d, r functions for finite von Mises Fisher
     mixtures.
@@ -1333,23 +1332,23 @@ mode
 ## [Random matrices]{#matrix}
 
 
--   *Huang-Wan distribution:* provided in
+- *Huang-Wan distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Inverse matrix gamma distribution:* provided in
+- *Inverse matrix gamma distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Inverse Wishart distribution:* `r pkg("LaplacesDemon")`
+- *Inverse Wishart distribution:* `r pkg("LaplacesDemon")`
     provides inverse Wishart distribution parametrized either by Sigma
     or by its Cholesky decomposition.
     `r pkg("LaplacesDemon")` provides the scaled inverse
     Wishart distribution. `r pkg("MCMCpack")` and
     `r pkg("mniw")` provides the inverse Wishart
     distribution.
--   *Marcenko-Pastur distribution:* provided in
+- *Marcenko-Pastur distribution:* provided in
     `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
     `r pkg("bayesm")`.
--   *Matrix gamma distribution:* provided in
+- *Matrix gamma distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Matrix normal distribution:* `r pkg("MBSP")` (r)
+- *Matrix normal distribution:* `r pkg("MBSP")` (r)
     provides a random generator using a Cholesky decomposition;
     `r pkg("matrixsampling")` (r) provides a random
     generator using a spectral decomposition;
@@ -1358,43 +1357,43 @@ mode
     forms in one place and allows users to be flexible in simulating
     random variates (Cholesky, spectral, SVD).
     
--   *Matrix student distribution:* provided in
+- *Matrix student distribution:* provided in
     `r pkg("mniw")`.
--   *Normal Inverse Wishart distribution:* provided in
+- *Normal Inverse Wishart distribution:* provided in
     `r pkg("LaplacesDemon")`, `r pkg("mniw")`.
--   *Normal Wishart distribution:* provided in
+- *Normal Wishart distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Tracy-Widom distribution:* provided in
+- *Tracy-Widom distribution:* provided in
     `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
     `r pkg("bayesm")`: supported beta values are 1 (Gaussian
     Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), and 4 (Gaussian
     Symplectic Ensemble).
--   *Sparse matrix:* `r pkg("spam")` provides
+- *Sparse matrix:* `r pkg("spam")` provides
     functionalities to draw random numbers from a user-supplied RNG
     (e.g. `rexp`) or from a multivariate normal distribution for large
     sparse matrices: typically for sparse covariance matrices.
--   *Spiked Wishart Maximum Eigenvalue Distribution:* provided in
+- *Spiked Wishart Maximum Eigenvalue Distribution:* provided in
     `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
     `r pkg("bayesm")`.
--   *Wishart distributions:* Base R provides the r function for the
+- *Wishart distributions:* Base R provides the r function for the
     Wishart distribution. `r pkg("MCMCpack")`,
     `r pkg("RMTstat")`, `r pkg("bayesm")`,
     `r pkg("mniw")` provides d, r functions,
     `r pkg("bayesm")` provides r function.
     `r pkg("LaplacesDemon")` provides Wishart distribution
     parametrized either by Sigma or by its Cholesky decomposition.
--   *White Wishart Maximum Eigenvalue Distribution:* provided in
+- *White Wishart Maximum Eigenvalue Distribution:* provided in
     `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
     `r pkg("bayesm")`.
--   *Yang-Berger distribution:* provided in
+- *Yang-Berger distribution:* provided in
     `r pkg("LaplacesDemon")`.
--   *Zellner distribution:* provided in
+- *Zellner distribution:* provided in
     `r pkg("LaplacesDemon")`.
 
 ## Copulas
 
 
--   *Unified approaches:* The packages
+- *Unified approaches:* The packages
     `r pkg("fCopulae", priority = "core")`,
     `r pkg("copula", priority = "core")`, and
     `r pkg("copBasic")` provide a lot of general
@@ -1403,7 +1402,7 @@ mode
     primarily oriented around utility functions for the general
     mathematics of copulas as described in the well known introduction
     to copulas by Nelsen.
--   *Archimedean copulas:* `r pkg("gumbel")` is a standalone
+- *Archimedean copulas:* `r pkg("gumbel")` is a standalone
     package for the Gumbel copula `r pkg("fCopulae")`
     implements the 22 Archimedean copulas of Nelsen (1998, *Introduction
     to Copulas* , Springer-Verlag) including Gumbel, Frank, Clayton, and
@@ -1426,16 +1425,16 @@ mode
     provides the Liouville copula.
     `r pkg("CopulaGAMM")` provides the bivariate version of Frank, FGM,
     Galambos, Gumbel, Huesler-Reiss, Joe, MTCJ, Plackett copulas.
--   *Blomqvist copula:* provided in `r pkg("copBasic")`.
--   *Composition of copula:* `r pkg("copBasic")` provides
+- *Blomqvist copula:* provided in `r pkg("copBasic")`.
+- *Composition of copula:* `r pkg("copBasic")` provides
     functions for composition of a single symmetric copula and
     composition of two copulas.
--   *Cubic copula:* Not yet implemented?
--   *Dirichlet copula:* Not yet implemented?
--   *Empirical copula:* provided in `r pkg("copBasic")`, `r pkg("copent")`, `r pkg("HAC")`.
+- *Cubic copula:* Not yet implemented?
+- *Dirichlet copula:* Not yet implemented?
+- *Empirical copula:* provided in `r pkg("copBasic")`, `r pkg("copent")`, `r pkg("HAC")`.
     `r pkg("GenOrd")` provides sampling function for multivariate discrete random vectors 
     with a specified correlation matrix.
--   *Elliptical copulas:* Gaussian, Student and Cauchy copulas are
+- *Elliptical copulas:* Gaussian, Student and Cauchy copulas are
     implemented in `r pkg("fCopulae")` for the bivariate
     cases. `r pkg("copula")`, `r pkg("VGAM")`,
     `r pkg("VineCopula")` provide the Gaussian and the
@@ -1446,31 +1445,31 @@ mode
     Pearson VII, Slash and Contaminated Normal distributions.
     `r pkg("CopulaGAMM")` provides the bivariate Gaussian and 
     student copula.
--   *Extreme value copulas:* `r pkg("fCopulae")` provides
+- *Extreme value copulas:* `r pkg("fCopulae")` provides
     the following copulas Gumbel, Galambos, Husler-Reiss, Tawn, or BB5.
     `r pkg("copula")` implements Gumbel, Galambos and
     Husler-Reiss.
--   *Eyraud-Farlie-Gumbel-Morgenstern copula:* provided in
+- *Eyraud-Farlie-Gumbel-Morgenstern copula:* provided in
     `r pkg("VGAM")`, `r pkg("RTDE")`, and
     `r pkg("copula")`.
--   *Integrated gamma copula:* provided in `r pkg("igcop")`.
--   *Mardia copula:* Not yet implemented?
--   *Nested copulas:* arbitrary nested versions of copulas can be
+- *Integrated gamma copula:* provided in `r pkg("igcop")`.
+- *Mardia copula:* Not yet implemented?
+- *Nested copulas:* arbitrary nested versions of copulas can be
     implemented in `r pkg("copula")`.
--   *Plackett:* provided in `r pkg("VGAM")`,
+- *Plackett:* provided in `r pkg("VGAM")`,
     `r pkg("copBasic")` and `r pkg("copula")`.
--   *Vine copulas:* Package `r pkg("vines")` provides
+- *Vine copulas:* Package `r pkg("vines")` provides
     functions for C- and D-vine copulas and
     `r pkg("VineCopula")` for general R-vine copulas.
 
 ## [Compound, composite, discretized, exponentiated and transformation of distributions]{#transform}
 
 
--   *Absolute value or half distribution:* Half-Cauchy, half normal and
+- *Absolute value or half distribution:* Half-Cauchy, half normal and
     half-student are implemented both in
     `r pkg("extraDistr")` and in
     `r pkg("LaplacesDemon")`.
--   *Composite distribution also known as spliced distribution:*
+- *Composite distribution also known as spliced distribution:*
     Split-normal (also known as
     the two-piece normal distribution) not yet implemented.
     Split-student provided in package `r pkg("dng")`.
@@ -1480,17 +1479,17 @@ mode
     distribution. `r pkg("gendist")` provides d, p, q, r
     functions for composite models working with any distribution defined
     by its d, p, q, r functions.
--   *Compound distribution:* 
+- *Compound distribution:* 
     `r pkg("kdist")` provides d, p, q, r functions of the K
     distribution.
--   *Discretized distribution:* `r pkg("distcrete")` allows
+- *Discretized distribution:* `r pkg("distcrete")` allows
     discretised versions of continuous distribution by mapping
     continuous values to an underlying discrete grid, based on a
     (uniform) frequency of discretisation, a valid discretisation point,
     and an integration range.
--   *Quantile-based asymmetric (QBA) family of distributions:*
+- *Quantile-based asymmetric (QBA) family of distributions:*
     no longer implemented.
--   *Transformed distribution:* `r pkg("Newdistns")`
+- *Transformed distribution:* `r pkg("Newdistns")`
     provides G-transformed distributions for a selected number of
     distributions which includes Marshall Olkin G distribution,
     exponentiated G distribution, beta G distribution, gamma G
@@ -1526,7 +1525,7 @@ mode
      such as exponential, extended exponential, Weibull, extended 
      Weibull, Fisk, Lomax, Burr-XII and Burr-X. 
     
--   *Truncated distribution:* A generic code snippet is available [in
+- *Truncated distribution:* A generic code snippet is available [in
     the JSS](https://www.jstatsoft.org/article/view/v016c02) . This code
     is now available in two packages: `r pkg("truncdist")`
     is a dedicated package providing d, p, q, r, m(oments) functions for
@@ -1537,10 +1536,10 @@ mode
 # [Moments, skewness, kurtosis and etc]{#moments}
 
 
--   *Empirical mean, standard deviation and variance:* base R provides
+- *Empirical mean, standard deviation and variance:* base R provides
     `mean()`, `sd()`, `var()` functions to compute the mean, standard
     deviation and variance, respectively.
--   *Empirical skewness:* available in `r pkg("agricolae")`,
+- *Empirical skewness:* available in `r pkg("agricolae")`,
     `r pkg("e1071")`, `r pkg("GLDEX")`,
     `r pkg("HyperbolicDist")`,
     `r pkg("modeest")`, `r pkg("moments")`,
@@ -1548,7 +1547,7 @@ mode
     `r pkg("DistributionUtils")`,
     `r pkg("EnvStats")`, `r pkg("parameters")`
     packages.
--   *Empirical kurtosis:* available in `r pkg("agricolae")`,
+- *Empirical kurtosis:* available in `r pkg("agricolae")`,
     `r pkg("DistributionUtils")`,
     `r pkg("e1071")`, `r pkg("EnvStats")`,
     `r pkg("GLDEX")`, `r pkg("HyperbolicDist")`,
@@ -1556,7 +1555,7 @@ mode
     `r pkg("parameters")` packages. The raw or centered
     moments are provided in `r pkg("e1071")`,
     `r pkg("moments")`.
--   *Empirical L-moments:* L-moments are available in
+- *Empirical L-moments:* L-moments are available in
     `r pkg("lmom")`, `r pkg("lmomco")`,
     `r pkg("Lmoments")`, `r pkg("GLDEX")`,
     `r pkg("EnvStats")`, trimmed L-moments are available in
@@ -1565,19 +1564,19 @@ mode
     available in `r pkg("lmomco")`, and cumulants in
     `r pkg("GLDEX")`. `r pkg("TLMoments")`
     provides a function to convert them to some distribution parameters.
--   *Empirical probability weighted moments:* Probability weighted
+- *Empirical probability weighted moments:* Probability weighted
     moments are available in `r pkg("EnvStats")` and
     `r pkg("fromo")`.
--   *Empirical cumulants:* `r pkg("fromo")` provides
+- *Empirical cumulants:* `r pkg("fromo")` provides
     centered and standardized cumulants.
--   *Mode estimation:* Package `r pkg("modeest")` provides
+- *Mode estimation:* Package `r pkg("modeest")` provides
     mode computation of known distributions and mode estimation 
     on datasets in the unimodal case.
     Package `r pkg("ModEstM")` provides mode estimation in unimodal 
     and multimodal cases.
     Package `r pkg("multimode")` provides for testing and exploring
     the number of modes on data using non-parametric procedures.
--   *Order statistics:* Distribution function of the jth order statistic
+- *Order statistics:* Distribution function of the jth order statistic
     can be obtained with base R functions.
     `r pkg("orders")` allows to generate samples of k-th order statistics and 
     others quantities of interest for the following distributions:
@@ -1592,13 +1591,13 @@ mode
     exponentiated exponential Poisson G, Poisson-inverse gaussian, 
     Skew normal type 1, Skew student t, Sinh-Arcsinh, 
     Sichel, Zero inflated Poisson. 
--   *Empirical characteristic function:* `r pkg("empichar")`
+- *Empirical characteristic function:* `r pkg("empichar")`
     evaluates the empirical characteristic function of univariate and
     multivariate samples.
--   *Dispersion index:* Package `r pkg("GWI")` provides
+- *Dispersion index:* Package `r pkg("GWI")` provides
     univariate dispersion index against a particular distribution.    
--   *Theoretical moments:*
-    -   *common distributions:* The `r pkg("actuar")`
+- *Theoretical moments:*
+    - *common distributions:* The `r pkg("actuar")`
         package implements raw moments, limited expected values and
         moment generating function for base R distributions.
         `r pkg("lmomco")` provides L-moments (L), trimmed
@@ -1613,15 +1612,15 @@ mode
         (L\[RC\]), Rice/Rician (L), Slash (TL), 3-parameter Student T
         (L), Truncated Exponential (L), Wakeby (L), and Weibull (L).
         Multivariate L-moments (L-comoments).
-    -   *hyperbolic distributions:*
+    - *hyperbolic distributions:*
         `r pkg("HyperbolicDist")` provides the mean,
         variance, skewness, kurtosis, mode, raw and centered moments for
         the hyperbolic, the generalized hyperbolic and the generalized
         inverse Gaussian distributions.
-    -   *Lambda distribution:* `r pkg("GLDEX")` also
+    - *Lambda distribution:* `r pkg("GLDEX")` also
         provides the mean, variance, skewness, kurtosis of generalized
         Lambda distribution.
-    -   *multivariate distributions:* `r pkg("MomTrunc")`
+    - *multivariate distributions:* `r pkg("MomTrunc")`
         provides mean vector, covariance matrices and raw moments for
         truncated or folded of the following multivariate distributions:
         normal, skew normal, extended skew normal and student.
@@ -1631,7 +1630,7 @@ mode
 # Random number generators
 
 
--   *Basic functionality:* R provides several random number generators
+- *Basic functionality:* R provides several random number generators
     (RNGs). The random seed can be provided via `set.seed` and the kind
     of RNG can be specified using `RNGkind`. The default RNG is the
     Mersenne-Twister algorithm. Other generators include Wichmann-Hill,
@@ -1641,7 +1640,7 @@ mode
     Box-Muller, Inversion (default). In addition to the tools above,
     `r pkg("setRNG")` provides an easy way to set, retain
     information about the setting, and reset the RNG.
--   *Pseudo-randomness:* `r pkg("RDieHarder")` offers
+- *Pseudo-randomness:* `r pkg("RDieHarder")` offers
     several dozen new RNGs from the GNU GSL.
     `r pkg("randtoolbox")` provides more recent RNGs such as
     SF Mersenne-Twister and WELL, which are generators of Mersenne
@@ -1650,12 +1649,12 @@ mode
     Marsaglia. `r pkg("dqrng")` provides PCG family by
     O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ by Blackman
     and Vigna (2018).
-    -   Support for several independent streams:
+    - Support for several independent streams:
         `r pkg("rstream")` focuses on multiple independent
         streams of random numbers from different sources (in an object
         oriented approach). `r pkg("dqrng")` provides RNG
         for parallel computation either in R or in C++.
-    -   For non-uniform generation, the `r pkg("Runuran")`
+    - For non-uniform generation, the `r pkg("Runuran")`
         package interfaces to the UNU.RAN library for universal
         non-uniform generation as well as customised distributions based
         on polynomial interpolation of the inverse cumulative
@@ -1669,10 +1668,10 @@ mode
         multivariate generators, see each distribution.
         `r pkg("Tinflex")` provides a non-uniform random number generator 
         for quite arbitrary distributions with piecewise twice differentiable densities.
-    -   `r pkg("kernelboot")` provides functions for random
+    - `r pkg("kernelboot")` provides functions for random
         generation from univariate and multivariate kernel densities (in
         particular multivariate Gaussian kernels).
--   *Quasi-randomness:* The `r pkg("randtoolbox")` provides
+- *Quasi-randomness:* The `r pkg("randtoolbox")` provides
     the following quasi random sequences: the Sobol sequence, the Halton
     (hence Van Der Corput) sequence and the Torus sequence (also known
     as Kronecker sequence). `r pkg("lhs")` and
@@ -1682,24 +1681,24 @@ mode
     `r pkg("qrng")` provides Korobov, generalize Halton and
     Sobol quasi-random sequences.
     `r pkg("spacefillr")` provides Halton and Sobol sequences.
--   *True randomness:* The `r pkg("random")` package
+- *True randomness:* The `r pkg("random")` package
     provides several functions that access the true random number
     service at [random.org](https://www.random.org/) .
--   *RNG tests:* `r pkg("RDieHarder")` offers numerous tests
+- *RNG tests:* `r pkg("RDieHarder")` offers numerous tests
     of RNGs based on a reimplementation and extension of Marsaglia's
     DieHarder battery. `r pkg("randtoolbox")` provides basic
     RNG tests.
--   *Parallel computing:* Random-number generators for parallel
+- *Parallel computing:* Random-number generators for parallel
     computing are available via the `r pkg("rlecuyer")`
     package. See the `r view("HighPerformanceComputing")`
     task view for more details.
--   *Multivariate random vectors:* for parametric multivariate distributions,
+- *Multivariate random vectors:* for parametric multivariate distributions,
     we refer to [Multivariate Continuous](#MultivariateContinuous)
     and [Multivariate Discrete](#MultivariateDiscrete).
     For non-parametric distributions, `r pkg("SimJoint")` offers 
     various to simulate multivariate distributions with non-parametric marginals
     given a Pearson or Spearman correlation matrix.
--   *Unit sphere and other:* `r pkg("simdd")` provides a generator for the Fisher Bingham 
+- *Unit sphere and other:* `r pkg("simdd")` provides a generator for the Fisher Bingham 
     distribution on the unit sphere, the matrix Bingham distribution on
     a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate 
     von Mises sin model on the torus.
@@ -1711,8 +1710,8 @@ mode
 # Miscellaneous
 
 
--   *Computation/benchmark:*
-    -   *Approximation of d, p, q, r functions:*
+- *Computation/benchmark:*
+    - *Approximation of d, p, q, r functions:*
         `r pkg("PDQutils")` provides tools for computing the
         density, cumulative distribution, and quantile functions of a
         distribution when the cumulants or moments are given, using the
@@ -1725,21 +1724,21 @@ mode
         approximations and alternative computations for d, p, q
         functions of probability distributions in R are given
         `r pkg("DPQ")`.
-    -   `r pkg("benchden")` implements the 28 distributions introduced 
+    - `r pkg("benchden")` implements the 28 distributions introduced 
         as kernel benchmarks for nonparametric density estimation by 
         [Berlinet and Devroye (1994)](https://hal.science/hal-03659919):
         includes d, p, q, r functions as well as additional information on features of the densities.
-    -   For non-uniform generation, see the
+    - For non-uniform generation, see the
         `r pkg("Runuran")` above.
 
--   *Non parametric models:*
-    -   *Binned Empirical distributions:* The
+- *Non parametric models:*
+    - *Binned Empirical distributions:* The
         `r pkg("HistogramTools")` package provides a number
         of methods for manipulating empirical data that has been binned
         into histogram form, including: (1) the empirical cumulative
         distribution function, (2) the empirical quantile, and (3)
         information loss metrics associated with binning.
-    -   *Empirical distribution:* Base R provides functions for
+    - *Empirical distribution:* Base R provides functions for
         univariate analysis: (1) the empirical density (see
         `density()`), (2) the empirical cumulative distribution function
         (see `ecdf()`), (3) the empirical quantile (see `quantile()`)
@@ -1752,11 +1751,11 @@ mode
         significance level of the difference.
         `r pkg("MEPDF")` provides functions to compute and
         visualize empirical density functions for multivariate data.
-    -   *Non Parametric distributions :* `r pkg("spd")`
+    - *Non Parametric distributions :* `r pkg("spd")`
         provides the Semi Parametric Piecewise Distribution, while
         `r pkg("fBasics")` implements spline smoothed
         distributions.
--   *Hierarchical models:* Distributions whose some parameters are no
+- *Hierarchical models:* Distributions whose some parameters are no
     longer constant but random according to a particular distribution.
     `r pkg("VGAM")` provides a lot of hierarchical models:
     beta/binomial, beta/geometric and beta/normal distributions.
@@ -1765,8 +1764,8 @@ mode
     `r pkg("LearnBayes")` and
     `r pkg("MCMCpack")` provides poisson/gamma,
     beta/binomial, normal/normal and multinomial/Dirichlet models.
--   *Unified interface to handle distributions:*
-    -   *S3 Object-orientation:* `r pkg("distributions3")`
+- *Unified interface to handle distributions:*
+    - *S3 Object-orientation:* `r pkg("distributions3")`
         provides tools to create and to manipulate probability
         distributions using S3, that is
         `r pkg("distributions3")`, generics `random()`,
@@ -1776,7 +1775,7 @@ mode
         create and to manipulate probability distributions using S3,
         with `cdf()`, `density()`, `hdr()`, `mean()`, `median()`,
         `quantile()`,\...
-    -   *S4 Object-orientation:* General discrete and continuous
+    - *S4 Object-orientation:* General discrete and continuous
         distributions are implemented in package
         `r pkg("distr")` respectively via S4-class
         DiscreteDistribution and AbscontDistribution providing the
@@ -1793,17 +1792,17 @@ mode
         `r pkg("distrTeach")`,
         `r pkg("distrDoc")`,
         `r pkg("distrEllipse")`).
-    -   *R6 Object-orientation:* 
+    - *R6 Object-orientation:* 
         `r pkg("ROOPSD")` provides a R6 class interface to
         classic statistical distribution.
-    -   *Transformation:* Lebesgue decomposition are implemented in
+    - *Transformation:* Lebesgue decomposition are implemented in
         `r pkg("distr")`, as well as Convolution, Truncation
         and Huberization of distributions. Furthermore,
         `r pkg("distr")` provides distribution of the
         maximum or minimum of two distributions. See Object-orientation
         above.
--   *Transversal functions:*
-    -   *Histogram, tail plots, distance estimation:*
+- *Transversal functions:*
+    - *Histogram, tail plots, distance estimation:*
         `r pkg("DistributionUtils")` provides log-histogram,
         tail plots, functions for testing distributions using inversion
         tests and the Massart inequality.
@@ -1819,7 +1818,7 @@ mode
         functions and cumulative distribution functions).
         `r pkg("vistributions")` provides visualization
         tools for a selected number of distributions.
-    -   *Parameter estimation:* `r pkg("lmomco")` and
+    - *Parameter estimation:* `r pkg("lmomco")` and
         `r pkg("Lmoments")` focus on univariate/multivariate
         (L-)moments estimation. `r pkg("VGAM")` provides a
         lot of parameter estimation for usual and "exotic"
@@ -1865,12 +1864,12 @@ multivariate distributions Volume 1, Wiley
 
 ### External links
 
--   [Clickable diagram of distribution relationships](https://www.johndcook.com/blog/distribution_chart/)
--   [Compendium of distributions.](https://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
--   [Comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
--   [Diagram of discrete distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
--   [Diagram of continuous distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&B.pdf)
--   [Journal of Statistical Software: R programs for truncated distributions](https://www.jstatsoft.org/v16/c02/)
--   [List and diagram of distribution relationship.](https://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)
+- [Clickable diagram of distribution relationships](https://www.johndcook.com/blog/distribution_chart/)
+- [Compendium of distributions.](https://www.stat.rice.edu/~dobelman/courses/DistributionCompendium.pdf)
+- [Comprehensive list of data types](https://en.wikipedia.org/wiki/Statistical_data_type)
+- [Diagram of discrete distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Discrete.Kendall.jpg)
+- [Diagram of continuous distribution relationships](https://www.stat.rice.edu/~dobelman/courses/texts/Distributions.Chart.C&B.pdf)
+- [Journal of Statistical Software: R programs for truncated distributions](https://www.jstatsoft.org/v16/c02/)
+- [List and diagram of distribution relationship.](https://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)
 
 
