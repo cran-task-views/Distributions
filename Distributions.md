@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-09-25
+version: 2023-10-04
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -995,6 +995,11 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Proportion distribution:* this is the distribution for the
     difference between two independent beta distributions. d, p, q, r
     functions in `r pkg("tolerance")`.
+- *Ratios of Quadratic Forms:* `r pkg("qfr")` provides d, p, q, r
+   functions for the distribution of ratios (and products) of quadratic 
+   forms in normal variables as well as moment.
+   `r pkg("QF")` provides d, p, q, r in the case of positive definite matrices.  
+   `r pkg("Qapprox")` provides the p function.  
 - *Rayleigh distribution:* provided in packages
     `r pkg("VGAM")`, `r pkg("extraDistr")` and
     `r pkg("lmomco")`. 
@@ -1848,6 +1853,7 @@ mode
 - N. L. Johnson, S. Kotz, N. Balakrishnan (1997). Discrete
 multivariate distributions, Wiley
 - N. L. Johnson, A. W. Kemp, S. Kotz (2008). Univariate discrete distributions, Wiley. `r doi("10.1002/0471715816")`
+- [N. L. Johnson, A. W. Kemp, S. Kotz (2008)](`r doi("10.1002/0471715816")`). Univariate discrete distributions, Wiley. 
 - S. Kotz, N. Balakrishnan, N. L. Johnson (2000). Continuous
 multivariate distributions Volume 1, Wiley
 - G. Wimmer (1999),  Thesaurus of univariate discrete probability distributions.

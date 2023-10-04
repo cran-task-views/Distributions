@@ -20,6 +20,11 @@ crandb_down()
 tvdb_down()
 
 intv <- tvdb_pkgs("Distributions")
-tvsugg <- setdiff(s_crandb("distributions", "probability", mode = "and"), intv)
+tvsugg <- setdiff(s_crandb("distribution", "probability", mode = "and"), intv)
+tvsugg <- setdiff(s_crandb("Distribution"), intv)
 
 tvsugg2$Packages %in% tvsugg
+
+paste(tvsugg, collapse=", ")
+
+s_crandb("Dirichlet", "composition", mode = "and")
