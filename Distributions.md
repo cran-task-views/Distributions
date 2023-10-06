@@ -995,7 +995,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Proportion distribution:* this is the distribution for the
     difference between two independent beta distributions. d, p, q, r
     functions in `r pkg("tolerance")`.
-- *Ratios of Quadratic Forms:* `r pkg("qfr")` provides d, p, q, r
+- *Ratios of Quadratic Forms:* `r pkg("qfratio")` provides d, p, q, r
    functions for the distribution of ratios (and products) of quadratic 
    forms in normal variables as well as moment.
    `r pkg("QF")` provides d, p, q, r in the case of positive definite matrices.  
