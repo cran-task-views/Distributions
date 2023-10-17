@@ -622,8 +622,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   distribution. `r pkg("VGAM")` implements the folded and
   the skewed normal distribution, and `r pkg("csn")`
   provides d, r functions for the closed skew normal distribution.
-  `r pkg("CompQuadForm")` provides the distribution
-  function of quadratic forms in normal variates.
   `r pkg("NormalLaplace")` provides d, p, q, r functions
   for the sum of a normal and a Laplace random variables, while
   `r pkg("LaplacesDemon")` provides d, r functions of the
@@ -985,11 +983,18 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Proportion distribution:* this is the distribution for the
   difference between two independent beta distributions. d, p, q, r
   functions in `r pkg("tolerance")`.
-- *Ratios of Quadratic Forms:* `r pkg("qfratio")` provides d, p, q, r
-  functions for the distribution of ratios (and products) of quadratic 
-  forms in normal variables as well as moment.
-  `r pkg("QF")` provides d, p, q, r in the case of positive definite matrices.  
-  `r pkg("Qapprox")` provides the p function.  
+- *Quadratic forms and their ratios:* `r pkg("CompQuadForm")` provides
+  several exact and approximate methods to evaluate the distribution function
+  of quadratic forms in normal variables.
+  `r pkg("Qapprox")` provides fast approximations for the distribution
+  function in nonnegative definite cases.
+  `r pkg("QF")` provides d, p, q, r for nonnegative definite
+  quadratic forms in normal variables and their ratios
+  where the numerator and denominator are independent, as well as
+  p for ratios of central quadratic forms in the same normal variables.
+  `r pkg("qfratio")` provides d, p, q, r for the distribution of ratios
+  of potentially noncentral quadratic forms in the same
+  normal variables, as well as moment.
 - *Rayleigh distribution:* provided in packages
   `r pkg("VGAM")`, `r pkg("extraDistr")` and
   `r pkg("lmomco")`. 
