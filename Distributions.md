@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-10-04
+version: 2023-11-04
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -464,8 +464,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Dagum distribution:* see beta.
 - *Davies distribution:* The Davies distribution is provided in
   `r pkg("Davies")` package.
-- *(non-central) Dunnett's test distribution:* provided in
-  `r pkg("nCDunnett")`.
+- *(non-central) Dunnett's test distribution:* no longer provided.
 - *Eta-mu distribution:* provided in `r pkg("lmomco")`.
   `r pkg("sadists")` implements Gram Charlier, Edgeworth
   and Cornish-Fisher approximations for doubly non central eta
