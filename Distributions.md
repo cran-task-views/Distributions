@@ -1228,6 +1228,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Multivariate Stable distribution:* For elliptically contoured (subgaussian 
    stable), `r pkg("alphastable")` provides d, r functions as well as a 
    fitting function, `r pkg("mvgb")` provides p function.
+   The multivariate subgaussian stable distribution (d, p, r) is available
+   in `r pkg("mvpd")`.
 - *Multivariate Student distribution:* The multivariate Student
   distribution is provided in the packages
   `r pkg("mvtnorm")` (d, r), `r pkg("mnormt")`
