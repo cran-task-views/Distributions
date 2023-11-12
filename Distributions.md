@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-11-04
+version: 2023-11-12
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1180,10 +1180,12 @@ Extreme Value) in order to compute the log-likelihood for example.
   compute the density and generate random variates of a multivariate
   normal distribution for which the covariance matrix or precision
   matrix is sparse. `r pkg("cmvnorm")` implements the
-  complex multivariate normal distribution (d, r). Finally,
-  `r pkg("condMVNorm")` implements d, p, r functions for
-  the conditional multivariate normal distribution. Furthermore,
-  `r pkg("sn")` besides providing facilities for their
+  complex multivariate normal distribution (d, r). 
+  Furthermore, `r pkg("condMVNorm")` implements d, p, r functions for
+  the conditional multivariate normal distribution. 
+  `r pkg("condTruncMVN")` implements d, p, r functions of the 
+  conditional truncated multivariate normal distribution.
+  Finally, `r pkg("sn")` besides providing facilities for their
   distribution functions, `r pkg("sn")` allows the
   creation of S4 objects which encapsulate these distributions and
   provide facilities for plotting, summary, marginalization,
