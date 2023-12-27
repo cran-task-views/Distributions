@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-11-12
+version: 2023-12-27
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -171,7 +171,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("gamlss.dist")`, `r pkg("actuar")`
   and in `r pkg("VGAM")`. The time-varying geometric is
   provided in `r pkg("tvgeom")`.
-- *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`.
+- *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`. Uniform-geometric distribution provided in `r pkg("new.dist")`.
 - *Generalized/fractional binomial distribution:* 
   `r pkg("GenBinomApps")` provides the generalized binomial distribution.
   `r pkg("frbinom")` provides the fractional binomial distribution
@@ -193,7 +193,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("RMKdiscrete")` provides d, p, q, r functions for
   the univariate and the bivariate Lagrangian Poisson distribution.
 - *Lindley's power series distribution:* provided in
-  `r pkg("LindleyPowerSeries")`.
+  `r pkg("LindleyPowerSeries")` and in `r pkg("new.dist")`.
 - *Logarithmic distribution:* This can be found in
   `r pkg("extraDistr")`, `r pkg("VGAM")`,
   `r pkg("actuar")`, and
@@ -299,6 +299,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provided in `r pkg("extraDistr")`,
   `r pkg("LaplacesDemon")`, `r pkg("DirichletReg")` and
   `r pkg("Compositional")`.
+  The flexible Dirichlet distribution is given in `r pkg("FlexDir")`.
 - *Truncated Stick-Breaking distribution:* provided in
   `r pkg("LaplacesDemon")`.
 
@@ -461,7 +462,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provides the d/p/q/r functions for a continuous analog to the
   standard discrete binomial with continuous size parameter and
   continuous support with x in \[0, size + 1\].
-- *Dagum distribution:* see beta.
+- *Dagum distribution:* see beta. the power log Dagum provided in `r pkg("new.dist")`.
 - *Davies distribution:* The Davies distribution is provided in
   `r pkg("Davies")` package.
 - *(non-central) Dunnett's test distribution:* no longer provided.
@@ -726,6 +727,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   implemented in `r pkg("Runuran")` as well as the density
   function. `r pkg("GIGrvg")` generates random variables
   from the generalized inverse Gaussian distribution.
+  Unit inverse Gaussian provided in `r pkg("new.dist")`.
 - *Johnson distribution:* provided in
   `r pkg("SuppDists")`. `r pkg("ForestFit")`
   provides d, p of Johnson SB distribution.
@@ -747,8 +749,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Kruskal Wallis distribution:* provided in
   `r pkg("SuppDists")`.
 - *Kumaraswamy distribution:* provided in packages
-  `r pkg("VGAM")`, `r pkg("extraDistr")` and
-  `r pkg("lmomco")`. `r pkg("elfDistr")`
+  `r pkg("VGAM")`, `r pkg("extraDistr")`,
+  `r pkg("lmomco")`, `r pkg("new.dist")`. `r pkg("elfDistr")`
   provides the Kumaraswamy Complementary Weibull Geometric Probability
   Distribution.
 - *(Tukey) Lambda distribution and its extensions:* The generalized
@@ -797,8 +799,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *LASSO distribution:* provided in
   `r pkg("LaplacesDemon")`.
 - *Lévy distribution:* provided in `r pkg("rmutil")`.
-- *Lindley distribution:* provided in `r pkg("VGAM")` and
-  `r pkg("gambin")`.
+- *Lindley distribution:* provided in `r pkg("VGAM")`,
+  `r pkg("gambin")`, `r pkg("new.dist")`.
 - *Linear failure rate distribution:* no longer implemented.
 - *Loglog distribution:* no longer implemented.
 - *Lomax distribution:* see beta.
@@ -859,12 +861,14 @@ Extreme Value) in order to compute the log-likelihood for example.
   parametrizations. `r pkg("distributionsrd")` provides
   the double Pareto-lognormal distribution, the left Pareto-lognormal
   distribution, the truncated lognormal distribution.
-- *Makeham distribution:* provided in `r pkg("VGAM")` and
-- *Maxwell distribution:* provided in `r pkg("VGAM")`.
+- *Makeham distribution:* provided in `r pkg("VGAM")`. 
+- *Maxwell distribution:* provided in `r pkg("VGAM")`, `r pkg("new.dist")`.
 - *Minimax distribution:* provided in `r pkg("minimax")`.
 - *Mittag-Leffler distribution:* d, p, q, r functions provided in
   `r pkg("MittagLeffleR")`.
+- *Muth distribution:* provided in `r pkg("new.dist")`.
 - *Nakagami distribution:* provided in `r pkg("VGAM")`.
+- *Neutrosophic:* provided in `r pkg("ntsDists")`.
 - *Pareto distribution:* d, p, q, r functions are implemented in
   `r pkg("VGAM")` for the Pareto distribution type IV
   (which includes Burr's distribution, Pareto type III, Pareto type
@@ -902,6 +906,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   the Pareto 2 and the zero-inflated Pareto 2 distribution.
   `r pkg("Pareto")` provides the Pareto 1, piecewise Pareto 
   and the generalized Pareto (from actuarial theory).
+  The gamma-Lomax distribution is provided in `r pkg("new.dist")`.
 
   -------------------------- ----------------- -------------------- -----------------------
   *Distribution name*        *Packages*        *Functions*          *Distribution suffix*
@@ -982,6 +987,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Proportion distribution:* this is the distribution for the
   difference between two independent beta distributions. d, p, q, r
   functions in `r pkg("tolerance")`.
+- *Omega distribution:* provided in `r pkg("new.dist")`.
 - *Quadratic forms and their ratios:* `r pkg("CompQuadForm")` provides
   several exact and approximate methods to evaluate the distribution function
   of quadratic forms in normal variables.
@@ -997,6 +1003,9 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Rayleigh distribution:* provided in packages
   `r pkg("VGAM")`, `r pkg("extraDistr")` and
   `r pkg("lmomco")`. 
+  The slashed generalized Rayleigh distribution provided in `r pkg("new.dist")`.
+  The two-parameter Rayleigh provided in `r pkg("new.dist")`.
+- *Ram Awadh:* provided in `r pkg("new.dist")`.
 - *Response time distribution:* `r pkg("rtdists")`
   provides d, p, q, r functions for the (Ratcliff) diffusion
   distribution and for the linear ballistic accumulator (LBA) with
@@ -1117,6 +1126,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provided in `r pkg("distTails")`.
   `r pkg("CaDENCE")` provides the zero-inflated Weibull
   distribution.
+  The bimodal Weibull distribution is provided in `r pkg("new.dist")`.
 - *First-passage time of a Wiener process:*
   `r pkg("WienR")` provides d, p functions of the 
   first-passage time of a diffusion model.
