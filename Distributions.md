@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2023-12-27
+version: 2024-01-23
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1853,6 +1853,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 
 - M. Ahsanullah, B.M. Golam Kibria, M. Shakil (2014). Normal and Student's t Distributions and Their Applications, Springer. `r doi("10.2991/978-94-6239-061-4")`
 - B. C. Arnold (2010). Pareto Distributions, Chapman and Hall. `r doi("10.1201/b18141")`
+- A. Azzalini (2013). The Skew-Normal and Related Families. `r doi("10.1017/CBO9781139248891")`
 - N. Balakrishnan (2014). Handbook of the Logistic Distribution, CRC Press. `r doi("10.1201/9781482277098 ")`
 
 ### Books with applications
