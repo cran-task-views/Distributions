@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-01-23
+version: 2024-03-13
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -766,8 +766,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("Davies")` (RS), `r pkg("gb")` (RS),
   `r pkg("lmomco")` (FMKL),
   `r pkg("extraDistr")` (original Tukey).
-  `r pkg("ecd")` provides the elliptic lambda distribution
-  and its use for financial pricing.
 - *Tukey's G/H distribution:* 
   no longer provided directly, but
   Tukey's H distribution is provided as a special case of Lambert W x
