@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-03-13
+version: 2024-06-14
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1145,8 +1145,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   r functions for the multivariate Cauchy distribution parametrized
   either by sigma, by the Cholesky decomposition of sigma, by the
   precision matrix omega or by the Cholesky decomposition of omega.
-  `r pkg("mcauchyd")` provides d, r function of the multivariate 
-  Cauchy distribution.
+  `r pkg("mcauchyd")` provides d, p, r functions of the multivariate 
+  Cauchy distribution..
 - *Cook-Johnson's Multivariate Uniform Distribution:*
   `r pkg("NonNorMvtDist")` provides d, p, q, r, s
   functions.
@@ -1614,6 +1614,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     (L\[RC\]), Rice/Rician (L), Slash (TL), 3-parameter Student T
     (L), Truncated Exponential (L), Wakeby (L), and Weibull (L).
     Multivariate L-moments (L-comoments).
+    `r pkg("Distributacalcul")` provides first few moments
+    for most common distributions.  
   - *hyperbolic distributions:*
     `r pkg("HyperbolicDist")` provides the mean,
     variance, skewness, kurtosis, mode, raw and centered moments for
@@ -1649,11 +1651,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   Marsaglia. `r pkg("dqrng")` provides PCG family by
   O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ by Blackman
   and Vigna (2018).
-  - Support for several independent streams:
-    `r pkg("rstream")` focuses on multiple independent
-    streams of random numbers from different sources (in an object
-    oriented approach). `r pkg("dqrng")` provides RNG
-    for parallel computation either in R or in C++.
   - For non-uniform generation, the `r pkg("Runuran")`
     package interfaces to the UNU.RAN library for universal
     non-uniform generation as well as customised distributions based
@@ -1688,10 +1685,15 @@ Extreme Value) in order to compute the log-likelihood for example.
   of RNGs based on a reimplementation and extension of Marsaglia's
   DieHarder battery. `r pkg("randtoolbox")` provides basic
   RNG tests.
-- *Parallel computing:* Random-number generators for parallel
-  computing are available via the `r pkg("rlecuyer")`
-  package. See the `r view("HighPerformanceComputing")`
-  task view for more details.
+- *Parallel computing:* Support for several independent streams:
+  - `r pkg("rstream")` focuses on multiple independent
+    streams of random numbers from different sources (in an object
+    oriented approach). 
+  - `r pkg("dqrng")` provides RNG
+    for parallel computation either in R or in C++.
+  - `r pkg("rlecuyer")` provides an interface to the C implementation 
+  of the random number generator with multiple independent streams. 
+  - See the `r view("HighPerformanceComputing")` task view for more details.
 - *Multivariate random vectors:* for parametric multivariate distributions,
   we refer to [Multivariate Continuous](#MultivariateContinuous)
   and [Multivariate Discrete](#MultivariateDiscrete).
@@ -1705,6 +1707,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("uniformly")` provides sampling on various geometric shapes, 
   such as spheres, ellipsoids, simplices.
   `r pkg("watson")` allows simulating mixtures of Watson distributions.
+- *Tidyverse:* `r pkg("TidyDensity")` maps the RNG of `stats` (and `actuar`) distributions 
+  to a tidy `tibble` which allows to work with the rest of the `tidyverse`.  
 
 
 # Miscellaneous
