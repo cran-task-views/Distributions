@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-06-14
+version: 2024-06-17
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1803,6 +1803,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("distr")` provides distribution of the
     maximum or minimum of two distributions. See Object-orientation
     above.
+    `r pkg("convdistr")` provides functions to convolute 
+    probabilistic distributions using RNG for a set of distributions.
 - *Transversal functions:*
   - *Histogram, tail plots, distance estimation:*
     `r pkg("DistributionUtils")` provides log-histogram,
