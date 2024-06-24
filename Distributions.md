@@ -1423,7 +1423,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   Clayton, Gumbel, Frank, BB9 copula.
   `r pkg("Bivariate.Pareto")` provides a random generator
   for the Frank copula with Pareto margins.
-  `r pkg("nCopula")`, `r pkg("HAC")` provide
+  `r pkg("HAC")` provides
   hierarchical archimedean copulas. `r pkg("lcopula")`
   provides the Liouville copula.
   `r pkg("CopulaGAMM")` provides the bivariate version of Frank, FGM,
@@ -1734,12 +1734,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   - For non-uniform generation, see the
     `r pkg("Runuran")` above.
 - *Non parametric models:*
-  - *Binned Empirical distributions:* The
-    `r pkg("HistogramTools")` package provides a number
-    of methods for manipulating empirical data that has been binned
-    into histogram form, including: (1) the empirical cumulative
-    distribution function, (2) the empirical quantile, and (3)
-    information loss metrics associated with binning.
+  - *Binned Empirical distributions:* no longer provided.
   - *Empirical distribution:* Base R provides functions for
     univariate analysis: (1) the empirical density (see
     `density()`), (2) the empirical cumulative distribution function
