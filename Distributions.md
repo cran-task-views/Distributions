@@ -1255,6 +1255,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   provided in `r pkg("MultiRNG")`. A special case of a
   bivariate noncentral t-distribution called Owen distribution is
   provided in `r pkg("OwenQ")`.
+  Distance between multivariate t distributions are provided
+  in `r pkg("mstudentd")`.
 - *Multivariate Uniform distribution:* r is provided in
   `r pkg("MultiRNG")`. `r pkg("compositions")`
   provides a random generator on the simplex.
