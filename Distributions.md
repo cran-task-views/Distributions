@@ -1264,7 +1264,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 ## [Mixed-type distributions]{#mixedType}
 
 - *Maxwell-Boltzmann-Bose-Einstein-Fermi-Dirac (MBBEFD) distribution
-  :* provided in `r pkg("mbbefd")`.
+  :* provided in `r pkg("mbbefd")` and `r pkg("MBBEFDLite")`.
 - *Mixed ordinal and normal distribution:* provided in
   `r pkg("OrdNor")`.
 - *One-inflated distributions:* a generic distribution as well as
