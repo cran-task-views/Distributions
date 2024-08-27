@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-06-24
+version: 2024-08-27
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -616,7 +616,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provided in `r pkg("CircStats")`.
   `r pkg("lmomco")` implements the generalized normal
   distribution. The Exponentially modified Gaussian is available in
-  `r pkg("emg")` and `r pkg("gamlss.dist")`
+  `r pkg("emg")`, `r pkg("gamlss.dist")`, `r pkg("tsdistributions")`, 
   `r pkg("sn")` implements the skew normal distribution.
   `r pkg("greybox")` implements the folded normal
   distribution. `r pkg("VGAM")` implements the folded and
@@ -645,6 +645,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   Folded normal                     greybox             d, p, q, r      `fnorm`
   Closed skew normal                csn                 d, p, q, r      `csn`
   Skew normal                       sn                  d, p, q, r      `sn`
+  Skew normal                       snorm               d, p, q, r      `tsdistributions`
   --------------------------------- ----------------- --------------- -----------------------
 
   :  Summary for Gaussian-related distributions
@@ -659,8 +660,10 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("TLMoments")`, `r pkg("rmutil")`,
   `r pkg("QRM")`, `r pkg("ROOPSD")` and
   `r pkg("fExtremes")`. 
-  `r pkg("revdbayes")` provide d,p,q,r functions of the
+  `r pkg("revdbayes")` provide d, p, q, r functions of the
   GEV distribution in a Bayesian setting.
+  `r pkg("bgev")` provide d, p, q, r functions of the
+  bimodal GEV distribution
 - *Gompertz distribution:* provided in 
   `r pkg("flexsurv")`, `r pkg("extraDistr")`.
   `r pkg("flexsurv")` also provides hazard (h) and
@@ -694,7 +697,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   transforms of the Gaussian variables.
 - *(generalized) Hyperbolic distribution:*
   `r pkg("fBasics")`, `r pkg("ghyp")`,
-  `r pkg("GeneralizedHyperbolic")` and
+  `r pkg("tsdistributions")` , `r pkg("GeneralizedHyperbolic")` and
   `r pkg("HyperbolicDist")` packages provide d, p, q, r
   functions for the generalized hyperbolic distribution.
   `r pkg("QRM")` provides d, r functions for the
@@ -719,7 +722,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("SuppDists")` also provides a function that
   returns moments, skewness, kurtosis. `r pkg("fBasics")`
   the normal inverse Gaussian and standardized normal inverse Gaussian
-  distributions. The generalized inverse gaussian (GIG) distribution can be
+  distributions. 
+  `r pkg("tsdistributions")` provides the normal inverse Gaussian distribution.
+  The generalized inverse gaussian (GIG) distribution can be
   found in `r pkg("gamlss.dist")`, `r pkg("ginormal")`, `r pkg("HyperbolicDist")`,
   `r pkg("QRM")`, `r pkg("rmutil")`. The truncated GIG is also available
   in `r pkg("ginormal")`. A random generator is
@@ -729,7 +734,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   from the generalized inverse Gaussian distribution.
   Unit inverse Gaussian provided in `r pkg("new.dist")`.
 - *Johnson distribution:* provided in
-  `r pkg("SuppDists")`. `r pkg("ForestFit")`
+  `r pkg("SuppDists")`, `r pkg("ForestFit")`, `r pkg("tsdistributions")`
   provides d, p of Johnson SB distribution.
 - *Jones and Pewsey distribution:* provided in
   `r pkg("circular")` (d).
@@ -767,9 +772,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("lmomco")` (FMKL),
   `r pkg("extraDistr")` (original Tukey).
 - *Tukey's G/H distribution:* 
-  no longer provided directly, but
-  Tukey's H distribution is provided as a special case of Lambert W x
-  F distribution.
+  provided in `r pkg("TukeyGH77")`, and
+  Tukey's H distribution is provided 
+  as a special case of Lambert W x F distribution.
 - *Lambda-prime distribution:* `r pkg("sadists")`
   implements Gram Charlier, Edgeworth and Cornish-Fisher
   approximations for K-prime distribution for computing d, p, q, r
@@ -1042,7 +1047,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   implements Gram Charlier, Edgeworth and Cornish-Fisher
   approximations for doubly non central Student distribution for
   computing d, p, q, r functions. The skewed Student distribution is
-  provided in `r pkg("skewt")`, `r pkg("sn")`
+  provided in `r pkg("skewt")`, `r pkg("sn")`, `r pkg("tsdistributions")`
   and `r pkg("gamlss.dist")` packages. The generalized
   skew distribution is provided in `r pkg("sgt")`. d, p,
   q, r functions for the generalized t-distribution can be found in
@@ -1069,6 +1074,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 
   : Summary for Student-related distributions
 
+- *Topp-Leone Cauchy Rayleigh (TLCAR) distribution:* provided
+  in `r pkg("TLCAR")` (d, p, q, r).
 - *Triangle/trapezoidal distribution:* packages
   `r pkg("triangle")`, `r pkg("extraDistr")`,
   `r pkg("mc2d")`, `r pkg("EnvStats")` and
@@ -1306,6 +1313,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("gendist")` provides d, p, q, r functions for
   two-distribution mixture models working with any distribution
   defined by its d, p, q, r functions.
+  `r pkg("fmx")` provides d, p, q, r functions for
+  finite parametrized distributions.
 - *Horseshoe distribution:* provided in
   `r pkg("LaplacesDemon")`.
 - *Laplace mixture distribution:* provided in
@@ -1349,6 +1358,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   Wishart distribution. `r pkg("MCMCpack")` and
   `r pkg("mniw")` provides the inverse Wishart
   distribution.
+  `r pkg("wishmom")` allows to computes the theoretical moments of
+  the inverse beta-Wishart distribution.
 - *Marcenko-Pastur distribution:* provided in
   `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
   `r pkg("bayesm")`.
@@ -1388,6 +1399,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("bayesm")` provides r function.
   `r pkg("LaplacesDemon")` provides Wishart distribution
   parametrized either by Sigma or by its Cholesky decomposition.
+  `r pkg("wishmom")` allows to computes the theoretical moments of
+  the beta-Wishart distribution.
 - *White Wishart Maximum Eigenvalue Distribution:* provided in
   `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
   `r pkg("bayesm")`.
@@ -1525,10 +1538,12 @@ Extreme Value) in order to compute the log-likelihood for example.
   symmetric models and arctan models working with any distribution
   defined by its d, p, q, r functions.
   `r pkg("ComRiskModel")` provides also G-transformed such as
-   binomial-G, complementary negative binomial-G and complementary 
-   geometric-G families of distributions taking baseline models 
-   such as exponential, extended exponential, Weibull, extended 
-   Weibull, Fisk, Lomax, Burr-XII and Burr-X. 
+  binomial-G, complementary negative binomial-G and complementary 
+  geometric-G families of distributions taking baseline models 
+  such as exponential, extended exponential, Weibull, extended 
+  Weibull, Fisk, Lomax, Burr-XII and Burr-X. 
+  `r pkg("geppe")` provides exponential-Poisson (EP), the 
+  generalised EP (GEP) and the Poisson-exponential (PE) distributions. 
 - *Truncated distribution:* A generic code snippet is available [in
   the JSS](https://www.jstatsoft.org/article/view/v016c02) . This code
   is now available in two packages: `r pkg("truncdist")`
@@ -1536,6 +1551,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   a univariate truncated distribution given a user-supplied
   distribution; `r pkg("LaplacesDemon")` provides a
   generic function in a Bayesian environment.
+  `r pkg("TruncExpFam")` provides d, r functions for truncated distributions
+  of the exponential family, e.g. truncated gamma or truncated Poisson
+  as well as fitting procedures.
 
 
 # [Moments, skewness, kurtosis and etc]{#moments}
@@ -1833,11 +1851,12 @@ Extreme Value) in order to compute the log-likelihood for example.
     `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
     one-step estimation procedures.
     `r pkg("EnvStats")`, `r pkg("fitteR")`, `r pkg("ExtDist")` also provide
-    tools to fit and select a set of probability distributions. `r pkg("flexsurv")` and
-    `r pkg("msm")` provides a quantile function for a
+    tools to fit and select a set of probability distributions. 
+    `r pkg("flexsurv")` and `r pkg("msm")` provides a quantile function for a
     generic distribution based on numerical computation based on a
     dichotomic search.
-
+    `r pkg("reservr")` provides fitting procedures for censored and truncated 
+    dataset on a set of selected distributions.
 
 ## Bibliography
 
