@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-08-27
+version: 2024-09-05
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -340,10 +340,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   implemented in `r pkg("VGAM")`,
   `r pkg("mc2d")`: Lomax, inverse Lomax, Dagum,
   Singh-Maddala, Pert distributions. `r pkg("actuar")`
-  provides the Feller-Pareto distribution as special cases Burr,
-  loglogistic, paralogistic, generalized Pareto, Pareto, see also the
-  Pareto subsection. `r pkg("llogistic")` provides the
-  log-logistic parametrized by the median.
+  provides the Feller-Pareto distribution with special cases Burr,
+  log-logistic, paralogistic, generalized Pareto, Pareto, see also the
+  Pareto subsection. 
   
   ------------------------- -------------- -------------------  -----------------------
   *Distribution name*       *Packages*     *Functions*           *Distribution suffix*
@@ -810,10 +809,13 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Logistic distribution and its extensions:* Base R provides the d,
   p, q, r functions for this distribution (see above).
   `r pkg("actuar")` and `r pkg("VGAM")`
-  provide d, p, q, r functions for the log logistic (also called
+  provide d, p, q, r functions for the log-logistic (also called
   Fisk), the paralogistic and the inverse paralogistic distributions.
   `r pkg("FAdist")` the log-logistic distribution with two
-  and three parameters. The generalized logistic distribution (Type I,
+  and three parameters.
+  `r pkg("llogistic")` provides the log-logistic parametrized by the median. 
+  `r pkg("trdist")` provides the log-logistic distribution.
+  The generalized logistic distribution (Type I,
   also known as skew-logistic distribution) is provided in
   `r pkg("lmomco")`, `r pkg("sld")`,
   `r pkg("rmutil")`, `r pkg("SCI")` and
@@ -1546,9 +1548,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   generalised EP (GEP) and the Poisson-exponential (PE) distributions. 
 - *Truncated distribution:* A generic code snippet is available [in
   the JSS](https://www.jstatsoft.org/article/view/v016c02) . This code
-  is now available in two packages: `r pkg("truncdist")`
-  is a dedicated package providing d, p, q, r, m(oments) functions for
-  a univariate truncated distribution given a user-supplied
+  is now available in two packages: `r pkg("truncdist")`, `r pkg("trdist")`
+  are dedicated packages providing d, p, q, r, m(oments) functions of
+  a univariate truncated distribution for a base distribution and a user-supplied
   distribution; `r pkg("LaplacesDemon")` provides a
   generic function in a Bayesian environment.
   `r pkg("TruncExpFam")` provides d, r functions for truncated distributions
@@ -1850,8 +1852,8 @@ Extreme Value) in order to compute the log-likelihood for example.
     enhances the tools to fit a user-supplied probability distribution.
     `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
     one-step estimation procedures.
-    `r pkg("EnvStats")`, `r pkg("fitteR")`, `r pkg("ExtDist")` also provide
-    tools to fit and select a set of probability distributions. 
+    `r pkg("EnvStats")`, `r pkg("fitteR")`, `r pkg("ExtDist")`, `r pkg("MLE")` 
+    also provide tools to fit and select a set of probability distributions. 
     `r pkg("flexsurv")` and `r pkg("msm")` provides a quantile function for a
     generic distribution based on numerical computation based on a
     dichotomic search.
