@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-09-05
+version: 2024-09-20
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1192,7 +1192,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   multivariate truncated normal is implemented in
   `r pkg("TruncatedNormal")` for d, p, r functions;
   `r pkg("tmvtnorm")` for p, q, r, m(oments) functions;
-  `r pkg("tmvmixnorm")` for a fast RNG.
+  `r pkg("tmvmixnorm")` for a fast RNG;
+  `r pkg("nntmvn")` for RNG using SNN method.
   `r pkg("sparseMVN")` implements very fast algorithms to
   compute the density and generate random variates of a multivariate
   normal distribution for which the covariance matrix or precision
