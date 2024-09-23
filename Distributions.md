@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-09-20
+version: 2024-09-23
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -414,7 +414,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   provides d, p, q, r functions for the Half-Cauchy distribution. The
   wrapped Cauchy distribution is provided in
   `r pkg("CircStats")`.
-- *Chen distribution:* no longer implemented.
+- *Chen distribution:* a special case of the Extended Chen-Poisson Lifetime 
+  Distribution as found in `r pkg("ecpdist")`.
 - *Chernoff distribution:*  `r pkg("ChernoffDist")` provides
   d, p, q functions of the distribution of the maximizer of the 
   two-sided Brownian motion minus quadratic drift, known as Chernoff's
