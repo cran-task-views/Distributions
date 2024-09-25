@@ -1224,6 +1224,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   bivariate and multivariate Extreme Value distributions as well as
   order/maxima/minima distributions are implemented in
   `r pkg("evd")` (d, p, r).
+- *Multivariate inverse Gaussian distribution:* `r pkg("mig")` provides 
+  (d, p, r) functionality as well as a fitting function.
 - *Multivariate Laplace distribution:*
   `r pkg("LaplacesDemon")` provides d, r functions for the
   multivariate Laplace distribution parametrized either by sigma, or
