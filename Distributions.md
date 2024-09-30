@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-09-25
+version: 2024-09-30
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -135,6 +135,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("distr", priority = "core")`.
 - *Discrete categorical distribution:* provided in
   `r pkg("LaplacesDemon")`.
+- *Discrete Cauchy (Cauchy-Cacoullos) distribution:* provided in
+  `r pkg("CCd")`.
 - *Discrete exponential distribution:* provided in
   `r pkg("poweRlaw")`.
 - *Discrete gamma distribution:* provided in
@@ -1559,7 +1561,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   generic function in a Bayesian environment.
   `r pkg("TruncExpFam")` provides d, r functions for truncated distributions
   of the exponential family, e.g. truncated gamma or truncated Poisson
-  as well as fitting procedures.
+  as well as fitting procedures. It also provides functions to retrieve the
+  original distribution parameters from a truncated sample by
+  maximum-likelihood estimation.
 
 
 # [Moments, skewness, kurtosis and etc]{#moments}
