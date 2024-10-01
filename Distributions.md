@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-09-30
+version: 2024-10-01
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -133,14 +133,20 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("Delaporte")`.
 - *Dirac distribution:* provided in
   `r pkg("distr", priority = "core")`.
+- *Discrete Burr-Hatke distribution:* `r pkg("DiscreteDists")` provides
+  d, p, q, r functions.  
 - *Discrete categorical distribution:* provided in
   `r pkg("LaplacesDemon")`.
 - *Discrete Cauchy (Cauchy-Cacoullos) distribution:* provided in
   `r pkg("CCd")`.
 - *Discrete exponential distribution:* provided in
-  `r pkg("poweRlaw")`.
+  `r pkg("poweRlaw")`. A generalized version of the second type is in
+  `r pkg("DiscreteDists")`.
 - *Discrete gamma distribution:* provided in
   `r pkg("extraDistr")`.
+- *Discrete inverted Kumaraswamy distribution:*
+  `r pkg("DiscreteDists")` provides d, p, q, r
+  functions.  
 - *Discrete inverse Weibull distribution:*
   `r pkg("DiscreteInverseWeibull")` provides d, p, q, r
   functions for the inverse Weibull as well as hazard rate function
@@ -152,8 +158,14 @@ Extreme Value) in order to compute the log-likelihood for example.
   DSL in `r pkg("disclap")`.
   `r pkg("LaplacesDemon")` also provides the DSL
   parametrization only.
+- *Discrete Lindley distribution:*
+  `r pkg("DiscreteDists")` provides d, p, q, r
+  functions.  
 - *Discrete lognormal distribution:* provided in
   `r pkg("poweRlaw")`.
+- *Discrete Marshall–Olkin Length Biased Exponential distribution:*
+  `r pkg("DiscreteDists")` provides d, p, q, r
+  functions.    
 - *Discrete normal distribution:* provided in
   `r pkg("extraDistr")`.
 - *Discrete power law distribution:* provided in
@@ -178,10 +190,14 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("GenBinomApps")` provides the generalized binomial distribution.
   `r pkg("frbinom")` provides the fractional binomial distribution
   where trials are from a generlized Bernoulli process.
+- *Generalized Geometric distribution:* provided in
+  `r pkg("DiscreteDists")`.
 - *Generalized Hermite distribution:* provided in
   `r pkg("hermite")`.
 - *Good distribution:* provided in
   `r pkg("good")`.
+- *Hyper-Poisson distribution:* provided in
+  `r pkg("DiscreteDists")`.  
 - *Hypergeometric distribution:* provided in **stats** . Non-central
   hypergeometric distribution is provided in
   `r pkg("MCMCpack")` (d,r). Extended hypergeometric
@@ -1772,10 +1788,13 @@ Extreme Value) in order to compute the log-likelihood for example.
     and (4) random sampling with or without replacement (see `sample()`).
     `r pkg("distributionsrd")` provides d, p, q, r
     user-friendly functions for the empirical distributions as well
-    as moments. `r pkg("mded")` provides a function for
+    as moments. `r pkg("distfromq")` provides d, p, q, r
+    user-friendly functions for the empirical distributions and options for 
+    estimating the tails.
+    `r pkg("mded")` provides a function for
     measuring the difference between two independent or
     non-independent empirical distributions and returning a
-    significance level of the difference.
+    significance level of the difference.  
     `r pkg("MEPDF")` provides functions to compute and
     visualize empirical density functions for multivariate data.
   - *Non Parametric distributions :* `r pkg("spd")`
