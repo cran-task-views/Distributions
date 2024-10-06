@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-10-01
+version: 2024-10-06
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1343,6 +1343,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("LaplacesDemon")`.
 - *Laplace mixture distribution:* provided in
   `r pkg("LaplacesDemon")`.
+- *Left-truncated mixtures of Gamma, Weibull, and Lognormal distributions:*       provided in `r pkg("ltmix")`.
 - *Log normal mixture:* d, p, q, r functions are provided in
   `r pkg("EnvStats")` with two possible parametrizations.
 - *Normal-polynomial quantile mixture:* d, p, q, r functions are
