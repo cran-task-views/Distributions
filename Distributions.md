@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-10-06
+version: 2024-10-19
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -93,6 +93,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("emdbook")`. ZI/ZM beta binomial distributions
   are implemented in
   `r pkg("gamlss.dist", priority = "core")`.
+  For a continuous analog with d, p, q, r functions, see `r pkg("cbbinom")`.
 - *Beta-geometric distribution:* provided in
   `r pkg("VGAM")`.
 - *Binomial (including Bernoulli) distribution:* provided in **stats**.
