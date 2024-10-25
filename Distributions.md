@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-10-19
+version: 2024-10-25
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1059,6 +1059,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   distributions.
   `r pkg("libstable4u")` provides d, p, q, r functions for skew stable distributions.
   `r pkg("dstabledist")` provides d, p, r functions for skew stable distributions.
+  `r pkg("StableEstim")` provides fitting functions, characteristic functions,
+  and simulation capabilities for 4-parameter stable distributions.
 - *Student distribution and its extensions:* Base R provides the d, p,
   q, r functions for Student and non central Student distribution (see
   above). `r pkg("extraDistr")` and
