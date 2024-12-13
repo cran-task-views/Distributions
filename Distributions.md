@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-10-25
+version: 2024-12-13
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -680,9 +680,11 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("QRM")`, `r pkg("ROOPSD")` and
   `r pkg("fExtremes")`. 
   `r pkg("revdbayes")` provide d, p, q, r functions of the
-  GEV distribution in a Bayesian setting.
+  GEV distribution in a Bayesian setting. 
   `r pkg("bgev")` provide d, p, q, r functions of the
-  bimodal GEV distribution
+  bimodal GEV distribution.
+  `r pkg("PGaGEV")` provide d, p, q, r functions of the
+   Power Garima-Generalized Extreme Value Distribution.
 - *Gompertz distribution:* provided in 
   `r pkg("flexsurv")`, `r pkg("extraDistr")`.
   `r pkg("flexsurv")` also provides hazard (h) and
