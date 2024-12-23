@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-12-13
+version: 2024-12-23
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1178,7 +1178,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   r functions for the multivariate Cauchy distribution parametrized
   either by sigma, by the Cholesky decomposition of sigma, by the
   precision matrix omega or by the Cholesky decomposition of omega.
-  `r pkg("mcauchyd")` provides d, p, r functions of the multivariate 
+  `r pkg("multvardiv")` provides d, p, r functions of the multivariate 
   Cauchy distribution..
 - *Cook-Johnson's Multivariate Uniform Distribution:*
   `r pkg("NonNorMvtDist")` provides d, p, q, r, s
@@ -1236,7 +1236,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   the multivariate normal distribution on the simplex and multivariate
   skew normal distribution on the simplex. A random generator of the
   multivariate normal is provided in `r pkg("MultiRNG")`.
-  `r pkg("mggd")` provides d, r function of the multivariate generalized
+  `r pkg("multvardiv")` provides d, r function of the multivariate generalized
   Gaussian distribution.
 - *Multivariate generalized hyperbolic distribution:*
   `r pkg("QRM")` provides d, r functions of the standard
@@ -1292,7 +1292,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   bivariate noncentral t-distribution called Owen distribution is
   provided in `r pkg("OwenQ")`.
   Distance between multivariate t distributions are provided
-  in `r pkg("mstudentd")`.
+  in `r pkg("multvardiv")`.
 - *Multivariate Uniform distribution:* r is provided in
   `r pkg("MultiRNG")`. `r pkg("compositions")`
   provides a random generator on the simplex.
