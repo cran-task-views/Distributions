@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2024-12-23
+version: 2025-01-08
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -195,8 +195,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("DiscreteDists")`.
 - *Generalized Hermite distribution:* provided in
   `r pkg("hermite")`.
-- *Good distribution:* provided in
-  `r pkg("good")`.
+- *Good distribution:* no longer provided: package of the same name is archived.
 - *Hyper-Poisson distribution:* provided in
   `r pkg("DiscreteDists")`.  
 - *Hypergeometric distribution:* provided in **stats** . Non-central
