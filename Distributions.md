@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-01-08
+version: 2025-01-11
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -309,6 +309,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("compositions")` provides a random generator.
   `r pkg("bzinb")` provides a random generator for the bivariate Poisson 
   (classic and zero-inflated) distribution.
+  `r pkg("bivpois")` provides d, r function of the bivariate Poisson
+  as well as some fitting functions.
 - *Multivariate Poisson-lognormal:* the bivariate
   Poisson-lognormal distribution is provided in
   `r pkg("poilog")`.
