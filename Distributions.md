@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-01-11
+version: 2025-02-08
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1718,6 +1718,9 @@ Extreme Value) in order to compute the log-likelihood for example.
     multivariate generators, see each distribution.
     `r pkg("Tinflex")` provides a non-uniform random number generator 
     for quite arbitrary distributions with piecewise twice differentiable densities.
+    `r pkg("zigg")` provides the Ziggurat Pseudo RNG
+    while `r pkg("RcppZiggurat")` provides 'Rcpp' integration of 
+    Ziggurat Normal RNG Implementations.
   - `r pkg("kernelboot")` provides functions for random
     generation from univariate and multivariate kernel densities (in
     particular multivariate Gaussian kernels).
