@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-02-08
+version: 2025-02-21
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -328,8 +328,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 ## Continuous univariate distributions
 
 
-- *Arcsine distribution:* implemented in package
-  `r pkg("distr")`.
+- *Arcsine distribution:* implemented in packages
+  `r pkg("distr")` and `r pkg("skewunit")`. 
 - *Argus distribution:* implemented in package
   `r pkg("argus")`.
 - *Beta distribution and its extensions:* Base R provides the d, p, q,
@@ -363,6 +363,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provides the Feller-Pareto distribution with special cases Burr,
   log-logistic, paralogistic, generalized Pareto, Pareto, see also the
   Pareto subsection. 
+  `r pkg("skewunit")` provides d, p, r for a symmetric beta.
   
   ------------------------- -------------- -------------------  -----------------------
   *Distribution name*       *Packages*     *Functions*           *Distribution suffix*
@@ -757,7 +758,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   Unit inverse Gaussian provided in `r pkg("new.dist")`.
 - *Johnson distribution:* provided in
   `r pkg("SuppDists")`, `r pkg("ForestFit")`, `r pkg("tsdistributions")`
-  provides d, p of Johnson SB distribution.
+  provides d, p of Johnson SB distribution.  `r pkg("skewunit")` provides 
+  d, p, and r of Johnson SB distribution.
 - *Jones and Pewsey distribution:* provided in
   `r pkg("circular")` (d).
 - *K-prime distribution:* `r pkg("sadists")` implements
@@ -1113,7 +1115,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("CircStats")`, `r pkg("circular")`
   provide d, r functions for triangular distribution. A fast random
   generator is available for the triangle distribution is implemented
-  in `r pkg("Runuran")` as well as the density function.
+  in `r pkg("Runuran")` as well as the density function.  `r pkg("skewunit")` 
+  provides d, p, r functions for the triangle distribution.
 - *Tsallis or q-Exponential distribution:*
   `r pkg("tsallisqexp")` provides d, p, q, r functions for
   two parametrizations of the Tsallis distribution and also implements
@@ -1122,6 +1125,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   package `r pkg("tweedie")`. Let us note that the Tweedie
   distribution is not necessarily continuous, a special case of it is
   the Poisson distribution.
+- *U-quadratic distribution:* d, p, r functions are found in `r pkg("skewunit")`.
 - *Uniform distribution:* d, p, q, r functions are of course provided
   in R. See section RNG for random number generation topics.
   `r pkg("KScorrect")` provides d, p, q, r functions for
