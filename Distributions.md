@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-02-21
+version: 2025-03-28
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1511,9 +1511,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   implemented in `r pkg("copula")`.
 - *Plackett:* provided in `r pkg("VGAM")`,
   `r pkg("copBasic")` and `r pkg("copula")`.
-- *Vine copulas:* Package `r pkg("vines")` provides
-  functions for C- and D-vine copulas and
-  `r pkg("VineCopula")` for general R-vine copulas.
+- *Vine copulas:* Package 
+  `r pkg("VineCopula")` provides functions for general R-vine copulas.
 
 
 ## [Compound, composite, discretized, exponentiated and transformation of distributions]{#transform}
