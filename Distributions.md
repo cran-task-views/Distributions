@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-03-28
+version: 2025-04-05
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -592,6 +592,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("sglg")` provides the generalized log-Gamma along with
   various functions to fit semi-parametric regression models.
   `r pkg("ollggamma")` provides d, p, q, r for the Odd Log-Logistic Generalized Gamma. 
+  The d, p, q, r functions for the 
+  truncated generalised gamma distribution are found in `r pkg("tggd")`.
   
   ---------------------- ------------------ ------------------------- -----------------------
   *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
@@ -1538,7 +1540,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   discretised versions of continuous distribution by mapping
   continuous values to an underlying discrete grid, based on a
   (uniform) frequency of discretisation, a valid discretisation point,
-  and an integration range.
+  and an integration range. Consult the package `r pkg("cctools")` for 
+  uniform scaled beta distribution and the continuous
+convolution kernel density estimator implementations. 
 - *Quantile-based asymmetric (QBA) family of distributions:*
   no longer implemented.
 - *Transformed distribution:* `r pkg("Newdistns")`
@@ -1589,7 +1593,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   of the exponential family, e.g. truncated gamma or truncated Poisson
   as well as fitting procedures. It also provides functions to retrieve the
   original distribution parameters from a truncated sample by
-  maximum-likelihood estimation.
+  maximum-likelihood estimation.  The d, p, q, r functions for the 
+  truncated generalised gamma distribution are found in `r pkg("tggd")`.
 
 
 # [Moments, skewness, kurtosis and etc]{#moments}
