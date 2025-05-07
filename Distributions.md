@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-04-05
+version: 2025-05-07
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -341,11 +341,12 @@ Extreme Value) in order to compute the log-likelihood for example.
   Edgeworth and Cornish-Fisher approximations for doubly non central
   beta distribution for computing d, p, q, r functions.
   `r pkg("extraDistr")` provides the four-parameter beta
-  with lower and upper bounds. The generalized beta of the first kind
-  (GB1) (exponentiation of beta 1) is provided in
+  with lower and upper bounds. 
+  The generalized beta of the first kind (GB1) 
+  (exponentiation of beta 1, also known as McDonald distribution) is provided in
   `r pkg("gamlss.dist")`, `r pkg("mbbefd")`,
-  `r pkg("actuar")`. `r pkg("betafunctions")`
-  provides the four-parameter beta (that is with location and scale
+  `r pkg("actuar")`, `r pkg("gkwreg")`. 
+  `r pkg("betafunctions")` provides the four-parameter beta (that is with location and scale
   parameters), the beta parametrized by the mean and the variance as
   well as the beta compound beta distribution. The beta prime (or beta
   of the second kind), which is the distribution of X/(1-X) when X
@@ -378,6 +379,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   GB1                       gamlss.dist     d, p, q, r           `GB1`
   GB1                       mbbefd          d, p, q, r, m, ec    `gbeta`
   GB1                       actuar          d, p, q, r, m, lev   `genbeta`
+  GB1                       gkwreg          d, p, q, r           `mc`
   one-infl GB1              mbbefd          d, p, q, r, m, ec    `oigbeta`
   ------------------------- --------------- -------------------- -----------------------
 
@@ -780,7 +782,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Kruskal Wallis distribution:* provided in
   `r pkg("SuppDists")`.
 - *Kumaraswamy distribution:* provided in packages
-  `r pkg("VGAM")`, `r pkg("extraDistr")`,
+  `r pkg("VGAM")`, `r pkg("extraDistr")`, `r pkg("gkwreg")`, 
   `r pkg("lmomco")`, `r pkg("new.dist")`. `r pkg("elfDistr")`
   provides the Kumaraswamy Complementary Weibull Geometric Probability
   Distribution.
@@ -812,12 +814,13 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("distr")`, `r pkg("lmomco")`,
   `r pkg("LaplacesDemon")`, `r pkg("L1pack")`, `r pkg("VGAM")`,
   `r pkg("sgt")`, `r pkg("extraDistr")`,
-  `r pkg("greybox")`, `r pkg("rmutil")` and
+  `r pkg("greybox")`, `r pkg("rmutil")`,
+  `r pkg("Rsubbotools")` and
   `r pkg("HyperbolicDist")` packages.
   `r pkg("LaplacesDemon")` provides the Laplace
   distribution parametrized by the precision parameter as well as the
   skew Laplace distribution. Asymetric Laplace distribution is
-  implemented in `r pkg("ald")`,
+  implemented in `r pkg("ald")`, `r pkg("Rsubbotools")`, 
   `r pkg("greybox")`. A fast random generator is available
   for the Laplace distribution is implemented in
   `r pkg("Runuran")` as well as the density function.
@@ -1013,9 +1016,11 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Phase-type distribution:* provided in `r pkg("actuar")`,
   `r pkg("mapfit")`, `r pkg("matrixdist")`, `r pkg("PhaseTypeR")`.
 - *Power distribution:* `r 
-  `r pkg("poweRlaw")` implement the exponential power
+  `r pkg("poweRlaw")`, `r pkg("Rsubbotools")` implement the exponential power
   distribution. Two-sided power distribution provided in
   `r pkg("rmutil")`.
+  `r pkg("Rsubbotools")` provides the skewed exponential power distribution
+  and a three-parameter version known as Subbotin distribution.
 - *Proportion distribution:* this is the distribution for the
   difference between two independent beta distributions. d, p, q, r
   functions in `r pkg("tolerance")`.
@@ -1295,9 +1300,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   multivariate Student distribution parametrized either by sigma, by
   the Cholesky decomposition of sigma, by the precision matrix omega
   or by the Cholesky decomposition of omega. Random generator r is
-  provided in `r pkg("MultiRNG")`. A special case of a
-  bivariate noncentral t-distribution called Owen distribution is
-  provided in `r pkg("OwenQ")`.
+  provided in `r pkg("MultiRNG")`.
   Distance between multivariate t distributions are provided
   in `r pkg("multvardiv")`.
 - *Multivariate Uniform distribution:* r is provided in
@@ -1326,6 +1329,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   Bernoulli-exponential, Bernoulli-Gamma, Bernoulli-lognormal,
   Bernoulli-Weibull distributions are provided in
   `r pkg("qmap")`.
+- *binary-normal mixture:*   r function in `r pkg("BinNor")`,
+  see also `r pkg("MultiOrd")`.
 - *Cauchy-polynomial quantile mixture:* d, p, q, r functions are
   provided in `r pkg("Lmoments")`.
 - *Chi-square mixture:* d, p, q, r functions are provided in
@@ -1571,7 +1576,10 @@ convolution kernel density estimator implementations.
   modified beta G distribution, Marshall-Olkin Kumaraswamy G
   distribution, odd log-logistic G distribution, truncated-exponential
   skew-symmetric G distribution, T-X{log-logistic}G distribution,
-  Weibull G distribution. `r pkg("gendist")` provides d,
+  Weibull G distribution. 
+  `r pkg("gkwreg")` provides the beta-Kumaraswamy, the exponentiated-Kumaraswamy,
+  the generalized Kumaraswamy, Kumaraswamy-Kumaraswamy distributions.
+  `r pkg("gendist")` provides d,
   p, q, r functions for composite models, folded models, skewed
   symmetric models and arctan models working with any distribution
   defined by its d, p, q, r functions.
