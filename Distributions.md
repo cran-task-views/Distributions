@@ -819,7 +819,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("HyperbolicDist")` packages.
   `r pkg("LaplacesDemon")` provides the Laplace
   distribution parametrized by the precision parameter as well as the
-  skew Laplace distribution. Asymetric Laplace distribution is
+  skew Laplace distribution. Asymmetric Laplace distribution is
   implemented in `r pkg("ald")`, `r pkg("Rsubbotools")`, 
   `r pkg("greybox")`. A fast random generator is available
   for the Laplace distribution is implemented in
