@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-05-07
+version: 2025-05-13
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -815,7 +815,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("LaplacesDemon")`, `r pkg("L1pack")`, `r pkg("VGAM")`,
   `r pkg("sgt")`, `r pkg("extraDistr")`,
   `r pkg("greybox")`, `r pkg("rmutil")`,
-  `r pkg("Rsubbotools")` and
+  `r pkg("Rsubbotools")`, `r pkg("joker")` and
   `r pkg("HyperbolicDist")` packages.
   `r pkg("LaplacesDemon")` provides the Laplace
   distribution parametrized by the precision parameter as well as the
@@ -1210,6 +1210,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   sigma, or by the Cholesky decomposition of sigma.
 - *Multivariate F distribution:* `r pkg("NonNorMvtDist")`
   provides d, p, q, r, s functions.
+- *Multivariate gamma distribution:* `r pkg("joker")`
+  provides d, r functions.
 - *Multivariate Gaussian (or normal) distribution:* The multivariate
   Gaussian distribution is provided in the packages
   `r pkg("mvtnorm", priority = "core")` (d, p, r),
@@ -1902,11 +1904,12 @@ convolution kernel density estimator implementations.
     `r pkg("MASS")` implements the flexible `fitdistr`
     function for parameter estimations.
     `r pkg("fitdistrplus")` greatly enlarges `fitdistr` and
-    enhances the tools to fit a user-supplied probability distribution.
+    enhances the tools to fit any user-supplied probability distribution.
     `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
     one-step estimation procedures.
-    `r pkg("EnvStats")`, `r pkg("fitteR")`, `r pkg("ExtDist")`, `r pkg("MLE")` 
-    also provide tools to fit and select a set of probability distributions. 
+    `r pkg("EnvStats")`, `r pkg("ExtDist")`,  
+    `r pkg("fitteR")`, `r pkg("joker")`, `r pkg("MLE")` also provide tools to fit 
+    and to select among a limited number of probability distributions. 
     `r pkg("flexsurv")` and `r pkg("msm")` provides a quantile function for a
     generic distribution based on numerical computation based on a
     dichotomic search.
