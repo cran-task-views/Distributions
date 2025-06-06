@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-05-13
+version: 2025-06-06
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -828,6 +828,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   random generator. The skew Laplace distribution is available in
   `r pkg("sgt")`. `r pkg("LaplacesDemon")`
   provides the log-Laplace distribution.
+  `r pkg("ExtendedLaplace")` provides the extended Laplace distribution.
 - *LASSO distribution:* provided in
   `r pkg("LaplacesDemon")`.
 - *Lévy distribution:* provided in `r pkg("rmutil")`.
@@ -1362,17 +1363,19 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("LaplacesDemon")`.
 - *Laplace mixture distribution:* provided in
   `r pkg("LaplacesDemon")`.
-- *Left-truncated mixtures of Gamma, Weibull, and Lognormal distributions:*       provided in `r pkg("ltmix")`.
+- *Left-truncated mixtures of Gamma, Weibull, and Lognormal distributions:*       
+   provided in `r pkg("ltmix")`.
 - *Log normal mixture:* d, p, q, r functions are provided in
   `r pkg("EnvStats")` with two possible parametrizations.
+  `r pkg("lognGPD")` provides the lognormal - generalized Pareto distribution.
 - *Normal-polynomial quantile mixture:* d, p, q, r functions are
   provided in `r pkg("Lmoments")`.
 - *Pareto distribution:* `r pkg("extremefit")` implements
   the mixture of two Pareto I distributions.
 - *Poisson beta distribution:* provided in
   `r pkg("scModels")`.
-- *Poisson Binomial distribution:* `r pkg("poibin")`
-  implements the Poisson Binomial distribution.
+- *Poisson Binomial distribution:* `r pkg("poibin")` and `r pkg("poisbinom")`
+  implement the Poisson Binomial distribution.
 - *Poisson lognormal distribution:* `r pkg("poilog")`
   implements the Poisson lognormal distribution.
 - *Poisson mixture:* provided in `r pkg("extraDistr")`.
