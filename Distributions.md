@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-06-06
+version: 2025-07-20
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1144,6 +1144,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Vasicek distribution:* 
   `r pkg("vasicek")` implements d, p, r functions.
   `r pkg("vasicekreg")` implements d, p, q, r functions.  
+- *voigt distribution:* 
+  `r pkg("voigt")` implements d, r functions.
 - *von Mises distribution:* The `r pkg("CircStats")`
   package provides d, p, r functions; the
   `r pkg("circular")` package provides d, p, q, r
