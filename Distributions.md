@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-07-20
+version: 2025-10-02
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -514,6 +514,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   is implemented in `r pkg("Runuran")` as well as the
   density function.
   `r pkg("AEP")` implements the Asymmetric Exponential Power Distribution.
+  `r pkg("pgnorm")` implements the p-Generalized Normal Distribution.
     
   --------------------------------------------------  --------------------- ---------------------- ----------------------------
   *Distribution name*                                 *Packages*             *Functions*             *Distribution suffix*
@@ -1166,13 +1167,15 @@ Extreme Value) in order to compute the log-likelihood for example.
   value distribution are provided in
   `r pkg("gamlss.dist")` (d, p, q, r) and the shifted left
   truncated Weibull distribution is provided in
-  `r pkg("Renext")`. The right truncated Weibull is
-  provided in `r pkg("ReIns")`. The generalized Weibull is
-  provided in `r pkg("rmutil")`. The tail Weibull is
-  provided in `r pkg("distTails")`.
+  `r pkg("Renext")`. 
+  The right truncated Weibull is provided in `r pkg("ReIns")`. 
+  The generalized Weibull is provided in `r pkg("rmutil")`. 
+  The tail Weibull is provided in `r pkg("distTails")`.
   `r pkg("CaDENCE")` provides the zero-inflated Weibull
   distribution.
   The bimodal Weibull distribution is provided in `r pkg("new.dist")`.
+  The Marshal–Olkin Generalized Inverse Weibull Distribution 
+  is provided in `r pkg("mogiw")`.
 - *First-passage time of a Wiener process:*
   `r pkg("WienR")` provides d, p functions of the 
   first-passage time of a diffusion model.
@@ -1255,6 +1258,9 @@ Extreme Value) in order to compute the log-likelihood for example.
   multivariate normal is provided in `r pkg("MultiRNG")`.
   `r pkg("multvardiv")` provides d, r function of the multivariate generalized
   Gaussian distribution.
+  `r pkg("nvmix")` provides d, p, q, r function of the Multivariate Normal Variance Mixtures
+  as well as the multivariate normal distribution.
+  
 - *Multivariate generalized hyperbolic distribution:*
   `r pkg("QRM")` provides d, r functions of the standard
   and the symmetric multivariate generalized hyperbolic distribution.
@@ -1308,6 +1314,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   provided in `r pkg("MultiRNG")`.
   Distance between multivariate t distributions are provided
   in `r pkg("multvardiv")`.
+  `r pkg("nvmix")` provides d, r function of the multivariate Student distribution.
 - *Multivariate Uniform distribution:* r is provided in
   `r pkg("MultiRNG")`. `r pkg("compositions")`
   provides a random generator on the simplex.
@@ -1597,6 +1604,7 @@ convolution kernel density estimator implementations.
   Weibull, Fisk, Lomax, Burr-XII and Burr-X. 
   `r pkg("geppe")` provides exponential-Poisson (EP), the 
   generalised EP (GEP) and the Poisson-exponential (PE) distributions. 
+  
 - *Truncated distribution:* A generic code snippet is available [in
   the JSS](https://www.jstatsoft.org/article/view/v016c02) . This code
   is now available in two packages: `r pkg("truncdist")`, `r pkg("trdist")`
