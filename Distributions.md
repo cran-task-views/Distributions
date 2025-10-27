@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-10-02
+version: 2025-10-27
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -434,9 +434,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   in `r pkg("lmomco", priority = "core")` and
   `r pkg("sgt")`. The skew Cauchy distribution is provided
   in `r pkg("sn")`. `r pkg("LaplacesDemon")`
-  provides d, p, q, r functions for the Half-Cauchy distribution. The
-  wrapped Cauchy distribution is provided in
-  `r pkg("CircStats")`.
+  provides d, p, q, r functions for the Half-Cauchy distribution. 
 - *Chen distribution:* a special case of the Extended Chen-Poisson Lifetime 
   Distribution as found in `r pkg("ecpdist")`.
 - *Chernoff distribution:*  `r pkg("ChernoffDist")` provides
@@ -477,9 +475,32 @@ Extreme Value) in order to compute the log-likelihood for example.
 
   :  Summary for Chi-related distributions
 
-- *Circular distribution:* uniform circular provided in
-  `r pkg("circular")` (d,r); Generalized von Mises
-  circular provided in `r pkg("circular")` (d).
+- *Circular distributions:* 
+  `r pkg("CircStats")`, `r pkg("circular")`, `r pkg("Directional")`, `r pkg("rvMF")`, `r pkg("VGAM")`
+  provide many circular distributions, see below.
+  
+  ---------------------------- -----------------------  ------------- -----------------------
+  *Distribution name*          *Packages*               *Functions*   *Distribution suffix*
+  Cardioid                     CircStats                d, r          `card`
+  Cardioid                     VGAM                     d, p, q, r    `card`
+  Cardioid                     Directional              d, r          `cardio`
+  circular beta                Directional              d, r          `circbeta`
+  circular exponential         Directional              d, r          `circexp`
+  circular Purkayastha         Directional              d, r          `circpurka`
+  von Mises                    circular                 d, p, q, r    `vonmises`
+  von Mises                    CircStats                d, p, r       `vm`
+  von Mises                    Directional              d, r          `vm`
+  von Mises                    rvMF                     r             `vMF`
+  wrapped Cauchy               circular                 d, r          `wrappedcauchy`
+  wrapped Cauchy               CircStats                d, r          `wrpcauchy`
+  wrapped Cauchy               Directional              d, r          `wrapcauchy`
+  wrapped normal               circular                 d, p, q, r    `wrappednormal`
+  wrapped normal               CircStats                d, r          `wrpnorm`
+  wrapped normal               Directional              d, r          `wrapnormal`
+  ---------------------------- -----------------------  ------------- -----------------------
+  
+  : Summary for circular distributions  
+  
 - *Consul distribution:* see `r pkg("rmutil")`.
 - *Continuous binomial distribution:* `r pkg("cbinom")`
   provides the d/p/q/r functions for a continuous analog to the
@@ -638,8 +659,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   and the zero-modified distribution.
   `r pkg("extraDistr")` provides the truncated normal.
   `r pkg("LaplacesDemon")` provides d, p, q, r functions
-  for the Half-normal distribution. The wrapped normal distribution is
-  provided in `r pkg("CircStats")`.
+  for the Half-normal distribution. 
   `r pkg("lmomco")` implements the generalized normal
   distribution. The Exponentially modified Gaussian is available in
   `r pkg("emg")`, `r pkg("gamlss.dist")`, `r pkg("tsdistributions")`, 
@@ -1147,12 +1167,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("vasicekreg")` implements d, p, q, r functions.  
 - *voigt distribution:* 
   `r pkg("voigt")` implements d, r functions.
-- *von Mises distribution:* The `r pkg("CircStats")`
-  package provides d, p, r functions; the
-  `r pkg("circular")` package provides d, p, q, r
-  functions.
-  `r pkg("rvMF")` package provides a fast random generator for von Mises
-  Fisher distribution.
 - *Wakeby distribution:* A 5-parameter Wakeby is provided in
   `r pkg("lmomco")`.
 - *Weibull distribution and its extensions:* Base R provides the d, p,
@@ -1318,6 +1332,33 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Multivariate Uniform distribution:* r is provided in
   `r pkg("MultiRNG")`. `r pkg("compositions")`
   provides a random generator on the simplex.
+- *Spherical distributions and other:* 
+  `r pkg("Directional")` provides many spherical distributions, see below.
+  `r pkg("simdd")` provides a generator for the Fisher Bingham 
+  distribution on the unit sphere, the matrix Bingham distribution on
+  a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate 
+  von Mises sin model on the torus.
+  `r pkg("uniformly")` provides uniform sampling on various geometric shapes, 
+  such as spheres, ellipsoids, simplices.
+  `r pkg("watson")` allows simulating mixtures of Watson distributions.
+  
+  ---------------------------- -----------------------  ------------- -----------------------
+  *Distribution name*          *Packages*               *Functions*   *Distribution suffix*
+  uniform                      uniformly                r             `runif_on_sphere`
+  Angular Gaussian             Directional              d, r          `agd`
+  Bingham                      simdd                    r             `Bingham`
+  Bingham                      Directional              r             `bingham`
+  Ellip. Sym. Ang. Gaussian    Directional              d, r          `ESAG`
+  Fisher Bingham               simdd                    r             `FisherBingham`
+  Kent                         Directional              d, r          `kent`
+  Purkayastha                  Directional              d, r          `purka`
+  spherical Cauchy             Directional              d, r          `spcauchy`
+  von Mises - Fisher           Directional              d, r          `vmf`
+  Wood                         Directional              d.            `wood`
+  ---------------------------- -----------------------  ------------- -----------------------
+  
+  : Summary for circular distributions    
+    
 
 # [Other distributions]{#other}
 
@@ -1787,13 +1828,6 @@ convolution kernel density estimator implementations.
   For non-parametric distributions, `r pkg("SimJoint")` offers 
   various to simulate multivariate distributions with non-parametric marginals
   given a Pearson or Spearman correlation matrix.
-- *Unit sphere and other:* `r pkg("simdd")` provides a generator for the Fisher Bingham 
-  distribution on the unit sphere, the matrix Bingham distribution on
-  a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate 
-  von Mises sin model on the torus.
-  `r pkg("uniformly")` provides sampling on various geometric shapes, 
-  such as spheres, ellipsoids, simplices.
-  `r pkg("watson")` allows simulating mixtures of Watson distributions.
 - *Tidyverse:* `r pkg("TidyDensity")` maps the RNG of `stats` (and `actuar`) distributions 
   to a tidy `tibble` which allows to work with the rest of the `tidyverse`.  
 
