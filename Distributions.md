@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-10-27
+version: 2025-10-28
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -477,10 +477,12 @@ Extreme Value) in order to compute the log-likelihood for example.
 
 - *Circular distributions:* 
   `r pkg("CircStats")`, `r pkg("circular")`, `r pkg("Directional")`, `r pkg("rvMF")`, `r pkg("VGAM")`
-  provide many circular distributions, see below.
+  provide many circular distributions, see below. `r pkg("Directional")` also proposes
+  various fitting methods.
   
   ---------------------------- -----------------------  ------------- -----------------------
   *Distribution name*          *Packages*               *Functions*   *Distribution suffix*
+  Angular Gaussian             Directional              d, r          `spml`
   Cardioid                     CircStats                d, r          `card`
   Cardioid                     VGAM                     d, p, q, r    `card`
   Cardioid                     Directional              d, r          `cardio`
@@ -1333,7 +1335,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("MultiRNG")`. `r pkg("compositions")`
   provides a random generator on the simplex.
 - *Spherical distributions and other:* 
-  `r pkg("Directional")` provides many spherical distributions, see below.
+  `r pkg("Directional")` provides many spherical distributions, see below,
+  and proposes various fitting methods.
   `r pkg("simdd")` provides a generator for the Fisher Bingham 
   distribution on the unit sphere, the matrix Bingham distribution on
   a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate 
@@ -1345,7 +1348,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   ---------------------------- -----------------------  ------------- -----------------------
   *Distribution name*          *Packages*               *Functions*   *Distribution suffix*
   uniform                      uniformly                r             `runif_on_sphere`
-  Angular Gaussian             Directional              d, r          `agd`
   Bingham                      simdd                    r             `Bingham`
   Bingham                      Directional              r             `bingham`
   Ellip. Sym. Ang. Gaussian    Directional              d, r          `ESAG`
