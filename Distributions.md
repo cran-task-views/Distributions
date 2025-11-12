@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-10-28
+version: 2025-11-12
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1161,6 +1161,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   in R. See section RNG for random number generation topics.
   `r pkg("KScorrect")` provides d, p, q, r functions for
   the log-uniform distribution.
+- *Unit-garima distribution:* d, p, q, r functions provided
+  in `r pkg("UGarima")`.
 - *Upsilon distribution:* `r pkg("sadists")` implements
   Gram Charlier, Edgeworth and Cornish-Fisher approximations for
   Upsilon distribution for computing d, p, q, r functions.
@@ -1276,6 +1278,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   Gaussian distribution.
   `r pkg("nvmix")` provides d, p, q, r function of the Multivariate Normal Variance Mixtures
   as well as the multivariate normal distribution.
+  `r pkg("hdtg")` provides efficient sampling from high-dimensional multivariate truncated normal.
   
 - *Multivariate generalized hyperbolic distribution:*
   `r pkg("QRM")` provides d, r functions of the standard
