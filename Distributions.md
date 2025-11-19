@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-11-12
+version: 2025-11-19
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -345,7 +345,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   The generalized beta of the first kind (GB1) 
   (exponentiation of beta 1, also known as McDonald distribution) is provided in
   `r pkg("gamlss.dist")`, `r pkg("mbbefd")`,
-  `r pkg("actuar")`, `r pkg("gkwreg")`. 
+  `r pkg("actuar")`, `r pkg("gkwdist")`. 
   `r pkg("betafunctions")` provides the four-parameter beta (that is with location and scale
   parameters), the beta parametrized by the mean and the variance as
   well as the beta compound beta distribution. The beta prime (or beta
@@ -379,7 +379,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   GB1                       gamlss.dist     d, p, q, r           `GB1`
   GB1                       mbbefd          d, p, q, r, m, ec    `gbeta`
   GB1                       actuar          d, p, q, r, m, lev   `genbeta`
-  GB1                       gkwreg          d, p, q, r           `mc`
+  GB1                       gkwdist          d, p, q, r           `mc`
   one-infl GB1              mbbefd          d, p, q, r, m, ec    `oigbeta`
   ------------------------- --------------- -------------------- -----------------------
 
@@ -805,7 +805,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Kruskal Wallis distribution:* provided in
   `r pkg("SuppDists")`.
 - *Kumaraswamy distribution:* provided in packages
-  `r pkg("VGAM")`, `r pkg("extraDistr")`, `r pkg("gkwreg")`, 
+  `r pkg("VGAM")`, `r pkg("extraDistr")`, `r pkg("gkwdist")`, 
   `r pkg("lmomco")`, `r pkg("new.dist")`. `r pkg("elfDistr")`
   provides the Kumaraswamy Complementary Weibull Geometric Probability
   Distribution.
@@ -1637,7 +1637,7 @@ convolution kernel density estimator implementations.
   distribution, odd log-logistic G distribution, truncated-exponential
   skew-symmetric G distribution, T-X{log-logistic}G distribution,
   Weibull G distribution. 
-  `r pkg("gkwreg")` provides the beta-Kumaraswamy, the exponentiated-Kumaraswamy,
+  `r pkg("gkwdist")` provides the beta-Kumaraswamy, the exponentiated-Kumaraswamy,
   the generalized Kumaraswamy, Kumaraswamy-Kumaraswamy distributions.
   `r pkg("gendist")` provides d,
   p, q, r functions for composite models, folded models, skewed
