@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-11-19
+version: 2025-12-15
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -223,8 +223,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Poisson distribution:* provided in **stats** and in
   `r pkg("poweRlaw")`. Zero-modified, zero-inflated,
   truncated versions are provided in
-  `r pkg("extraDistr")`,
-  `r pkg("gamlss.dist")`, `r pkg("actuar")`
+  `r pkg("extraDistr")`, `r pkg("gamlss.dist")`, `r pkg("actuar")`
   and in `r pkg("VGAM")`.
   `r pkg("extraDistr")` provides the truncated Poisson
   distribution. `r pkg("LaplacesDemon")` provides the
@@ -1433,6 +1432,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   implement the Poisson Binomial distribution.
 - *Poisson lognormal distribution:* `r pkg("poilog")`
   implements the Poisson lognormal distribution.
+  `r pkg("ztpln")` provides d, r functions of Zero-Truncated Poisson Lognormal Distribution.
 - *Poisson mixture:* provided in `r pkg("extraDistr")`.
 - *Poisson-Tweedie exponential family models:* provided in
   `r pkg("poistweedie")`.
@@ -1918,6 +1918,9 @@ convolution kernel density estimator implementations.
     `r pkg("distrTeach")`,
     `r pkg("distrDoc")`,
     `r pkg("distrEllipse")`).
+  - *tidyverse:* `r pkg("distionary")` provides probability distribution 
+    objects to handle base or custom distributions which allow statistical
+    modeling and simulations. This forms the core of probaverse.
   - *R6 Object-orientation:* 
     `r pkg("ROOPSD")` provides a R6 class interface to
     classic statistical distribution.
