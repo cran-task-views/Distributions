@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2025-12-15
+version: 2026-01-01
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1901,6 +1901,8 @@ convolution kernel density estimator implementations.
     create and to manipulate probability distributions using S3,
     with `cdf()`, `density()`, `hdr()`, `mean()`, `median()`,
     `quantile()`,\...
+    `r pkg("algebraic.dist")` provides an algebra over probability distributions 
+    enabling composition, sampling, and automatic simplification to closed forms. 
   - *S4 Object-orientation:* General discrete and continuous
     distributions are implemented in package
     `r pkg("distr")` respectively via S4-class
