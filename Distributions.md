@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2026-01-01
+version: 2026-01-19
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1463,7 +1463,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("wishmom")` allows to computes the theoretical moments of
   the inverse beta-Wishart distribution.
 - *Marcenko-Pastur distribution:* provided in
-  `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+  `r pkg("RMTstat")`, `r pkg("MCMCpack")`, `r pkg("RMT4DS")` and
   `r pkg("bayesm")`.
 - *Matrix gamma distribution:* provided in
   `r pkg("LaplacesDemon")`.
@@ -1483,7 +1483,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Normal Wishart distribution:* provided in
   `r pkg("LaplacesDemon")`.
 - *Tracy-Widom distribution:* provided in
-  `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
+  `r pkg("RMTstat")`, `r pkg("MCMCpack")`, `r pkg("RMT4DS")` and
   `r pkg("bayesm")`: supported beta values are 1 (Gaussian
   Orthogonal Ensemble), 2 (Gaussian Unitary Ensemble), and 4 (Gaussian
   Symplectic Ensemble).
