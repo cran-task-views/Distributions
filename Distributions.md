@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2026-01-19
+version: 2026-03-11
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -364,6 +364,11 @@ Extreme Value) in order to compute the log-likelihood for example.
   log-logistic, paralogistic, generalized Pareto, Pareto, see also the
   Pareto subsection. 
   `r pkg("skewunit")` provides d, p, r for a symmetric beta.
+  `r pkg("ZeroOneDists")` provides d, p, q, r for a one-inflated beta
+  called abusively beta-rectangular distribution, parametrized by its
+  probability mass and mean, standard deviation of the beta part
+  or the overall distribution.
+  
   
   ------------------------- -------------- -------------------  -----------------------
   *Distribution name*       *Packages*     *Functions*           *Distribution suffix*
@@ -375,6 +380,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   zero-infl beta            gamlss.dist     d, p, q, r           `BEZI`
   one-infl beta             gamlss.dist     d, p, q, r           `BEOI`
   one-infl beta             mbbefd          d, p, q, r, m, ec    `oibeta`
+  one-infl beta             ZeroOneDists    d, p, q, r           `BER`, `BER2`
   GB1                       gamlss.dist     d, p, q, r           `GB1`
   GB1                       mbbefd          d, p, q, r, m, ec    `gbeta`
   GB1                       actuar          d, p, q, r, m, lev   `genbeta`
@@ -675,6 +681,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   sum of a normal and a Laplace random variables.
   `r pkg("PSDistr")` provides d, p, q, r functions of transformations
   of the normal distribution, such as expnormal and sinh-normal distributions.
+  `r pkg("ZeroOneDists")` provides the unit-power half normal distribution 
+  valued in $(0,1)$.
     
   --------------------------------- ----------------- --------------- -----------------------
   *Distribution name*               *Packages*          *Functions*     *Distribution suffix*
@@ -726,7 +734,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("gamlss.dist")`, `r pkg("FAdist")`,
   `r pkg("extraDistr")`, 
   `r pkg("QRM")`, `r pkg("TLMoments")`,
-  `r pkg("dgumbel")`, `r pkg("EnvStats")` and
+  `r pkg("EnvStats")` and
   `r pkg("evd")`. `r pkg("actuar")` provides
   the raw moments and the moment generating function (mgf) in addition
   to the d, p, q, r functions. A fast random generator is available
@@ -874,6 +882,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("rmutil")`, `r pkg("SCI")` and
   `r pkg("glogis")`.
   `r pkg("GTDL")` implements generalized Time-Dependent Logistic distribution.
+  `r pkg("ZeroOneDists")` provides the unit-half logistic distribution valued in $(0,1)$.
 
    ---------------------- -------------- -------------------- -----------------------
    *Distribution name*    *Packages*       *Functions*          *Distribution suffix*
@@ -921,6 +930,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   distribution, the truncated lognormal distribution.
 - *Makeham distribution:* provided in `r pkg("VGAM")`. 
 - *Maxwell distribution:* provided in `r pkg("VGAM")`, `r pkg("new.dist")`.
+  `r pkg("ZeroOneDists")` provides the unit Maxwell-Boltzmann distribution.
 - *Minimax distribution:* provided in `r pkg("minimax")`.
 - *Mittag-Leffler distribution:* d, p, q, r functions provided in
   `r pkg("MittagLeffleR")`.
@@ -1560,9 +1570,6 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("VineCopula")` provide the Gaussian and the
   Student copulas. `r pkg("QRM")` provides pdf and random
   generator for Gaussian, Student copulas.
-  `r pkg("relliptical")` provides a random generator for multivariate
-  truncated Normal, Student-t, Power Exponential,
-  Pearson VII, Slash and Contaminated Normal distributions.
   `r pkg("CopulaGAMM")` provides the bivariate Gaussian and 
   student copula.
 - *Extreme value copulas:* `r pkg("fCopulae")` provides
