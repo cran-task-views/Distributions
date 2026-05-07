@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2026-03-11
+version: 2026-05-07
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -184,8 +184,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Geometric distribution:* provided in **stats** . Zero-modified,
   zero-inflated, truncated versions are provided in
   `r pkg("gamlss.dist")`, `r pkg("actuar")`
-  and in `r pkg("VGAM")`. The time-varying geometric is
-  provided in `r pkg("tvgeom")`.
+  and in `r pkg("VGAM")`. 
 - *Geometric (compound) Poisson distribution (also known Polya-Aeppli distribution):* provided in `r pkg("polyaAeppli")`. Uniform-geometric distribution provided in `r pkg("new.dist")`.
 - *Generalized/fractional binomial distribution:* 
   `r pkg("GenBinomApps")` provides the generalized binomial distribution.
@@ -826,7 +825,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   by Gilchrist), GPD (gen. Pareto dist.) and AS (Asymmetry-steepness).
   The following packages implement such distributions (with d, p, q, r
   functions): `r pkg("gld")` (RS, FKML, FM5, GPD),
-  `r pkg("Davies")` (RS), `r pkg("gb")` (RS),
+  `r pkg("Davies")` (RS), 
   `r pkg("lmomco")` (FMKL),
   `r pkg("extraDistr")` (original Tukey).
 - *Tukey's G/H distribution:* 
@@ -1047,7 +1046,7 @@ Extreme Value) in order to compute the log-likelihood for example.
 - *Planck's distribution:* a random generator is available in
   `r pkg("Runuran")`.
 - *Phase-type distribution:* provided in `r pkg("actuar")`,
-  `r pkg("mapfit")`, `r pkg("matrixdist")`, `r pkg("PhaseTypeR")`.
+  `r pkg("matrixdist")`, `r pkg("PhaseTypeR")`.
 - *Power distribution:* `r 
   `r pkg("poweRlaw")`, `r pkg("Rsubbotools")` implement the exponential power
   distribution. Two-sided power distribution provided in
