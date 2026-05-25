@@ -284,7 +284,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("dirmult")`, `r pkg("extraDistr")`
   and `r pkg("bayesm")`. r is provided in
   `r pkg("MultiRNG")`.
-- *Multivariate Ewens distribution:* not yet implemented?
+- *Multivariate Ewens distribution:* d, r functions provided in
+  `r pkg("ewens")`.
 - *Multivariate geometric:* d, r functions provided in
   `r pkg("bivgeom")` for the bivariate geometric distribution. 
   `r pkg("BivGeo")` provides the Basu-Dhar bivariate geometric distribution.
@@ -733,7 +734,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("gamlss.dist")`, `r pkg("FAdist")`,
   `r pkg("extraDistr")`, 
   `r pkg("QRM")`, `r pkg("TLMoments")`,
-  `r pkg("EnvStats")` and
+  `r pkg("EnvStats")`, `r pkg("evmr")` and
   `r pkg("evd")`. `r pkg("actuar")` provides
   the raw moments and the moment generating function (mgf) in addition
   to the d, p, q, r functions. A fast random generator is available
@@ -742,6 +743,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   reverse Gumbel distribution is implemented in
   `r pkg("lmomco")` and `r pkg("gamlss.dist")`.
   `r pkg("bgumbel")` provides the bimodel Gumbel distribution.
+  `r pkg("evmr")` provides the generalized Gumbel distribution.
 - *Hjorth distribution:* provided in `r pkg("rmutil")`.
 - *Huber distribution:* Huber's least favourable distribution
   provided in package `r pkg("smoothmest")` (d, r), and in
@@ -799,7 +801,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   Gram Charlier, Edgeworth and Cornish-Fisher approximations for
   K-prime distribution for computing d, p, q, r functions.
 - *Kappa distribution:* A 4-parameter Kappa distribution is provided
-  in `r pkg("lmomco")` and `r pkg("FAdist")`.
+  in `r pkg("lmomco")`, `r pkg("evmr")` and `r pkg("FAdist")`.
 - *Kappa-mu distribution:* provided in `r pkg("lmomco")`.
 - *Kato-Jones distribution:* provided in
   `r pkg("circular")` (d, r).
@@ -877,7 +879,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("trdist")` provides the log-logistic distribution.
   The generalized logistic distribution (Type I,
   also known as skew-logistic distribution) is provided in
-  `r pkg("lmomco")`, `r pkg("sld")`,
+  `r pkg("lmomco")`, `r pkg("sld")`, `r pkg("evmr")`,
   `r pkg("rmutil")`, `r pkg("SCI")` and
   `r pkg("glogis")`.
   `r pkg("GTDL")` implements generalized Time-Dependent Logistic distribution.
@@ -1125,6 +1127,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   (3-parameter) are provided in `r pkg("lmomco")`.
   `r pkg("crch")` provides d, p, q, r functions for the 
   truncated student distribution.
+  `r pkg("foldedt")` provides d, r functions for the 
+  folded student distribution.
 
   ----------------------------- ----------------- ------------- ---------------------------
   *Distribution name*           *Packages*          *Functions*   *Distribution suffix*
