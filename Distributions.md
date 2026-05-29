@@ -1930,9 +1930,14 @@ convolution kernel density estimator implementations.
     `r pkg("distrTeach")`,
     `r pkg("distrDoc")`,
     `r pkg("distrEllipse")`).
-  - *tidyverse:* `r pkg("distionary")` provides probability distribution 
-    objects to handle base or custom distributions which allow statistical
-    modeling and simulations. This forms the core of probaverse.
+  - *tidyverse:* `r pkg("distionary")` provides probability distribution
+    objects for base or custom distributions and can evaluate distribution
+    functions even when they are not explicitly supplied in the definition.
+    `r pkg("distplyr")` builds on this infrastructure to transform,
+    combine, and otherwise manipulate distributions. `r pkg("probaverse")`
+    is a meta-package that attaches the core probaverse packages,
+    including `r pkg("distionary")`, `r pkg("distplyr")`, and
+    `r pkg("famish")`.
   - *R6 Object-orientation:* 
     `r pkg("ROOPSD")` provides a R6 class interface to
     classic statistical distribution.
@@ -1972,6 +1977,9 @@ convolution kernel density estimator implementations.
     function for parameter estimations.
     `r pkg("fitdistrplus")` greatly enlarges `fitdistr` and
     enhances the tools to fit any user-supplied probability distribution.
+    `r pkg("famish")` fits distribution families to data using methods
+    such as maximum likelihood and L-moments, returning probaverse-compatible
+    distribution objects together with fitting diagnostics.
     `r pkg("OneStep")` is based upon `r pkg("fitdistrplus")` to provide
     one-step estimation procedures.
     `r pkg("EnvStats")`, `r pkg("ExtDist")`,  
