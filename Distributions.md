@@ -1600,7 +1600,7 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("LaplacesDemon")`.
 - *Composite distribution also known as spliced distribution:*
   Split-normal (also known as
-  the two-piece normal distribution) not yet implemented.
+  the two-piece normal distribution) and the
   Split-student provided in package `r pkg("dng")`.
   `r pkg("evmix")` provides d, p, q, r of the following
   composite distributions: gamma-GPD, lognormal GPD, normal-GPD,
