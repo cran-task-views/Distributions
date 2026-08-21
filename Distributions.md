@@ -1227,7 +1227,11 @@ Extreme Value) in order to compute the log-likelihood for example.
   either by sigma, by the Cholesky decomposition of sigma, by the
   precision matrix omega or by the Cholesky decomposition of omega.
   `r pkg("multvardiv")` provides d, p, r functions of the multivariate 
-  Cauchy distribution..
+  Cauchy distribution. Bivariate plotting, d, and r functions are available in
+  `r pkg("mcauchyd")`.  Also note, setting `alpha=1` in a Multivariate Stable
+  distribution (see packages below) will give a Multivariate Cauchy, as will 
+  setting degrees of freedom to 1 in a Multivariate Student distribution (see 
+  packages below).
 - *Cook-Johnson's Multivariate Uniform Distribution:*
   `r pkg("NonNorMvtDist")` provides d, p, q, r, s
   functions.
