@@ -331,6 +331,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("distr")` and `r pkg("skewunit")`. 
 - *Argus distribution:* implemented in package
   `r pkg("argus")`.
+- *Arvind distribution:* implemented in package
+  `r pkg("ArvindRF")`.
 - *Beta distribution and its extensions:* Base R provides the d, p, q,
   r functions for this distribution (see above).
   `r pkg("extraDistr")` provides the beta distribution
@@ -625,6 +627,8 @@ Extreme Value) in order to compute the log-likelihood for example.
   `r pkg("ollggamma")` provides d, p, q, r for the Odd Log-Logistic Generalized Gamma. 
   The d, p, q, r functions for the 
   truncated generalised gamma distribution are found in `r pkg("tggd")`.
+  `r pkg("PowerXgammaRF")` provides the power-X-gamma
+  distribution.
   
   ---------------------- ------------------ ------------------------- -----------------------
   *Distribution name*    *Packages*           *Functions*               *Distribution suffix*
@@ -1148,6 +1152,8 @@ Extreme Value) in order to compute the log-likelihood for example.
 
 - *Topp-Leone Cauchy Rayleigh (TLCAR) distribution:* provided
   in `r pkg("TLCAR")` (d, p, q, r).
+  `r pkg("MTLRF")` provides the modified Topp-Leone
+  distribution.
 - *Triangle/trapezoidal distribution:* packages
   `r pkg("triangle")`, `r pkg("extraDistr")`,
   `r pkg("mc2d")`, `r pkg("EnvStats")` and
@@ -1227,7 +1233,11 @@ Extreme Value) in order to compute the log-likelihood for example.
   either by sigma, by the Cholesky decomposition of sigma, by the
   precision matrix omega or by the Cholesky decomposition of omega.
   `r pkg("multvardiv")` provides d, p, r functions of the multivariate 
-  Cauchy distribution..
+  Cauchy distribution. Bivariate plotting, d, and r functions are available in
+  `r pkg("mcauchyd")`.  Also note, setting `alpha=1` in a Multivariate Stable
+  distribution (see packages below) will give a Multivariate Cauchy, as will 
+  setting degrees of freedom to 1 in a Multivariate Student distribution (see 
+  packages below).
 - *Cook-Johnson's Multivariate Uniform Distribution:*
   `r pkg("NonNorMvtDist")` provides d, p, q, r, s
   functions.
