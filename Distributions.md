@@ -3,7 +3,7 @@ name: Distributions
 topic: Probability Distributions
 maintainer: Christophe Dutang, Patrice Kiener, Bruce J. Swihart
 email: dutangc@gmail.com
-version: 2026-05-07
+version: 2026-08-21
 source: https://github.com/cran-task-views/Distributions/
 ---
 
@@ -1511,11 +1511,13 @@ Extreme Value) in order to compute the log-likelihood for example.
   Wishart distribution. `r pkg("MCMCpack")`,
   `r pkg("RMTstat")`, `r pkg("bayesm")`,
   `r pkg("mniw")` provides d, r functions,
-  `r pkg("bayesm")` provides r function.
+  `r pkg("bayesm")`, `r pkg("rWishart")` provides r function.
   `r pkg("LaplacesDemon")` provides Wishart distribution
   parametrized either by Sigma or by its Cholesky decomposition.
   `r pkg("wishmom")` allows to computes the theoretical moments of
   the beta-Wishart distribution.
+  `r pkg("rWishart")` also provides singular, pseudo and
+  fractional degree-of-freedom Wishart generator.
 - *White Wishart Maximum Eigenvalue Distribution:* provided in
   `r pkg("RMTstat")`, `r pkg("MCMCpack")` and
   `r pkg("bayesm")`.
